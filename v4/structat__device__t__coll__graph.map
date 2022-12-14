@@ -1,0 +1,5 @@
+<map id="at_device_t" name="at_device_t">
+<area shape="rect" id="node2" href="$structcore__at__urc__item__t.html" title="AT主动上报命令 " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node3" href="$structcore__at__cmd__item__t.html" title="AT命令请求响应结构体定义 " alt="" coords="163,5,303,32"/>
+<area shape="rect" id="node4" href="$structcore__at__recv__data__prefix.html" title="AT主动上报接收的数据，可识别头 " alt="" coords="328,5,496,32"/>
+</map>

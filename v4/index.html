@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: 简介</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">简介 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>阿里云的<a href="https://www.aliyun.com/product/iot">物联网平台</a>提供安全可靠的设备连接通信能力, 帮助用户将海量设备数据采集上云</p>
+<p>设备可通过集成 <code>Link SDK</code> 具备连接物联网平台服务器的能力, 以及进而使用物联网平台的其它高级能力 </p><hr/>
+<p> 这个SDK以C99编写, 开源发布, 支持多种操作系统和硬件平台, 阅读本文开始使用, 访问<a href="https://code.aliyun.com/linksdk/docs/wikis/home">SDK的线上文档首页</a>得到更多信息</p>
+<h1>了解SDK架构</h1>
+<div class="image">
+<img src="https://linkkit-export.oss-cn-shanghai.aliyuncs.com/sdk_new_arch.png"  width="800"/>
+</div>
+<h1>获取SDK内容及用户编程导引</h1>
+<blockquote class="doxtable">
+<p><b>SDK基座:</b> <a href="https://code.aliyun.com/linksdk/base/repository/archive.zip?ref=master">下载地址</a> </p>
+</blockquote>
+<p>下载SDK基座得到的, 主要含上图中的**SDK核心模块**, 它本身已是完整可用的了, 点击以下链接阅读编程导引开始使用</p>
+<ul>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/MQTT_Connect">MQTT连云能力</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/HTTP_Connect">HTTP连云能力</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/RRPC_Process">RRPC</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Broadcast_Process">在线设备接收广播</a> <hr/>
+ 除此以外, 以上获取的SDK基座上, 还可以由用户选择动态安插, 装备上其它高阶的能力, 点击以下链接阅读编程导引开始使用</li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Bootstrap_Service">Bootstrap(引导服务)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/OTA_Service">OTA(固件升级)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Data_Model_Process">Data-Model(物模型)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Dynreg_Service">Dynreg(动态注册)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/NTP_Service">NTP(时间同步)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Shadow_Service">Shadow(设备影子)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Logpost_Service">Logpost(日志上云)</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/Devinfo_Service">Devinfo(设备标签)</a> <hr/>
+ 在面向应用的编程导引外, 以上所有组件也提供面向代码的详细手册, <a href="http://gaic.alicdn.com/ztms/linkkit/html/index.html">SDK的线上手册地址</a></li>
+</ul>
+<h1>装备高阶能力</h1>
+<p>以上高阶能力, 任意两两之间无依赖关系, 仅依赖SDK核心模块(<code>core</code>目录), 用户装备任一种能力的方式都是一致的</p>
+<ul>
+<li>下载组件压缩包, 每一种高阶能力对应一个组件代码压缩包</li>
+<li>解压组件压缩包, 放置到 <code>components/xxx</code> 目录</li>
+</ul>
+<blockquote class="doxtable">
+<p>目前已就绪的高阶组件有 </p>
+</blockquote>
+<table class="doxtable">
+<tr>
+<th align="center"><b>高阶组件</b> </th><th><b>组件说明</b> </th><th><b>下载地址</b>  </th></tr>
+<tr>
+<td align="center"><code>Bootstrap</code> </td><td><em>实时动态的同步国家与地区的建连信息给设备</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-bootstrap/repository/archive.zip?ref=master">Bootstrap组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>OTA</code> </td><td><em>固件升级和远程配置</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-ota/repository/archive.zip?ref=master">OTA组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>Data-Model</code> </td><td><em>使用属性, 事件, 服务构成的物模型描述设备</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-data-model/repository/archive.zip?ref=master">Data-Model组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>Dynreg</code> </td><td><em>在设备运行时分配<code>deviceSecret</code>以简化烧录</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-dynreg/repository/archive.zip?ref=master">Dynreg组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>NTP</code> </td><td><em>基于MQTT协议从云平台获取标准时间</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-ntp/repository/archive.zip?ref=master">NTP组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>Shadow</code> </td><td><em>基于MQTT协议获取或更新云端缓存模型</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-shadow/repository/archive.zip?ref=master">Shadow组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>Logpost</code> </td><td><em>基于MQTT协议上报设备日志到云端控制台</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-logpost/repository/archive.zip?ref=master">Logpost组件下载链接</a> </td></tr>
+<tr>
+<td align="center"><code>Devinfo</code> </td><td><em>基于MQTT协议上报标签删除或标签更新请求</em> </td><td><a href="https://code.aliyun.com/linksdk/linksdk-devinfo/repository/archive.zip?ref=master">Devinfo组件下载链接</a> </td></tr>
+</table>
+<h1>SDK使用的最佳实践</h1>
+<p>为直观的了解SDK的移植和使用, 可点击链接访问以下的实际场景中开发文档记录, 参考官方给出的使用者角度最佳实践</p>
+<h2>移植实例</h2>
+<ul>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/ESP8266_Porting">乐鑫ESP8266移植</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/ESP32_Porting">乐鑫ESP32移植</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/SIM800C_TCP_Porting">MCU+TCP模组(SIM800C)移植</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/N720V5_MQTT_Porting">MCU+MQTT模组(N720V5)移植</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/Android_Intree_Porting">Android源码树内移植</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/Android_NDK_Porting">Android源码树外NDK移植</a></li>
+</ul>
+<h2>特殊的TLS认证模式</h2>
+<ul>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/TLS_PSK_Auth">基于PSK的TLS连接</a></li>
+<li><a href="http://code.aliyun.com/linksdk/docs/wikis/best-practice/TLS_X509_Auth">基于X509的TLS连接</a></li>
+</ul>
+<h1>编译方式</h1>
+<p>**<code>Link SDK</code>完全由高移植性的C语言源文件构成**, 用户应使用惯用的任意编译方式, 将这些C文件(<code>demos</code>目录除外)跟自己的其它源文件编译到一起即可使用它 </p><hr/>
+<p> <em>如果用户使用安装有<code>GNU Make</code>的<code>Linux</code>主机开发环境, 可在SDK源码根目录运行</em></p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;make</div></div><!-- fragment --><p><em>编译SDK例程, 编好的例程在<code>output/xxxx_demo</code>, 运行这些例程可快速体验SDK和物联网平台的功能, 编程导引文档中也有例程的运行输出讲解</em></p>
+<h1>设计原则</h1>
+<p>不论是MQTT连云这样放在<code>core</code>的SDK核心模块, 还是固件升级这样放在<code>components/xxx</code>的高阶组件, 一致使用以下的设计原则</p>
+<ul>
+<li>用户须知的API函数接口和数据结构, 在<code>xxx/aiot_xxx_api.h</code>头文件中列出, 以<code>aiot_xxx_yyy</code>风格命名</li>
+<li>这些API函数的实现源码, 在<code>xxx/aiot_xxx_api.c</code>中</li>
+<li>组件能力的使用范例, 在<code>xxx/demos/xxx_{basic,posix}_demo.c</code>中</li>
+<li>组件的API函数原型, 遵循统一的设计模式<ul>
+<li><code>aiot_xxx_init()</code>: 初始化1个会话实例, 并设置默认参数</li>
+<li><code>aiot_xxx_deinit()</code>: 销毁1个会话实例, 回收其占用资源</li>
+<li><code>aiot_xxx_setopt()</code>: 配置1个会话实例的运行参数, 可用参数及用法在编程手册中有指出</li>
+<li><code>aiot_xxx_send_yyy()</code>: 向云平台发起某种会话请求</li>
+<li><code>aiot_xxx_recv()</code>: 从云平台接收请求的应答</li>
+</ul>
+</li>
+<li>组件能力运行时, 对外表达信息的方式, 遵循统一的设计模式<ul>
+<li><b>API的返回值</b>: 是1个<code>16 bits</code>的非正数整型, 也叫**状态码**, <code>0</code>表成功, 其它值表达运行状态<ul>
+<li><code>retval = aiot_xxx_yyy()</code>方式获取返回值</li>
+<li>所有返回值唯一对应内部运行分支, 含义详见<code><a class="el" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 ">core/aiot_state_api.h</a></code>或<code>components/xxx/aiot_xxx_api.h</code></li>
+<li>所有组件的返回值的值域互不重叠, 共同分别分布在<code>0x0000 - 0xFFFF</code></li>
+</ul>
+</li>
+<li><b>数据回调函数</b>: 是1个用户实现并传入SDK的回调函数, SDK从外界读取到值得关注的数据报文时, SDK会调用它, 用户可在此处理数据流<ul>
+<li><code>aiot_xxx_setopt(handle, AIOT_XXXOPT_RECV_HANDLER, user_recv_cb)</code>设置数据回调</li>
+</ul>
+</li>
+<li><b>事件回调函数</b>: 是1个用户实现并传入SDK的回调函数, SDK内部运行状态发生值得关注的变化时, SDK会调用它, 用户可在此处理控制流<ul>
+<li><code>aiot_xxx_setopt(handle, AIOT_XXXOPT_EVENT_HANDLER, user_event_cb)</code>设置事件回调</li>
+</ul>
+</li>
+<li><b>运行日志回调</b>: 是1个用户实现并传入SDK的回调函数, SDK运行时, 详细的运行日志字符串会实时输入到这个回调<ul>
+<li><code>aiot_state_set_logcb(user_log_cb)</code>设置日志回调</li>
+<li>若不想看到SDK运行日志, 回调为空即可</li>
+<li>日志格式统一为: <code>[timestamp][LK-XXXX] message</code><ul>
+<li><code>XXXX</code>以数字形式标识了日志字符串, 它和返回值共享一个**状态码**分布空间, 都在<code>-0xFFFF ~ 0x0000</code></li>
+<li>利用SDK的高阶组件之一, 时间同步(<code>ntp</code>), 可进行网络对时, 此后日志中的<code>timestamp</code>会自动变成"年月日 时分秒"的易读模式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote class="doxtable">
+<p><a href="http://code.aliyun.com/linksdk/docs/wikis/prog-guide/StateCode_List"><b>点此查看详细状态码清单</b></a>, 比如<code>-0x0305</code>代表MQTT连云时设备鉴权失败</p>
+</blockquote>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

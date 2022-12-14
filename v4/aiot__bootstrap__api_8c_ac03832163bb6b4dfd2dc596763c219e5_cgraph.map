@@ -1,0 +1,7 @@
+<map id="aiot_bootstrap_send_request" name="aiot_bootstrap_send_request">
+<area shape="rect" id="node2" href="$aiot__bootstrap__api_8c.html#a3f479af974adab936287f2d1a96b8029" title="_bootstrap_exec_inc" alt="" coords="196,5,339,32"/>
+<area shape="rect" id="node3" href="$aiot__bootstrap__api_8c.html#af6a37095391fa36e25c66352e00a3d91" title="_bootstrap_exec_dec" alt="" coords="194,56,341,83"/>
+<area shape="rect" id="node4" href="$aiot__bootstrap__api_8c.html#ab8566d8bc43419babe53b32c81277d18" title="_bootstrap_http_recv\l_handler" alt="" coords="195,107,339,149"/>
+<area shape="rect" id="node5" href="$aiot__bootstrap__api_8c.html#a341155bf7a61a12ef9dc76694877f0bb" title="_bootstrap_send_get\l_request" alt="" coords="196,173,339,214"/>
+<area shape="rect" id="node6" href="$aiot__bootstrap__api_8c.html#a5e9ea9f4ebe39513aedbc436d812b5b2" title="_bootstrap_send_post\l_request" alt="" coords="192,238,343,279"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="aiot_dm_msg_t" name="aiot_dm_msg_t">
+<area shape="rect" id="node2" href="$structaiot__dm__msg__async__service__reply__t.html" title="异步服务应答消息结构体, 用户在收到AIOT_DMRECV_ASYNC_SERVICE_INVOKE 类型的异步服务调用消息后, 应发送此消息进行应答 " alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node3" href="$structaiot__dm__msg__raw__data__t.html" title="物模型二进制数据消息结构体, 发送的二进制数据将通过物联网平台的JavaScript脚本转化为JSON格式数据, 用户发送此消息前应确保已正确启用云端解析脚本 " alt="" coords="15,71,186,98"/>
+<area shape="rect" id="node4" href="$structaiot__dm__msg__sync__service__reply__t.html" title="同步服务应答消息结构体, 用户在收到AIOT_DMRECV_SYNC_SERVICE_INVOKE 类型的同步服务调用消息后, 应在超时时间(默认7s)内进行应答 " alt="" coords="9,123,193,164"/>
+<area shape="rect" id="node5" href="$structaiot__dm__msg__property__post__t.html" title="物模型属性上报消息结构体 " alt="" coords="23,188,178,229"/>
+<area shape="rect" id="node6" href="$structaiot__dm__msg__event__post__t.html" title="物模型事件上报消息结构体 " alt="" coords="9,254,192,281"/>
+<area shape="rect" id="node7" href="$structaiot__dm__msg__get__desired__t.html" title="获取期望属性值消息结构体, 发送 " alt="" coords="8,305,193,331"/>
+<area shape="rect" id="node8" href="$structaiot__dm__msg__delete__desired__t.html" title="删除指定期望值消息结构体 " alt="" coords="29,356,172,397"/>
+<area shape="rect" id="node9" href="$structaiot__dm__msg__property__set__reply__t.html" title="属性设置应答消息结构体, 用户在收到AIOT_DMRECV_PROPERTY_SET 类型的属性设置后, 可发送此消息进行回复 ..." alt="" coords="23,421,178,463"/>
+<area shape="rect" id="node10" href="$structaiot__dm__msg__raw__service__reply__t.html" title="二进制格式的同步服务应答消息结构体, 用户在收到AIOT_DMRECV_RAW_SYNC_SERVICE_INVOKE 类型消息后..." alt="" coords="12,487,189,528"/>
+</map>

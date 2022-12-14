@@ -1,0 +1,6 @@
+<map id="aiot_http_recv" name="aiot_http_recv">
+<area shape="rect" id="node2" href="$aiot__http__api_8c.html#a7365b4e585c1e6842544336bae8a63a7" title="_core_aiot_http_exec_inc" alt="" coords="159,5,330,32"/>
+<area shape="rect" id="node3" href="$aiot__http__api_8c.html#ab939de1219e4899de28594a8fc4091a5" title="_core_http_recv_handler" alt="" coords="163,56,327,83"/>
+<area shape="rect" id="node4" href="$aiot__http__api_8c.html#ae92e6b0902fe65706d5745a511c3f4a8" title="_core_aiot_http_exec_dec" alt="" coords="157,107,332,133"/>
+<area shape="rect" id="node5" href="$aiot__http__api_8c.html#a8fc63ddd4c441240f8961fdb83d5e9de" title="_core_aiot_http_token\l_expired_event" alt="" coords="169,158,320,199"/>
+</map>

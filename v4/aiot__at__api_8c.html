@@ -1,0 +1,1430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: portfiles/at-port/at/aiot_at_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b0da765c72fd855e83656f55377a5385.html">portfiles</a></li><li class="navelem"><a class="el" href="dir_2a5728d99d665ccf0719af4619bdf105.html">at-port</a></li><li class="navelem"><a class="el" href="dir_ad7fcb689440843ab5fadc9c2ec1246c.html">at</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_at_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供了外部通信模组对接到SDK网络适配层的接口实现  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;core_stdinc.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__sysdep__api_8h_source.html">aiot_sysdep_api.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__at__api_8h_source.html">aiot_at_api.h</a>&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;os_net_interface.h&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_at_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c__incl.png" border="0" usemap="#portfiles_2at-port_2at_2aiot__at__api_8c" alt=""/></div>
+<map name="portfiles_2at-port_2at_2aiot__at__api_8c" id="portfiles_2at-port_2at_2aiot__at__api_8c">
+<area shape="rect" id="node4" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="113,169,227,196"/>
+<area shape="rect" id="node6" href="aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="252,169,379,196"/>
+<area shape="rect" id="node7" href="aiot__at__api_8h.html" title="AT模块头文件, 提供对接AT模组的能力 " alt="" coords="353,95,449,121"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a97040708df538f442a5bf14d4394a81f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400">at_rsp_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a97040708df538f442a5bf14d4394a81f">at_csq_handler</a> (char *rsp)</td></tr>
+<tr class="separator:a97040708df538f442a5bf14d4394a81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4057361d8bf198d2985ffb75cb45ffc1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a4057361d8bf198d2985ffb75cb45ffc1">core_ringbuf_init</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf, uint32_t size)</td></tr>
+<tr class="separator:a4057361d8bf198d2985ffb75cb45ffc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5a500c764ccd9dbabcba8a306f13ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba">core_ringbuf_reset</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf)</td></tr>
+<tr class="separator:a3c5a500c764ccd9dbabcba8a306f13ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9954ff76651bd78f8d8a0529d62461d7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7">core_ringbuf_get_occupy</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf)</td></tr>
+<tr class="separator:a9954ff76651bd78f8d8a0529d62461d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68c0abb2eb755b69a049d4d535dbabb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb">core_ringbuf_write</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf, const uint8_t *data, uint32_t len)</td></tr>
+<tr class="separator:af68c0abb2eb755b69a049d4d535dbabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d66bd3307b62d5054448e964935b7d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d">core_ringbuf_read</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf, uint8_t *data, uint32_t len)</td></tr>
+<tr class="separator:a36d66bd3307b62d5054448e964935b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4849cb1df80a0447726fe922af8c23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#abf4849cb1df80a0447726fe922af8c23">core_ringbuf_deinit</a> (<a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *rbuf)</td></tr>
+<tr class="separator:abf4849cb1df80a0447726fe922af8c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0f5cf32de3c170bf5a1ca92ce75ca"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca">core_at_uart_tx</a> (const uint8_t *p_data, uint16_t len, uint32_t timeout)</td></tr>
+<tr class="separator:a7ce0f5cf32de3c170bf5a1ca92ce75ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1125d0747a6bc748df35e425007c1ea4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400">at_rsp_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4">core_at_rsp_process_default</a> (const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *cmd, char *rsp)</td></tr>
+<tr class="separator:a1125d0747a6bc748df35e425007c1ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb299e424281bc1e4feb628142a3744"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744">core_at_wait_resp</a> (const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *cmd)</td></tr>
+<tr class="separator:acdb299e424281bc1e4feb628142a3744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4114bb7e8297dfbfb5968f27653c1753"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753">core_at_commands_send_sync</a> (const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *cmd_list, uint16_t cmd_num)</td></tr>
+<tr class="separator:a4114bb7e8297dfbfb5968f27653c1753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f37da823aff2811e1c8496fbd9717f5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a4f37da823aff2811e1c8496fbd9717f5">aiot_at_init</a> (void)</td></tr>
+<tr class="memdesc:a4f37da823aff2811e1c8496fbd9717f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化AT组件  <a href="#a4f37da823aff2811e1c8496fbd9717f5">更多...</a><br /></td></tr>
+<tr class="separator:a4f37da823aff2811e1c8496fbd9717f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfd11358f40b10acb4c1f7d1cf4718c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#addfd11358f40b10acb4c1f7d1cf4718c">core_at_set_device</a> (<a class="el" href="structat__device__t.html">at_device_t</a> *device)</td></tr>
+<tr class="separator:addfd11358f40b10acb4c1f7d1cf4718c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60faf4065e39b3dbdf729a4a8adfd5a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#af60faf4065e39b3dbdf729a4a8adfd5a">aiot_at_setopt</a> (<a class="el" href="aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419">aiot_at_option_t</a> opt, void *data)</td></tr>
+<tr class="memdesc:af60faf4065e39b3dbdf729a4a8adfd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置AT组件, 主要为配置串口发送回调函数  <a href="#af60faf4065e39b3dbdf729a4a8adfd5a">更多...</a><br /></td></tr>
+<tr class="separator:af60faf4065e39b3dbdf729a4a8adfd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af431b898ab64c8ad844eb895740ab1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a0af431b898ab64c8ad844eb895740ab1">aiot_at_bootstrap</a> (void)</td></tr>
+<tr class="memdesc:a0af431b898ab64c8ad844eb895740ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">模组启动, 内部发送模组相关的AT命令已启动模组, 启动完成后, 模组将获取到IP地址  <a href="#a0af431b898ab64c8ad844eb895740ab1">更多...</a><br /></td></tr>
+<tr class="separator:a0af431b898ab64c8ad844eb895740ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6190a9d1564c3c7fccb1f020b95ee4a4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a6190a9d1564c3c7fccb1f020b95ee4a4">aiot_at_nwk_open</a> (uint8_t *socket_id)</td></tr>
+<tr class="memdesc:a6190a9d1564c3c7fccb1f020b95ee4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">为对应的链路ID创建ringbuf资源  <a href="#a6190a9d1564c3c7fccb1f020b95ee4a4">更多...</a><br /></td></tr>
+<tr class="separator:a6190a9d1564c3c7fccb1f020b95ee4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa659bf9fc851ea49c64b25895467db31"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#aa659bf9fc851ea49c64b25895467db31">aiot_at_set_ssl</a> (uint8_t socket_id, const char *ca_cert)</td></tr>
+<tr class="separator:aa659bf9fc851ea49c64b25895467db31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3cb5309b2deb09dd27bd66dc14f8c6e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#ad3cb5309b2deb09dd27bd66dc14f8c6e">aiot_at_nwk_connect</a> (uint8_t socket_id, const char *host, uint16_t port, uint32_t timeout)</td></tr>
+<tr class="memdesc:ad3cb5309b2deb09dd27bd66dc14f8c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部会调用模组相关的AT命令, 通过串口发送TCP建连命令。可对接到core_sysdep_network_establish网络接口  <a href="#ad3cb5309b2deb09dd27bd66dc14f8c6e">更多...</a><br /></td></tr>
+<tr class="separator:ad3cb5309b2deb09dd27bd66dc14f8c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15d0cd67694cfc2fda3b84cd56bc99a"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#aa15d0cd67694cfc2fda3b84cd56bc99a">core_at_send_package</a> (uint8_t socket_id, const uint8_t *buffer, uint32_t len, uint32_t timeout)</td></tr>
+<tr class="separator:aa15d0cd67694cfc2fda3b84cd56bc99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337e6385a4371a87f6313cd25be78806"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a337e6385a4371a87f6313cd25be78806">aiot_at_nwk_send</a> (uint8_t socket_id, const uint8_t *buffer, uint32_t len, uint32_t timeout)</td></tr>
+<tr class="memdesc:a337e6385a4371a87f6313cd25be78806"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部会调用模组相关的AT命令, 通过串口发送TCP数据。可对接到core_sysdep_network_send网络接口  <a href="#a337e6385a4371a87f6313cd25be78806">更多...</a><br /></td></tr>
+<tr class="separator:a337e6385a4371a87f6313cd25be78806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cbd2704a14117b7815556ab25c4ff1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a81cbd2704a14117b7815556ab25c4ff1">aiot_at_nwk_recv</a> (uint8_t socket_id, uint8_t *buffer, uint32_t len, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:a81cbd2704a14117b7815556ab25c4ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部会从对应的数据ringbu中读取网络数据, 可对接到core_sysdep_network_recv网络接口  <a href="#a81cbd2704a14117b7815556ab25c4ff1">更多...</a><br /></td></tr>
+<tr class="separator:a81cbd2704a14117b7815556ab25c4ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c2aa964a417019b408e8e2390e2235"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a41c2aa964a417019b408e8e2390e2235">aiot_at_nwk_close</a> (uint8_t socket_id)</td></tr>
+<tr class="memdesc:a41c2aa964a417019b408e8e2390e2235"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部会调用模组相关的AT命令, 关闭连接链路。可对接到core_sysdep_network_deinit网络接口  <a href="#a41c2aa964a417019b408e8e2390e2235">更多...</a><br /></td></tr>
+<tr class="separator:a41c2aa964a417019b408e8e2390e2235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599c4558fdbecd9b1322d3fdd64f558b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a599c4558fdbecd9b1322d3fdd64f558b">core_at_recv_prefix_match</a> (const char *data, uint32_t size)</td></tr>
+<tr class="separator:a599c4558fdbecd9b1322d3fdd64f558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075dd0d3dec34ae5018bb4bc9982f18b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a075dd0d3dec34ae5018bb4bc9982f18b">core_at_process_line</a> (char *line, uint32_t len)</td></tr>
+<tr class="separator:a075dd0d3dec34ae5018bb4bc9982f18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e435a4d2c2babc48c1e10a6b52fba4"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a23e435a4d2c2babc48c1e10a6b52fba4">core_at_hal_process</a> (uint8_t *data, uint32_t size)</td></tr>
+<tr class="separator:a23e435a4d2c2babc48c1e10a6b52fba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae391b0b66a4021115fbe20e808499ac2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#ae391b0b66a4021115fbe20e808499ac2">aiot_at_hal_recv_handle</a> (uint8_t *data, uint32_t size)</td></tr>
+<tr class="memdesc:ae391b0b66a4021115fbe20e808499ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">为AT组件提供串口数据  <a href="#ae391b0b66a4021115fbe20e808499ac2">更多...</a><br /></td></tr>
+<tr class="separator:ae391b0b66a4021115fbe20e808499ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e8fb1ce71e2969d0fd8571988b80d9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a25e8fb1ce71e2969d0fd8571988b80d9">aiot_at_deinit</a> (void)</td></tr>
+<tr class="memdesc:a25e8fb1ce71e2969d0fd8571988b80d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">反初始化AT组件  <a href="#a25e8fb1ce71e2969d0fd8571988b80d9">更多...</a><br /></td></tr>
+<tr class="separator:a25e8fb1ce71e2969d0fd8571988b80d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac171669a3c03323bc1cb312a830087a5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#ac171669a3c03323bc1cb312a830087a5">core_at_notify_ip_status</a> (<a class="el" href="aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a> status)</td></tr>
+<tr class="separator:ac171669a3c03323bc1cb312a830087a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2499e8dde7ede1ac17f47321bc32795"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#af2499e8dde7ede1ac17f47321bc32795">core_at_socket_status</a> (uint32_t id, <a class="el" href="aiot__at__api_8h.html#a84bc94a208ba85239d4af73e6fe87637">core_at_link_status_t</a> status)</td></tr>
+<tr class="separator:af2499e8dde7ede1ac17f47321bc32795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ad303ff634065456f8a32fc7e8dd7c951"><td class="memItemLeft" align="right" valign="top">aiot_os_al_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#ad303ff634065456f8a32fc7e8dd7c951">os_api</a></td></tr>
+<tr class="separator:ad303ff634065456f8a32fc7e8dd7c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f0b756871f26758467471187a19480"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a84f0b756871f26758467471187a19480">ali_ca_cert</a></td></tr>
+<tr class="separator:a84f0b756871f26758467471187a19480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc8d4b4a9cc074db5576a41fd26c94a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structcore__at__handle__t.html">core_at_handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#a2cc8d4b4a9cc074db5576a41fd26c94a">at_handle</a></td></tr>
+<tr class="separator:a2cc8d4b4a9cc074db5576a41fd26c94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0de5dc4771d6b3f8e0e1a47ecd9187"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__at__api_8c.html#aba0de5dc4771d6b3f8e0e1a47ecd9187">at_module_init_cmd_table</a> []</td></tr>
+<tr class="separator:aba0de5dc4771d6b3f8e0e1a47ecd9187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供了外部通信模组对接到SDK网络适配层的接口实现 </p>
+<dl class="section date"><dt>日期</dt><dd>2020-01-20</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited</dd></dl>
+<ol type="1">
+<li>用户需将具体的模组设备结构化数据按照at_device_t格式传进来</li>
+<li>本实现提供了基于TCP AT通信指令的网络数据收发能力, 示例代码不区分udp和tcp</li>
+<li>支持多条数据链路同时收发的情况</li>
+<li>用户应根据应用的实际数据吞吐量合理配置ringbuf大小, ringbuf写入溢出会导致报文不完整, 设备会重新建连 </li>
+</ol>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a97040708df538f442a5bf14d4394a81f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400">at_rsp_result_t</a> at_csq_handler </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rsp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4057361d8bf198d2985ffb75cb45ffc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_ringbuf_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c5a500c764ccd9dbabcba8a306f13ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core_ringbuf_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9954ff76651bd78f8d8a0529d62461d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_ringbuf_get_occupy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af68c0abb2eb755b69a049d4d535dbabb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_ringbuf_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_af68c0abb2eb755b69a049d4d535dbabb_cgraph.png" border="0" usemap="#aiot__at__api_8c_af68c0abb2eb755b69a049d4d535dbabb_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_af68c0abb2eb755b69a049d4d535dbabb_cgraph" id="aiot__at__api_8c_af68c0abb2eb755b69a049d4d535dbabb_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="181,5,348,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36d66bd3307b62d5054448e964935b7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_ringbuf_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a36d66bd3307b62d5054448e964935b7d_cgraph.png" border="0" usemap="#aiot__at__api_8c_a36d66bd3307b62d5054448e964935b7d_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a36d66bd3307b62d5054448e964935b7d_cgraph" id="aiot__at__api_8c_a36d66bd3307b62d5054448e964935b7d_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="179,5,345,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abf4849cb1df80a0447726fe922af8c23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core_ringbuf_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a> *&#160;</td>
+          <td class="paramname"><em>rbuf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0f5cf32de3c170bf5a1ca92ce75ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_uart_tx </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1125d0747a6bc748df35e425007c1ea4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400">at_rsp_result_t</a> core_at_rsp_process_default </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rsp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acdb299e424281bc1e4feb628142a3744"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_wait_resp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_acdb299e424281bc1e4feb628142a3744_cgraph.png" border="0" usemap="#aiot__at__api_8c_acdb299e424281bc1e4feb628142a3744_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_acdb299e424281bc1e4feb628142a3744_cgraph" id="aiot__at__api_8c_acdb299e424281bc1e4feb628142a3744_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="372,5,539,32"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="190,31,315,57"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="181,82,324,123"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4114bb7e8297dfbfb5968f27653c1753"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_commands_send_sync </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>cmd_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a4114bb7e8297dfbfb5968f27653c1753_cgraph.png" border="0" usemap="#aiot__at__api_8c_a4114bb7e8297dfbfb5968f27653c1753_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a4114bb7e8297dfbfb5968f27653c1753_cgraph" id="aiot__at__api_8c_a4114bb7e8297dfbfb5968f27653c1753_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="260,5,389,32"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="269,56,381,83"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="261,107,389,133"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="628,81,795,108"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="446,107,571,133"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="437,158,580,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f37da823aff2811e1c8496fbd9717f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化AT组件 </p>
+<p>AT moduel API start </p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a4f37da823aff2811e1c8496fbd9717f5_cgraph.png" border="0" usemap="#aiot__at__api_8c_a4f37da823aff2811e1c8496fbd9717f5_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a4f37da823aff2811e1c8496fbd9717f5_cgraph" id="aiot__at__api_8c_a4f37da823aff2811e1c8496fbd9717f5_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4057361d8bf198d2985ffb75cb45ffc1" title="core_ringbuf_init" alt="" coords="139,5,256,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="addfd11358f40b10acb4c1f7d1cf4718c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_set_device </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structat__device__t.html">at_device_t</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af60faf4065e39b3dbdf729a4a8adfd5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_setopt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419">aiot_at_option_t</a>&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置AT组件, 主要为配置串口发送回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>配置项 </td></tr>
+    <tr><td class="paramname">data</td><td>配置数据</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>配置成功 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>配置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_af60faf4065e39b3dbdf729a4a8adfd5a_cgraph.png" border="0" usemap="#aiot__at__api_8c_af60faf4065e39b3dbdf729a4a8adfd5a_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_af60faf4065e39b3dbdf729a4a8adfd5a_cgraph" id="aiot__at__api_8c_af60faf4065e39b3dbdf729a4a8adfd5a_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#addfd11358f40b10acb4c1f7d1cf4718c" title="core_at_set_device" alt="" coords="157,5,292,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0af431b898ab64c8ad844eb895740ab1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_bootstrap </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>模组启动, 内部发送模组相关的AT命令已启动模组, 启动完成后, 模组将获取到IP地址 </p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>启动成功 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>启动失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a0af431b898ab64c8ad844eb895740ab1_cgraph.png" border="0" usemap="#aiot__at__api_8c_a0af431b898ab64c8ad844eb895740ab1_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a0af431b898ab64c8ad844eb895740ab1_cgraph" id="aiot__at__api_8c_a0af431b898ab64c8ad844eb895740ab1_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="176,56,383,83"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="431,5,560,32"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="439,56,551,83"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="431,107,559,133"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="799,81,965,108"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="617,107,742,133"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="608,158,751,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6190a9d1564c3c7fccb1f020b95ee4a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_nwk_open </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>socket_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为对应的链路ID创建ringbuf资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>链路ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>操作成功 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>操作失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a6190a9d1564c3c7fccb1f020b95ee4a4_cgraph.png" border="0" usemap="#aiot__at__api_8c_a6190a9d1564c3c7fccb1f020b95ee4a4_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a6190a9d1564c3c7fccb1f020b95ee4a4_cgraph" id="aiot__at__api_8c_a6190a9d1564c3c7fccb1f020b95ee4a4_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4057361d8bf198d2985ffb75cb45ffc1" title="core_ringbuf_init" alt="" coords="180,5,297,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa659bf9fc851ea49c64b25895467db31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_set_ssl </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ca_cert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_aa659bf9fc851ea49c64b25895467db31_cgraph.png" border="0" usemap="#aiot__at__api_8c_aa659bf9fc851ea49c64b25895467db31_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_aa659bf9fc851ea49c64b25895467db31_cgraph" id="aiot__at__api_8c_aa659bf9fc851ea49c64b25895467db31_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="164,56,371,83"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="419,5,548,32"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="427,56,539,83"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="419,107,547,133"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="787,81,953,108"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="605,107,730,133"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="596,158,739,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3cb5309b2deb09dd27bd66dc14f8c6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_nwk_connect </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部会调用模组相关的AT命令, 通过串口发送TCP建连命令。可对接到core_sysdep_network_establish网络接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>链路ID </td></tr>
+    <tr><td class="paramname">host</td><td>主机名 </td></tr>
+    <tr><td class="paramname">port</td><td>端口号 </td></tr>
+    <tr><td class="paramname">timeout</td><td>建连超时时间</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>建连成功 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>建连失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_ad3cb5309b2deb09dd27bd66dc14f8c6e_cgraph.png" border="0" usemap="#aiot__at__api_8c_ad3cb5309b2deb09dd27bd66dc14f8c6e_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_ad3cb5309b2deb09dd27bd66dc14f8c6e_cgraph" id="aiot__at__api_8c_ad3cb5309b2deb09dd27bd66dc14f8c6e_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#aa659bf9fc851ea49c64b25895467db31" title="aiot_at_set_ssl" alt="" coords="199,31,309,57"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="357,56,564,83"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="612,5,741,32"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="621,56,733,83"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="613,107,741,133"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="980,81,1147,108"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="798,107,923,133"/>
+<area shape="rect" id="node9" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="789,158,932,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa15d0cd67694cfc2fda3b84cd56bc99a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_send_package </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_aa15d0cd67694cfc2fda3b84cd56bc99a_cgraph.png" border="0" usemap="#aiot__at__api_8c_aa15d0cd67694cfc2fda3b84cd56bc99a_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_aa15d0cd67694cfc2fda3b84cd56bc99a_cgraph" id="aiot__at__api_8c_aa15d0cd67694cfc2fda3b84cd56bc99a_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="209,56,416,83"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="464,5,593,32"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="473,56,585,83"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="465,107,593,133"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="832,81,999,108"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="650,107,775,133"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="641,158,784,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a337e6385a4371a87f6313cd25be78806"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_nwk_send </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部会调用模组相关的AT命令, 通过串口发送TCP数据。可对接到core_sysdep_network_send网络接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>链路ID </td></tr>
+    <tr><td class="paramname">buffer</td><td>指向外部数据缓冲区的指针 </td></tr>
+    <tr><td class="paramname">len</td><td>数据长度 </td></tr>
+    <tr><td class="paramname">timeout</td><td>发送超时时间</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>已发送的数据长度 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>发送失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a337e6385a4371a87f6313cd25be78806_cgraph.png" border="0" usemap="#aiot__at__api_8c_a337e6385a4371a87f6313cd25be78806_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a337e6385a4371a87f6313cd25be78806_cgraph" id="aiot__at__api_8c_a337e6385a4371a87f6313cd25be78806_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#aa15d0cd67694cfc2fda3b84cd56bc99a" title="core_at_send_package" alt="" coords="180,56,336,83"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="384,56,591,83"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="639,5,768,32"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="647,56,759,83"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="639,107,767,133"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="1007,81,1173,108"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="825,107,950,133"/>
+<area shape="rect" id="node9" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="816,158,959,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a81cbd2704a14117b7815556ab25c4ff1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_nwk_recv </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部会从对应的数据ringbu中读取网络数据, 可对接到core_sysdep_network_recv网络接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>链路ID </td></tr>
+    <tr><td class="paramname">buffer</td><td>指向外部数据缓冲区的指针 </td></tr>
+    <tr><td class="paramname">len</td><td>外部数据缓冲区大小 </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>接收超时时间</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>读取到的数据长度 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>读取失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a81cbd2704a14117b7815556ab25c4ff1_cgraph.png" border="0" usemap="#aiot__at__api_8c_a81cbd2704a14117b7815556ab25c4ff1_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a81cbd2704a14117b7815556ab25c4ff1_cgraph" id="aiot__at__api_8c_a81cbd2704a14117b7815556ab25c4ff1_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="351,5,517,32"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="177,31,303,57"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a41c2aa964a417019b408e8e2390e2235"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_nwk_close </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>socket_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部会调用模组相关的AT命令, 关闭连接链路。可对接到core_sysdep_network_deinit网络接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket_id</td><td>链路ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>操作成功 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>操作失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a41c2aa964a417019b408e8e2390e2235_cgraph.png" border="0" usemap="#aiot__at__api_8c_a41c2aa964a417019b408e8e2390e2235_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a41c2aa964a417019b408e8e2390e2235_cgraph" id="aiot__at__api_8c_a41c2aa964a417019b408e8e2390e2235_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753" title="core_at_commands_send_sync" alt="" coords="184,56,391,83"/>
+<area shape="rect" id="node9" href="aiot__at__api_8c.html#abf4849cb1df80a0447726fe922af8c23" title="core_ringbuf_deinit" alt="" coords="222,107,353,133"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba" title="core_ringbuf_reset" alt="" coords="439,5,568,32"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="447,56,559,83"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744" title="core_at_wait_resp" alt="" coords="439,107,567,133"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="807,81,973,108"/>
+<area shape="rect" id="node7" href="aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="625,107,750,133"/>
+<area shape="rect" id="node8" href="aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4" title="core_at_rsp_process\l_default" alt="" coords="616,158,759,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a599c4558fdbecd9b1322d3fdd64f558b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_recv_prefix_match </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a075dd0d3dec34ae5018bb4bc9982f18b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_process_line </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a075dd0d3dec34ae5018bb4bc9982f18b_cgraph.png" border="0" usemap="#aiot__at__api_8c_a075dd0d3dec34ae5018bb4bc9982f18b_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a075dd0d3dec34ae5018bb4bc9982f18b_cgraph" id="aiot__at__api_8c_a075dd0d3dec34ae5018bb4bc9982f18b_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb" title="core_ringbuf_write" alt="" coords="199,5,327,32"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="375,5,541,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a23e435a4d2c2babc48c1e10a6b52fba4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t core_at_hal_process </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a23e435a4d2c2babc48c1e10a6b52fba4_cgraph.png" border="0" usemap="#aiot__at__api_8c_a23e435a4d2c2babc48c1e10a6b52fba4_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a23e435a4d2c2babc48c1e10a6b52fba4_cgraph" id="aiot__at__api_8c_a23e435a4d2c2babc48c1e10a6b52fba4_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb" title="core_ringbuf_write" alt="" coords="389,32,517,59"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a599c4558fdbecd9b1322d3fdd64f558b" title="core_at_recv_prefix\l_match" alt="" coords="201,25,337,66"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#a075dd0d3dec34ae5018bb4bc9982f18b" title="core_at_process_line" alt="" coords="196,91,341,118"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="565,32,732,59"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae391b0b66a4021115fbe20e808499ac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_hal_recv_handle </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为AT组件提供串口数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>字节数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>操作成功,返回已经消费掉的数据 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>操作失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_ae391b0b66a4021115fbe20e808499ac2_cgraph.png" border="0" usemap="#aiot__at__api_8c_ae391b0b66a4021115fbe20e808499ac2_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_ae391b0b66a4021115fbe20e808499ac2_cgraph" id="aiot__at__api_8c_ae391b0b66a4021115fbe20e808499ac2_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#a23e435a4d2c2babc48c1e10a6b52fba4" title="core_at_hal_process" alt="" coords="216,32,359,59"/>
+<area shape="rect" id="node3" href="aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb" title="core_ringbuf_write" alt="" coords="600,32,728,59"/>
+<area shape="rect" id="node5" href="aiot__at__api_8c.html#a599c4558fdbecd9b1322d3fdd64f558b" title="core_at_recv_prefix\l_match" alt="" coords="411,25,547,66"/>
+<area shape="rect" id="node6" href="aiot__at__api_8c.html#a075dd0d3dec34ae5018bb4bc9982f18b" title="core_at_process_line" alt="" coords="407,91,552,118"/>
+<area shape="rect" id="node4" href="aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="776,32,943,59"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a25e8fb1ce71e2969d0fd8571988b80d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_at_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>反初始化AT组件 </p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__at__api_8c_a25e8fb1ce71e2969d0fd8571988b80d9_cgraph.png" border="0" usemap="#aiot__at__api_8c_a25e8fb1ce71e2969d0fd8571988b80d9_cgraph" alt=""/></div>
+<map name="aiot__at__api_8c_a25e8fb1ce71e2969d0fd8571988b80d9_cgraph" id="aiot__at__api_8c_a25e8fb1ce71e2969d0fd8571988b80d9_cgraph">
+<area shape="rect" id="node2" href="aiot__at__api_8c.html#abf4849cb1df80a0447726fe922af8c23" title="core_ringbuf_deinit" alt="" coords="152,5,283,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac171669a3c03323bc1cb312a830087a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_at_notify_ip_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2499e8dde7ede1ac17f47321bc32795"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t core_at_socket_status </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__at__api_8h.html#a84bc94a208ba85239d4af73e6fe87637">core_at_link_status_t</a>&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ad303ff634065456f8a32fc7e8dd7c951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">aiot_os_al_t* os_api</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84f0b756871f26758467471187a19480"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ali_ca_cert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cc8d4b4a9cc074db5576a41fd26c94a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcore__at__handle__t.html">core_at_handle_t</a> at_handle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .is_init = 0,</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aba0de5dc4771d6b3f8e0e1a47ecd9187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcore__at__cmd__item__t.html">core_at_cmd_item_t</a> at_module_init_cmd_table[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

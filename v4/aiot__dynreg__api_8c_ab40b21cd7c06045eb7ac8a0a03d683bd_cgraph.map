@@ -1,0 +1,5 @@
+<map id="aiot_dynreg_recv" name="aiot_dynreg_recv">
+<area shape="rect" id="node2" href="$aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3" title="_dynreg_exec_inc" alt="" coords="182,5,309,32"/>
+<area shape="rect" id="node3" href="$aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd" title="_dynreg_exec_dec" alt="" coords="180,56,311,83"/>
+<area shape="rect" id="node4" href="$aiot__dynreg__api_8c.html#a00c48d126ade92bfce12dfc8a0201284" title="_dynreg_device_info" alt="" coords="175,107,316,133"/>
+</map>

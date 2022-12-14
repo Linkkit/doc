@@ -1,0 +1,2105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/ota/aiot_ota_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_662d71ffb131aa122771b20f4c8404c5.html">ota</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_ota_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>OTA模块头文件, 提供设备获取固件升级和远程配置的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_ota_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h__incl.png" border="0" usemap="#components_2ota_2aiot__ota__api_8h" alt=""/></div>
+<map name="components_2ota_2aiot__ota__api_8h" id="components_2ota_2aiot__ota__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h__dep__incl.png" border="0" usemap="#components_2ota_2aiot__ota__api_8hdep" alt=""/></div>
+<map name="components_2ota_2aiot__ota__api_8hdep" id="components_2ota_2aiot__ota__api_8hdep">
+<area shape="rect" id="node2" href="aiot__mqtt__download__api_8c.html" title="mqtt文件下载的实现文件 " alt="" coords="5,95,157,136"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html" title="OTA模块接口实现文件, 其中包含了OTA的所有用户API. " alt="" coords="182,95,322,136"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__ota__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__task__desc__t.html">aiot_download_task_desc_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下推的固件升级任务的描述信息, 包括url, 大小, 签名等  <a href="structaiot__download__task__desc__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ota__recv__t.html">aiot_ota_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下行的OTA消息, 包括其消息类型(固件升级/远程配置)和升级任务的具体描述  <a href="structaiot__ota__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html">aiot_download_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中收到的分片的报文的描述, 包括类型, 以及所存储的buffer地址, buffer的长度, 以及当前的下载进度  <a href="structaiot__download__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a9d42f97d83d6f8d5c45ca369693230f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a9d42f97d83d6f8d5c45ca369693230f2">STATE_OTA_BASE</a>&#160;&#160;&#160;(-0x0900)</td></tr>
+<tr class="memdesc:a9d42f97d83d6f8d5c45ca369693230f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0900~-0x09FF表达SDK在OTA模块内的状态码, 也包含下载时使用的<code>STATE_DOWNLOAD_XXX</code>  <a href="#a9d42f97d83d6f8d5c45ca369693230f2">更多...</a><br /></td></tr>
+<tr class="separator:a9d42f97d83d6f8d5c45ca369693230f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc761617fbbe5e201031aa2646afb911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#adc761617fbbe5e201031aa2646afb911">STATE_OTA_DIGEST_MATCH</a>&#160;&#160;&#160;(-0x0901)</td></tr>
+<tr class="memdesc:adc761617fbbe5e201031aa2646afb911"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA固件下载已完成, 校验和验证成功  <a href="#adc761617fbbe5e201031aa2646afb911">更多...</a><br /></td></tr>
+<tr class="separator:adc761617fbbe5e201031aa2646afb911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7743477d0782ffdb09ce894ed397392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ab7743477d0782ffdb09ce894ed397392">STATE_OTA_REPORT_FAILED</a>&#160;&#160;&#160;(-0x0902)</td></tr>
+<tr class="memdesc:ab7743477d0782ffdb09ce894ed397392"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA下载进度消息或固件版本号消息上报到服务器时遇到失败  <a href="#ab7743477d0782ffdb09ce894ed397392">更多...</a><br /></td></tr>
+<tr class="separator:ab7743477d0782ffdb09ce894ed397392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76fadb920d4a5e36ea711a3af3e0b2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae76fadb920d4a5e36ea711a3af3e0b2f">STATE_DOWNLOAD_RECV_ERROR</a>&#160;&#160;&#160;(-0x0903)</td></tr>
+<tr class="memdesc:ae76fadb920d4a5e36ea711a3af3e0b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块收取固件内容数据时出现错误  <a href="#ae76fadb920d4a5e36ea711a3af3e0b2f">更多...</a><br /></td></tr>
+<tr class="separator:ae76fadb920d4a5e36ea711a3af3e0b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfcb026374dac5ce99feb5038f82717"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a4cfcb026374dac5ce99feb5038f82717">STATE_OTA_DIGEST_MISMATCH</a>&#160;&#160;&#160;(-0x0904)</td></tr>
+<tr class="memdesc:a4cfcb026374dac5ce99feb5038f82717"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块下载固件时出现校验和签名验证错误  <a href="#a4cfcb026374dac5ce99feb5038f82717">更多...</a><br /></td></tr>
+<tr class="separator:a4cfcb026374dac5ce99feb5038f82717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4217a4405c1c971ed2bf243ce1510aff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a4217a4405c1c971ed2bf243ce1510aff">STATE_OTA_PARSE_JSON_ERROR</a>&#160;&#160;&#160;(-0x0905)</td></tr>
+<tr class="memdesc:a4217a4405c1c971ed2bf243ce1510aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块解析服务器下推的MQTT下行JSON报文时出错  <a href="#a4217a4405c1c971ed2bf243ce1510aff">更多...</a><br /></td></tr>
+<tr class="separator:a4217a4405c1c971ed2bf243ce1510aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9bc17337c6c154a339534bcbb531ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a6a9bc17337c6c154a339534bcbb531ed">STATE_DOWNLOAD_SEND_REQUEST_FAILED</a>&#160;&#160;&#160;(-0x0906)</td></tr>
+<tr class="memdesc:a6a9bc17337c6c154a339534bcbb531ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块发送HTTP报文, 请求下载固件时遇到失败  <a href="#a6a9bc17337c6c154a339534bcbb531ed">更多...</a><br /></td></tr>
+<tr class="separator:a6a9bc17337c6c154a339534bcbb531ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbcbc5ccfdd745eaffa44f27803eeee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#acfbcbc5ccfdd745eaffa44f27803eeee">STATE_DOWNLOAD_RANGE_FINISHED</a>&#160;&#160;&#160;(-0x0907)</td></tr>
+<tr class="memdesc:acfbcbc5ccfdd745eaffa44f27803eeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块下载固件内容已到达之前设置的range末尾, 不会继续下载  <a href="#acfbcbc5ccfdd745eaffa44f27803eeee">更多...</a><br /></td></tr>
+<tr class="separator:acfbcbc5ccfdd745eaffa44f27803eeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adeb700486a3b3321b8c6521b6ae65a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a3adeb700486a3b3321b8c6521b6ae65a">STATE_OTA_PARSE_JSON_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x0908)</td></tr>
+<tr class="memdesc:a3adeb700486a3b3321b8c6521b6ae65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块为解析JSON报文而申请内存时, 未获取到所需内存而解析失败  <a href="#a3adeb700486a3b3321b8c6521b6ae65a">更多...</a><br /></td></tr>
+<tr class="separator:a3adeb700486a3b3321b8c6521b6ae65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4c47ea598fa537bbd85965fabf5629"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#acb4c47ea598fa537bbd85965fabf5629">STATE_OTA_DEINIT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0909)</td></tr>
+<tr class="memdesc:acb4c47ea598fa537bbd85965fabf5629"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁OTA会话实例时, 发现会话句柄为空, 中止销毁动作  <a href="#acb4c47ea598fa537bbd85965fabf5629">更多...</a><br /></td></tr>
+<tr class="separator:acb4c47ea598fa537bbd85965fabf5629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2fa86330391f98382cb3bc3df4451d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a0e2fa86330391f98382cb3bc3df4451d">STATE_OTA_SETOPT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x090A)</td></tr>
+<tr class="memdesc:a0e2fa86330391f98382cb3bc3df4451d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置OTA会话实例时, 发现会话句柄为空, 中止配置动作  <a href="#a0e2fa86330391f98382cb3bc3df4451d">更多...</a><br /></td></tr>
+<tr class="separator:a0e2fa86330391f98382cb3bc3df4451d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddb35cd35cb5e8d4a67e8cd5d2832a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aeddb35cd35cb5e8d4a67e8cd5d2832a0">STATE_OTA_SETOPT_DATA_IS_NULL</a>&#160;&#160;&#160;(-0x090B)</td></tr>
+<tr class="memdesc:aeddb35cd35cb5e8d4a67e8cd5d2832a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置OTA会话实例时, 发现配置数据为空, 中止配置动作  <a href="#aeddb35cd35cb5e8d4a67e8cd5d2832a0">更多...</a><br /></td></tr>
+<tr class="separator:aeddb35cd35cb5e8d4a67e8cd5d2832a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483ada72ce6cb1e11cc37e918b84775f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a483ada72ce6cb1e11cc37e918b84775f">STATE_DOWNLOAD_DEINIT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x090C)</td></tr>
+<tr class="memdesc:a483ada72ce6cb1e11cc37e918b84775f"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁下载会话实例时, 发现会话句柄为空, 中止销毁动作  <a href="#a483ada72ce6cb1e11cc37e918b84775f">更多...</a><br /></td></tr>
+<tr class="separator:a483ada72ce6cb1e11cc37e918b84775f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25379355008428225cb96ac9dcaf717"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aa25379355008428225cb96ac9dcaf717">STATE_DOWNLOAD_SETOPT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x090D)</td></tr>
+<tr class="memdesc:aa25379355008428225cb96ac9dcaf717"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置下载会话实例时, 发现会话句柄为空, 中止配置动作  <a href="#aa25379355008428225cb96ac9dcaf717">更多...</a><br /></td></tr>
+<tr class="separator:aa25379355008428225cb96ac9dcaf717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae772c22eaf2a2014c02411132bee00ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae772c22eaf2a2014c02411132bee00ad">STATE_DOWNLOAD_SETOPT_DATA_IS_NULL</a>&#160;&#160;&#160;(-0x090E)</td></tr>
+<tr class="memdesc:ae772c22eaf2a2014c02411132bee00ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置下载会话实例时, 发现配置数据为空, 中止配置动作  <a href="#ae772c22eaf2a2014c02411132bee00ad">更多...</a><br /></td></tr>
+<tr class="separator:ae772c22eaf2a2014c02411132bee00ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a54f3b13f08591e4e96b5d14d92b6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a1a54f3b13f08591e4e96b5d14d92b6ce">STATE_DOWNLOAD_SETOPT_COPIED_DATA_IS_NULL</a>&#160;&#160;&#160;(-0x090F)</td></tr>
+<tr class="memdesc:a1a54f3b13f08591e4e96b5d14d92b6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置下载会话实例时, 从OTA会话同步配置发生内部错误, 中止配置动作  <a href="#a1a54f3b13f08591e4e96b5d14d92b6ce">更多...</a><br /></td></tr>
+<tr class="separator:a1a54f3b13f08591e4e96b5d14d92b6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27600e327bec56ff4f34038172236797"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a27600e327bec56ff4f34038172236797">STATE_OTA_REPORT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0910)</td></tr>
+<tr class="memdesc:a27600e327bec56ff4f34038172236797"><td class="mdescLeft">&#160;</td><td class="mdescRight">直连设备上报版本号时, OTA句柄为空, 中止执行上报  <a href="#a27600e327bec56ff4f34038172236797">更多...</a><br /></td></tr>
+<tr class="separator:a27600e327bec56ff4f34038172236797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17af06730c27ace16b0c9638ecffbddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a17af06730c27ace16b0c9638ecffbddf">STATE_OTA_REPORT_VERSION_IS_NULL</a>&#160;&#160;&#160;(-0x0911)</td></tr>
+<tr class="memdesc:a17af06730c27ace16b0c9638ecffbddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">直连设备上报版本号时, 版本号字符串为空, 中止执行上报  <a href="#a17af06730c27ace16b0c9638ecffbddf">更多...</a><br /></td></tr>
+<tr class="separator:a17af06730c27ace16b0c9638ecffbddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e3f7d35188e957c04783d61cc94bea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a64e3f7d35188e957c04783d61cc94bea">STATE_OTA_REPORT_MQTT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0912)</td></tr>
+<tr class="memdesc:a64e3f7d35188e957c04783d61cc94bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">直连设备上报版本号时, MQTT句柄为空, 中止执行上报  <a href="#a64e3f7d35188e957c04783d61cc94bea">更多...</a><br /></td></tr>
+<tr class="separator:a64e3f7d35188e957c04783d61cc94bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2edb9a5fe6676598325ead5dd6697d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#adf2edb9a5fe6676598325ead5dd6697d">STATE_OTA_REPORT_EXT_HANELD_IS_NULL</a>&#160;&#160;&#160;(-0x0913)</td></tr>
+<tr class="memdesc:adf2edb9a5fe6676598325ead5dd6697d"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关为子设备上报版本号时, OTA句柄为空, 中止执行上报  <a href="#adf2edb9a5fe6676598325ead5dd6697d">更多...</a><br /></td></tr>
+<tr class="separator:adf2edb9a5fe6676598325ead5dd6697d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a432587ff8f8de433caa96c9448bca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a60a432587ff8f8de433caa96c9448bca">STATE_OTA_REPORT_EXT_VERSION_NULL</a>&#160;&#160;&#160;(-0x0914)</td></tr>
+<tr class="memdesc:a60a432587ff8f8de433caa96c9448bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关为子设备上报版本号时, 版本号字符串为空, 中止执行上报  <a href="#a60a432587ff8f8de433caa96c9448bca">更多...</a><br /></td></tr>
+<tr class="separator:a60a432587ff8f8de433caa96c9448bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8015a5614002786901c9353a2ef49d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a3d8015a5614002786901c9353a2ef49d">STATE_OTA_REPORT_EXT_PRODUCT_KEY_IS_NULL</a>&#160;&#160;&#160;(-0x0915)</td></tr>
+<tr class="memdesc:a3d8015a5614002786901c9353a2ef49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关为子设备上报版本号时, 子设备productKey为空, 中止执行上报  <a href="#a3d8015a5614002786901c9353a2ef49d">更多...</a><br /></td></tr>
+<tr class="separator:a3d8015a5614002786901c9353a2ef49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3ca32ad96ba1f448cb3df7e3d852ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aec3ca32ad96ba1f448cb3df7e3d852ec">STATE_OTA_REPORT_EXT_DEVICE_NAME_IS_NULL</a>&#160;&#160;&#160;(-0x0916)</td></tr>
+<tr class="memdesc:aec3ca32ad96ba1f448cb3df7e3d852ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关为子设备上报版本号时, 子设备deviceName为空, 中止执行上报  <a href="#aec3ca32ad96ba1f448cb3df7e3d852ec">更多...</a><br /></td></tr>
+<tr class="separator:aec3ca32ad96ba1f448cb3df7e3d852ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0557e6a8f079b082b2f29cf503909ba1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a0557e6a8f079b082b2f29cf503909ba1">STATE_OTA_REPORT_EXT_MQTT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0917)</td></tr>
+<tr class="memdesc:a0557e6a8f079b082b2f29cf503909ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">网关为子设备上报版本号时, MQTT会话句柄为空, 中止执行上报  <a href="#a0557e6a8f079b082b2f29cf503909ba1">更多...</a><br /></td></tr>
+<tr class="separator:a0557e6a8f079b082b2f29cf503909ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49be4acc462c5bd087e6b125b580383"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae49be4acc462c5bd087e6b125b580383">STATE_DOWNLOAD_REPORT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0918)</td></tr>
+<tr class="memdesc:ae49be4acc462c5bd087e6b125b580383"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报下载进度或OTA错误码时, 下载会话句柄为空, 中止执行上报  <a href="#ae49be4acc462c5bd087e6b125b580383">更多...</a><br /></td></tr>
+<tr class="separator:ae49be4acc462c5bd087e6b125b580383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d41e42027505ffe3a82a5927bcc8825"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a6d41e42027505ffe3a82a5927bcc8825">STATE_DOWNLOAD_REPORT_TASK_DESC_IS_NULL</a>&#160;&#160;&#160;(-0x0919)</td></tr>
+<tr class="memdesc:a6d41e42027505ffe3a82a5927bcc8825"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报下载进度或OTA错误码时, 任务描述数据结构为空, 中止执行上报  <a href="#a6d41e42027505ffe3a82a5927bcc8825">更多...</a><br /></td></tr>
+<tr class="separator:a6d41e42027505ffe3a82a5927bcc8825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78a9df9c92eded55ddaef33de4ba7d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae78a9df9c92eded55ddaef33de4ba7d3">STATE_DOWNLOAD_RECV_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x091A)</td></tr>
+<tr class="memdesc:ae78a9df9c92eded55ddaef33de4ba7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用aiot_download_recv接收固件内容时, 处理接收数据的用户回调为空值, 中止执行  <a href="#ae78a9df9c92eded55ddaef33de4ba7d3">更多...</a><br /></td></tr>
+<tr class="separator:ae78a9df9c92eded55ddaef33de4ba7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61510386593c96b12d1196f26386998f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a61510386593c96b12d1196f26386998f">STATE_DOWNLOAD_REQUEST_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x091B)</td></tr>
+<tr class="memdesc:a61510386593c96b12d1196f26386998f"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用aiot_download_send_request发送固件下载请求时, 下载会话的句柄为空, 中止执行  <a href="#a61510386593c96b12d1196f26386998f">更多...</a><br /></td></tr>
+<tr class="separator:a61510386593c96b12d1196f26386998f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063ce9a38398a88c6d27ccbb9423b41f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a063ce9a38398a88c6d27ccbb9423b41f">STATE_DOWNLOAD_REQUEST_TASK_DESC_IS_NULL</a>&#160;&#160;&#160;(-0x091C)</td></tr>
+<tr class="memdesc:a063ce9a38398a88c6d27ccbb9423b41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用aiot_download_send_request发送固件下载请求时, 任务描述为空, 中止执行  <a href="#a063ce9a38398a88c6d27ccbb9423b41f">更多...</a><br /></td></tr>
+<tr class="separator:a063ce9a38398a88c6d27ccbb9423b41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c53e17abd31f47a383387ae9309b012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a8c53e17abd31f47a383387ae9309b012">STATE_DOWNLOAD_REQUEST_URL_IS_NULL</a>&#160;&#160;&#160;(-0x091D)</td></tr>
+<tr class="memdesc:a8c53e17abd31f47a383387ae9309b012"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用aiot_download_send_request发送固件下载请求时, 任务描述中的固件URL为空, 中止执行  <a href="#a8c53e17abd31f47a383387ae9309b012">更多...</a><br /></td></tr>
+<tr class="separator:a8c53e17abd31f47a383387ae9309b012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52af1bf8fe929a8bb7ce03faa9e6aee5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a52af1bf8fe929a8bb7ce03faa9e6aee5">STATE_OTA_UNKNOWN_DIGEST_METHOD</a>&#160;&#160;&#160;(-0x091E)</td></tr>
+<tr class="memdesc:a52af1bf8fe929a8bb7ce03faa9e6aee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析通知OTA的MQTT下行报文时, 其中的digest方法并非md5或sha256, SDK不支持  <a href="#a52af1bf8fe929a8bb7ce03faa9e6aee5">更多...</a><br /></td></tr>
+<tr class="separator:a52af1bf8fe929a8bb7ce03faa9e6aee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6433acef6533ddbce9e5c4f2675c243b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a6433acef6533ddbce9e5c4f2675c243b">STATE_DOWNLOAD_FINISHED</a>&#160;&#160;&#160;(-0x091F)</td></tr>
+<tr class="memdesc:a6433acef6533ddbce9e5c4f2675c243b"><td class="mdescLeft">&#160;</td><td class="mdescRight">整个固件(而不是单独一次的下载片段)收取已完成, 收取的累计字节数与固件预期字节数一致  <a href="#a6433acef6533ddbce9e5c4f2675c243b">更多...</a><br /></td></tr>
+<tr class="separator:a6433acef6533ddbce9e5c4f2675c243b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3db91d5e1e6c601f3e4af5996fcba0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a4f3db91d5e1e6c601f3e4af5996fcba0">STATE_DOWNLOAD_HTTPRSP_CODE_ERROR</a>&#160;&#160;&#160;(-0x0920)</td></tr>
+<tr class="memdesc:a4f3db91d5e1e6c601f3e4af5996fcba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备向固件服务器发出GET请求时, 服务器返回的HTTP报文中Status Code错误, 既非200, 也非206  <a href="#a4f3db91d5e1e6c601f3e4af5996fcba0">更多...</a><br /></td></tr>
+<tr class="separator:a4f3db91d5e1e6c601f3e4af5996fcba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf472055e742f18c08197909c2c1310b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aaf472055e742f18c08197909c2c1310b">STATE_DOWNLOAD_HTTPRSP_HEADER_ERROR</a>&#160;&#160;&#160;(-0x0921)</td></tr>
+<tr class="memdesc:aaf472055e742f18c08197909c2c1310b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备向固件服务器发出GET请求时, 服务器返回的HTTP报文header里, 没有说明Content-Length  <a href="#aaf472055e742f18c08197909c2c1310b">更多...</a><br /></td></tr>
+<tr class="separator:aaf472055e742f18c08197909c2c1310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c1dad38eeea25867d7eca19cd7be0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a15c1dad38eeea25867d7eca19cd7be0b">STATE_DOWNLOAD_RENEWAL_REQUEST_SENT</a>&#160;&#160;&#160;(-0x0922)</td></tr>
+<tr class="memdesc:a15c1dad38eeea25867d7eca19cd7be0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA固件下载失败后, 正在进行断点续传, SDK向服务端重新发起了下载请求  <a href="#a15c1dad38eeea25867d7eca19cd7be0b">更多...</a><br /></td></tr>
+<tr class="separator:a15c1dad38eeea25867d7eca19cd7be0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405cb6149d840f1bdb4f752f2196722f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a405cb6149d840f1bdb4f752f2196722f">STATE_DOWNLOAD_SETOPT_MALLOC_SHA256_CTX_FAILED</a>&#160;&#160;&#160;(-0x0923)</td></tr>
+<tr class="memdesc:a405cb6149d840f1bdb4f752f2196722f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块为计算固件的SHA256校验和申请内存时遇到失败  <a href="#a405cb6149d840f1bdb4f752f2196722f">更多...</a><br /></td></tr>
+<tr class="separator:a405cb6149d840f1bdb4f752f2196722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83745683795209b2e93f9e9aad5d81b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a83745683795209b2e93f9e9aad5d81b5">STATE_DOWNLOAD_SETOPT_MALLOC_MD5_CTX_FAILED</a>&#160;&#160;&#160;(-0x0924)</td></tr>
+<tr class="memdesc:a83745683795209b2e93f9e9aad5d81b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块为计算固件的MD5校验和内存时遇到失败  <a href="#a83745683795209b2e93f9e9aad5d81b5">更多...</a><br /></td></tr>
+<tr class="separator:a83745683795209b2e93f9e9aad5d81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe5005e0b92d0344f94cd54ba6111b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#adfe5005e0b92d0344f94cd54ba6111b3">STATE_OTA_PARSE_URL_HOST_IS_NULL</a>&#160;&#160;&#160;(-0x0925)</td></tr>
+<tr class="memdesc:adfe5005e0b92d0344f94cd54ba6111b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块从任务描述数据结构中解析固件下载URL时, 遇到HOST字段为空, 解析失败  <a href="#adfe5005e0b92d0344f94cd54ba6111b3">更多...</a><br /></td></tr>
+<tr class="separator:adfe5005e0b92d0344f94cd54ba6111b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81152a9712ae432b9ba179ddbe590697"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a81152a9712ae432b9ba179ddbe590697">STATE_OTA_PARSE_URL_PATH_IS_NULL</a>&#160;&#160;&#160;(-0x0926)</td></tr>
+<tr class="memdesc:a81152a9712ae432b9ba179ddbe590697"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块从任务描述数据结构中解析固件下载URL时, 遇到PATH字段为空, 解析失败  <a href="#a81152a9712ae432b9ba179ddbe590697">更多...</a><br /></td></tr>
+<tr class="separator:a81152a9712ae432b9ba179ddbe590697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0c2004b97851efdf9af3a30eea07f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a8e0c2004b97851efdf9af3a30eea07f5">STATE_DOWNLOAD_FETCH_TOO_MANY</a>&#160;&#160;&#160;(-0x0927)</td></tr>
+<tr class="memdesc:a8e0c2004b97851efdf9af3a30eea07f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA模块分多段下载固件时, 多段累计的总和大小超过了固件预期的值  <a href="#a8e0c2004b97851efdf9af3a30eea07f5">更多...</a><br /></td></tr>
+<tr class="separator:a8e0c2004b97851efdf9af3a30eea07f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aac8ab14a08594edd225642d8ae5899"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a9aac8ab14a08594edd225642d8ae5899">STATE_OTA_QUERY_FIRMWARE_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0928)</td></tr>
+<tr class="memdesc:a9aac8ab14a08594edd225642d8ae5899"><td class="mdescLeft">&#160;</td><td class="mdescRight">向云端查询OTA的升级任务时, OTA句柄为空  <a href="#a9aac8ab14a08594edd225642d8ae5899">更多...</a><br /></td></tr>
+<tr class="separator:a9aac8ab14a08594edd225642d8ae5899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd105288c3b5cdd447a9ebace1c6613"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a0dd105288c3b5cdd447a9ebace1c6613">STATE_OTA_HOST_STRING_OVERFLOW</a>&#160;&#160;&#160;(-0x0929)</td></tr>
+<tr class="memdesc:a0dd105288c3b5cdd447a9ebace1c6613"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA下行报文中url字段中的host字段超出长度限制  <a href="#a0dd105288c3b5cdd447a9ebace1c6613">更多...</a><br /></td></tr>
+<tr class="separator:a0dd105288c3b5cdd447a9ebace1c6613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fe9e90e28aa2734dad1c00e4657d45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ab3fe9e90e28aa2734dad1c00e4657d45">STATE_OTA_PATH_STRING_OVERFLOW</a>&#160;&#160;&#160;(-0x092A)</td></tr>
+<tr class="memdesc:ab3fe9e90e28aa2734dad1c00e4657d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA下行报文中url字段中的path字段超出长度限制  <a href="#ab3fe9e90e28aa2734dad1c00e4657d45">更多...</a><br /></td></tr>
+<tr class="separator:ab3fe9e90e28aa2734dad1c00e4657d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ac4db901cee504c4fd9431671bf616f73"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ac4db901cee504c4fd9431671bf616f73">aiot_ota_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__ota__recv__t.html">aiot_ota_recv_t</a> *const msg, void *userdata)</td></tr>
+<tr class="memdesc:ac4db901cee504c4fd9431671bf616f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备收到OTA的mqtt下行报文时的接收回调函数.用户在这个回调函数中可以看到待升级固件的版本号, 决定升级策略(是否升级, 何时升级等)  <a href="#ac4db901cee504c4fd9431671bf616f73">更多...</a><br /></td></tr>
+<tr class="separator:ac4db901cee504c4fd9431671bf616f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cdf8344cefe47eb446691fcad642926"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a7cdf8344cefe47eb446691fcad642926">aiot_download_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__download__recv__t.html">aiot_download_recv_t</a> *packet, void *userdata)</td></tr>
+<tr class="memdesc:a7cdf8344cefe47eb446691fcad642926"><td class="mdescLeft">&#160;</td><td class="mdescRight">升级开始后, 设备收到分成一段段的固件内容时的收包回调函数.当前默认是通过https报文下推分段后的固件内容.  <a href="#a7cdf8344cefe47eb446691fcad642926">更多...</a><br /></td></tr>
+<tr class="separator:a7cdf8344cefe47eb446691fcad642926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a3f1b2cff4b7a91acbe9805bd95ab8234"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a3f1b2cff4b7a91acbe9805bd95ab8234">aiot_ota_recv_type_t</a> { <a class="el" href="aiot__ota__api_8h.html#a3f1b2cff4b7a91acbe9805bd95ab8234ad6ebca6d351314d058426722637167bd">AIOT_OTARECV_FOTA</a>, 
+<a class="el" href="aiot__ota__api_8h.html#a3f1b2cff4b7a91acbe9805bd95ab8234aeca86b618edb73d567669e434504ebe4">AIOT_OTARECV_COTA</a>
+ }<tr class="memdesc:a3f1b2cff4b7a91acbe9805bd95ab8234"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下行的OTA消息的类型, 分为固件升级和远程配置两种  <a href="aiot__ota__api_8h.html#a3f1b2cff4b7a91acbe9805bd95ab8234">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a3f1b2cff4b7a91acbe9805bd95ab8234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd098df34968ff006dce374a951453b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">aiot_ota_digest_type_t</a> { <a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba205fc161508b59a0d6d08add64eae637">AIOT_OTA_DIGEST_MD5</a>, 
+<a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba51cf14aa662aa9c41705d3fbb0155852">AIOT_OTA_DIGEST_SHA256</a>, 
+<a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453ba8c14991bbc7a60b1afdd23893e44b4f4">AIOT_OTA_DIGEST_MAX</a>
+ }<tr class="memdesc:abcd098df34968ff006dce374a951453b"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA过程中使用的digest方法类型, 分为MD5和SHA256两种  <a href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:abcd098df34968ff006dce374a951453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e7993e6535008680de96c8337ab7e8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8">aiot_ota_protocol_type_t</a> { <a class="el" href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8a1f5b415bf1bd90041cc75e0d34c8f3c0">AIOT_OTA_PROTOCOL_HTTPS</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8a2efe00b1a3fedd50ceda843da8aa613c">AIOT_OTA_PROTOCOL_MQTT</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8adb474864442496d0525c47e21de99567">AIOT_OTA_PROTOCOL_MAX</a>
+ }<tr class="memdesc:ae6e7993e6535008680de96c8337ab7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">OTA下载升级文件的方式  <a href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ae6e7993e6535008680de96c8337ab7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ec93406d3fbd7ba4604b317fd2aa8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a> { <a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8da4f271291ef8be1586c8f6442eb0aa4d1">AIOT_DLRECV_HTTPBODY</a>
+ }<tr class="memdesc:aa5ec93406d3fbd7ba4604b317fd2aa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中收到的分片的报文的类型  <a href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa5ec93406d3fbd7ba4604b317fd2aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a759beb8a70902d17ccf501469c7f55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55">aiot_ota_protocol_errcode_t</a> { <a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55a2d55a0426ce1bc05509898a80705df84">AIOT_OTAERR_UPGRADE_FAILED</a> = -1, 
+<a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55a84a58a3f49be64afa2ec329132777a64">AIOT_OTAERR_FETCH_FAILED</a> = -2, 
+<a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55a78302d3cc837c59ce54e386dc153dff5">AIOT_OTAERR_CHECKSUM_MISMATCH</a> = -3, 
+<a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55a649fc163c922c5eb4453fef2d00ba983">AIOT_OTAERR_BURN_FAILED</a> = -4
+ }<tr class="memdesc:a7a759beb8a70902d17ccf501469c7f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">与云端约定的OTA过程中的错误码, 云端据此知道升级过程中出错在哪个环节  <a href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a7a759beb8a70902d17ccf501469c7f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023a6f06099115b2f77cef62a057e5f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5ab88715335c5ee51cdee3d8348905e9fd">AIOT_OTAOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5ae47ce39d4b71cd671d96e42f8ab131d9">AIOT_OTAOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5a3e3b11255e8308b05942fd21668cf509">AIOT_OTAOPT_USERDATA</a>, 
+<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5aadc853ecc464f886a05730889c22880d">AIOT_OTAOPT_MODULE</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5a4977f18b8a687a21a86e2e28aee52cac">AIOT_OTAOPT_MAX</a>
+<br />
+ }<tr class="memdesc:a023a6f06099115b2f77cef62a057e5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__ota__api_8h.html#ae9f5cfe9dcb40d2a793f23c4093263c8">aiot_ota_setopt</a> 接口时, option参数的可用值  <a href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a023a6f06099115b2f77cef62a057e5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94e882c00926519a68ef631edf7d8a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a">AIOT_DLOPT_NETWORK_CRED</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2">AIOT_DLOPT_NETWORK_PORT</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6">AIOT_DLOPT_RECV_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86">AIOT_DLOPT_RECV_HANDLER</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1">AIOT_DLOPT_USERDATA</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2">AIOT_DLOPT_TASK_DESC</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c">AIOT_DLOPT_RANGE_START</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152">AIOT_DLOPT_RANGE_END</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a>, 
+<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada">AIOT_DLOPT_MAX</a>
+<br />
+ }<tr class="memdesc:ab94e882c00926519a68ef631edf7d8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__ota__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a> 接口时, option参数的可用值  <a href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ab94e882c00926519a68ef631edf7d8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a83fa2db6bfed9bc23ea75a76a848d8ae"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a83fa2db6bfed9bc23ea75a76a848d8ae">aiot_ota_query_firmware</a> (void *handle)</td></tr>
+<tr class="memdesc:a83fa2db6bfed9bc23ea75a76a848d8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备端主动向云端查询升级任务  <a href="#a83fa2db6bfed9bc23ea75a76a848d8ae">更多...</a><br /></td></tr>
+<tr class="separator:a83fa2db6bfed9bc23ea75a76a848d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561e74ed1fcdfd4c26b7341e1dab5b47"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a561e74ed1fcdfd4c26b7341e1dab5b47">aiot_ota_init</a> ()</td></tr>
+<tr class="memdesc:a561e74ed1fcdfd4c26b7341e1dab5b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个OTA实例  <a href="#a561e74ed1fcdfd4c26b7341e1dab5b47">更多...</a><br /></td></tr>
+<tr class="separator:a561e74ed1fcdfd4c26b7341e1dab5b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6904b069da7e5356e03a5af48166e499"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a6904b069da7e5356e03a5af48166e499">aiot_ota_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a6904b069da7e5356e03a5af48166e499"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁ota实例句柄  <a href="#a6904b069da7e5356e03a5af48166e499">更多...</a><br /></td></tr>
+<tr class="separator:a6904b069da7e5356e03a5af48166e499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19a04dd4e887634c79682eba38afc41"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#af19a04dd4e887634c79682eba38afc41">aiot_ota_report_version</a> (void *handle, char *version)</td></tr>
+<tr class="memdesc:af19a04dd4e887634c79682eba38afc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报普通设备(非网关中的子设备)的版本号  <a href="#af19a04dd4e887634c79682eba38afc41">更多...</a><br /></td></tr>
+<tr class="separator:af19a04dd4e887634c79682eba38afc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08ba251bb93fec39e43911ebfb050eb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ad08ba251bb93fec39e43911ebfb050eb">aiot_ota_report_version_ext</a> (void *handle, char *product_key, char *device_name, char *version)</td></tr>
+<tr class="memdesc:ad08ba251bb93fec39e43911ebfb050eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于网关中的子设备上报版本号  <a href="#ad08ba251bb93fec39e43911ebfb050eb">更多...</a><br /></td></tr>
+<tr class="separator:ad08ba251bb93fec39e43911ebfb050eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f5cfe9dcb40d2a793f23c4093263c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#ae9f5cfe9dcb40d2a793f23c4093263c8">aiot_ota_setopt</a> (void *handle, <a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ae9f5cfe9dcb40d2a793f23c4093263c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ota句柄的参数  <a href="#ae9f5cfe9dcb40d2a793f23c4093263c8">更多...</a><br /></td></tr>
+<tr class="separator:ae9f5cfe9dcb40d2a793f23c4093263c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b449e24d16dae0d2bfb0776b833398"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a23b449e24d16dae0d2bfb0776b833398">aiot_download_init</a> ()</td></tr>
+<tr class="memdesc:a23b449e24d16dae0d2bfb0776b833398"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化download实例并设置默认参数  <a href="#a23b449e24d16dae0d2bfb0776b833398">更多...</a><br /></td></tr>
+<tr class="separator:a23b449e24d16dae0d2bfb0776b833398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3816b1c0bebf108eb75fcaddf06d5b8a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a3816b1c0bebf108eb75fcaddf06d5b8a">aiot_download_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a3816b1c0bebf108eb75fcaddf06d5b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放download实例句柄的资源  <a href="#a3816b1c0bebf108eb75fcaddf06d5b8a">更多...</a><br /></td></tr>
+<tr class="separator:a3816b1c0bebf108eb75fcaddf06d5b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f3ae8a8436c540989720c3b774c806"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a03f3ae8a8436c540989720c3b774c806">aiot_download_recv</a> (void *handle)</td></tr>
+<tr class="memdesc:a03f3ae8a8436c540989720c3b774c806"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过download实例句柄下载一段buffer  <a href="#a03f3ae8a8436c540989720c3b774c806">更多...</a><br /></td></tr>
+<tr class="separator:a03f3ae8a8436c540989720c3b774c806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f392f2755b7498b17d60bd377faf91"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a> (void *handle, <a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:af3f392f2755b7498b17d60bd377faf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置download句柄参数  <a href="#af3f392f2755b7498b17d60bd377faf91">更多...</a><br /></td></tr>
+<tr class="separator:af3f392f2755b7498b17d60bd377faf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3344813afce70327b5a32f36640ce963"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a3344813afce70327b5a32f36640ce963">aiot_download_report_progress</a> (void *handle, int32_t percent)</td></tr>
+<tr class="memdesc:a3344813afce70327b5a32f36640ce963"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报下载完成度的百分比或者错误码  <a href="#a3344813afce70327b5a32f36640ce963">更多...</a><br /></td></tr>
+<tr class="separator:a3344813afce70327b5a32f36640ce963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfaae5554051c4bee6baba1baedeaac"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ota__api_8h.html#a5cfaae5554051c4bee6baba1baedeaac">aiot_download_send_request</a> (void *handle)</td></tr>
+<tr class="memdesc:a5cfaae5554051c4bee6baba1baedeaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">向云端发送GET固件报文请求  <a href="#a5cfaae5554051c4bee6baba1baedeaac">更多...</a><br /></td></tr>
+<tr class="separator:a5cfaae5554051c4bee6baba1baedeaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>OTA模块头文件, 提供设备获取固件升级和远程配置的能力 </p>
+<dl class="section date"><dt>日期</dt><dd>2019-12-27</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited</dd></dl>
+<p>OTA模块可用于配合阿里云平台的固件升级服务, 在<a href="https://help.aliyun.com/document_detail/58328.html">推送固件到设备</a>页面有介绍OTA的控制操作流程</p>
+<ul>
+<li>参考<a href="https://help.aliyun.com/document_detail/58328.html">设备端OTA升级</a>页面, 了解设备端配合OTA升级时的网络交互流程<ul>
+<li>设备要使用OTA服务, 必须先以<a class="el" href="aiot__ota__api_8h.html#af19a04dd4e887634c79682eba38afc41">aiot_ota_report_version</a> 向云端上报当前的固件版本号, 否则无法接收到固件信息推送</li>
+<li>设备下载固件时, 设备自行用<a class="el" href="aiot__ota__api_8h.html#a5cfaae5554051c4bee6baba1baedeaac">aiot_download_send_request</a> 从云端获取, SDK不会自动下载固件</li>
+<li>设备下载中或者下载完成后, 设备需自行将内存buffer中的固件内容写到Flash上, SDK不含有固件烧录的逻辑</li>
+<li>设备升级完成后, 需以<a class="el" href="aiot__ota__api_8h.html#af19a04dd4e887634c79682eba38afc41">aiot_ota_report_version</a> 接口, 向云端上报升级后的新固件版本号, 否则云端不会认为升级完成</li>
+<li>设备从<a class="el" href="aiot__ota__api_8h.html#ac4db901cee504c4fd9431671bf616f73">aiot_ota_recv_handler_t</a> 收到升级任务时, 如果忽略了该任务, 可以通过调用<a class="el" href="aiot__ota__api_8h.html#a83fa2db6bfed9bc23ea75a76a848d8ae">aiot_ota_query_firmware</a> 再次收到该任务</li>
+</ul>
+</li>
+<li>用户在控制台推送固件的下载地址等信息给设备时, 是通过MQTT通道, 所以设备OTA升级的前提是成功建立并保持MQTT长连接通道在线 </li>
+</ul>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a9d42f97d83d6f8d5c45ca369693230f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_BASE&#160;&#160;&#160;(-0x0900)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0900~-0x09FF表达SDK在OTA模块内的状态码, 也包含下载时使用的<code>STATE_DOWNLOAD_XXX</code> </p>
+
+</div>
+</div>
+<a class="anchor" id="adc761617fbbe5e201031aa2646afb911"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_DIGEST_MATCH&#160;&#160;&#160;(-0x0901)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA固件下载已完成, 校验和验证成功 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7743477d0782ffdb09ce894ed397392"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_FAILED&#160;&#160;&#160;(-0x0902)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA下载进度消息或固件版本号消息上报到服务器时遇到失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae76fadb920d4a5e36ea711a3af3e0b2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_RECV_ERROR&#160;&#160;&#160;(-0x0903)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块收取固件内容数据时出现错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4cfcb026374dac5ce99feb5038f82717"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_DIGEST_MISMATCH&#160;&#160;&#160;(-0x0904)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块下载固件时出现校验和签名验证错误 </p>
+<p>固件的md5或者sha256计算结果跟云端通知的期望值不匹配所致的错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4217a4405c1c971ed2bf243ce1510aff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_PARSE_JSON_ERROR&#160;&#160;&#160;(-0x0905)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块解析服务器下推的MQTT下行JSON报文时出错 </p>
+<p>从云端下行的JSON报文中, 无法找到目标的key, 从而无法找到相应的value </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9bc17337c6c154a339534bcbb531ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SEND_REQUEST_FAILED&#160;&#160;&#160;(-0x0906)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块发送HTTP报文, 请求下载固件时遇到失败 </p>
+<p>OTA模块往存储固件的服务器发送GET请求失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="acfbcbc5ccfdd745eaffa44f27803eeee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_RANGE_FINISHED&#160;&#160;&#160;(-0x0907)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块下载固件内容已到达之前设置的range末尾, 不会继续下载 </p>
+<p>按照range下载的时候已经下载到了range_end字段指定的地方. 如果用户此时还是继续尝试去下载, SDK返回返回错误码提示用户 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3adeb700486a3b3321b8c6521b6ae65a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_PARSE_JSON_MALLOC_FAILED&#160;&#160;&#160;(-0x0908)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块为解析JSON报文而申请内存时, 未获取到所需内存而解析失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="acb4c47ea598fa537bbd85965fabf5629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_DEINIT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0909)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁OTA会话实例时, 发现会话句柄为空, 中止销毁动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e2fa86330391f98382cb3bc3df4451d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_SETOPT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x090A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置OTA会话实例时, 发现会话句柄为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeddb35cd35cb5e8d4a67e8cd5d2832a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_SETOPT_DATA_IS_NULL&#160;&#160;&#160;(-0x090B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置OTA会话实例时, 发现配置数据为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a483ada72ce6cb1e11cc37e918b84775f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_DEINIT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x090C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁下载会话实例时, 发现会话句柄为空, 中止销毁动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa25379355008428225cb96ac9dcaf717"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SETOPT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x090D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置下载会话实例时, 发现会话句柄为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae772c22eaf2a2014c02411132bee00ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SETOPT_DATA_IS_NULL&#160;&#160;&#160;(-0x090E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置下载会话实例时, 发现配置数据为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a54f3b13f08591e4e96b5d14d92b6ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SETOPT_COPIED_DATA_IS_NULL&#160;&#160;&#160;(-0x090F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置下载会话实例时, 从OTA会话同步配置发生内部错误, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a27600e327bec56ff4f34038172236797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0910)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>直连设备上报版本号时, OTA句柄为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a17af06730c27ace16b0c9638ecffbddf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_VERSION_IS_NULL&#160;&#160;&#160;(-0x0911)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>直连设备上报版本号时, 版本号字符串为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a64e3f7d35188e957c04783d61cc94bea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_MQTT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0912)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>直连设备上报版本号时, MQTT句柄为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="adf2edb9a5fe6676598325ead5dd6697d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_EXT_HANELD_IS_NULL&#160;&#160;&#160;(-0x0913)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关为子设备上报版本号时, OTA句柄为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a60a432587ff8f8de433caa96c9448bca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_EXT_VERSION_NULL&#160;&#160;&#160;(-0x0914)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关为子设备上报版本号时, 版本号字符串为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d8015a5614002786901c9353a2ef49d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_EXT_PRODUCT_KEY_IS_NULL&#160;&#160;&#160;(-0x0915)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关为子设备上报版本号时, 子设备productKey为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="aec3ca32ad96ba1f448cb3df7e3d852ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_EXT_DEVICE_NAME_IS_NULL&#160;&#160;&#160;(-0x0916)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关为子设备上报版本号时, 子设备deviceName为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0557e6a8f079b082b2f29cf503909ba1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_REPORT_EXT_MQTT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0917)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网关为子设备上报版本号时, MQTT会话句柄为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae49be4acc462c5bd087e6b125b580383"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_REPORT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0918)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报下载进度或OTA错误码时, 下载会话句柄为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d41e42027505ffe3a82a5927bcc8825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_REPORT_TASK_DESC_IS_NULL&#160;&#160;&#160;(-0x0919)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报下载进度或OTA错误码时, 任务描述数据结构为空, 中止执行上报 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae78a9df9c92eded55ddaef33de4ba7d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_RECV_HANDLE_IS_NULL&#160;&#160;&#160;(-0x091A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用aiot_download_recv接收固件内容时, 处理接收数据的用户回调为空值, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a61510386593c96b12d1196f26386998f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_REQUEST_HANDLE_IS_NULL&#160;&#160;&#160;(-0x091B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用aiot_download_send_request发送固件下载请求时, 下载会话的句柄为空, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a063ce9a38398a88c6d27ccbb9423b41f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_REQUEST_TASK_DESC_IS_NULL&#160;&#160;&#160;(-0x091C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用aiot_download_send_request发送固件下载请求时, 任务描述为空, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c53e17abd31f47a383387ae9309b012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_REQUEST_URL_IS_NULL&#160;&#160;&#160;(-0x091D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用aiot_download_send_request发送固件下载请求时, 任务描述中的固件URL为空, 中止执行 </p>
+
+</div>
+</div>
+<a class="anchor" id="a52af1bf8fe929a8bb7ce03faa9e6aee5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_UNKNOWN_DIGEST_METHOD&#160;&#160;&#160;(-0x091E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析通知OTA的MQTT下行报文时, 其中的digest方法并非md5或sha256, SDK不支持 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6433acef6533ddbce9e5c4f2675c243b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_FINISHED&#160;&#160;&#160;(-0x091F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整个固件(而不是单独一次的下载片段)收取已完成, 收取的累计字节数与固件预期字节数一致 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f3db91d5e1e6c601f3e4af5996fcba0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_HTTPRSP_CODE_ERROR&#160;&#160;&#160;(-0x0920)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备向固件服务器发出GET请求时, 服务器返回的HTTP报文中Status Code错误, 既非200, 也非206 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf472055e742f18c08197909c2c1310b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_HTTPRSP_HEADER_ERROR&#160;&#160;&#160;(-0x0921)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备向固件服务器发出GET请求时, 服务器返回的HTTP报文header里, 没有说明Content-Length </p>
+
+</div>
+</div>
+<a class="anchor" id="a15c1dad38eeea25867d7eca19cd7be0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_RENEWAL_REQUEST_SENT&#160;&#160;&#160;(-0x0922)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA固件下载失败后, 正在进行断点续传, SDK向服务端重新发起了下载请求 </p>
+
+</div>
+</div>
+<a class="anchor" id="a405cb6149d840f1bdb4f752f2196722f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SETOPT_MALLOC_SHA256_CTX_FAILED&#160;&#160;&#160;(-0x0923)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块为计算固件的SHA256校验和申请内存时遇到失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a83745683795209b2e93f9e9aad5d81b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_SETOPT_MALLOC_MD5_CTX_FAILED&#160;&#160;&#160;(-0x0924)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块为计算固件的MD5校验和内存时遇到失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="adfe5005e0b92d0344f94cd54ba6111b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_PARSE_URL_HOST_IS_NULL&#160;&#160;&#160;(-0x0925)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块从任务描述数据结构中解析固件下载URL时, 遇到HOST字段为空, 解析失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a81152a9712ae432b9ba179ddbe590697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_PARSE_URL_PATH_IS_NULL&#160;&#160;&#160;(-0x0926)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块从任务描述数据结构中解析固件下载URL时, 遇到PATH字段为空, 解析失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e0c2004b97851efdf9af3a30eea07f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DOWNLOAD_FETCH_TOO_MANY&#160;&#160;&#160;(-0x0927)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA模块分多段下载固件时, 多段累计的总和大小超过了固件预期的值 </p>
+<p>可能的一个原因是用户将固件划分了多个range来下载, 但是由于不同的range之间存在重叠等原因, 导致最终的下载总量超出了固件的总大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9aac8ab14a08594edd225642d8ae5899"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_QUERY_FIRMWARE_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0928)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向云端查询OTA的升级任务时, OTA句柄为空 </p>
+<p>需要先调用aiot_ota_init函数来初始化一个OTA句柄, 再把这个句柄传给aiot_ota_query_firmware. 如果这个句柄没有被初始化, 或者 初始化不成功, 就会报出这个错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0dd105288c3b5cdd447a9ebace1c6613"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_HOST_STRING_OVERFLOW&#160;&#160;&#160;(-0x0929)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA下行报文中url字段中的host字段超出长度限制 </p>
+<p>在OTA的下行报文中, 包含了存储固件的url. url中包含host字段, 如果host字段超出限制(当前限1024个字节), 就会报出这个错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3fe9e90e28aa2734dad1c00e4657d45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_OTA_PATH_STRING_OVERFLOW&#160;&#160;&#160;(-0x092A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA下行报文中url字段中的path字段超出长度限制 </p>
+<p>在OTA的下行报文中, 包含了存储固件的url. url中包含path字段, 如果path字段超出限制(当前限1024个字节), 就会报出这个错误 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ac4db901cee504c4fd9431671bf616f73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  aiot_ota_recv_handler_t) (void *handle, const <a class="el" href="structaiot__ota__recv__t.html">aiot_ota_recv_t</a> *const msg, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备收到OTA的mqtt下行报文时的接收回调函数.用户在这个回调函数中可以看到待升级固件的版本号, 决定升级策略(是否升级, 何时升级等) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>OTA实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>云端下行的OTA消息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7cdf8344cefe47eb446691fcad642926"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  aiot_download_recv_handler_t) (void *handle, const <a class="el" href="structaiot__download__recv__t.html">aiot_download_recv_t</a> *packet, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>升级开始后, 设备收到分成一段段的固件内容时的收包回调函数.当前默认是通过https报文下推分段后的固件内容. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>download实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>云端下行的分段后的固件的报文 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a3f1b2cff4b7a91acbe9805bd95ab8234"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#a3f1b2cff4b7a91acbe9805bd95ab8234">aiot_ota_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>云端下行的OTA消息的类型, 分为固件升级和远程配置两种 </p>
+<p>传入<a class="el" href="aiot__ota__api_8h.html#ac4db901cee504c4fd9431671bf616f73">aiot_ota_recv_handler_t</a> 的MQTT报文类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a3f1b2cff4b7a91acbe9805bd95ab8234ad6ebca6d351314d058426722637167bd"></a>AIOT_OTARECV_FOTA&#160;</td><td class="fielddoc">
+<p>收到的OTA消息为固件升级消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3f1b2cff4b7a91acbe9805bd95ab8234aeca86b618edb73d567669e434504ebe4"></a>AIOT_OTARECV_COTA&#160;</td><td class="fielddoc">
+<p>收到的OTA消息为远程配置消息 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="abcd098df34968ff006dce374a951453b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#abcd098df34968ff006dce374a951453b">aiot_ota_digest_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA过程中使用的digest方法类型, 分为MD5和SHA256两种 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba205fc161508b59a0d6d08add64eae637"></a>AIOT_OTA_DIGEST_MD5&#160;</td><td class="fielddoc">
+<p>收到的OTA固件的digest方法为MD5 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba51cf14aa662aa9c41705d3fbb0155852"></a>AIOT_OTA_DIGEST_SHA256&#160;</td><td class="fielddoc">
+<p>收到的OTA固件的digest方法为SHA256 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abcd098df34968ff006dce374a951453ba8c14991bbc7a60b1afdd23893e44b4f4"></a>AIOT_OTA_DIGEST_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ae6e7993e6535008680de96c8337ab7e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#ae6e7993e6535008680de96c8337ab7e8">aiot_ota_protocol_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OTA下载升级文件的方式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ae6e7993e6535008680de96c8337ab7e8a1f5b415bf1bd90041cc75e0d34c8f3c0"></a>AIOT_OTA_PROTOCOL_HTTPS&#160;</td><td class="fielddoc">
+<p>下载OTA文件的方式为HTTPS </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae6e7993e6535008680de96c8337ab7e8a2efe00b1a3fedd50ceda843da8aa613c"></a>AIOT_OTA_PROTOCOL_MQTT&#160;</td><td class="fielddoc">
+<p>下载OTA文件的方式为MQTT </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae6e7993e6535008680de96c8337ab7e8adb474864442496d0525c47e21de99567"></a>AIOT_OTA_PROTOCOL_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa5ec93406d3fbd7ba4604b317fd2aa8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下载固件过程中收到的分片的报文的类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa5ec93406d3fbd7ba4604b317fd2aa8da4f271291ef8be1586c8f6442eb0aa4d1"></a>AIOT_DLRECV_HTTPBODY&#160;</td><td class="fielddoc">
+<p>基于HTTP传输的固件分片报文 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7a759beb8a70902d17ccf501469c7f55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55">aiot_ota_protocol_errcode_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>与云端约定的OTA过程中的错误码, 云端据此知道升级过程中出错在哪个环节 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a7a759beb8a70902d17ccf501469c7f55a2d55a0426ce1bc05509898a80705df84"></a>AIOT_OTAERR_UPGRADE_FAILED&#160;</td><td class="fielddoc">
+<p>与云端约定的设备升级出错的错误描述 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a759beb8a70902d17ccf501469c7f55a84a58a3f49be64afa2ec329132777a64"></a>AIOT_OTAERR_FETCH_FAILED&#160;</td><td class="fielddoc">
+<p>与云端约定的设备下载出错的错误码描述 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a759beb8a70902d17ccf501469c7f55a78302d3cc837c59ce54e386dc153dff5"></a>AIOT_OTAERR_CHECKSUM_MISMATCH&#160;</td><td class="fielddoc">
+<p>与云端约定的固件校验数字签名时出错的错误码描述 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7a759beb8a70902d17ccf501469c7f55a649fc163c922c5eb4453fef2d00ba983"></a>AIOT_OTAERR_BURN_FAILED&#160;</td><td class="fielddoc">
+<p>与云端约定的烧写固件出错的错误码描述 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__ota__api_8h.html#ae9f5cfe9dcb40d2a793f23c4093263c8">aiot_ota_setopt</a> 接口时, option参数的可用值 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5ab88715335c5ee51cdee3d8348905e9fd"></a>AIOT_OTAOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>设置处理OTA消息的用户回调函数 </p>
+<p>在该回调中, 用户可能收到两种消息: 固件升级消息或者远程配置消息.</p>
+<p>无论哪种消息, 都包含了url, version, digest method, sign等内容.</p>
+<p>用户需要在该回调中决定升级策略, 包括是否升级和何时升级等. 如果需要升级, 则需要调用aiot_download_init初始化一个download实例句柄. 具体见demos目录下的fota_xxx_xxx.c的用例</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5ae47ce39d4b71cd671d96e42f8ab131d9"></a>AIOT_OTAOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>设置MQTT的handle </p>
+<p>OTA过程中使用MQTT的通道能力, 用以向云端上报版本号, 进度, 以及错误码</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5a3e3b11255e8308b05942fd21668cf509"></a>AIOT_OTAOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<p>该上下文会在<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5ab88715335c5ee51cdee3d8348905e9fd">AIOT_OTAOPT_RECV_HANDLER</a> 中传回给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5aadc853ecc464f886a05730889c22880d"></a>AIOT_OTAOPT_MODULE&#160;</td><td class="fielddoc">
+<p>如果当前ota是针对某个外接模块(mcu等), 需要通过该字段设置模块名 </p>
+<p>OTA可能会针对某个外接的模块进行, 在上报版本号的时候, 需要知道模块的名称. 模块的名称通过该字段来设置.</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a023a6f06099115b2f77cef62a057e5f5a4977f18b8a687a21a86e2e28aee52cac"></a>AIOT_OTAOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__ota__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a> 接口时, option参数的可用值 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a"></a>AIOT_DLOPT_NETWORK_CRED&#160;</td><td class="fielddoc">
+<p>设备通过HTTP与固件服务器建联时, 网络使用的安全凭据 </p>
+<p>该配置项用于为底层网络配置<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 安全凭据数据</p>
+<ol type="1">
+<li>若该选项不配置, 那么HTTP将以tcp方式直接建联</li>
+<li>若<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option配置为<a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610aad715af742b63dd0a5d969dcd5c2cb24">AIOT_SYSDEP_NETWORK_CRED_NONE</a> , HTTP将以tcp方式直接建联</li>
+<li>若<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option配置为<a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610a0eda021576456a3c9bc077a07823a34c">AIOT_SYSDEP_NETWORK_CRED_SVRCERT_CA</a> , HTTP将以tls方式建联</li>
+<li>若<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option配置为<a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610ab27b144992537de21fba0b04d99de9b4">AIOT_SYSDEP_NETWORK_CRED_SVRCERT_PSK</a> , HTTP将以tls psk方式建联</li>
+</ol>
+<p>数据类型: (<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2"></a>AIOT_DLOPT_NETWORK_PORT&#160;</td><td class="fielddoc">
+<p>设备通过HTTP访问固件下载服务器的端口号 </p>
+<p>如果使用的是tcp或者tls证书方式, 端口号设置为443</p>
+<p>数据类型: (uint16_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6"></a>AIOT_DLOPT_RECV_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>通过HTTP接收固件内容时, 在协议栈花费的最长时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (5 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86"></a>AIOT_DLOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>HTTP 数据接收回调函数 </p>
+<p>数据类型: (aiot_download_recv_handler_t) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1"></a>AIOT_DLOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<p>当接收到HTTP数据时, 该上下文会从 <a class="el" href="aiot__ota__api_8h.html#a7cdf8344cefe47eb446691fcad642926">aiot_download_recv_handler_t</a> 的 userdata 参数给出</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2"></a>AIOT_DLOPT_TASK_DESC&#160;</td><td class="fielddoc">
+<p>设置download实例句柄所包含下载任务的具体内容 </p>
+<p>用户在收到OTA的mqtt消息后, 如果决定升级, 则需要通过该选项, 在download实例句柄中开辟内存, 将OTA消息中携带的url, version, digest method, sign等信息复制过来, 有了这些信息后才能开始下载任务</p>
+<p>数据类型: (<a class="el" href="structaiot__download__task__desc__t.html" title="云端下推的固件升级任务的描述信息, 包括url, 大小, 签名等 ">aiot_download_task_desc_t</a> *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c"></a>AIOT_DLOPT_RANGE_START&#160;</td><td class="fielddoc">
+<p>设置按照range下载的起始地址 </p>
+<p>HTTP 范围请求(range requests)特性中, 表示从第该byte开始下载 如果指定从头开始下载, 则start的值为0</p>
+<p>数据类型: (uint32_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152"></a>AIOT_DLOPT_RANGE_END&#160;</td><td class="fielddoc">
+<p>设置按照range下载的结束地址 </p>
+<p>HTTP 范围请求(range requests)特性中, 表示下载到该byte后结束. 如果指定从头开始下载到10个byte后结束, 则需要指定start = 0, end = 9, 这样总共10个byte</p>
+<p>数据类型: (uint32_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c"></a>AIOT_DLOPT_BODY_BUFFER_MAX_LEN&#160;</td><td class="fielddoc">
+<p>当设备从固件下载服务器接收返回的http报文时, 每次从 <a class="el" href="aiot__ota__api_8h.html#a7cdf8344cefe47eb446691fcad642926">aiot_download_recv_handler_t</a> 回调函数中给出的body最大长度 </p>
+<p>如果收到的数据没能达到这个长度, 则以aiot_download_recv_handler_t回调函数给出的长度是设备实际接收到的长度</p>
+<p>数据类型: (uint32_t *) 默认值: (2 *1024) Bytes </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada"></a>AIOT_DLOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a83fa2db6bfed9bc23ea75a76a848d8ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ota_query_firmware </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备端主动向云端查询升级任务 </p>
+<p>设备上线后, 云端如果部署了OTA任务, SDK会通过<a class="el" href="aiot__ota__api_8h.html#ac4db901cee504c4fd9431671bf616f73">aiot_ota_recv_handler_t</a> 将该任务透给用户. 出于当前业务繁忙等原因, 这个OTA任务可能被暂时忽略, 那么用户可以在业务空闲的时候通过调用本api来让云端再次下推这个OTA任务. 同样地, SDK会从<a class="el" href="aiot__ota__api_8h.html#ac4db901cee504c4fd9431671bf616f73">aiot_ota_recv_handler_t</a> 将该OTA任务透给用户</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>发送请求成功 </td></tr>
+    <tr><td class="paramname">STATE_OTA_QUERY_FIRMWARE_HANDLE_IS_NULL</td><td>作为入参的handle句柄没有经过初始化, 需要调用<a class="el" href="aiot__ota__api_8h.html#a561e74ed1fcdfd4c26b7341e1dab5b47">aiot_ota_init</a> 来进行初始化 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a83fa2db6bfed9bc23ea75a76a848d8ae_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a83fa2db6bfed9bc23ea75a76a848d8ae_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a83fa2db6bfed9bc23ea75a76a848d8ae_cgraph" id="aiot__ota__api_8h_a83fa2db6bfed9bc23ea75a76a848d8ae_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="247,444,377,471"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="221,495,403,521"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="217,545,407,572"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="455,444,559,471"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="607,444,753,471"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="801,444,916,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1229,189,1377,230"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="990,670,1126,711"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1200,677,1407,704"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1455,298,1612,339"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="978,269,1138,310"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="988,101,1128,142"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="985,385,1131,412"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1228,532,1379,559"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="987,502,1129,543"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="983,568,1133,595"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="973,335,1143,361"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="985,437,1131,478"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="992,735,1124,777"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="997,852,1119,879"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="964,217,1152,244"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1225,101,1381,142"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1234,357,1373,398"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1215,852,1391,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a561e74ed1fcdfd4c26b7341e1dab5b47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_ota_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个OTA实例 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>ota实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 或者是因为没有设置portfile, 或者是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a561e74ed1fcdfd4c26b7341e1dab5b47_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a561e74ed1fcdfd4c26b7341e1dab5b47_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a561e74ed1fcdfd4c26b7341e1dab5b47_cgraph" id="aiot__ota__api_8h_a561e74ed1fcdfd4c26b7341e1dab5b47_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="145,5,308,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6904b069da7e5356e03a5af48166e499"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ota_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁ota实例句柄 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向ota实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_OTA_DEINIT_HANDLE_IS_NULL</td><td>handle或者handle所指向的地址为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a6904b069da7e5356e03a5af48166e499_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a6904b069da7e5356e03a5af48166e499_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a6904b069da7e5356e03a5af48166e499_cgraph" id="aiot__ota__api_8h_a6904b069da7e5356e03a5af48166e499_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a14d605cf679951a69c42d323f52334a8" title="_ota_core_mqtt_operate\l_process_handler" alt="" coords="160,64,323,105"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="182,198,301,225"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a7134901e859e9a2d04e347806244b86b" title="_ota_core_mqtt_process\l_handler" alt="" coords="390,5,555,47"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="411,71,534,98"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="623,46,845,73"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="623,101,845,127"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="900,33,1040,75"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="900,99,1040,140"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="399,122,546,149"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="395,173,551,199"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="371,223,574,250"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="371,274,575,301"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="397,325,548,351"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="665,240,803,281"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="668,175,800,216"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="893,175,1047,216"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="668,305,800,347"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af19a04dd4e887634c79682eba38afc41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ota_report_version </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报普通设备(非网关中的子设备)的版本号 </p>
+<p>如果云端不知道某台设备当前的固件版本号, 就不会为其提供OTA服务, 而如果不知道设备的新版本号, 也不会认为它升级成功</p>
+<p>所以OTA要正常工作, 一般会要求设备在每次开机之后, 就调用这个接口, 将当前运行的固件版本号字符串上报给云端</p>
+<p>参数的handle通过<a class="el" href="aiot__ota__api_8h.html#a561e74ed1fcdfd4c26b7341e1dab5b47">aiot_ota_init</a> 得到, 比如, 上报当前版本号为"1.0.0"的代码写作</p>
+<div class="fragment"><div class="line">handle = <a class="code" href="aiot__ota__api_8c.html#a7317e7720196c85b998cd2689d38db09">aiot_ota_init</a>();</div><div class="line">...</div><div class="line">aiot_ota_report_version(handle, <span class="stringliteral">&quot;1.0.0&quot;</span>);</div></div><!-- fragment --><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向ota实例句柄的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>待上报的版本号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_OTA_REPORT_HANDLE_IS_NULL</td><td>ota句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_VERSION_IS_NULL</td><td>用户输入的版本号为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_MQTT_HANDLE_IS_NULL</td><td>ota_handle句柄中的mqtt句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_FAILED</td><td>中止执行上报 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_af19a04dd4e887634c79682eba38afc41_cgraph.png" border="0" usemap="#aiot__ota__api_8h_af19a04dd4e887634c79682eba38afc41_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_af19a04dd4e887634c79682eba38afc41_cgraph" id="aiot__ota__api_8h_af19a04dd4e887634c79682eba38afc41_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="214,343,397,369"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="211,393,400,420"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="240,444,371,471"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="448,444,552,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="600,444,747,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="795,444,909,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1223,189,1371,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="983,670,1119,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1193,677,1400,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1448,298,1605,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="971,269,1131,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="981,101,1121,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="978,385,1125,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1221,532,1372,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="981,502,1122,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="976,568,1127,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="966,335,1137,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="978,437,1125,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="985,735,1117,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="990,852,1113,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="957,217,1145,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1219,101,1375,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1227,357,1366,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1209,852,1385,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad08ba251bb93fec39e43911ebfb050eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ota_report_version_ext </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>product_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>device_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于网关中的子设备上报版本号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>ota实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">product_key</td><td>设备的product_key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_name</td><td>设备的名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>版本号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>上报成功 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_EXT_HANELD_IS_NULL</td><td>ota句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_EXT_VERSION_NULL</td><td>用户输入的版本号为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_EXT_PRODUCT_KEY_IS_NULL</td><td>子设备的product_key输入为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_EXT_DEVICE_NAME_IS_NULL</td><td>子设备的device_name输入为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_EXT_MQTT_HANDLE_IS_NULL</td><td>ota句柄中的mqtt_handle为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_REPORT_FAILED</td><td>中止执行上报 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_ad08ba251bb93fec39e43911ebfb050eb_cgraph.png" border="0" usemap="#aiot__ota__api_8h_ad08ba251bb93fec39e43911ebfb050eb_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_ad08ba251bb93fec39e43911ebfb050eb_cgraph" id="aiot__ota__api_8h_ad08ba251bb93fec39e43911ebfb050eb_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="236,444,367,471"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="415,444,519,471"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="567,444,713,471"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="761,444,876,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1189,189,1337,230"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="950,670,1086,711"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1160,677,1367,704"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1415,298,1572,339"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="938,269,1098,310"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="948,101,1088,142"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="945,385,1091,412"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1188,532,1339,559"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="947,502,1089,543"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="943,568,1093,595"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="933,335,1103,361"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="945,437,1091,478"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="952,735,1084,777"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="957,852,1079,879"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="924,217,1112,244"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1185,101,1341,142"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1194,357,1333,398"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1175,852,1351,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9f5cfe9dcb40d2a793f23c4093263c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ota_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ota句柄的参数 </p>
+<p>对OTA会话进行配置, 常见的配置选项包括</p>
+<ul>
+<li><code>AIOT_OTAOPT_MQTT_HANDLE</code>: 把 <a class="el" href="aiot__mqtt__api_8h.html#a5a11b1a4ec6467b38120f3e03ddc57fe">aiot_mqtt_init</a> 返回的MQTT会话句柄跟OTA会话关联起来</li>
+<li><code>AIOT_OTAOPT_RECV_HANDLER</code>: 设置OTA消息的数据处理回调, 这个用户回调在有OTA消息的时候, 会被 <a class="el" href="aiot__mqtt__api_8h.html#a3742475084b41bf5ba3f5bfe817ad28a">aiot_mqtt_recv</a> 调用到</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>ota句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__ota__api_8h.html#a023a6f06099115b2f77cef62a057e5f5">aiot_ota_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_OTA_SETOPT_HANDLE_IS_NULL</td><td>ota句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_OTA_SETOPT_DATA_IS_NULL</td><td>参数data字段为空 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_UNKNOWN_OPTION</td><td>option不支持 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_ae9f5cfe9dcb40d2a793f23c4093263c8_cgraph.png" border="0" usemap="#aiot__ota__api_8h_ae9f5cfe9dcb40d2a793f23c4093263c8_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_ae9f5cfe9dcb40d2a793f23c4093263c8_cgraph" id="aiot__ota__api_8h_ae9f5cfe9dcb40d2a793f23c4093263c8_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a681445597582c7d27e0f113ee803f30c" title="_ota_subscribe" alt="" coords="190,376,301,403"/>
+<area shape="rect" id="node19" href="aiot__ota__api_8c.html#a14d605cf679951a69c42d323f52334a8" title="_ota_core_mqtt_operate\l_process_handler" alt="" coords="164,445,327,486"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a98eb9e2da970282da1d1025be28e7cb2" title="_ota_mqtt_process" alt="" coords="391,132,524,159"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="398,376,517,403"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#a11c491dd014c7b6a211910207423c6b4" title="_ota_prase_topic" alt="" coords="639,5,760,32"/>
+<area shape="rect" id="node5" href="aiot__ota__api_8c.html#a3c488e119e1b57a1f765b5dedaad0019" title="_ota_parse_json" alt="" coords="870,107,987,133"/>
+<area shape="rect" id="node6" href="aiot__ota__api_8c.html#a0dd46bdedb26cba2d0d79f867c457bba" title="_ota_parse_list_array" alt="" coords="626,107,773,133"/>
+<area shape="rect" id="node7" href="aiot__ota__api_8c.html#a55b489abc2fc4cf003d2cf0e4f5c84ee" title="_process_single_file" alt="" coords="629,157,769,184"/>
+<area shape="rect" id="node8" href="aiot__ota__api_8c.html#a683d28b1a5a9c42931ee746ce887f5f4" title="_download_deep_free\l_task_desc" alt="" coords="625,209,773,250"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="626,275,773,301"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="621,325,777,352"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="598,376,801,403"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="597,427,801,453"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="624,477,775,504"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="859,377,998,418"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="863,311,995,353"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1047,311,1200,353"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="863,442,995,483"/>
+<area shape="rect" id="node20" href="aiot__ota__api_8c.html#a7134901e859e9a2d04e347806244b86b" title="_ota_core_mqtt_process\l_handler" alt="" coords="375,445,540,486"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="396,528,519,555"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="589,528,810,555"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="588,583,811,609"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="859,517,999,558"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="859,582,999,623"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a23b449e24d16dae0d2bfb0776b833398"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_download_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化download实例并设置默认参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>download实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 或者是没有设置portfile, 或者是内存不足无法分配download或者http实例 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a23b449e24d16dae0d2bfb0776b833398_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a23b449e24d16dae0d2bfb0776b833398_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a23b449e24d16dae0d2bfb0776b833398_cgraph" id="aiot__ota__api_8h_a23b449e24d16dae0d2bfb0776b833398_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="183,335,345,361"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a1fb38e361d0523fcf4742fd370165ec2" title="_http_recv_handler" alt="" coords="198,385,330,412"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#ad6425662b916f95c8ea82eb69b864f36" title="_download_digest_update" alt="" coords="393,335,565,361"/>
+<area shape="rect" id="node5" href="aiot__ota__api_8c.html#a01c8b507d337c2ea566a4e090f6e82d3" title="_download_digest_verify" alt="" coords="397,385,562,412"/>
+<area shape="rect" id="node6" href="aiot__ota__api_8c.html#a3344813afce70327b5a32f36640ce963" title="上报下载完成度的百分比或者错误码 " alt="" coords="407,437,552,478"/>
+<area shape="rect" id="node7" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="613,444,744,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="792,444,896,471"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="944,444,1091,471"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="1139,444,1253,471"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1567,189,1715,230"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1327,670,1463,711"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1537,677,1744,704"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1792,298,1949,339"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1315,269,1475,310"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1325,101,1465,142"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1322,385,1469,412"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1565,532,1716,559"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1325,502,1466,543"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1320,568,1471,595"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1310,335,1481,361"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1322,437,1469,478"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1329,735,1461,777"/>
+<area shape="rect" id="node26" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1334,852,1457,879"/>
+<area shape="rect" id="node28" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1301,217,1489,244"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1563,101,1719,142"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1571,357,1710,398"/>
+<area shape="rect" id="node27" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1553,852,1729,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3816b1c0bebf108eb75fcaddf06d5b8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放download实例句柄的资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向download实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_DOWNLOAD_DEINIT_HANDLE_IS_NULL</td><td>handle或者handle指向的内容为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a3816b1c0bebf108eb75fcaddf06d5b8a_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a3816b1c0bebf108eb75fcaddf06d5b8a_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a3816b1c0bebf108eb75fcaddf06d5b8a_cgraph" id="aiot__ota__api_8h_a3816b1c0bebf108eb75fcaddf06d5b8a_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a683d28b1a5a9c42931ee746ce887f5f4" title="_download_deep_free\l_task_desc" alt="" coords="196,5,344,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03f3ae8a8436c540989720c3b774c806"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过download实例句柄下载一段buffer </p>
+<p>用户解析完OTA消息, 知道了固件的下载地址之后, 就可以用这个接口以HTTP下载固件内容</p>
+<p>被下载到的内容, 会通过回调函数传递给用户, 用户调用 <a class="el" href="aiot__ota__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a> 把自己的数据处理回调函数设置给SDK</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向download实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;STATE_SUCCESS</td><td>表示下载到的字节数 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_HTTPRSP_CODE_ERROR</td><td>下载所使用的url链接不可访问, 返回的code并非200或者206 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_FINISHED</td><td>整个固件包下载完成 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_RANGE_FINISHED</td><td>分段下载的时候, 单个分段下载完成 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_HTTPRSP_HEADER_ERROR</td><td>访问下载链接后http的回复报文中并没有Content-Length字段 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_RECV_HANDLE_IS_NULL</td><td>download句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_RENEWAL_REQUEST_SENT</td><td>进行断点续传往固件服务器重新发送了下载请求 </td></tr>
+    <tr><td class="paramname">其他出错信息</td><td>请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a03f3ae8a8436c540989720c3b774c806_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a03f3ae8a8436c540989720c3b774c806_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a03f3ae8a8436c540989720c3b774c806_cgraph" id="aiot__ota__api_8h_a03f3ae8a8436c540989720c3b774c806_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a5cfaae5554051c4bee6baba1baedeaac" title="向云端发送GET固件报文请求 " alt="" coords="191,407,331,449"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a79f6b18aeb77a40843a68ba383c3c497" title="_download_parse_url" alt="" coords="379,385,523,412"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#a3344813afce70327b5a32f36640ce963" title="上报下载完成度的百分比或者错误码 " alt="" coords="379,437,524,478"/>
+<area shape="rect" id="node5" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="572,444,703,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="751,444,855,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="903,444,1049,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="1097,444,1212,471"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1525,189,1673,230"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1286,670,1422,711"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1496,677,1703,704"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1751,298,1908,339"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1274,269,1434,310"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1284,101,1424,142"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1281,385,1427,412"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1524,532,1675,559"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1283,502,1425,543"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1279,568,1429,595"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1269,335,1439,361"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1281,437,1427,478"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1288,735,1420,777"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1293,852,1415,879"/>
+<area shape="rect" id="node26" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1260,217,1448,244"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1521,101,1677,142"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1530,357,1669,398"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1511,852,1687,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af3f392f2755b7498b17d60bd377faf91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置download句柄参数 </p>
+<p>配置固件下载会话的选项, 常见需要设置的选项包括</p>
+<ul>
+<li><code>AIOT_DLOPT_RECV_HANDLER</code>: 用户告诉SDK, 当SDK收到固件内容的时候, 调用哪个用户函数来传出固件内容缓冲区</li>
+<li><code>AIOT_DLOPT_NETWORK_CRED</code>: 可以配置是走HTTP还是走HTTPS下载固件内容</li>
+<li><code>AIOT_DLOPT_BODY_BUFFER_MAX_LEN</code>: 这是个缓冲区的长度, SDK下载中, 每当填满这个长度就调用一次用户回调, 所以这里设置的越大, 下载越快, 内存开销也越大</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>download句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SETOPT_HANDLE_IS_NULL</td><td>download句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SETOPT_DATA_IS_NULL</td><td>data字段为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SETOPT_COPIED_DATA_IS_NULL</td><td>拷贝task_desc失败 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SETOPT_MALLOC_SHA256_CTX_FAILED</td><td>为shs256算法的context分配内存失败 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SETOPT_MALLOC_MD5_CTX_FAILED</td><td>为MD5算法的context分配内存失败 </td></tr>
+    <tr><td class="paramname">其他出错信息</td><td>请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_af3f392f2755b7498b17d60bd377faf91_cgraph.png" border="0" usemap="#aiot__ota__api_8h_af3f392f2755b7498b17d60bd377faf91_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_af3f392f2755b7498b17d60bd377faf91_cgraph" id="aiot__ota__api_8h_af3f392f2755b7498b17d60bd377faf91_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a947d444d21e74d78733064a42c286b64" title="_download_deep_copy\l_task_desc" alt="" coords="201,27,356,69"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a72a55bc6536d7decc4a0851e0369baa9" title="_download_deep_copy_base" alt="" coords="404,5,593,32"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#a683d28b1a5a9c42931ee746ce887f5f4" title="_download_deep_free\l_task_desc" alt="" coords="425,57,573,98"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3344813afce70327b5a32f36640ce963"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_report_progress </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报下载完成度的百分比或者错误码 </p>
+<p>在设备开始下载固件的过程之后, 都可以用这个接口向云端上报进展情况, 包括下载进度或出错信息</p>
+<ul>
+<li>如果下载是正常的, 可以整数形式上报, 当前已下载的内容占固件整体大小的百分比, percent参数, SDK会自动计算好, 在回调中传给用户</li>
+<li>如果下载异常或者下载之后固件的烧录异常了, 也可以用这个接口把异常告诉云端, 设备和云端的协议错误码约定见 <a class="el" href="aiot__ota__api_8h.html#a7a759beb8a70902d17ccf501469c7f55">aiot_ota_protocol_errcode_t</a></li>
+<li>通过 <a class="el" href="aiot__ota__api_8h.html#a3344813afce70327b5a32f36640ce963">aiot_download_report_progress</a> 上报的内容都会影响控制台的显示, 比如显示OTA升级进度, 显示OTA升级失败等</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>download句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percent</td><td>当前所下载内容完成度的百分比或者错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_REPORT_HANDLE_IS_NULL</td><td>上报时handle为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_REPORT_TASK_DESC_IS_NULL</td><td>上报时task_desc为空, 无法找到相应的product_key, device_name </td></tr>
+    <tr><td class="paramname">其他出错信息</td><td>请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a3344813afce70327b5a32f36640ce963_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a3344813afce70327b5a32f36640ce963_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a3344813afce70327b5a32f36640ce963_cgraph" id="aiot__ota__api_8h_a3344813afce70327b5a32f36640ce963_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="199,444,329,471"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="377,444,481,471"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="529,444,676,471"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="724,444,839,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1152,189,1300,230"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="913,670,1049,711"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1123,677,1329,704"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1377,298,1535,339"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="901,269,1061,310"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="911,101,1051,142"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="907,385,1054,412"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1151,532,1301,559"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="910,502,1051,543"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="905,568,1056,595"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="895,335,1066,361"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="907,437,1054,478"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="915,735,1047,777"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="919,852,1042,879"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="887,217,1075,244"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1148,101,1304,142"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1157,357,1295,398"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1138,852,1314,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cfaae5554051c4bee6baba1baedeaac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_send_request </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向云端发送GET固件报文请求 </p>
+<p>设备通过OTA消息回调函数知道了固件下载地址后, 就可以调用这个接口, 下载一段固件</p>
+<ul>
+<li>这段长度可由<code>AIOT_DLOPT_RANGE_START</code>和<code>AIOT_DLOPT_RANGE_END</code>选项设置</li>
+<li>如果不做设置, 则默认SDK会整段去请求固件内容, 但每到填满1次用户buffer就会通知用户1次, buffer长度用<code>AIOT_DLOPT_BODY_BUFFER_MAX_LEN</code>选项配置</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>download句柄, 包含了固件的url等信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_REQUEST_HANDLE_IS_NULL</td><td>发送GET请求的时候handle为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_REQUEST_URL_IS_NULL</td><td>发送GET请求的时候task_desc不为空, 但是其中的url为空 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_SEND_REQUEST_FAILED</td><td>发送GET请求的时候http底层发包逻辑报错 </td></tr>
+    <tr><td class="paramname">STATE_DOWNLOAD_REQUEST_TASK_DESC_IS_NULL</td><td>发送GET请求的时候task_desc字段为空 </td></tr>
+    <tr><td class="paramname">其他出错信息</td><td>请参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ota__api_8h_a5cfaae5554051c4bee6baba1baedeaac_cgraph.png" border="0" usemap="#aiot__ota__api_8h_a5cfaae5554051c4bee6baba1baedeaac_cgraph" alt=""/></div>
+<map name="aiot__ota__api_8h_a5cfaae5554051c4bee6baba1baedeaac_cgraph" id="aiot__ota__api_8h_a5cfaae5554051c4bee6baba1baedeaac_cgraph">
+<area shape="rect" id="node2" href="aiot__ota__api_8c.html#a79f6b18aeb77a40843a68ba383c3c497" title="_download_parse_url" alt="" coords="194,385,338,412"/>
+<area shape="rect" id="node3" href="aiot__ota__api_8c.html#a3344813afce70327b5a32f36640ce963" title="上报下载完成度的百分比或者错误码 " alt="" coords="193,437,339,478"/>
+<area shape="rect" id="node4" href="aiot__ota__api_8c.html#ac0c4d9b588b45f46eb6a96ba1cec5f60" title="_ota_publish_base" alt="" coords="387,444,517,471"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="565,444,669,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="717,444,864,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="912,444,1027,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1340,189,1488,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1101,670,1237,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1311,677,1517,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1565,298,1723,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1089,269,1249,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1099,101,1239,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1095,385,1242,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1339,532,1489,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1098,502,1239,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1093,568,1244,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1083,335,1254,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1095,437,1242,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1103,735,1235,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1107,852,1230,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1075,217,1263,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1336,101,1492,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1345,357,1483,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1326,852,1502,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

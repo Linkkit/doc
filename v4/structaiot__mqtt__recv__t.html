@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: aiot_mqtt_recv_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structaiot__mqtt__recv__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_mqtt_recv_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="aiot__mqtt__api_8h_source.html">aiot_mqtt_api.h</a>&gt;</code></p>
+<div class="dynheader">
+aiot_mqtt_recv_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structaiot__mqtt__recv__t__coll__graph.png" border="0" usemap="#aiot__mqtt__recv__t_coll__map" alt="Collaboration graph"/></div>
+<map name="aiot__mqtt__recv__t_coll__map" id="aiot__mqtt__recv__t_coll__map">
+<area shape="rect" id="node2" href="structconnack__property__t.html" title="MQTT 5.0协议中, 下行的conack报文conack中的属性 " alt="" coords="5,201,141,228"/>
+<area shape="rect" id="node3" href="structuser__property__t.html" title="MQTT 5.0协议中用户属性 " alt="" coords="132,111,244,137"/>
+<area shape="rect" id="node5" href="structpub__property__t.html" title="MQTT 5.0协议中, 上行和下行pub报文中的属性. " alt="" coords="166,201,274,228"/>
+<area shape="rect" id="node4" href="structlen__value__t.html" title="value&#45;length 结构体. " alt="" coords="209,5,297,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aeee4f8857ffb3dd37eb414dd8ea4c132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__mqtt__api_8h.html#ad4c3a28282a888ca3d99cbb531fe99ed">aiot_mqtt_recv_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__recv__t.html#aeee4f8857ffb3dd37eb414dd8ea4c132">type</a></td></tr>
+<tr class="memdesc:aeee4f8857ffb3dd37eb414dd8ea4c132"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT报文类型, 更多信息请参考<a class="el" href="aiot__mqtt__api_8h.html#ad4c3a28282a888ca3d99cbb531fe99ed">aiot_mqtt_recv_type_t</a>.  <a href="#aeee4f8857ffb3dd37eb414dd8ea4c132">更多...</a><br /></td></tr>
+<tr class="separator:aeee4f8857ffb3dd37eb414dd8ea4c132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afd5904e17506a33cce2a0b0ab2b282"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ad0af6feae0e1703bd426a4469faa019b"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a9109d0388a9a8dc56ed1927ac846217f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a61a4fdb06b1a3e66f38ff9d8616c2746">qos</a></td></tr>
+<tr class="separator:a9109d0388a9a8dc56ed1927ac846217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffb05fbf42ffac95c97fc8599e67ce9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;char *&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#aee2d1a9ead9ce488758dde392dea9ef6">topic</a></td></tr>
+<tr class="separator:a6ffb05fbf42ffac95c97fc8599e67ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b33bb56621333d1e0901cc31be191f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a3d939758d6d522b7ce4289b9370638b9">topic_len</a></td></tr>
+<tr class="separator:ab0b33bb56621333d1e0901cc31be191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f9339b45e959f4190fb6f0186c9f0b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#afcca4f5d38290ef086ba4803093440fe">payload</a></td></tr>
+<tr class="separator:ac4f9339b45e959f4190fb6f0186c9f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c36328446f4afe2b3601d94994f45e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a82ea916c995651011c525b2c2497e012">payload_len</a></td></tr>
+<tr class="separator:a16c36328446f4afe2b3601d94994f45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e98a621f5702152d86354e65f1b7f5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structpub__property__t.html">pub_property_t</a> *&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#aebde925f0f40fc92cc45f9cc809dded1">pub_prop</a></td></tr>
+<tr class="separator:a78e98a621f5702152d86354e65f1b7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0af6feae0e1703bd426a4469faa019b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a0d2e6b30dceb9e608c1d21306e765c0d">pub</a></td></tr>
+<tr class="memdesc:ad0af6feae0e1703bd426a4469faa019b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT PUBLISH报文  <a href="#ad0af6feae0e1703bd426a4469faa019b">更多...</a><br /></td></tr>
+<tr class="separator:ad0af6feae0e1703bd426a4469faa019b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eab02a7ad82936dfd2ef29b6422b2ae"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:af272d3c018c996f652e461f3a2edf4dc"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a436bf676f0935303cd13dd5909881c45">res</a></td></tr>
+<tr class="separator:af272d3c018c996f652e461f3a2edf4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797be02010d1ccfa2a8c19d5eb09a6c9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a53e26fa9ca948d91fa67ae2f270f579e">max_qos</a></td></tr>
+<tr class="separator:a797be02010d1ccfa2a8c19d5eb09a6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb6b1caef8d8b917888e261fc368991"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a08332786aa798410d3aa1bde413b18b9">packet_id</a></td></tr>
+<tr class="separator:acbb6b1caef8d8b917888e261fc368991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eab02a7ad82936dfd2ef29b6422b2ae"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a6348d30b7331d2a3b5de44ecad6c09fe">sub_ack</a></td></tr>
+<tr class="memdesc:a1eab02a7ad82936dfd2ef29b6422b2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIOT_MQTTRECV_SUB_ACK.  <a href="#a1eab02a7ad82936dfd2ef29b6422b2ae">更多...</a><br /></td></tr>
+<tr class="separator:a1eab02a7ad82936dfd2ef29b6422b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6a993af6ca282a466cc2d7c31c79f4"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a8a291a44cdf3dd47b3763eb95832cd8a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a08332786aa798410d3aa1bde413b18b9">packet_id</a></td></tr>
+<tr class="separator:a8a291a44cdf3dd47b3763eb95832cd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6a993af6ca282a466cc2d7c31c79f4"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#ae488f43caae0832635ff52f5e7c78bf9">unsub_ack</a></td></tr>
+<tr class="memdesc:a4e6a993af6ca282a466cc2d7c31c79f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIOT_MQTTRECV_UNSUB_ACK.  <a href="#a4e6a993af6ca282a466cc2d7c31c79f4">更多...</a><br /></td></tr>
+<tr class="separator:a4e6a993af6ca282a466cc2d7c31c79f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1f3f26bf7163a96ef378f17b9c587"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aae5f7976cf99afffe0fc885673f45f52"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a08332786aa798410d3aa1bde413b18b9">packet_id</a></td></tr>
+<tr class="separator:aae5f7976cf99afffe0fc885673f45f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1f3f26bf7163a96ef378f17b9c587"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a5225913d95c103754749306abcf9faa8">pub_ack</a></td></tr>
+<tr class="memdesc:a25c1f3f26bf7163a96ef378f17b9c587"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIOT_MQTTRECV_PUB_ACK.  <a href="#a25c1f3f26bf7163a96ef378f17b9c587">更多...</a><br /></td></tr>
+<tr class="separator:a25c1f3f26bf7163a96ef378f17b9c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e2aec98524becbb6b7ddeaf7fbe235"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a53bf0f14f1dc5a1076828b13198b42be"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#ab9aaed478e8bfe36c8f3310cc99911bc">reason_code</a></td></tr>
+<tr class="separator:a53bf0f14f1dc5a1076828b13198b42be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e427539f461e35af1fa9bf04244faa0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structconnack__property__t.html">connack_property_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#ad2aa2e555436d52e692d6f1d66084d25">prop</a></td></tr>
+<tr class="separator:a0e427539f461e35af1fa9bf04244faa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e2aec98524becbb6b7ddeaf7fbe235"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#a080da265142fe3f64d33c0290e96fb59">con_ack</a></td></tr>
+<tr class="memdesc:ac3e2aec98524becbb6b7ddeaf7fbe235"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIOT_MQTTRECV_CON_ACK.  <a href="#ac3e2aec98524becbb6b7ddeaf7fbe235">更多...</a><br /></td></tr>
+<tr class="separator:ac3e2aec98524becbb6b7ddeaf7fbe235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877814a5f28d012bdb456de4ebe8ff90"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a2cf320f1643d13fd891869eb95ea72a4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#ab9aaed478e8bfe36c8f3310cc99911bc">reason_code</a></td></tr>
+<tr class="separator:a2cf320f1643d13fd891869eb95ea72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877814a5f28d012bdb456de4ebe8ff90"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__mqtt__recv__t.html#ad7450b6f00f86d9cb9fe61ee9ffdc966">server_disconnect</a></td></tr>
+<tr class="memdesc:a877814a5f28d012bdb456de4ebe8ff90"><td class="mdescLeft">&#160;</td><td class="mdescRight">AIOT_MQTTRECV_DISCONNECT. MQTT 5.0特性.  <a href="#a877814a5f28d012bdb456de4ebe8ff90">更多...</a><br /></td></tr>
+<tr class="separator:a877814a5f28d012bdb456de4ebe8ff90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afd5904e17506a33cce2a0b0ab2b282"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__recv__t.html#a4afd5904e17506a33cce2a0b0ab2b282">data</a></td></tr>
+<tr class="memdesc:a4afd5904e17506a33cce2a0b0ab2b282"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT报文联合体, 内容根据type进行选择  <a href="#a4afd5904e17506a33cce2a0b0ab2b282">更多...</a><br /></td></tr>
+<tr class="separator:a4afd5904e17506a33cce2a0b0ab2b282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aeee4f8857ffb3dd37eb414dd8ea4c132"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aiot__mqtt__api_8h.html#ad4c3a28282a888ca3d99cbb531fe99ed">aiot_mqtt_recv_type_t</a> aiot_mqtt_recv_t::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT报文类型, 更多信息请参考<a class="el" href="aiot__mqtt__api_8h.html#ad4c3a28282a888ca3d99cbb531fe99ed">aiot_mqtt_recv_type_t</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a61a4fdb06b1a3e66f38ff9d8616c2746"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t aiot_mqtt_recv_t::qos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee2d1a9ead9ce488758dde392dea9ef6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_mqtt_recv_t::topic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d939758d6d522b7ce4289b9370638b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t aiot_mqtt_recv_t::topic_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afcca4f5d38290ef086ba4803093440fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* aiot_mqtt_recv_t::payload</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82ea916c995651011c525b2c2497e012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t aiot_mqtt_recv_t::payload_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aebde925f0f40fc92cc45f9cc809dded1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpub__property__t.html">pub_property_t</a>* aiot_mqtt_recv_t::pub_prop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d2e6b30dceb9e608c1d21306e765c0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::pub</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT PUBLISH报文 </p>
+
+</div>
+</div>
+<a class="anchor" id="a436bf676f0935303cd13dd5909881c45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_recv_t::res</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53e26fa9ca948d91fa67ae2f270f579e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t aiot_mqtt_recv_t::max_qos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a08332786aa798410d3aa1bde413b18b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t aiot_mqtt_recv_t::packet_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6348d30b7331d2a3b5de44ecad6c09fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::sub_ack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AIOT_MQTTRECV_SUB_ACK. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae488f43caae0832635ff52f5e7c78bf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::unsub_ack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AIOT_MQTTRECV_UNSUB_ACK. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5225913d95c103754749306abcf9faa8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::pub_ack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AIOT_MQTTRECV_PUB_ACK. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9aaed478e8bfe36c8f3310cc99911bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t aiot_mqtt_recv_t::reason_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2aa2e555436d52e692d6f1d66084d25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconnack__property__t.html">connack_property_t</a> aiot_mqtt_recv_t::prop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a080da265142fe3f64d33c0290e96fb59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::con_ack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AIOT_MQTTRECV_CON_ACK. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad7450b6f00f86d9cb9fe61ee9ffdc966"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_mqtt_recv_t::server_disconnect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AIOT_MQTTRECV_DISCONNECT. MQTT 5.0特性. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4afd5904e17506a33cce2a0b0ab2b282"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   aiot_mqtt_recv_t::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT报文联合体, 内容根据type进行选择 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>core/<a class="el" href="aiot__mqtt__api_8h_source.html">aiot_mqtt_api.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

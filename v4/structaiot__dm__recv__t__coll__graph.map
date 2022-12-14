@@ -1,0 +1,8 @@
+<map id="aiot_dm_recv_t" name="aiot_dm_recv_t">
+<area shape="rect" id="node2" href="$structaiot__dm__recv__sync__service__invoke__t.html" title="同步服务调用消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答 " alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node3" href="$structaiot__dm__recv__raw__service__invoke__t.html" title="二进制数据的同步服务调用消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为�..." alt="" coords="9,71,186,112"/>
+<area shape="rect" id="node4" href="$structaiot__dm__recv__async__service__invoke__t.html" title="同步服务调用消息结构体 " alt="" coords="26,136,169,177"/>
+<area shape="rect" id="node5" href="$structaiot__dm__recv__property__set__t.html" title="属性设置消息结构体 " alt="" coords="20,201,175,243"/>
+<area shape="rect" id="node6" href="$structaiot__dm__recv__raw__data__t.html" title="物模型二进制数据消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数�..." alt="" coords="12,267,183,294"/>
+<area shape="rect" id="node7" href="$structaiot__dm__recv__generic__reply__t.html" title="云端通用应答消息结构体, 设备端上报AIOT_DMMSG_PROPERTY_POST, AIOT_DMMSG_EVENT_POST 或者AIOT_DMMSG_GET_..." alt="" coords="23,319,172,360"/>
+</map>

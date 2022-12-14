@@ -1,0 +1,5 @@
+<map id="core/aiot_state_api.h" name="core/aiot_state_api.h">
+<area shape="rect" id="node2" href="$aiot__state__api_8c.html" title="状态码模块实现 " alt="" coords="5,87,148,114"/>
+<area shape="rect" id="node3" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="172,80,355,121"/>
+<area shape="rect" id="node4" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="379,80,503,121"/>
+</map>

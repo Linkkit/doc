@@ -1,0 +1,933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/task/aiot_task_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_75d92e10de11e8963a2656c32ee6ae35.html">task</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_task_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>task模块头文件, 提供任务管理的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_task_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h__incl.png" border="0" usemap="#components_2task_2aiot__task__api_8h" alt=""/></div>
+<map name="components_2task_2aiot__task__api_8h" id="components_2task_2aiot__task__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h__dep__incl.png" border="0" usemap="#components_2task_2aiot__task__api_8hdep" alt=""/></div>
+<map name="components_2task_2aiot__task__api_8hdep" id="components_2task_2aiot__task__api_8hdep">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html" title="TASK模块接口实现文件, 其中包含了TASK的所有用户API. " alt="" coords="5,95,152,136"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__task__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtask__desc__t.html">task_desc_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务描述的数据结构  <a href="structtask__desc__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtask__summary__t.html">task_summary_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端拉取list时每个任务的简要描述  <a href="structtask__summary__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtask__get__list__reply__t.html">task_get_list_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端拉取list返回的数据  <a href="structtask__get__list__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtask__get__detail__reply__t.html">task_get_detail_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端拉取任务详细信息时返回的数据  <a href="structtask__get__detail__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtask__update__reply__t.html">task_update_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新任务状态到云端后，云端返回的数据  <a href="structtask__update__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__task__recv__t.html">aiot_task_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端主动下发或更新任务云端返回的数据  <a href="structaiot__task__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aec99624e185a6da096cee784c6fb9dbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#aec99624e185a6da096cee784c6fb9dbd">STATE_TASK_BASE</a>&#160;&#160;&#160;(-0x0B00)</td></tr>
+<tr class="memdesc:aec99624e185a6da096cee784c6fb9dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0B00~-0x0BFF表达SDK在task模块内的状态码  <a href="#aec99624e185a6da096cee784c6fb9dbd">更多...</a><br /></td></tr>
+<tr class="separator:aec99624e185a6da096cee784c6fb9dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e7af56d0f3679188604ebb93df383b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#ab5e7af56d0f3679188604ebb93df383b">STATE_TASK_DEINIT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0B01)</td></tr>
+<tr class="memdesc:ab5e7af56d0f3679188604ebb93df383b"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁task会话实例时, 发现会话句柄为空, 中止销毁动作  <a href="#ab5e7af56d0f3679188604ebb93df383b">更多...</a><br /></td></tr>
+<tr class="separator:ab5e7af56d0f3679188604ebb93df383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3135cd2b0138ddc990881bb2e05b26d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#af3135cd2b0138ddc990881bb2e05b26d">STATE_TASK_SETOPT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0B02)</td></tr>
+<tr class="memdesc:af3135cd2b0138ddc990881bb2e05b26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置task会话实例时, 发现会话句柄为空, 中止配置动作  <a href="#af3135cd2b0138ddc990881bb2e05b26d">更多...</a><br /></td></tr>
+<tr class="separator:af3135cd2b0138ddc990881bb2e05b26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497b21f8825fc1e0c1fc57d3a91d4ffe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a497b21f8825fc1e0c1fc57d3a91d4ffe">STATE_TASK_RECV_NOTIFY</a>&#160;&#160;&#160;(-0x0B03)</td></tr>
+<tr class="memdesc:a497b21f8825fc1e0c1fc57d3a91d4ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到服务器notify下行消息时的日志状态码  <a href="#a497b21f8825fc1e0c1fc57d3a91d4ffe">更多...</a><br /></td></tr>
+<tr class="separator:a497b21f8825fc1e0c1fc57d3a91d4ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08846fd4cbdb8455239c812e6aea9e7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a08846fd4cbdb8455239c812e6aea9e7e">STATE_TASK_PARSE_NOTIFY_FAILED</a>&#160;&#160;&#160;(-0x0B04)</td></tr>
+<tr class="memdesc:a08846fd4cbdb8455239c812e6aea9e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析服务器下推的MQTT下行JSON报文时出错  <a href="#a08846fd4cbdb8455239c812e6aea9e7e">更多...</a><br /></td></tr>
+<tr class="separator:a08846fd4cbdb8455239c812e6aea9e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a770869fd1d9592e2be12cb3137ae90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a1a770869fd1d9592e2be12cb3137ae90">STATE_TASK_PARSE_JSON_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x0B05)</td></tr>
+<tr class="memdesc:a1a770869fd1d9592e2be12cb3137ae90"><td class="mdescLeft">&#160;</td><td class="mdescRight">为解析JSON报文而申请内存时, 未获取到所需内存而解析失败  <a href="#a1a770869fd1d9592e2be12cb3137ae90">更多...</a><br /></td></tr>
+<tr class="separator:a1a770869fd1d9592e2be12cb3137ae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848ddfbc4386714a9ca747c15c276153"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a848ddfbc4386714a9ca747c15c276153">STATE_TASK_PARSE_JSON_ERROR</a>&#160;&#160;&#160;(-0x0B06)</td></tr>
+<tr class="memdesc:a848ddfbc4386714a9ca747c15c276153"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到服务器notify下行消息时的日志状态码  <a href="#a848ddfbc4386714a9ca747c15c276153">更多...</a><br /></td></tr>
+<tr class="separator:a848ddfbc4386714a9ca747c15c276153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1ec3759fb65ce34507f9ee0f70fe15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a2c1ec3759fb65ce34507f9ee0f70fe15">STATE_TASK_QUERY_TASK_ID_IS_NULL</a>&#160;&#160;&#160;(-0x0B07)</td></tr>
+<tr class="memdesc:a2c1ec3759fb65ce34507f9ee0f70fe15"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到查询task id是空  <a href="#a2c1ec3759fb65ce34507f9ee0f70fe15">更多...</a><br /></td></tr>
+<tr class="separator:a2c1ec3759fb65ce34507f9ee0f70fe15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad061352910f89b37812c17bcbe053a91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#ad061352910f89b37812c17bcbe053a91">STATE_TASK_RECV_GET_LIST_REPLY</a>&#160;&#160;&#160;(-0x0B08)</td></tr>
+<tr class="memdesc:ad061352910f89b37812c17bcbe053a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到服务器get list reply下行消息时的日志状态码  <a href="#ad061352910f89b37812c17bcbe053a91">更多...</a><br /></td></tr>
+<tr class="separator:ad061352910f89b37812c17bcbe053a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa2f5f9be7cfaabf98bedbfb3787fcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a9fa2f5f9be7cfaabf98bedbfb3787fcc">STATE_TASK_SETOPT_DATA_IS_NULL</a>&#160;&#160;&#160;(-0x0B09)</td></tr>
+<tr class="memdesc:a9fa2f5f9be7cfaabf98bedbfb3787fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置task会话实例时, 发现会话句柄为空, 中止配置动作  <a href="#a9fa2f5f9be7cfaabf98bedbfb3787fcc">更多...</a><br /></td></tr>
+<tr class="separator:a9fa2f5f9be7cfaabf98bedbfb3787fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf4d63143fe7cc94752ba88167e2a52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a0cf4d63143fe7cc94752ba88167e2a52">STATE_TASK_UPDATE_STATUS_INVALID</a>&#160;&#160;&#160;(-0x0B0A)</td></tr>
+<tr class="memdesc:a0cf4d63143fe7cc94752ba88167e2a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置task 描述时状态设置不对  <a href="#a0cf4d63143fe7cc94752ba88167e2a52">更多...</a><br /></td></tr>
+<tr class="separator:a0cf4d63143fe7cc94752ba88167e2a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9ce4b965a628b893200ab246a538e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a0d9ce4b965a628b893200ab246a538e6">STATE_TASK_UPDATE_STATUS_DETAILS_INVALID</a>&#160;&#160;&#160;(-0x0B0B)</td></tr>
+<tr class="memdesc:a0d9ce4b965a628b893200ab246a538e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">aiot_task_setopt 接口的option参数可选值.  <a href="#a0d9ce4b965a628b893200ab246a538e6">更多...</a><br /></td></tr>
+<tr class="separator:a0d9ce4b965a628b893200ab246a538e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a7ab84c6afc02ec7bfbdb7b4e1bb2c75f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a7ab84c6afc02ec7bfbdb7b4e1bb2c75f">aiot_task_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__task__recv__t.html">aiot_task_recv_t</a> *recv, void *userdata)</td></tr>
+<tr class="memdesc:a7ab84c6afc02ec7bfbdb7b4e1bb2c75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备收到task的mqtt下行报文时的接收回调函数  <a href="#a7ab84c6afc02ec7bfbdb7b4e1bb2c75f">更多...</a><br /></td></tr>
+<tr class="separator:a7ab84c6afc02ec7bfbdb7b4e1bb2c75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a702d5d01d0d721324d73a7a0ca646ada"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a> { <a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646adaa8800fbe78330873e4fa5d02a4264cad5">AIOT_TASKOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646adaa5e9bb35d4a8f85c028176b7eef0f2c3a">AIOT_TASKOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646adaa013a7382467e2cee8b43620f21f90c03">AIOT_TASKOPT_USERDATA</a>, 
+<a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646adaac62b25757bc7591fdfba60158c05e120">AIOT_TASKOPT_MAX</a>
+ }</td></tr>
+<tr class="separator:a702d5d01d0d721324d73a7a0ca646ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa683f96a99920ff312602b51e01564d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564d">aiot_task_status_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564dac42fa017207c4eb28746584ae6b805c6">AIOT_TASK_STATUS_QUEUED</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564daf1571326de8b379b87502a6ed47971ba">AIOT_TASK_STATUS_SENT</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564dad43b60463f5566636979ddb84d4a1a1c">AIOT_TASK_STATUS_IN_PROGRESS</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da99d1f0909f27b2d28ef115a12c1c4a5f">AIOT_TASK_STATUS_SUCCEEDED</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da42f88d53715052ed5009ebc00dbf8589">AIOT_TASK_STATUS_FAILED</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564dafe6a9732dc7deeb966e3bb46685d4f7e">AIOT_TASK_STATUS_REJECTED</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da6361665588cb9d94e0f1094b720946c7">AIOT_TASK_STATUS_CANCELLED</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da1ee87dfdf6f02ea1e367d3c028614218">AIOT_TASK_STATUS_REMOVED</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da9aa8524cd40059dd542523eea9b4ed87">AIOT_TASK_STATUS_TIMED_OUT</a>, 
+<a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564da397f77a4b581599099df0cb3ff78ec75">AIOT_TASK_STATUS_NOT_FOUND</a>
+<br />
+ }<tr class="memdesc:afa683f96a99920ff312602b51e01564d"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务的状态.  <a href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:afa683f96a99920ff312602b51e01564d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0385a09dac6e9462089791e18e4ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4ece">aiot_task_recv_type_t</a> { <a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4eceae946d988caf7edbfc1aa032e42107492">AIOT_TASKRECV_NOTIFY</a>, 
+<a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4ecea759111eea27910a39be6897aa9d61bf4">AIOT_TASKRECV_GET_DETAIL_REPLY</a>, 
+<a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4eceae64a2f32fbef9f10b692f463bc95d85b">AIOT_TASKRECV_GET_LIST_REPLY</a>, 
+<a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4eceaf208704cb1f3df088869546b3373718c">AIOT_TASKRECV_UPDATE_REPLY</a>
+ }<tr class="memdesc:a3e0385a09dac6e9462089791e18e4ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">下行有关的数据结构  <a href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4ece">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a3e0385a09dac6e9462089791e18e4ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5a6b9db313fa233c0fe6d94aacdb408b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a5a6b9db313fa233c0fe6d94aacdb408b">aiot_task_init</a> (void)</td></tr>
+<tr class="memdesc:a5a6b9db313fa233c0fe6d94aacdb408b"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个task实例  <a href="#a5a6b9db313fa233c0fe6d94aacdb408b">更多...</a><br /></td></tr>
+<tr class="separator:a5a6b9db313fa233c0fe6d94aacdb408b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7094d0ac5d724ef7814caf009355a1a8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a7094d0ac5d724ef7814caf009355a1a8">aiot_task_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a7094d0ac5d724ef7814caf009355a1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁task实例句柄  <a href="#a7094d0ac5d724ef7814caf009355a1a8">更多...</a><br /></td></tr>
+<tr class="separator:a7094d0ac5d724ef7814caf009355a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d0aed22b2b5bde06ad5caf897fb2ef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a74d0aed22b2b5bde06ad5caf897fb2ef">aiot_task_setopt</a> (void *handle, <a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:a74d0aed22b2b5bde06ad5caf897fb2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置task句柄的参数  <a href="#a74d0aed22b2b5bde06ad5caf897fb2ef">更多...</a><br /></td></tr>
+<tr class="separator:a74d0aed22b2b5bde06ad5caf897fb2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3e9e8569b61f90a2f2ce9350b0edb3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#a9b3e9e8569b61f90a2f2ce9350b0edb3">aiot_task_get_task_list</a> (void *handle)</td></tr>
+<tr class="memdesc:a9b3e9e8569b61f90a2f2ce9350b0edb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端获取task列表  <a href="#a9b3e9e8569b61f90a2f2ce9350b0edb3">更多...</a><br /></td></tr>
+<tr class="separator:a9b3e9e8569b61f90a2f2ce9350b0edb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f59bf627f3586f57171b98a6dfbf48"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#ae8f59bf627f3586f57171b98a6dfbf48">aiot_task_get_task_detail</a> (void *handle, char *user_task_id)</td></tr>
+<tr class="memdesc:ae8f59bf627f3586f57171b98a6dfbf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端获取task详细内容  <a href="#ae8f59bf627f3586f57171b98a6dfbf48">更多...</a><br /></td></tr>
+<tr class="separator:ae8f59bf627f3586f57171b98a6dfbf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a5123ed46bde4adf08404ba3a713e8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__task__api_8h.html#aa2a5123ed46bde4adf08404ba3a713e8">aiot_task_update</a> (void *handle, <a class="el" href="structtask__desc__t.html">task_desc_t</a> *task)</td></tr>
+<tr class="memdesc:aa2a5123ed46bde4adf08404ba3a713e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新任务状态到云端  <a href="#aa2a5123ed46bde4adf08404ba3a713e8">更多...</a><br /></td></tr>
+<tr class="separator:aa2a5123ed46bde4adf08404ba3a713e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>task模块头文件, 提供任务管理的能力 </p>
+<dl class="section date"><dt>日期</dt><dd>2020-11-25</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aec99624e185a6da096cee784c6fb9dbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_BASE&#160;&#160;&#160;(-0x0B00)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0B00~-0x0BFF表达SDK在task模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab5e7af56d0f3679188604ebb93df383b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_DEINIT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0B01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁task会话实例时, 发现会话句柄为空, 中止销毁动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="af3135cd2b0138ddc990881bb2e05b26d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_SETOPT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0B02)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置task会话实例时, 发现会话句柄为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a497b21f8825fc1e0c1fc57d3a91d4ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_RECV_NOTIFY&#160;&#160;&#160;(-0x0B03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到服务器notify下行消息时的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a08846fd4cbdb8455239c812e6aea9e7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_PARSE_NOTIFY_FAILED&#160;&#160;&#160;(-0x0B04)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析服务器下推的MQTT下行JSON报文时出错 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a770869fd1d9592e2be12cb3137ae90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_PARSE_JSON_MALLOC_FAILED&#160;&#160;&#160;(-0x0B05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为解析JSON报文而申请内存时, 未获取到所需内存而解析失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a848ddfbc4386714a9ca747c15c276153"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_PARSE_JSON_ERROR&#160;&#160;&#160;(-0x0B06)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到服务器notify下行消息时的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c1ec3759fb65ce34507f9ee0f70fe15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_QUERY_TASK_ID_IS_NULL&#160;&#160;&#160;(-0x0B07)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到查询task id是空 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad061352910f89b37812c17bcbe053a91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_RECV_GET_LIST_REPLY&#160;&#160;&#160;(-0x0B08)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到服务器get list reply下行消息时的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9fa2f5f9be7cfaabf98bedbfb3787fcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_SETOPT_DATA_IS_NULL&#160;&#160;&#160;(-0x0B09)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置task会话实例时, 发现会话句柄为空, 中止配置动作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0cf4d63143fe7cc94752ba88167e2a52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_UPDATE_STATUS_INVALID&#160;&#160;&#160;(-0x0B0A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置task 描述时状态设置不对 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d9ce4b965a628b893200ab246a538e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_TASK_UPDATE_STATUS_DETAILS_INVALID&#160;&#160;&#160;(-0x0B0B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>aiot_task_setopt 接口的option参数可选值. </p>
+<p>update task的时候task status_details只能为NULL或者json字符串对象 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a7ab84c6afc02ec7bfbdb7b4e1bb2c75f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  aiot_task_recv_handler_t) (void *handle, const <a class="el" href="structaiot__task__recv__t.html">aiot_task_recv_t</a> *recv, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备收到task的mqtt下行报文时的接收回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>task实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv</td><td>云端下行的消息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a702d5d01d0d721324d73a7a0ca646ada"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a702d5d01d0d721324d73a7a0ca646adaa8800fbe78330873e4fa5d02a4264cad5"></a>AIOT_TASKOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>设置MQTT的handle </p>
+<p>OTA过程中使用MQTT的通道能力, 用以向云端上报版本号, 进度, 以及错误码</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a702d5d01d0d721324d73a7a0ca646adaa5e9bb35d4a8f85c028176b7eef0f2c3a"></a>AIOT_TASKOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>设置处理task消息的用户回调函数 </p>
+<p>从云端下发或者返回的数据的处理函数</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a702d5d01d0d721324d73a7a0ca646adaa013a7382467e2cee8b43620f21f90c03"></a>AIOT_TASKOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<p>这个上下文指针会在 AIOT_TASKOPT_RECV_HANDLER设置的回调被调用时, 由SDK传给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a702d5d01d0d721324d73a7a0ca646adaac62b25757bc7591fdfba60158c05e120"></a>AIOT_TASKOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="afa683f96a99920ff312602b51e01564d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__task__api_8h.html#afa683f96a99920ff312602b51e01564d">aiot_task_status_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>任务的状态. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564dac42fa017207c4eb28746584ae6b805c6"></a>AIOT_TASK_STATUS_QUEUED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564daf1571326de8b379b87502a6ed47971ba"></a>AIOT_TASK_STATUS_SENT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564dad43b60463f5566636979ddb84d4a1a1c"></a>AIOT_TASK_STATUS_IN_PROGRESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da99d1f0909f27b2d28ef115a12c1c4a5f"></a>AIOT_TASK_STATUS_SUCCEEDED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da42f88d53715052ed5009ebc00dbf8589"></a>AIOT_TASK_STATUS_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564dafe6a9732dc7deeb966e3bb46685d4f7e"></a>AIOT_TASK_STATUS_REJECTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da6361665588cb9d94e0f1094b720946c7"></a>AIOT_TASK_STATUS_CANCELLED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da1ee87dfdf6f02ea1e367d3c028614218"></a>AIOT_TASK_STATUS_REMOVED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da9aa8524cd40059dd542523eea9b4ed87"></a>AIOT_TASK_STATUS_TIMED_OUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afa683f96a99920ff312602b51e01564da397f77a4b581599099df0cb3ff78ec75"></a>AIOT_TASK_STATUS_NOT_FOUND&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a3e0385a09dac6e9462089791e18e4ece"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__task__api_8h.html#a3e0385a09dac6e9462089791e18e4ece">aiot_task_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下行有关的数据结构 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a3e0385a09dac6e9462089791e18e4eceae946d988caf7edbfc1aa032e42107492"></a>AIOT_TASKRECV_NOTIFY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3e0385a09dac6e9462089791e18e4ecea759111eea27910a39be6897aa9d61bf4"></a>AIOT_TASKRECV_GET_DETAIL_REPLY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3e0385a09dac6e9462089791e18e4eceae64a2f32fbef9f10b692f463bc95d85b"></a>AIOT_TASKRECV_GET_LIST_REPLY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3e0385a09dac6e9462089791e18e4eceaf208704cb1f3df088869546b3373718c"></a>AIOT_TASKRECV_UPDATE_REPLY&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a5a6b9db313fa233c0fe6d94aacdb408b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_task_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个task实例 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>task实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 或者是因为没有设置portfile, 或者是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_a5a6b9db313fa233c0fe6d94aacdb408b_cgraph.png" border="0" usemap="#aiot__task__api_8h_a5a6b9db313fa233c0fe6d94aacdb408b_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_a5a6b9db313fa233c0fe6d94aacdb408b_cgraph" id="aiot__task__api_8h_a5a6b9db313fa233c0fe6d94aacdb408b_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="152,5,315,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7094d0ac5d724ef7814caf009355a1a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_task_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁task实例句柄 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向task实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>handle或者handle所指向的地址为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_a7094d0ac5d724ef7814caf009355a1a8_cgraph.png" border="0" usemap="#aiot__task__api_8h_a7094d0ac5d724ef7814caf009355a1a8_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_a7094d0ac5d724ef7814caf009355a1a8_cgraph" id="aiot__task__api_8h_a7094d0ac5d724ef7814caf009355a1a8_cgraph">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html#a6764b2363bf966edc448991665d4adb8" title="_task_core_mqtt_operate\l_process_handler" alt="" coords="167,64,336,105"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="192,198,311,225"/>
+<area shape="rect" id="node3" href="aiot__task__api_8c.html#a04e5d26e482e9a374f428bbb789d9b60" title="_task_core_mqtt_process\l_handler" alt="" coords="400,5,572,47"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="425,71,547,98"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="637,46,858,73"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="636,101,859,127"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="913,33,1053,75"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="913,99,1053,140"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="413,122,559,149"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="408,173,564,199"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="385,223,587,250"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="384,274,588,301"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="411,325,561,351"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="678,240,817,281"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="681,175,813,216"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="907,175,1060,216"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="681,305,813,347"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a74d0aed22b2b5bde06ad5caf897fb2ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_task_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置task句柄的参数 </p>
+<p>对task会话进行配置, 常见的配置选项包括</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>task句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__task__api_8h.html#a702d5d01d0d721324d73a7a0ca646ada">aiot_task_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_TASK_SETOPT_HANDLE_IS_NULL</td><td>task句柄为空 </td></tr>
+    <tr><td class="paramname">STATE_TASK_SETOPT_DATA_IS_NULL</td><td>参数data字段为空 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_UNKNOWN_OPTION</td><td>option不支持 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_a74d0aed22b2b5bde06ad5caf897fb2ef_cgraph.png" border="0" usemap="#aiot__task__api_8h_a74d0aed22b2b5bde06ad5caf897fb2ef_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_a74d0aed22b2b5bde06ad5caf897fb2ef_cgraph" id="aiot__task__api_8h_a74d0aed22b2b5bde06ad5caf897fb2ef_cgraph">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html#a08ea048470628a4d9c72dfcebb58adf1" title="_task_setup_topic_mapping" alt="" coords="172,120,356,147"/>
+<area shape="rect" id="node13" href="aiot__task__api_8c.html#a6764b2363bf966edc448991665d4adb8" title="_task_core_mqtt_operate\l_process_handler" alt="" coords="179,175,349,217"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="431,112,549,139"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="662,5,809,32"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="657,56,813,83"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="634,107,837,133"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="633,157,837,184"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="660,208,811,235"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="895,109,1034,150"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="899,43,1031,85"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1083,43,1236,85"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="899,174,1031,215"/>
+<area shape="rect" id="node14" href="aiot__task__api_8c.html#a04e5d26e482e9a374f428bbb789d9b60" title="_task_core_mqtt_process\l_handler" alt="" coords="404,175,576,217"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="429,259,551,285"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="625,259,846,285"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="624,313,847,340"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="895,247,1035,289"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="895,313,1035,354"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b3e9e8569b61f90a2f2ce9350b0edb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_task_get_task_list </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从云端获取task列表 </p>
+<p>从云端获取task列表</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>task句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_TASK_SETOPT_DATA_IS_NULL</td><td>参数的handle字段为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>发送成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_a9b3e9e8569b61f90a2f2ce9350b0edb3_cgraph.png" border="0" usemap="#aiot__task__api_8h_a9b3e9e8569b61f90a2f2ce9350b0edb3_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_a9b3e9e8569b61f90a2f2ce9350b0edb3_cgraph" id="aiot__task__api_8h_a9b3e9e8569b61f90a2f2ce9350b0edb3_cgraph">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html#a8d47ddabb37590f8e53b367abeefd7a0" title="_task_send_query_task" alt="" coords="209,393,369,420"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="421,343,603,369"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="417,393,607,420"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="460,444,564,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="655,444,801,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="849,444,964,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1277,189,1425,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1038,670,1174,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1248,677,1455,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1503,298,1660,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1026,269,1186,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1036,101,1176,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1033,385,1179,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1276,532,1427,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1035,502,1177,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1031,568,1181,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1021,335,1191,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1033,437,1179,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1040,735,1172,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1045,852,1167,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1012,217,1200,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1273,101,1429,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1282,357,1421,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1263,852,1439,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8f59bf627f3586f57171b98a6dfbf48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_task_get_task_detail </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>user_task_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从云端获取task详细内容 </p>
+<p>从云端获取task详细内容</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>task句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_task_id</td><td>task的id或者$next</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_TASK_SETOPT_DATA_IS_NULL或user_task_id</td><td>参数的handle字段为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>发送成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_ae8f59bf627f3586f57171b98a6dfbf48_cgraph.png" border="0" usemap="#aiot__task__api_8h_ae8f59bf627f3586f57171b98a6dfbf48_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_ae8f59bf627f3586f57171b98a6dfbf48_cgraph" id="aiot__task__api_8h_ae8f59bf627f3586f57171b98a6dfbf48_cgraph">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html#a8d47ddabb37590f8e53b367abeefd7a0" title="_task_send_query_task" alt="" coords="185,393,345,420"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="397,343,579,369"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="393,393,583,420"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="436,444,540,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="631,444,777,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="825,444,940,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1253,189,1401,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1014,670,1150,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1224,677,1431,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1479,298,1636,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1002,269,1162,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1012,101,1152,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1009,385,1155,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1252,532,1403,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1011,502,1153,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1007,568,1157,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="997,335,1167,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1009,437,1155,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1016,735,1148,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1021,852,1143,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="988,217,1176,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1249,101,1405,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1258,357,1397,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1239,852,1415,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2a5123ed46bde4adf08404ba3a713e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_task_update </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtask__desc__t.html">task_desc_t</a> *&#160;</td>
+          <td class="paramname"><em>task</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新任务状态到云端 </p>
+<p>更新任务状态到云端</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>task句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>task信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_TASK_SETOPT_DATA_IS_NULL或task</td><td>参数的handle字段为空 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>更新成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__task__api_8h_aa2a5123ed46bde4adf08404ba3a713e8_cgraph.png" border="0" usemap="#aiot__task__api_8h_aa2a5123ed46bde4adf08404ba3a713e8_cgraph" alt=""/></div>
+<map name="aiot__task__api_8h_aa2a5123ed46bde4adf08404ba3a713e8_cgraph" id="aiot__task__api_8h_aa2a5123ed46bde4adf08404ba3a713e8_cgraph">
+<area shape="rect" id="node2" href="aiot__task__api_8c.html#a880261008c291c80a67659ae2aab167d" title="_task_convert_status\l_to_str" alt="" coords="196,277,343,318"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="178,343,361,369"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="175,393,364,420"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="217,444,321,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="412,444,559,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="607,444,721,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1035,189,1183,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="795,670,931,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1005,677,1212,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1260,298,1417,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="783,269,943,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="793,101,933,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="790,385,937,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1033,532,1184,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="793,502,934,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="788,568,939,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="778,335,949,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="790,437,937,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="797,735,929,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="802,852,925,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="769,217,957,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1031,101,1187,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1039,357,1178,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1021,852,1197,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

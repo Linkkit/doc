@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/shadow/aiot_shadow_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_bfb1761e94dbf584a72bb40063487591.html">shadow</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_shadow_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>shadow模块的API接口实现, 提供更新, 删除, 获取设备影子的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;shadow_private.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;core_global.h&quot;</code><br />
+<code>#include &quot;core_mqtt.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_shadow_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c__incl.png" border="0" usemap="#components_2shadow_2aiot__shadow__api_8c" alt=""/></div>
+<map name="components_2shadow_2aiot__shadow__api_8c" id="components_2shadow_2aiot__shadow__api_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4a49c018624296f3afd36db0d8c6a0ce"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#a4a49c018624296f3afd36db0d8c6a0ce">_shadow_get_pk_dn</a> (<a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *sysdep, char *topic, uint16_t topic_len, char **product_key, char **device_name)</td></tr>
+<tr class="separator:a4a49c018624296f3afd36db0d8c6a0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae105638c8acbb5f955d04e4b05c3bd99"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#ae105638c8acbb5f955d04e4b05c3bd99">_shadow_int642str</a> (int64_t input, char *output, uint8_t *output_len)</td></tr>
+<tr class="separator:ae105638c8acbb5f955d04e4b05c3bd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21597ada1d0edd5a06b6d1f7f0b0f0d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#a21597ada1d0edd5a06b6d1f7f0b0f0d4">_shadow_recv_message_handler</a> (void *handle, const <a class="el" href="structaiot__mqtt__recv__t.html">aiot_mqtt_recv_t</a> *msg, void *userdata)</td></tr>
+<tr class="separator:a21597ada1d0edd5a06b6d1f7f0b0f0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d416ed9250f778a3d9c91c63061210"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#aa0d416ed9250f778a3d9c91c63061210">_shadow_core_mqtt_process_handler</a> (void *context, <a class="el" href="structaiot__mqtt__event__t.html">aiot_mqtt_event_t</a> *event, core_mqtt_event_t *core_event)</td></tr>
+<tr class="separator:aa0d416ed9250f778a3d9c91c63061210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68fa24800ba1c74eb3551bcabf18140"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#ad68fa24800ba1c74eb3551bcabf18140">_shadow_core_mqtt_operate_process_handler</a> (shadow_handle_t *shadow_handle, core_mqtt_option_t option)</td></tr>
+<tr class="separator:ad68fa24800ba1c74eb3551bcabf18140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaff78a2b2a3ed54fad52f1cd7e8f383"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#aeaff78a2b2a3ed54fad52f1cd7e8f383">aiot_shadow_init</a> (void)</td></tr>
+<tr class="memdesc:aeaff78a2b2a3ed54fad52f1cd7e8f383"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建shadow会话实例, 并以默认值配置会话参数  <a href="#aeaff78a2b2a3ed54fad52f1cd7e8f383">更多...</a><br /></td></tr>
+<tr class="separator:aeaff78a2b2a3ed54fad52f1cd7e8f383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e4f896971df9d80497740275ad4759"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#ad3e4f896971df9d80497740275ad4759">aiot_shadow_setopt</a> (void *handle, <a class="el" href="aiot__shadow__api_8h.html#a052db4790028aa33bd0e205654f224ae">aiot_shadow_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ad3e4f896971df9d80497740275ad4759"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置shadow会话  <a href="#ad3e4f896971df9d80497740275ad4759">更多...</a><br /></td></tr>
+<tr class="separator:ad3e4f896971df9d80497740275ad4759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0f8b594df2295a0a83a7c849c36ede"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#a7e0f8b594df2295a0a83a7c849c36ede">aiot_shadow_send</a> (void *handle, <a class="el" href="structaiot__shadow__msg__t.html">aiot_shadow_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:a7e0f8b594df2295a0a83a7c849c36ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">向服务器发送shadow消息请求  <a href="#a7e0f8b594df2295a0a83a7c849c36ede">更多...</a><br /></td></tr>
+<tr class="separator:a7e0f8b594df2295a0a83a7c849c36ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c050dfb05c7435f33b932d2321b8191"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__shadow__api_8c.html#a8c050dfb05c7435f33b932d2321b8191">aiot_shadow_deinit</a> (void **p_handle)</td></tr>
+<tr class="memdesc:a8c050dfb05c7435f33b932d2321b8191"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束shadow会话, 销毁实例并回收资源  <a href="#a8c050dfb05c7435f33b932d2321b8191">更多...</a><br /></td></tr>
+<tr class="separator:a8c050dfb05c7435f33b932d2321b8191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>shadow模块的API接口实现, 提供更新, 删除, 获取设备影子的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4a49c018624296f3afd36db0d8c6a0ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _shadow_get_pk_dn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *&#160;</td>
+          <td class="paramname"><em>sysdep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>topic_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>product_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>device_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae105638c8acbb5f955d04e4b05c3bd99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t _shadow_int642str </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21597ada1d0edd5a06b6d1f7f0b0f0d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _shadow_recv_message_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__mqtt__recv__t.html">aiot_mqtt_recv_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_a21597ada1d0edd5a06b6d1f7f0b0f0d4_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_a21597ada1d0edd5a06b6d1f7f0b0f0d4_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_a21597ada1d0edd5a06b6d1f7f0b0f0d4_cgraph" id="aiot__shadow__api_8c_a21597ada1d0edd5a06b6d1f7f0b0f0d4_cgraph">
+<area shape="rect" id="node2" href="aiot__shadow__api_8c.html#a4a49c018624296f3afd36db0d8c6a0ce" title="_shadow_get_pk_dn" alt="" coords="220,13,361,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d416ed9250f778a3d9c91c63061210"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _shadow_core_mqtt_process_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__mqtt__event__t.html">aiot_mqtt_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">core_mqtt_event_t *&#160;</td>
+          <td class="paramname"><em>core_event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad68fa24800ba1c74eb3551bcabf18140"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _shadow_core_mqtt_operate_process_handler </td>
+          <td>(</td>
+          <td class="paramtype">shadow_handle_t *&#160;</td>
+          <td class="paramname"><em>shadow_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">core_mqtt_option_t&#160;</td>
+          <td class="paramname"><em>option</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_ad68fa24800ba1c74eb3551bcabf18140_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_ad68fa24800ba1c74eb3551bcabf18140_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_ad68fa24800ba1c74eb3551bcabf18140_cgraph" id="aiot__shadow__api_8c_ad68fa24800ba1c74eb3551bcabf18140_cgraph">
+<area shape="rect" id="node2" href="aiot__shadow__api_8c.html#aa0d416ed9250f778a3d9c91c63061210" title="_shadow_core_mqtt_process\l_handler" alt="" coords="243,5,435,47"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="277,71,400,98"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="483,43,705,70"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="483,98,705,125"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="753,32,893,73"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="753,97,893,139"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeaff78a2b2a3ed54fad52f1cd7e8f383"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_shadow_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建shadow会话实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>shadow实例的句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_aeaff78a2b2a3ed54fad52f1cd7e8f383_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_aeaff78a2b2a3ed54fad52f1cd7e8f383_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_aeaff78a2b2a3ed54fad52f1cd7e8f383_cgraph" id="aiot__shadow__api_8c_aeaff78a2b2a3ed54fad52f1cd7e8f383_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="172,5,335,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3e4f896971df9d80497740275ad4759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_shadow_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__shadow__api_8h.html#a052db4790028aa33bd0e205654f224ae">aiot_shadow_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置shadow会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>shadow会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__shadow__api_8h.html#a052db4790028aa33bd0e205654f224ae">aiot_shadow_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__shadow__api_8h.html#a052db4790028aa33bd0e205654f224ae">aiot_shadow_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参handle或data为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参optioin的枚举值&gt;=AIOT_SHADOWOPT_MAX </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_ad3e4f896971df9d80497740275ad4759_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_ad3e4f896971df9d80497740275ad4759_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_ad3e4f896971df9d80497740275ad4759_cgraph" id="aiot__shadow__api_8c_ad3e4f896971df9d80497740275ad4759_cgraph">
+<area shape="rect" id="node2" href="aiot__shadow__api_8c.html#a21597ada1d0edd5a06b6d1f7f0b0f0d4" title="_shadow_recv_message\l_handler" alt="" coords="203,45,370,86"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="227,157,346,184"/>
+<area shape="rect" id="node14" href="aiot__shadow__api_8c.html#ad68fa24800ba1c74eb3551bcabf18140" title="_shadow_core_mqtt_operate\l_process_handler" alt="" coords="192,310,381,351"/>
+<area shape="rect" id="node3" href="aiot__shadow__api_8c.html#a4a49c018624296f3afd36db0d8c6a0ce" title="_shadow_get_pk_dn" alt="" coords="461,5,602,32"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="458,56,605,83"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="453,107,609,133"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="430,157,633,184"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="429,208,633,235"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="456,259,607,285"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="723,185,862,226"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="727,119,859,161"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="952,119,1105,161"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="727,250,859,291"/>
+<area shape="rect" id="node15" href="aiot__shadow__api_8c.html#aa0d416ed9250f778a3d9c91c63061210" title="_shadow_core_mqtt_process\l_handler" alt="" coords="435,310,627,351"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="470,376,593,403"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="682,336,903,363"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="681,391,904,417"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="959,325,1099,366"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="959,390,1099,431"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e0f8b594df2295a0a83a7c849c36ede"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_shadow_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__shadow__msg__t.html">aiot_shadow_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向服务器发送shadow消息请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>shadow会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>消息结构体, 可指定发送消息的设备<em>productKey</em>, <em>deviceName</em>; 消息类型, 消息数据等, 更多信息请参考<a class="el" href="structaiot__shadow__msg__t.html">aiot_shadow_msg_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参<em>handle</em>或<em>msg</em>为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参<em>msg</em>的结构体成员<em>type</em> &gt;= AIOT_SHADOWMSG_MAX </td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_MALLOC_FAILED</td><td>内存分配失败 </td></tr>
+    <tr><td class="paramname">STATE_SHADOW_MQTT_HANDLE_IS_NULL</td><td>用户未调用<a class="el" href="aiot__shadow__api_8h.html#ad3e4f896971df9d80497740275ad4759">aiot_shadow_setopt</a> 配置MQTT句柄 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__shadow__api_8h.html#a36c9a49b9803c34af20247e98c2119ff">STATE_SHADOW_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_a7e0f8b594df2295a0a83a7c849c36ede_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_a7e0f8b594df2295a0a83a7c849c36ede_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_a7e0f8b594df2295a0a83a7c849c36ede_cgraph" id="aiot__shadow__api_8c_a7e0f8b594df2295a0a83a7c849c36ede_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="187,292,370,319"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="184,343,373,369"/>
+<area shape="rect" id="node4" href="aiot__shadow__api_8c.html#ae105638c8acbb5f955d04e4b05c3bd99" title="_shadow_int642str" alt="" coords="213,393,344,420"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="227,444,331,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="421,444,568,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="616,444,731,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1044,189,1192,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="805,670,941,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1015,677,1221,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1269,298,1427,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="793,269,953,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="803,101,943,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="799,385,946,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1043,532,1193,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="802,502,943,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="797,568,948,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="787,335,958,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="799,437,946,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="807,735,939,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="811,852,934,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="779,217,967,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1040,101,1196,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1049,357,1187,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1030,852,1206,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c050dfb05c7435f33b932d2321b8191"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_shadow_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束shadow会话, 销毁实例并回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向shadow会话句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__shadow__api_8c_a8c050dfb05c7435f33b932d2321b8191_cgraph.png" border="0" usemap="#aiot__shadow__api_8c_a8c050dfb05c7435f33b932d2321b8191_cgraph" alt=""/></div>
+<map name="aiot__shadow__api_8c_a8c050dfb05c7435f33b932d2321b8191_cgraph" id="aiot__shadow__api_8c_a8c050dfb05c7435f33b932d2321b8191_cgraph">
+<area shape="rect" id="node2" href="aiot__shadow__api_8c.html#ad68fa24800ba1c74eb3551bcabf18140" title="_shadow_core_mqtt_operate\l_process_handler" alt="" coords="187,60,376,101"/>
+<area shape="rect" id="node9" href="aiot__shadow__api_8c.html#a21597ada1d0edd5a06b6d1f7f0b0f0d4" title="_shadow_recv_message\l_handler" alt="" coords="198,125,365,167"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="222,255,341,282"/>
+<area shape="rect" id="node3" href="aiot__shadow__api_8c.html#aa0d416ed9250f778a3d9c91c63061210" title="_shadow_core_mqtt_process\l_handler" alt="" coords="430,5,622,47"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="465,71,587,98"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="677,45,898,71"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="676,99,899,126"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="953,31,1093,72"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="953,96,1093,137"/>
+<area shape="rect" id="node10" href="aiot__shadow__api_8c.html#a4a49c018624296f3afd36db0d8c6a0ce" title="_shadow_get_pk_dn" alt="" coords="455,129,597,155"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="453,179,599,206"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="448,230,604,257"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="425,281,627,307"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="424,331,628,358"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="451,382,601,409"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="718,299,857,340"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="721,233,853,275"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="947,233,1100,275"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="721,364,853,405"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

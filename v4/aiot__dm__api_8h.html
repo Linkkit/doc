@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/data-model/aiot_dm_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_996b53e47f4ecfe893bc6d59679c4bea.html">data-model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_dm_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>数据模型模块头文件, 提供了物模型数据格式的上云能力, 包括属性, 事件, 服务和物模型二进制格式的数据上下行能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_dm_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h__incl.png" border="0" usemap="#components_2data-model_2aiot__dm__api_8h" alt=""/></div>
+<map name="components_2data-model_2aiot__dm__api_8h" id="components_2data-model_2aiot__dm__api_8h">
+</map>
+</div>
+</div>
+<p><a href="aiot__dm__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__property__post__t.html">aiot_dm_msg_property_post_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型属性上报</b>消息结构体  <a href="structaiot__dm__msg__property__post__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__event__post__t.html">aiot_dm_msg_event_post_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型事件上报</b>消息结构体  <a href="structaiot__dm__msg__event__post__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__property__set__reply__t.html">aiot_dm_msg_property_set_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>属性设置应答</b>消息结构体, 用户在收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa02b5dab4b45a2b537c1574dc231d3a7d">AIOT_DMRECV_PROPERTY_SET</a> 类型的属性设置后, 可发送此消息进行回复  <a href="structaiot__dm__msg__property__set__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__async__service__reply__t.html">aiot_dm_msg_async_service_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>异步服务应答</b>消息结构体, 用户在收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa34845a26177303a3ac59e81f835d3476">AIOT_DMRECV_ASYNC_SERVICE_INVOKE</a> 类型的异步服务调用消息后, 应发送此消息进行应答  <a href="structaiot__dm__msg__async__service__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__sync__service__reply__t.html">aiot_dm_msg_sync_service_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>同步服务应答</b>消息结构体, 用户在收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa4e0f06c7e08fd9dbc06bd5ea36f86c3d">AIOT_DMRECV_SYNC_SERVICE_INVOKE</a> 类型的同步服务调用消息后, 应在超时时间(默认7s)内进行应答  <a href="structaiot__dm__msg__sync__service__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__raw__data__t.html">aiot_dm_msg_raw_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型二进制数据</b>消息结构体, 发送的二进制数据将通过物联网平台的JavaScript脚本转化为JSON格式数据, 用户发送此消息前应确保已正确启用云端解析脚本  <a href="structaiot__dm__msg__raw__data__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__raw__service__reply__t.html">aiot_dm_msg_raw_service_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>二进制格式的同步服务应答</b>消息结构体, 用户在收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caaac3b6da1694b7380022843de8bd9da80">AIOT_DMRECV_RAW_SYNC_SERVICE_INVOKE</a> 类型消息后, 应在超时时间(默认7s)内进行应答<br />
+用户在使用此消息前应确保已启用云端解析脚本, 并且脚本工作正常  <a href="structaiot__dm__msg__raw__service__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__get__desired__t.html">aiot_dm_msg_get_desired_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>获取期望属性值</b>消息结构体, 发送  <a href="structaiot__dm__msg__get__desired__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__delete__desired__t.html">aiot_dm_msg_delete_desired_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>删除指定期望值</b>消息结构体  <a href="structaiot__dm__msg__delete__desired__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__property__batch__post__t.html">aiot_dm_msg_property_batch_post_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型属性上报</b>消息结构体  <a href="structaiot__dm__msg__property__batch__post__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块发送消息的消息结构体  <a href="structaiot__dm__msg__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__generic__reply__t.html">aiot_dm_recv_generic_reply_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>云端通用应答</b>消息结构体, 设备端上报<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393caa873bee259c26047e982a95b7c4dc07c">AIOT_DMMSG_PROPERTY_POST</a>, <a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100">AIOT_DMMSG_EVENT_POST</a> 或者<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca1f841d0b84f370812f0356b3199365f9">AIOT_DMMSG_GET_DESIRED</a> 等消息后, 服务器会应答此消息  <a href="structaiot__dm__recv__generic__reply__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__property__set__t.html">aiot_dm_recv_property_set_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>属性设置</b>消息结构体  <a href="structaiot__dm__recv__property__set__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__sync__service__invoke__t.html">aiot_dm_recv_sync_service_invoke_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>同步服务调用</b>消息结构体, 用户收到同步服务后, 必须在超时时间(默认7s)内进行应答  <a href="structaiot__dm__recv__sync__service__invoke__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__async__service__invoke__t.html">aiot_dm_recv_async_service_invoke_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>同步服务调用</b>消息结构体  <a href="structaiot__dm__recv__async__service__invoke__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__raw__data__t.html">aiot_dm_recv_raw_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>物模型二进制数据</b>消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数据, 用户在接收此消息前应确保已正确启用云端解析脚本  <a href="structaiot__dm__recv__raw__data__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__raw__service__invoke__t.html">aiot_dm_recv_raw_service_invoke_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>二进制数据的同步服务调用</b>消息结构体, 服务器的JSON格式物模型数据将通过物联网平台的JavaScript脚本转化为二进制数据, 用户在接收此消息前应确保已正确启用云端解析脚本  <a href="structaiot__dm__recv__raw__service__invoke__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__dm__recv__t.html">aiot_dm_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块接收消息的结构体  <a href="structaiot__dm__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2b6f48dad27d86c02351b6ebbf813fbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a2b6f48dad27d86c02351b6ebbf813fbc">STATE_DM_BASE</a>&#160;&#160;&#160;(-0x0A00)</td></tr>
+<tr class="memdesc:a2b6f48dad27d86c02351b6ebbf813fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0A00~-0x0AFF表达SDK在data-model模块内的状态码  <a href="#a2b6f48dad27d86c02351b6ebbf813fbc">更多...</a><br /></td></tr>
+<tr class="separator:a2b6f48dad27d86c02351b6ebbf813fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229d17b68e0330ed33107335803cd628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a229d17b68e0330ed33107335803cd628">STATE_DM_EVENT_ID_IS_NULL</a>&#160;&#160;&#160;(-0x0A01)</td></tr>
+<tr class="memdesc:a229d17b68e0330ed33107335803cd628"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100">AIOT_DMMSG_EVENT_POST</a> 消息时, 消息数据中的event_id为NULL  <a href="#a229d17b68e0330ed33107335803cd628">更多...</a><br /></td></tr>
+<tr class="separator:a229d17b68e0330ed33107335803cd628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414638a35e7971737b24420cac6a889a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a414638a35e7971737b24420cac6a889a">STATE_DM_SERVICE_ID_IS_NULL</a>&#160;&#160;&#160;(-0x0A02)</td></tr>
+<tr class="memdesc:a414638a35e7971737b24420cac6a889a"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca2ead0d732e2c7e43eef71b1b67913860">AIOT_DMMSG_ASYNC_SERVICE_REPLY</a> 或<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f">AIOT_DMMSG_SYNC_SERVICE_REPLY</a> 消息时, 消息数据中的event_id为NULL  <a href="#a414638a35e7971737b24420cac6a889a">更多...</a><br /></td></tr>
+<tr class="separator:a414638a35e7971737b24420cac6a889a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b23207f7b37f548b621af67b29245b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a1b23207f7b37f548b621af67b29245b3">STATE_DM_RRPC_ID_IS_NULL</a>&#160;&#160;&#160;(-0x0A03)</td></tr>
+<tr class="memdesc:a1b23207f7b37f548b621af67b29245b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f">AIOT_DMMSG_SYNC_SERVICE_REPLY</a> 消息时, 消息数据中的rrpc_id为NULL  <a href="#a1b23207f7b37f548b621af67b29245b3">更多...</a><br /></td></tr>
+<tr class="separator:a1b23207f7b37f548b621af67b29245b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9598904e421880a5ba4e48275f9c3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a9d9598904e421880a5ba4e48275f9c3f">STATE_DM_MSG_PARAMS_IS_NULL</a>&#160;&#160;&#160;(-0X0A04)</td></tr>
+<tr class="memdesc:a9d9598904e421880a5ba4e48275f9c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户发送请求类消息时, 消息数据中的param为NULL  <a href="#a9d9598904e421880a5ba4e48275f9c3f">更多...</a><br /></td></tr>
+<tr class="separator:a9d9598904e421880a5ba4e48275f9c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d333103c16a18a4dfeb84c64458144"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#ad0d333103c16a18a4dfeb84c64458144">STATE_DM_MSG_DATA_IS_NULL</a>&#160;&#160;&#160;(-0X0A05)</td></tr>
+<tr class="memdesc:ad0d333103c16a18a4dfeb84c64458144"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户发送应答类消息时, 消息数据中的data为NULL  <a href="#ad0d333103c16a18a4dfeb84c64458144">更多...</a><br /></td></tr>
+<tr class="separator:ad0d333103c16a18a4dfeb84c64458144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df4eedcd58bc7a2817ade19ea7f6ba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a2df4eedcd58bc7a2817ade19ea7f6ba4">STATE_DM_INTERNAL_TOPIC_ERROR</a>&#160;&#160;&#160;(-0x0A06)</td></tr>
+<tr class="memdesc:a2df4eedcd58bc7a2817ade19ea7f6ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析下行数据对应的topic时发生错误  <a href="#a2df4eedcd58bc7a2817ade19ea7f6ba4">更多...</a><br /></td></tr>
+<tr class="separator:a2df4eedcd58bc7a2817ade19ea7f6ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e426ce7ac64b001c7264ef8ec3e6445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a6e426ce7ac64b001c7264ef8ec3e6445">STATE_DM_MQTT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0A07)</td></tr>
+<tr class="memdesc:a6e426ce7ac64b001c7264ef8ec3e6445"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户未调用<a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 配置MQTT句柄  <a href="#a6e426ce7ac64b001c7264ef8ec3e6445">更多...</a><br /></td></tr>
+<tr class="separator:a6e426ce7ac64b001c7264ef8ec3e6445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4646e36ef6ebf06132d31a489dd7f636"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a4646e36ef6ebf06132d31a489dd7f636">STATE_DM_LOG_RECV</a>&#160;&#160;&#160;(-0x0A08)</td></tr>
+<tr class="memdesc:a4646e36ef6ebf06132d31a489dd7f636"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到服务器下行消息时的日志状态码  <a href="#a4646e36ef6ebf06132d31a489dd7f636">更多...</a><br /></td></tr>
+<tr class="separator:a4646e36ef6ebf06132d31a489dd7f636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12547581610f923cb3893d983485d1d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a12547581610f923cb3893d983485d1d3">SATAE_DM_LOG_PARSE_RECV_MSG_FAILED</a>&#160;&#160;&#160;(-0x0A09)</td></tr>
+<tr class="memdesc:a12547581610f923cb3893d983485d1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析服务器下行消息失败时的日志状态码  <a href="#a12547581610f923cb3893d983485d1d3">更多...</a><br /></td></tr>
+<tr class="separator:a12547581610f923cb3893d983485d1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:adb91ea3c00bf994a84bbad53bf275df2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#adb91ea3c00bf994a84bbad53bf275df2">aiot_dm_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__dm__recv__t.html">aiot_dm_recv_t</a> *recv, void *userdata)</td></tr>
+<tr class="memdesc:adb91ea3c00bf994a84bbad53bf275df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块消息接收回调函数的函数原型定义, 当模块接收到服务器下行数据后将调用此回调函数, 并将消息数据通过<em>recv</em>参数输入给用户, <br />
+同时将用户上下文数据指针通过<em>userdata</em>参数返回给用户  <a href="#adb91ea3c00bf994a84bbad53bf275df2">更多...</a><br /></td></tr>
+<tr class="separator:adb91ea3c00bf994a84bbad53bf275df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a9b01abb2829192bcd1e125308d9fa9d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a4e3bfd0979402826571282ca70b3dab6">AIOT_DMOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a7d4fbc8b18b5b94809021e0af16a4e8b">AIOT_DMOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a160ca12dfaacaf230e4ecc1c67c86dba">AIOT_DMOPT_USERDATA</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a5dcb5cac3004eb7e5e64896e8b913f14">AIOT_DMOPT_POST_REPLY</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a17ef981975731bcafb42f114987866e7">AIOT_DMOPT_MAX</a>
+<br />
+ }<tr class="memdesc:a9b01abb2829192bcd1e125308d9fa9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块的配置选项枚举类型定义. <a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 函数入数data的数据类型根据不同的选项而不同  <a href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a9b01abb2829192bcd1e125308d9fa9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">aiot_dm_msg_type_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393caa873bee259c26047e982a95b7c4dc07c">AIOT_DMMSG_PROPERTY_POST</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100">AIOT_DMMSG_EVENT_POST</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca791ca4c22749a67716ef00f6b5a812cd">AIOT_DMMSG_PROPERTY_SET_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca2ead0d732e2c7e43eef71b1b67913860">AIOT_DMMSG_ASYNC_SERVICE_REPLY</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f">AIOT_DMMSG_SYNC_SERVICE_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca0f54d4028d6ab3706686233af458aed4">AIOT_DMMSG_RAW_DATA</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca63be1fcbfd14f0794d8d4a332b4bf802">AIOT_DMMSG_RAW_SERVICE_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca1f841d0b84f370812f0356b3199365f9">AIOT_DMMSG_GET_DESIRED</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca7be7a077beeaeacc1a254fb896d07e63">AIOT_DMMSG_DELETE_DESIRED</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae6614574ecbd139b2b35f701b630ea71">AIOT_DMMSG_PROPERTY_BATCH_POST</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae3d46c8b44e9bb46ffbfb30199474e18">AIOT_DMMSG_MAX</a>
+<br />
+ }<tr class="memdesc:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块发送消息类型  <a href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a2f10245b1e1d34dc3365d99f0e2a393c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f834d6a49440657a02d16de4dd390ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390ca">aiot_dm_recv_type_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa02b5dab4b45a2b537c1574dc231d3a7d">AIOT_DMRECV_PROPERTY_SET</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa34845a26177303a3ac59e81f835d3476">AIOT_DMRECV_ASYNC_SERVICE_INVOKE</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa4e0f06c7e08fd9dbc06bd5ea36f86c3d">AIOT_DMRECV_SYNC_SERVICE_INVOKE</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa6f936662b8983f176b81489987392c22">AIOT_DMRECV_RAW_DATA_REPLY</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa672af81263a1a157df727f50eda50880">AIOT_DMRECV_RAW_DATA</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caaac3b6da1694b7380022843de8bd9da80">AIOT_DMRECV_RAW_SYNC_SERVICE_INVOKE</a>, 
+<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caaec15cae976dbc18530d5e4ab882de99e">AIOT_DMRECV_MAX</a>
+<br />
+ }<tr class="memdesc:a8f834d6a49440657a02d16de4dd390ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">data-model模块接受消息类型枚举  <a href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390ca">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a8f834d6a49440657a02d16de4dd390ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a86b2df4212597e30fb15b1fa57b563d5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#a86b2df4212597e30fb15b1fa57b563d5">aiot_dm_init</a> (void)</td></tr>
+<tr class="memdesc:a86b2df4212597e30fb15b1fa57b563d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化data-model实例  <a href="#a86b2df4212597e30fb15b1fa57b563d5">更多...</a><br /></td></tr>
+<tr class="separator:a86b2df4212597e30fb15b1fa57b563d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0163ca972ee85ad25ab97dba03142d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> (void *handle, <a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:aeb0163ca972ee85ad25ab97dba03142d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置data-model参数  <a href="#aeb0163ca972ee85ad25ab97dba03142d">更多...</a><br /></td></tr>
+<tr class="separator:aeb0163ca972ee85ad25ab97dba03142d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fe384e113e9d78521ea31fbb610928"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#af1fe384e113e9d78521ea31fbb610928">aiot_dm_send</a> (void *handle, const <a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:af1fe384e113e9d78521ea31fbb610928"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送一条data-model消息到物联网平台, 消息类型和消息数据由msg入参决定  <a href="#af1fe384e113e9d78521ea31fbb610928">更多...</a><br /></td></tr>
+<tr class="separator:af1fe384e113e9d78521ea31fbb610928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa775af909e9304df6bf79e4c140332b4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dm__api_8h.html#aa775af909e9304df6bf79e4c140332b4">aiot_dm_deinit</a> (void **p_handle)</td></tr>
+<tr class="memdesc:aa775af909e9304df6bf79e4c140332b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁data-model实例, 释放资源  <a href="#aa775af909e9304df6bf79e4c140332b4">更多...</a><br /></td></tr>
+<tr class="separator:aa775af909e9304df6bf79e4c140332b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>数据模型模块头文件, 提供了物模型数据格式的上云能力, 包括属性, 事件, 服务和物模型二进制格式的数据上下行能力 </p>
+<dl class="section date"><dt>日期</dt><dd>2020-01-20</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited</dd></dl>
+<p>请按照以下流程使用API</p>
+<ol type="1">
+<li>在使用物模型模块前, 用户应首先创建好一个MQTT实例</li>
+<li>调用<code>aiot_dm_init</code>创建一个物模型实例, 保存实例句柄</li>
+<li>调用<code>aiot_dm_setopt</code>配置<code>AIOT_DMOPT_MQTT_HANDLE</code>选项以设置MQTT句柄, 此选项为强制配置选项</li>
+<li>调用<code>aiot_dm_setopt</code>配置<code>AIOT_DMOPT_RECV_HANDLER</code>和<code>AIOT_DMOPT_USERDATA</code>选项以注册数据接受回调函数和用户上下文数据指针</li>
+<li>在使用<code>aiot_dm_send</code>发送消息前, 应先完成MQTT实例的建连</li>
+<li>调动<code>aiot_dm_send</code>发送不同类型的消息到云平台, 在注册的回调函数中处理各种类型的云平台下行消息 </li>
+</ol>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a2b6f48dad27d86c02351b6ebbf813fbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_BASE&#160;&#160;&#160;(-0x0A00)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0A00~-0x0AFF表达SDK在data-model模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a229d17b68e0330ed33107335803cd628"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_EVENT_ID_IS_NULL&#160;&#160;&#160;(-0x0A01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100">AIOT_DMMSG_EVENT_POST</a> 消息时, 消息数据中的event_id为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a414638a35e7971737b24420cac6a889a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_SERVICE_ID_IS_NULL&#160;&#160;&#160;(-0x0A02)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca2ead0d732e2c7e43eef71b1b67913860">AIOT_DMMSG_ASYNC_SERVICE_REPLY</a> 或<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f">AIOT_DMMSG_SYNC_SERVICE_REPLY</a> 消息时, 消息数据中的event_id为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b23207f7b37f548b621af67b29245b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_RRPC_ID_IS_NULL&#160;&#160;&#160;(-0x0A03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户发送<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f">AIOT_DMMSG_SYNC_SERVICE_REPLY</a> 消息时, 消息数据中的rrpc_id为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d9598904e421880a5ba4e48275f9c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_MSG_PARAMS_IS_NULL&#160;&#160;&#160;(-0X0A04)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户发送请求类消息时, 消息数据中的param为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0d333103c16a18a4dfeb84c64458144"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_MSG_DATA_IS_NULL&#160;&#160;&#160;(-0X0A05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户发送应答类消息时, 消息数据中的data为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a2df4eedcd58bc7a2817ade19ea7f6ba4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_INTERNAL_TOPIC_ERROR&#160;&#160;&#160;(-0x0A06)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析下行数据对应的topic时发生错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e426ce7ac64b001c7264ef8ec3e6445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_MQTT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0A07)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户未调用<a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 配置MQTT句柄 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4646e36ef6ebf06132d31a489dd7f636"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_DM_LOG_RECV&#160;&#160;&#160;(-0x0A08)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到服务器下行消息时的日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a12547581610f923cb3893d983485d1d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SATAE_DM_LOG_PARSE_RECV_MSG_FAILED&#160;&#160;&#160;(-0x0A09)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析服务器下行消息失败时的日志状态码 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="adb91ea3c00bf994a84bbad53bf275df2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_dm_recv_handler_t) (void *handle, const <a class="el" href="structaiot__dm__recv__t.html">aiot_dm_recv_t</a> *recv, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data-model模块消息接收回调函数的函数原型定义, 当模块接收到服务器下行数据后将调用此回调函数, 并将消息数据通过<em>recv</em>参数输入给用户, <br />
+同时将用户上下文数据指针通过<em>userdata</em>参数返回给用户 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>data-model实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv</td><td>服务下发的消息数据, <b>消息结构体中的所有数据指针在离开回调函数后将失效, 保存消息数据必须使用内存复制的方式</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>指向用户上下文数据的指针, 这个指针由用户通过调用<a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 配置<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9a160ca12dfaacaf230e4ecc1c67c86dba">AIOT_DMOPT_USERDATA</a> 选项设置</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data-model模块的配置选项枚举类型定义. <a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 函数入数data的数据类型根据不同的选项而不同 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9a4e3bfd0979402826571282ca70b3dab6"></a>AIOT_DMOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>模块依赖的MQTT句柄 </p>
+<p>data-model模块依赖底层的MQTT模块, 用户必需配置正确的MQTT句柄, 否则无法正常工作</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9a7d4fbc8b18b5b94809021e0af16a4e8b"></a>AIOT_DMOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>数据接收回调函数, data-model接收物联网平台的下行消息后调用此回调函数 </p>
+<p>数据类型: (aiot_dm_recv_handler_t), 详细查看<a class="el" href="aiot__dm__api_8h.html#adb91ea3c00bf994a84bbad53bf275df2">aiot_dm_recv_handler_t</a> 回调函数原型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9a160ca12dfaacaf230e4ecc1c67c86dba"></a>AIOT_DMOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>指向用户上下文数据的指针 </p>
+<p>在用户注册的<a class="el" href="aiot__dm__api_8h.html#adb91ea3c00bf994a84bbad53bf275df2">aiot_dm_recv_handler_t</a> 数据接收回调函数中会同过userdata参数将此指针返回给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9a5dcb5cac3004eb7e5e64896e8b913f14"></a>AIOT_DMOPT_POST_REPLY&#160;</td><td class="fielddoc">
+<p>用户是否希望接收post消息后的reply </p>
+<p>是否要接收云端的reply消息. 1表示要接收, 0表示不要.</p>
+<p>数据类型: (uint8_t) *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9b01abb2829192bcd1e125308d9fa9d9a17ef981975731bcafb42f114987866e7"></a>AIOT_DMOPT_MAX&#160;</td><td class="fielddoc">
+<p>配置选项数量最大值, 不可用作配置参数 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393c">aiot_dm_msg_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data-model模块发送消息类型 </p>
+<p>这个枚举类型包括了dm模块支持发送的所有数据类型, 不同的消息类型将对于不同的消息结构体 用户可查看网页文档<a href="https://help.aliyun.com/document_detail/89301.html">设备属性/事件/服务</a>进一步了解各种数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393caa873bee259c26047e982a95b7c4dc07c"></a>AIOT_DMMSG_PROPERTY_POST&#160;</td><td class="fielddoc">
+<p>属性上报, 消息结构体参考<a class="el" href="structaiot__dm__msg__property__post__t.html">aiot_dm_msg_property_post_t</a> <br />
+成功发送此消息后, 将会收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a> 类型的应答消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100"></a>AIOT_DMMSG_EVENT_POST&#160;</td><td class="fielddoc">
+<p>事件上报, 消息结构体参考<a class="el" href="structaiot__dm__msg__event__post__t.html">aiot_dm_msg_event_post_t</a> <br />
+成功发送此消息后, 将会收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a> 类型的应答消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca791ca4c22749a67716ef00f6b5a812cd"></a>AIOT_DMMSG_PROPERTY_SET_REPLY&#160;</td><td class="fielddoc">
+<p>属性设置应答, 消息结构体参考<a class="el" href="structaiot__dm__msg__property__set__reply__t.html">aiot_dm_msg_property_set_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca2ead0d732e2c7e43eef71b1b67913860"></a>AIOT_DMMSG_ASYNC_SERVICE_REPLY&#160;</td><td class="fielddoc">
+<p>异步服务应答, 消息结构体参考<a class="el" href="structaiot__dm__msg__async__service__reply__t.html">aiot_dm_msg_async_service_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cafbf7c24e7acef884b8d537f84130015f"></a>AIOT_DMMSG_SYNC_SERVICE_REPLY&#160;</td><td class="fielddoc">
+<p>同步服务应答, 消息结构体参考<a class="el" href="structaiot__dm__msg__sync__service__reply__t.html">aiot_dm_msg_sync_service_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca0f54d4028d6ab3706686233af458aed4"></a>AIOT_DMMSG_RAW_DATA&#160;</td><td class="fielddoc">
+<p>二进制格式的物模型上行数据, 消息结构体参考<a class="el" href="structaiot__dm__msg__raw__data__t.html">aiot_dm_msg_raw_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca63be1fcbfd14f0794d8d4a332b4bf802"></a>AIOT_DMMSG_RAW_SERVICE_REPLY&#160;</td><td class="fielddoc">
+<p>二进制格式的同步服务应答, 消息结构体参考<a class="el" href="structaiot__dm__msg__raw__service__reply__t.html">aiot_dm_msg_raw_service_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca1f841d0b84f370812f0356b3199365f9"></a>AIOT_DMMSG_GET_DESIRED&#160;</td><td class="fielddoc">
+<p>获取期望属性值, 消息结构体请参考<a class="el" href="structaiot__dm__msg__get__desired__t.html">aiot_dm_msg_get_desired_t</a>, <br />
+成功发送此消息后, 将会收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a> 类型的应答消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393ca7be7a077beeaeacc1a254fb896d07e63"></a>AIOT_DMMSG_DELETE_DESIRED&#160;</td><td class="fielddoc">
+<p>清除指定的期望值, 消息结构体请参考<a class="el" href="structaiot__dm__msg__delete__desired__t.html">aiot_dm_msg_delete_desired_t</a> <br />
+成功发送此消息后, 将会收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a> 类型的应答消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cae6614574ecbd139b2b35f701b630ea71"></a>AIOT_DMMSG_PROPERTY_BATCH_POST&#160;</td><td class="fielddoc">
+<p>清除指定的期望值, 消息结构体请参考<a class="el" href="structaiot__dm__msg__delete__desired__t.html">aiot_dm_msg_delete_desired_t</a> <br />
+成功发送此消息后, 将会收到<a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559">AIOT_DMRECV_GENERIC_REPLY</a> 类型的应答消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2f10245b1e1d34dc3365d99f0e2a393cae3d46c8b44e9bb46ffbfb30199474e18"></a>AIOT_DMMSG_MAX&#160;</td><td class="fielddoc">
+<p>消息数量最大值, 不可用作消息类型 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a8f834d6a49440657a02d16de4dd390ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__dm__api_8h.html#a8f834d6a49440657a02d16de4dd390ca">aiot_dm_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>data-model模块接受消息类型枚举 </p>
+<p>这个枚举类型包括了dm模块支持接收的所有数据类型, 不同的消息类型将对于不同的消息结构体 用户可查看网页文档<a href="https://help.aliyun.com/document_detail/89301.html">设备属性/事件/服务</a>进一步了解各种数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa7b1b778261d4f7a0e413f1941316a559"></a>AIOT_DMRECV_GENERIC_REPLY&#160;</td><td class="fielddoc">
+<p>上报属性/实践后服务器返回的应答消息, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__generic__reply__t.html">aiot_dm_recv_generic_reply_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa02b5dab4b45a2b537c1574dc231d3a7d"></a>AIOT_DMRECV_PROPERTY_SET&#160;</td><td class="fielddoc">
+<p>服务器下发的属性设置消息, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__property__set__t.html">aiot_dm_recv_property_set_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa34845a26177303a3ac59e81f835d3476"></a>AIOT_DMRECV_ASYNC_SERVICE_INVOKE&#160;</td><td class="fielddoc">
+<p>服务器下发的异步服务调用消息, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__async__service__invoke__t.html">aiot_dm_recv_async_service_invoke_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa4e0f06c7e08fd9dbc06bd5ea36f86c3d"></a>AIOT_DMRECV_SYNC_SERVICE_INVOKE&#160;</td><td class="fielddoc">
+<p>服务器下发的同步服务调用消息, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__sync__service__invoke__t.html">aiot_dm_recv_sync_service_invoke_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa6f936662b8983f176b81489987392c22"></a>AIOT_DMRECV_RAW_DATA_REPLY&#160;</td><td class="fielddoc">
+<p>服务器对设备上报的二进制数据应答, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__raw__data__t.html">aiot_dm_recv_raw_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caa672af81263a1a157df727f50eda50880"></a>AIOT_DMRECV_RAW_DATA&#160;</td><td class="fielddoc">
+<p>服务器下发的物模型二进制数据, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__raw__data__t.html">aiot_dm_recv_raw_data_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caaac3b6da1694b7380022843de8bd9da80"></a>AIOT_DMRECV_RAW_SYNC_SERVICE_INVOKE&#160;</td><td class="fielddoc">
+<p>服务器下发的二进制格式的同步服务调用消息, 消息数据结构体参考<a class="el" href="structaiot__dm__recv__raw__service__invoke__t.html">aiot_dm_recv_raw_service_invoke_t</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f834d6a49440657a02d16de4dd390caaec15cae976dbc18530d5e4ab882de99e"></a>AIOT_DMRECV_MAX&#160;</td><td class="fielddoc">
+<p>消息数量最大值, 不可用作消息类型 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a86b2df4212597e30fb15b1fa57b563d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_dm_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化data-model实例 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>data-model实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_a86b2df4212597e30fb15b1fa57b563d5_cgraph.png" border="0" usemap="#aiot__dm__api_8h_a86b2df4212597e30fb15b1fa57b563d5_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_a86b2df4212597e30fb15b1fa57b563d5_cgraph" id="aiot__dm__api_8h_a86b2df4212597e30fb15b1fa57b563d5_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="145,5,308,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb0163ca972ee85ad25ab97dba03142d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dm_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置data-model参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>data-model实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请查看<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置数据, 更多信息请查看<a class="el" href="aiot__dm__api_8h.html#a9b01abb2829192bcd1e125308d9fa9d9">aiot_dm_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参handle或data为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参optioin的枚举值&gt;=AIOT_DMOPT_MAX </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_aeb0163ca972ee85ad25ab97dba03142d_cgraph.png" border="0" usemap="#aiot__dm__api_8h_aeb0163ca972ee85ad25ab97dba03142d_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_aeb0163ca972ee85ad25ab97dba03142d_cgraph" id="aiot__dm__api_8h_aeb0163ca972ee85ad25ab97dba03142d_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a6bd1152d94772073bf2ab0ab79d14d2b" title="_dm_setup_topic_mapping" alt="" coords="164,120,341,147"/>
+<area shape="rect" id="node13" href="aiot__dm__api_8c.html#a52cf7d8d44d629cf72e18f335e58cd7f" title="_dm_core_mqtt_operate\l_process_handler" alt="" coords="171,175,334,217"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="413,112,531,139"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="641,5,787,32"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="636,56,792,83"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="613,107,815,133"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="612,157,816,184"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="639,208,789,235"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="874,109,1013,150"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="877,43,1009,85"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1061,43,1215,85"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="877,174,1009,215"/>
+<area shape="rect" id="node14" href="aiot__dm__api_8c.html#aad154a7641e824a7d83002e3a4179304" title="_dm_core_mqtt_process\l_handler" alt="" coords="389,175,555,217"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="411,259,533,285"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="603,259,825,285"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="603,313,825,340"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="873,247,1013,289"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="873,313,1013,354"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af1fe384e113e9d78521ea31fbb610928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dm_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送一条data-model消息到物联网平台, 消息类型和消息数据由msg入参决定 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>data-model实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>消息结构体, 可指定发送消息的设备<em>productKey</em>, <em>deviceName</em>; 消息类型, 消息数据等, 更多信息请参考<a class="el" href="structaiot__dm__msg__t.html">aiot_dm_msg_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>消息发送成功, 对于<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393caa873bee259c26047e982a95b7c4dc07c">AIOT_DMMSG_PROPERTY_POST</a>, <a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393cae95dd6b3dab7ca5c5587d2e729e14100">AIOT_DMMSG_EVENT_POST</a>, <a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca1f841d0b84f370812f0356b3199365f9">AIOT_DMMSG_GET_DESIRED</a> 和<a class="el" href="aiot__dm__api_8h.html#a2f10245b1e1d34dc3365d99f0e2a393ca7be7a077beeaeacc1a254fb896d07e63">AIOT_DMMSG_DELETE_DESIRED</a> 消息, <br />
+发送成功返回值为&gt;STATE_SUCCESS的消息标示符<em>msg_id</em>值 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参<em>handle</em>或<em>msg</em>为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参<em>msg</em>的结构体成员<em>type</em> &gt;= AIOT_DMMSG_MAX </td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_MALLOC_FAILED</td><td>内存分配失败 </td></tr>
+    <tr><td class="paramname">STATE_DM_MQTT_HANDLE_IS_NULL</td><td>用户未调用<a class="el" href="aiot__dm__api_8h.html#aeb0163ca972ee85ad25ab97dba03142d">aiot_dm_setopt</a> 配置MQTT句柄 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__dm__api_8h.html#a2b6f48dad27d86c02351b6ebbf813fbc">STATE_DM_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_af1fe384e113e9d78521ea31fbb610928_cgraph.png" border="0" usemap="#aiot__dm__api_8h_af1fe384e113e9d78521ea31fbb610928_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_af1fe384e113e9d78521ea31fbb610928_cgraph" id="aiot__dm__api_8h_af1fe384e113e9d78521ea31fbb610928_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#ac0cd28129728dc5f26ceee2e7f12a22b" title="_dm_prepare_send_topic" alt="" coords="156,31,323,57"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="374,5,557,32"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="371,56,560,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa775af909e9304df6bf79e4c140332b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dm_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>p_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁data-model实例, 释放资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_handle</td><td>指向data-model实例句柄的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dm__api_8h_aa775af909e9304df6bf79e4c140332b4_cgraph.png" border="0" usemap="#aiot__dm__api_8h_aa775af909e9304df6bf79e4c140332b4_cgraph" alt=""/></div>
+<map name="aiot__dm__api_8h_aa775af909e9304df6bf79e4c140332b4_cgraph" id="aiot__dm__api_8h_aa775af909e9304df6bf79e4c140332b4_cgraph">
+<area shape="rect" id="node2" href="aiot__dm__api_8c.html#a52cf7d8d44d629cf72e18f335e58cd7f" title="_dm_core_mqtt_operate\l_process_handler" alt="" coords="160,64,323,105"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="182,198,301,225"/>
+<area shape="rect" id="node3" href="aiot__dm__api_8c.html#aad154a7641e824a7d83002e3a4179304" title="_dm_core_mqtt_process\l_handler" alt="" coords="390,5,555,47"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="411,71,534,98"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="623,46,845,73"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="623,101,845,127"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="900,33,1040,75"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="900,99,1040,140"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="399,122,546,149"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="395,173,551,199"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="371,223,574,250"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="371,274,575,301"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="397,325,548,351"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="665,240,803,281"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="668,175,800,216"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="893,175,1047,216"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="668,305,800,347"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

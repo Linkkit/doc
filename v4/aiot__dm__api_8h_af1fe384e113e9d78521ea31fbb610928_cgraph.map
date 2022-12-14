@@ -1,0 +1,5 @@
+<map id="aiot_dm_send" name="aiot_dm_send">
+<area shape="rect" id="node2" href="$aiot__dm__api_8c.html#ac0cd28129728dc5f26ceee2e7f12a22b" title="_dm_prepare_send_topic" alt="" coords="156,31,323,57"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="374,5,557,32"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="371,56,560,83"/>
+</map>

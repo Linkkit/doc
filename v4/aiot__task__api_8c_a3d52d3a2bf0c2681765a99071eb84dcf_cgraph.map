@@ -1,0 +1,10 @@
+<map id="_task_recv_get_reply_handler" name="_task_recv_get_reply_handler">
+<area shape="rect" id="node2" href="$aiot__task__api_8c.html#a63f799a262f115bac37fac7292881407" title="_task_parse_get_list\l_reply" alt="" coords="210,64,353,105"/>
+<area shape="rect" id="node6" href="$aiot__task__api_8c.html#a0d5aeb2aff7a76eed3d4ba5f8555f1da" title="_task_free_task_list" alt="" coords="212,181,351,207"/>
+<area shape="rect" id="node7" href="$aiot__task__api_8c.html#af90f8c955615bd2aaa93743bf080e176" title="_task_parse_task_detail" alt="" coords="200,130,363,157"/>
+<area shape="rect" id="node8" href="$aiot__task__api_8c.html#a20c9464e2770ac81c0622d63efdf0e27" title="_task_free_task_detail" alt="" coords="205,231,358,258"/>
+<area shape="rect" id="node3" href="$aiot__task__api_8c.html#a5a5184e30eef18b67a75f71ff6e69a77" title="_task_parse_get_list\l_reply_array" alt="" coords="421,5,563,47"/>
+<area shape="rect" id="node4" href="$aiot__task__api_8c.html#a3d59eb9ecc9784f218083e9700538304" title="_task_parse_json" alt="" coords="430,71,554,98"/>
+<area shape="rect" id="node5" href="$aiot__task__api_8c.html#a291d0b5b7bac726e6edc705622247264" title="_task_cover_status\l_to_enum" alt="" coords="424,123,560,164"/>
+<area shape="rect" id="node9" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="411,231,573,258"/>
+</map>

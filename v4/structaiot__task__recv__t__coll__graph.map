@@ -1,0 +1,7 @@
+<map id="aiot_task_recv_t" name="aiot_task_recv_t">
+<area shape="rect" id="node2" href="$structtask__update__reply__t.html" title="更新任务状态到云端后，云端返回的数据 " alt="" coords="5,95,144,121"/>
+<area shape="rect" id="node3" href="$structtask__get__list__reply__t.html" title="从云端拉取list返回的数据 " alt="" coords="169,95,311,121"/>
+<area shape="rect" id="node4" href="$structtask__summary__t.html" title="从云端拉取list时每个任务的简要描述 " alt="" coords="181,5,299,32"/>
+<area shape="rect" id="node5" href="$structtask__get__detail__reply__t.html" title="从云端拉取任务详细信息时返回的数据 " alt="" coords="422,95,578,121"/>
+<area shape="rect" id="node6" href="$structtask__desc__t.html" title="任务描述的数据结构 " alt="" coords="364,5,457,32"/>
+</map>

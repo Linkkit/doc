@@ -1,0 +1,5 @@
+<map id="aiot_bootstrap_recv" name="aiot_bootstrap_recv">
+<area shape="rect" id="node2" href="$aiot__bootstrap__api_8c.html#a3f479af974adab936287f2d1a96b8029" title="_bootstrap_exec_inc" alt="" coords="209,5,351,32"/>
+<area shape="rect" id="node3" href="$aiot__bootstrap__api_8c.html#af6a37095391fa36e25c66352e00a3d91" title="_bootstrap_exec_dec" alt="" coords="207,56,353,83"/>
+<area shape="rect" id="node4" href="$aiot__bootstrap__api_8c.html#a62143c0c0a93e1b79d81810b8d7ee8ec" title="_bootstrap_connection_info" alt="" coords="189,107,371,133"/>
+</map>

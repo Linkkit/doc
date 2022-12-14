@@ -1,0 +1,5 @@
+<map id="core/aiot_sysdep_api.h" name="core/aiot_sysdep_api.h">
+<area shape="rect" id="node2" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="5,80,188,121"/>
+<area shape="rect" id="node3" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="213,169,337,211"/>
+<area shape="rect" id="node4" href="$aiot__at__api_8h.html" title="AT模块头文件, 提供对接AT模组的能力 " alt="" coords="264,80,388,121"/>
+</map>

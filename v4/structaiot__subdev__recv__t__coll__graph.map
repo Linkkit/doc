@@ -1,0 +1,4 @@
+<map id="aiot_subdev_recv_t" name="aiot_subdev_recv_t">
+<area shape="rect" id="node2" href="$structaiot__subdev__generic__reply__t.html" title="aiot_subdev_generic\l_reply_t" alt="" coords="5,5,147,47"/>
+<area shape="rect" id="node3" href="$structaiot__subdev__generic__notify__t.html" title="aiot_subdev_generic\l_notify_t" alt="" coords="171,5,312,47"/>
+</map>

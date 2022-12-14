@@ -1,0 +1,6 @@
+<map id="aiot_dynreg_send_request" name="aiot_dynreg_send_request">
+<area shape="rect" id="node2" href="$aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3" title="_dynreg_exec_inc" alt="" coords="239,5,366,32"/>
+<area shape="rect" id="node3" href="$aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd" title="_dynreg_exec_dec" alt="" coords="237,56,368,83"/>
+<area shape="rect" id="node4" href="$aiot__dynreg__api_8c.html#a4457ee379c77a984e38c93d4406545d2" title="_dynreg_recv_handler" alt="" coords="228,107,377,133"/>
+<area shape="rect" id="node5" href="$aiot__dynreg__api_8c.html#aad7f2dcc0f1beec05e355624b24585ce" title="_dynreg_sign" alt="" coords="253,157,352,184"/>
+</map>

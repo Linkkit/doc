@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: core/aiot_http_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_http_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>HTTP模块头文件, 提供用HTTP协议向阿里云物联网平台上报数据的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;core_stdinc.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_http_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__http__api_8h__incl.png" border="0" usemap="#core_2aiot__http__api_8h" alt=""/></div>
+<map name="core_2aiot__http__api_8h" id="core_2aiot__http__api_8h">
+</map>
+</div>
+</div>
+<p><a href="aiot__http__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__http__recv__t.html">aiot_http_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK收到HTTP报文, 传递给用户数据回调函数时, 对报文内容的描述  <a href="structaiot__http__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__http__event__t.html">aiot_http_event_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK内部发生状态变化, 通过用户事件回调函数通知用户时, 对事件内容的描述  <a href="structaiot__http__event__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab47898dd5f8f1b4eab2360a3b9c2631c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#ab47898dd5f8f1b4eab2360a3b9c2631c">aiot_http_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__http__recv__t.html">aiot_http_recv_t</a> *packet, void *userdata)</td></tr>
+<tr class="memdesc:ab47898dd5f8f1b4eab2360a3b9c2631c"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 消息接收回调函数原型, 可以通过 <a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 接口的 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173dabf63fc3ec1b3f5a250739db1bb742dfc">AIOT_HTTPOPT_RECV_HANDLER</a> 参数指定  <a href="#ab47898dd5f8f1b4eab2360a3b9c2631c">更多...</a><br /></td></tr>
+<tr class="separator:ab47898dd5f8f1b4eab2360a3b9c2631c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72e91210620b4a4c1ae579b0525349d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#ac72e91210620b4a4c1ae579b0525349d">aiot_http_event_handler_t</a>) (void *handle, const <a class="el" href="structaiot__http__event__t.html">aiot_http_event_t</a> *event, void *userdata)</td></tr>
+<tr class="memdesc:ac72e91210620b4a4c1ae579b0525349d"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP 事件回调函数原型, 可以通过 <a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 接口的 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da42e9a102934256718c776bd70357636f">AIOT_HTTPOPT_EVENT_HANDLER</a> 参数指定  <a href="#ac72e91210620b4a4c1ae579b0525349d">更多...</a><br /></td></tr>
+<tr class="separator:ac72e91210620b4a4c1ae579b0525349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a95ee1c6392f6b190245668e832fce986"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986">aiot_http_response_code_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986a88fb5b6fb3f9e30d29a28751cb416fc8">AIOT_HTTP_RSPCODE_SUCCESS</a> = 0, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986aa36ea114daa27e47e2ee120c3d7bf63e">AIOT_HTTP_RSPCODE_COMMON_ERROR</a> = 10000, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986af0f925715b2e29345ef0c9f1c59527f3">AIOT_HTTP_RSPCODE_PARAM_ERROR</a> = 10001, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986af2515e97b3613df57cf83b29fac8eff2">AIOT_HTTP_RSPCODE_TOKEN_EXPIRED</a> = 20001, 
+<br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986a32ca59b5efad602d335460ec68e9854f">AIOT_HTTP_RSPCODE_TOKEN_NULL</a> = 20002, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986a5baff56a8714cec5d181d194df777ec0">AIOT_HTTP_RSPCODE_TOKEN_CHECK_ERROR</a> = 20003, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986ab4c3c79f373af3008f4f0bc4828fd21a">AIOT_HTTP_RSPCODE_PUBLISH_MESSAGE_ERROR</a> = 30001, 
+<a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986ad0dc2941fa52b176f09e6a12705d4014">AIOT_HTTP_RSPCODE_REQUEST_TOO_MANY</a> = 40000
+<br />
+ }<tr class="memdesc:a95ee1c6392f6b190245668e832fce986"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器返回的业务错误码  <a href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a95ee1c6392f6b190245668e832fce986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9971c8898710342fb87c54f1e0fd173d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da8ed4be3dc79d5ee762d0e8ef876d35c2">AIOT_HTTPOPT_HOST</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da1b14cf9ddfc2bba59727031f9ee2fc7f">AIOT_HTTPOPT_PORT</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da7f5509d8dbbc82e29ead98380fb29933">AIOT_HTTPOPT_NETWORK_CRED</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173dad08ec7ce9299d7ecffc54b7940b88f06">AIOT_HTTPOPT_CONNECT_TIMEOUT_MS</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da2617d27d96172fa01a297f73525c2f1f">AIOT_HTTPOPT_SEND_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da3d614eb9f57fd67704256ebb65e89a7f">AIOT_HTTPOPT_RECV_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da18c2d306e9f6fc5e8f7be5e108c7a05f">AIOT_HTTPOPT_DEINIT_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da0a58e02729e2da04a872ad9d7d046b5f">AIOT_HTTPOPT_HEADER_BUFFER_LEN</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da8c151ddb8e0ec2114769dec14c87a6a3">AIOT_HTTPOPT_BODY_BUFFER_LEN</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da42e9a102934256718c776bd70357636f">AIOT_HTTPOPT_EVENT_HANDLER</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da02fdc1629ee7453ab92ca1db57deb220">AIOT_HTTPOPT_USERDATA</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173dabf63fc3ec1b3f5a250739db1bb742dfc">AIOT_HTTPOPT_RECV_HANDLER</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da16d7a605467a3d383dcc732817434c36">AIOT_HTTPOPT_PRODUCT_KEY</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da6ca37b1fbf116d1509fb9636916322b8">AIOT_HTTPOPT_DEVICE_NAME</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173dab2a7774929408b99e4e6273e9f81113c">AIOT_HTTPOPT_DEVICE_SECRET</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da1438bb9e7b9f60b78f831b992a564b64">AIOT_HTTPOPT_EXTEND_DEVINFO</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da616b22ac89d7e4e1219c88d1436d5633">AIOT_HTTPOPT_AUTH_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da1c42447a3211b6df26c7d56489ae3f07">AIOT_HTTPOPT_LONG_CONNECTION</a>, 
+<a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da47c8f4e46a8314c1e81ba3c488b1750f">AIOT_HTTPOPT_MAX</a>
+<br />
+ }<tr class="memdesc:a9971c8898710342fb87c54f1e0fd173d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 函数的 option 参数, 对于下文每一个选项中的数据类型, 指的是 <a class="el" href="aiot__mqtt__api_8h.html#a9dbaf4235dd1d28ffa87c32953987608">aiot_mqtt_setopt</a> 中的data参数的数据类型  <a href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a9971c8898710342fb87c54f1e0fd173d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79cdb4b5e89c15c50b12ebb886c07d1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1a">aiot_http_recv_type_t</a> { <a class="el" href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1aa98ecefc5c39d68b9fad7ef82a9321fc3">AIOT_HTTPRECV_STATUS_CODE</a>, 
+<a class="el" href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1aa5688804db31125fbbf092ebcdc4b531d">AIOT_HTTPRECV_HEADER</a>, 
+<a class="el" href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1aa8ceeb8d1047751494059308c8d8e91c1">AIOT_HTTPRECV_BODY</a>
+ }<tr class="memdesc:a79cdb4b5e89c15c50b12ebb886c07d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK收到HTTP报文, 传递给用户数据回调函数时, 对报文类型的描述  <a href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1a">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a79cdb4b5e89c15c50b12ebb886c07d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e5f8f4ed2671f705d4256cadec85e9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a48e5f8f4ed2671f705d4256cadec85e9">aiot_http_event_type_t</a> { <a class="el" href="aiot__http__api_8h.html#a48e5f8f4ed2671f705d4256cadec85e9a6c47ccbb97b7cb068a219ff4341c3d66">AIOT_HTTPEVT_TOKEN_INVALID</a>
+ }<tr class="memdesc:a48e5f8f4ed2671f705d4256cadec85e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK内部发生状态变化, 通过用户事件回调函数通知用户时, 对事件类型的描述  <a href="aiot__http__api_8h.html#a48e5f8f4ed2671f705d4256cadec85e9">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a48e5f8f4ed2671f705d4256cadec85e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5c2be90bd818fc430ccf5c07374c5ec8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a5c2be90bd818fc430ccf5c07374c5ec8">aiot_http_init</a> (void)</td></tr>
+<tr class="memdesc:a5c2be90bd818fc430ccf5c07374c5ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个HTTP上云实例  <a href="#a5c2be90bd818fc430ccf5c07374c5ec8">更多...</a><br /></td></tr>
+<tr class="separator:a5c2be90bd818fc430ccf5c07374c5ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8d99d9fda194b12a9f27d51c5d139c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> (void *handle, <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:a6e8d99d9fda194b12a9f27d51c5d139c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置HTTP实例参数  <a href="#a6e8d99d9fda194b12a9f27d51c5d139c">更多...</a><br /></td></tr>
+<tr class="separator:a6e8d99d9fda194b12a9f27d51c5d139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d08ff0300f8f58711559153de6a8cb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> (void *handle)</td></tr>
+<tr class="memdesc:ad7d08ff0300f8f58711559153de6a8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">向服务器发送认证请求, 获取token  <a href="#ad7d08ff0300f8f58711559153de6a8cb">更多...</a><br /></td></tr>
+<tr class="separator:ad7d08ff0300f8f58711559153de6a8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7125c8aea28129e7ea504fe10175677e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a7125c8aea28129e7ea504fe10175677e">aiot_http_send</a> (void *handle, char *topic, uint8_t *payload, uint32_t payload_len)</td></tr>
+<tr class="memdesc:a7125c8aea28129e7ea504fe10175677e"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报数据到物联网平台  <a href="#a7125c8aea28129e7ea504fe10175677e">更多...</a><br /></td></tr>
+<tr class="separator:a7125c8aea28129e7ea504fe10175677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e771074e72b37acac7c7c74eca658b6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a5e771074e72b37acac7c7c74eca658b6">aiot_http_recv</a> (void *handle)</td></tr>
+<tr class="memdesc:a5e771074e72b37acac7c7c74eca658b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">接受HTTP应答数据, 数据会从用户设置的 <a class="el" href="aiot__http__api_8h.html#ac72e91210620b4a4c1ae579b0525349d">aiot_http_event_handler_t</a> 回调函数输出  <a href="#a5e771074e72b37acac7c7c74eca658b6">更多...</a><br /></td></tr>
+<tr class="separator:a5e771074e72b37acac7c7c74eca658b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b92247d17fb616733ea2137bab4ecac"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__http__api_8h.html#a7b92247d17fb616733ea2137bab4ecac">aiot_http_deinit</a> (void **p_handle)</td></tr>
+<tr class="memdesc:a7b92247d17fb616733ea2137bab4ecac"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁参数p_handle所指定的HTTP实例  <a href="#a7b92247d17fb616733ea2137bab4ecac">更多...</a><br /></td></tr>
+<tr class="separator:a7b92247d17fb616733ea2137bab4ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>HTTP模块头文件, 提供用HTTP协议向阿里云物联网平台上报数据的能力 </p>
+<dl class="section date"><dt>日期</dt><dd>2019-12-27</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ab47898dd5f8f1b4eab2360a3b9c2631c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_http_recv_handler_t) (void *handle, const <a class="el" href="structaiot__http__recv__t.html">aiot_http_recv_t</a> *packet, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 消息接收回调函数原型, 可以通过 <a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 接口的 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173dabf63fc3ec1b3f5a250739db1bb742dfc">AIOT_HTTPOPT_RECV_HANDLER</a> 参数指定 </p>
+<p>当SDK收到 HTTP 服务器的应答数据时, 通过此回调函数输出</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>HTTP 句柄 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet</td><td>从 HTTP 服务器接收到的数据 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">userdata</td><td>用户通过 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da02fdc1629ee7453ab92ca1db57deb220">AIOT_HTTPOPT_USERDATA</a> 交由SDK暂存的上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac72e91210620b4a4c1ae579b0525349d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  aiot_http_event_handler_t) (void *handle, const <a class="el" href="structaiot__http__event__t.html">aiot_http_event_t</a> *event, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTP 事件回调函数原型, 可以通过 <a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 接口的 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da42e9a102934256718c776bd70357636f">AIOT_HTTPOPT_EVENT_HANDLER</a> 参数指定 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>HTTP句柄 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">event</td><td>事件结构体 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>指向用户上下文数据的指针, 由 <a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 的 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173da02fdc1629ee7453ab92ca1db57deb220">AIOT_HTTPOPT_USERDATA</a> 选项设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a95ee1c6392f6b190245668e832fce986"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__http__api_8h.html#a95ee1c6392f6b190245668e832fce986">aiot_http_response_code_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务器返回的业务错误码 </p>
+<p>从云平台对上报消息回应的报文JSON中解析 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986a88fb5b6fb3f9e30d29a28751cb416fc8"></a>AIOT_HTTP_RSPCODE_SUCCESS&#160;</td><td class="fielddoc">
+<p>0, 服务端成功接收到上报的消息 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986aa36ea114daa27e47e2ee120c3d7bf63e"></a>AIOT_HTTP_RSPCODE_COMMON_ERROR&#160;</td><td class="fielddoc">
+<p>10000, 服务端返回未知错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986af0f925715b2e29345ef0c9f1c59527f3"></a>AIOT_HTTP_RSPCODE_PARAM_ERROR&#160;</td><td class="fielddoc">
+<p>10001, 请求参数错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986af2515e97b3613df57cf83b29fac8eff2"></a>AIOT_HTTP_RSPCODE_TOKEN_EXPIRED&#160;</td><td class="fielddoc">
+<p>20001, token过期, 请调用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 进行鉴权, 获取新token </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986a32ca59b5efad602d335460ec68e9854f"></a>AIOT_HTTP_RSPCODE_TOKEN_NULL&#160;</td><td class="fielddoc">
+<p>20002, 请求的header中无token可表明设备端合法, 请调用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 进行鉴权, 获取新token </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986a5baff56a8714cec5d181d194df777ec0"></a>AIOT_HTTP_RSPCODE_TOKEN_CHECK_ERROR&#160;</td><td class="fielddoc">
+<p>20003, token错误, 请调用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 进行鉴权, 获取新token </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986ab4c3c79f373af3008f4f0bc4828fd21a"></a>AIOT_HTTP_RSPCODE_PUBLISH_MESSAGE_ERROR&#160;</td><td class="fielddoc">
+<p>30001, 消息上报失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95ee1c6392f6b190245668e832fce986ad0dc2941fa52b176f09e6a12705d4014"></a>AIOT_HTTP_RSPCODE_REQUEST_TOO_MANY&#160;</td><td class="fielddoc">
+<p>40000, 设备端上报过于频繁, 触发服务端限流 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a9971c8898710342fb87c54f1e0fd173d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__http__api_8h.html#a6e8d99d9fda194b12a9f27d51c5d139c">aiot_http_setopt</a> 函数的 option 参数, 对于下文每一个选项中的数据类型, 指的是 <a class="el" href="aiot__mqtt__api_8h.html#a9dbaf4235dd1d28ffa87c32953987608">aiot_mqtt_setopt</a> 中的data参数的数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da8ed4be3dc79d5ee762d0e8ef876d35c2"></a>AIOT_HTTPOPT_HOST&#160;</td><td class="fielddoc">
+<p>HTTP 服务器的域名地址或者ip地址 </p>
+<p>阿里云物联网平台域名地址列表: (tcp使用80端口, tls使用443端口)</p>
+<table class="doxtable">
+<tr>
+<th>域名地址 </th><th>区域 </th><th>端口号  </th></tr>
+<tr>
+<td>iot-as-http.cn-shanghai.aliyuncs.com </td><td>上海 </td><td>443 </td></tr>
+</table>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da1b14cf9ddfc2bba59727031f9ee2fc7f"></a>AIOT_HTTPOPT_PORT&#160;</td><td class="fielddoc">
+<p>HTTP 服务器的端口号 </p>
+<p>连接阿里云物联网平台时:</p>
+<p>1.如果使用的是tcp, 端口号设置为80</p>
+<ol type="1">
+<li>如果使用的是tls, 端口号设置为443</li>
+</ol>
+<p>数据类型: (uint16_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da7f5509d8dbbc82e29ead98380fb29933"></a>AIOT_HTTPOPT_NETWORK_CRED&#160;</td><td class="fielddoc">
+<p>HTTP建联时, 网络使用的安全凭据 </p>
+<p>该配置项用于为底层网络配置 <a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 安全凭据数据</p>
+<ol type="1">
+<li>若该选项不配置, 那么MQTT将以tcp方式直接建联</li>
+<li>若 <a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option配置为 <a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610aad715af742b63dd0a5d969dcd5c2cb24">AIOT_SYSDEP_NETWORK_CRED_NONE</a> , HTTP将以tcp方式直接建联</li>
+<li>若 <a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option配置为 <a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610a0eda021576456a3c9bc077a07823a34c">AIOT_SYSDEP_NETWORK_CRED_SVRCERT_CA</a> , HTTP将以tls方式建联</li>
+</ol>
+<p>数据类型: (<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173dad08ec7ce9299d7ecffc54b7940b88f06"></a>AIOT_HTTPOPT_CONNECT_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>HTTP建联时, 建立网络连接的超时时间 </p>
+<p>指建立socket连接的超时时间</p>
+<p>数据类型: (uint32_t *) 默认值: (5 *1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da2617d27d96172fa01a297f73525c2f1f"></a>AIOT_HTTPOPT_SEND_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>HTTP发送数据时, 在协议栈花费的最长时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (5 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da3d614eb9f57fd67704256ebb65e89a7f"></a>AIOT_HTTPOPT_RECV_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>HTTP接收数据时, 在协议栈花费的最长时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (5 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da18c2d306e9f6fc5e8f7be5e108c7a05f"></a>AIOT_HTTPOPT_DEINIT_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>销毁HTTP实例时, 等待其他api执行完毕的时间 </p>
+<p>当调用 <a class="el" href="aiot__http__api_8h.html#a7b92247d17fb616733ea2137bab4ecac">aiot_http_deinit</a> 销毁HTTP实例时, 若继续调用其他 aiot_http_xxx API, API会返回STATE_USER_INPUT_EXEC_DISABLED 错误</p>
+<p>此时, 用户应该停止调用其他 aiot_http_xxx API</p>
+<p>数据类型: (uint32_t *) 默认值: (2 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da0a58e02729e2da04a872ad9d7d046b5f"></a>AIOT_HTTPOPT_HEADER_BUFFER_LEN&#160;</td><td class="fielddoc">
+<p>当接收服务器返回的http报文时, 单行http header的最大长度 </p>
+<p>当单行http header设置过短时, <a class="el" href="aiot__http__api_8h.html#a5e771074e72b37acac7c7c74eca658b6">aiot_http_recv</a> 会返回 <a class="el" href="aiot__state__api_8h.html#a2996597c6645b2db9411631f38ae3b33">STATE_HTTP_HEADER_BUFFER_TOO_SHORT</a> 状态码</p>
+<p>数据类型: (uint32_t *) 默认值: 128 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da8c151ddb8e0ec2114769dec14c87a6a3"></a>AIOT_HTTPOPT_BODY_BUFFER_LEN&#160;</td><td class="fielddoc">
+<p>当接收服务器返回的http报文时, 每次从 <a class="el" href="aiot__http__api_8h.html#ab47898dd5f8f1b4eab2360a3b9c2631c">aiot_http_recv_handler_t</a> 回调函数中给出的body最大长度 </p>
+<p>数据类型: (uint32_t *) 默认值: 128 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da42e9a102934256718c776bd70357636f"></a>AIOT_HTTPOPT_EVENT_HANDLER&#160;</td><td class="fielddoc">
+<p>HTTP 内部事件回调函数 </p>
+<p>数据类型: (aiot_http_event_handler_t) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da02fdc1629ee7453ab92ca1db57deb220"></a>AIOT_HTTPOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<ol type="1">
+<li>当接收到HTTP数据时, 该上下文会从 <a class="el" href="aiot__http__api_8h.html#ab47898dd5f8f1b4eab2360a3b9c2631c">aiot_http_recv_handler_t</a> 的 userdata 参数给出</li>
+<li>当HTTP内部有事件发生时, 该上下文会从 <a class="el" href="aiot__http__api_8h.html#ac72e91210620b4a4c1ae579b0525349d">aiot_http_event_handler_t</a> 的 userdata 参数给出</li>
+</ol>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173dabf63fc3ec1b3f5a250739db1bb742dfc"></a>AIOT_HTTPOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>HTTP 数据接收回调函数 </p>
+<p>数据类型: (aiot_http_recv_handler_t) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da16d7a605467a3d383dcc732817434c36"></a>AIOT_HTTPOPT_PRODUCT_KEY&#160;</td><td class="fielddoc">
+<p>设备的product key, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da6ca37b1fbf116d1509fb9636916322b8"></a>AIOT_HTTPOPT_DEVICE_NAME&#160;</td><td class="fielddoc">
+<p>设备的device name, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173dab2a7774929408b99e4e6273e9f81113c"></a>AIOT_HTTPOPT_DEVICE_SECRET&#160;</td><td class="fielddoc">
+<p>设备的device secret, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da1438bb9e7b9f60b78f831b992a564b64"></a>AIOT_HTTPOPT_EXTEND_DEVINFO&#160;</td><td class="fielddoc">
+<p>上报设备的扩展信息, 比如模组商ID和模组ID </p>
+<ol type="1">
+<li>模组商ID: 格式为pid=xxx</li>
+<li>模组ID: 格式为mid=xxx</li>
+</ol>
+<p>如果需要同时上报多个信息, 那么它们之间用&amp;连接, 例如: pid=xxx&amp;mid=xxx</p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da616b22ac89d7e4e1219c88d1436d5633"></a>AIOT_HTTPOPT_AUTH_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>使用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 进行认证并获取token的超时时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (5 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da1c42447a3211b6df26c7d56489ae3f07"></a>AIOT_HTTPOPT_LONG_CONNECTION&#160;</td><td class="fielddoc">
+<p>是否使用http长连接 </p>
+<p>若该配置的值为0, 则每次使用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 和 <a class="el" href="aiot__http__api_8h.html#a7125c8aea28129e7ea504fe10175677e">aiot_http_send</a> 时, SDK会重新与 HTTP 服务器建立简介</p>
+<p>数据类型: (uint8_t *) 默认值: (5 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9971c8898710342fb87c54f1e0fd173da47c8f4e46a8314c1e81ba3c488b1750f"></a>AIOT_HTTPOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a79cdb4b5e89c15c50b12ebb886c07d1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__http__api_8h.html#a79cdb4b5e89c15c50b12ebb886c07d1a">aiot_http_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK收到HTTP报文, 传递给用户数据回调函数时, 对报文类型的描述 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a79cdb4b5e89c15c50b12ebb886c07d1aa98ecefc5c39d68b9fad7ef82a9321fc3"></a>AIOT_HTTPRECV_STATUS_CODE&#160;</td><td class="fielddoc">
+<p>获取到HTTP Status Code </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a79cdb4b5e89c15c50b12ebb886c07d1aa5688804db31125fbbf092ebcdc4b531d"></a>AIOT_HTTPRECV_HEADER&#160;</td><td class="fielddoc">
+<p>获取到HTTP Header, 每次返回Header中的一组键值对 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a79cdb4b5e89c15c50b12ebb886c07d1aa8ceeb8d1047751494059308c8d8e91c1"></a>AIOT_HTTPRECV_BODY&#160;</td><td class="fielddoc">
+<p>获取到HTTP Body, 返回完整的Body内容 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a48e5f8f4ed2671f705d4256cadec85e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__http__api_8h.html#a48e5f8f4ed2671f705d4256cadec85e9">aiot_http_event_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK内部发生状态变化, 通过用户事件回调函数通知用户时, 对事件类型的描述 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a48e5f8f4ed2671f705d4256cadec85e9a6c47ccbb97b7cb068a219ff4341c3d66"></a>AIOT_HTTPEVT_TOKEN_INVALID&#160;</td><td class="fielddoc">
+<p>token无效事件, 此时用户应该调用 <a class="el" href="aiot__http__api_8h.html#ad7d08ff0300f8f58711559153de6a8cb">aiot_http_auth</a> 获取新的token </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a5c2be90bd818fc430ccf5c07374c5ec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_http_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个HTTP上云实例 </p>
+<dl class="section return"><dt>返回</dt><dd>void*</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL,HTTP</td><td>实例句柄 </td></tr>
+    <tr><td class="paramname">NULL,初始化</td><td>HTTP 实例失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6e8d99d9fda194b12a9f27d51c5d139c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_http_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置HTTP实例参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>HTTP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置数据, 更多信息请参考 <a class="el" href="aiot__http__api_8h.html#a9971c8898710342fb87c54f1e0fd173d">aiot_http_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS,成功</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_HANDLE_IS_NULL,HTTP句柄为NULL</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE,用户输入参数无效</td><td></td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_MALLOC_FAILED,内存分配失败</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__http__api_8h_a6e8d99d9fda194b12a9f27d51c5d139c_cgraph.png" border="0" usemap="#aiot__http__api_8h_a6e8d99d9fda194b12a9f27d51c5d139c_cgraph" alt=""/></div>
+<map name="aiot__http__api_8h_a6e8d99d9fda194b12a9f27d51c5d139c_cgraph" id="aiot__http__api_8h_a6e8d99d9fda194b12a9f27d51c5d139c_cgraph">
+<area shape="rect" id="node2" href="aiot__http__api_8c.html#a7365b4e585c1e6842544336bae8a63a7" title="_core_aiot_http_exec_inc" alt="" coords="170,5,341,32"/>
+<area shape="rect" id="node3" href="aiot__http__api_8c.html#ae92e6b0902fe65706d5745a511c3f4a8" title="_core_aiot_http_exec_dec" alt="" coords="168,56,343,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7d08ff0300f8f58711559153de6a8cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_http_auth </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向服务器发送认证请求, 获取token </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>HTTP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS,认证成功</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_HANDLE_IS_NULL,HTTP句柄为NULL</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_MISSING_PRODUCT_KEY,未设置必要选项ProductKey</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_MISSING_DEVICE_NAME,未设置必要选项DeviceName</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_MISSING_DEVICE_SECRET,未设置必要选项DeviceSecret</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_TOKEN_LEN_ERROR,token长度错误</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_GET_TOKEN_FAILED,获取token失败</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__http__api_8h_ad7d08ff0300f8f58711559153de6a8cb_cgraph.png" border="0" usemap="#aiot__http__api_8h_ad7d08ff0300f8f58711559153de6a8cb_cgraph" alt=""/></div>
+<map name="aiot__http__api_8h_ad7d08ff0300f8f58711559153de6a8cb_cgraph" id="aiot__http__api_8h_ad7d08ff0300f8f58711559153de6a8cb_cgraph">
+<area shape="rect" id="node2" href="aiot__http__api_8c.html#a7365b4e585c1e6842544336bae8a63a7" title="_core_aiot_http_exec_inc" alt="" coords="159,5,330,32"/>
+<area shape="rect" id="node3" href="aiot__http__api_8c.html#a5e42ea4e7b0b24dfc77a5fd2e64e09b8" title="_core_http_auth_recv\l_handler" alt="" coords="171,57,318,98"/>
+<area shape="rect" id="node4" href="aiot__http__api_8c.html#ae92e6b0902fe65706d5745a511c3f4a8" title="_core_aiot_http_exec_dec" alt="" coords="157,123,332,149"/>
+<area shape="rect" id="node5" href="aiot__http__api_8c.html#a6a550c97c524c4894b25216b9b3e9ff3" title="_core_http_send_auth" alt="" coords="169,173,320,200"/>
+<area shape="rect" id="node6" href="aiot__http__api_8c.html#a4a4091336368c5eb9d87785cebf7966a" title="_core_http_recv_auth" alt="" coords="171,224,318,251"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7125c8aea28129e7ea504fe10175677e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_http_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上报数据到物联网平台 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>HTTP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>上报的目标topic, 在物联网平台控制的产品详情页面有设备的完整topic列表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>指向上报数据的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload_len</td><td>上报数据的长度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS,上报成功</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_HANDLE_IS_NULL,HTTP句柄为NULL</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE,用户输入参数无效</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_NOT_AUTH,设备未认证</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__http__api_8h_a7125c8aea28129e7ea504fe10175677e_cgraph.png" border="0" usemap="#aiot__http__api_8h_a7125c8aea28129e7ea504fe10175677e_cgraph" alt=""/></div>
+<map name="aiot__http__api_8h_a7125c8aea28129e7ea504fe10175677e_cgraph" id="aiot__http__api_8h_a7125c8aea28129e7ea504fe10175677e_cgraph">
+<area shape="rect" id="node2" href="aiot__http__api_8c.html#a7365b4e585c1e6842544336bae8a63a7" title="_core_aiot_http_exec_inc" alt="" coords="162,5,333,32"/>
+<area shape="rect" id="node3" href="aiot__http__api_8c.html#ae92e6b0902fe65706d5745a511c3f4a8" title="_core_aiot_http_exec_dec" alt="" coords="160,56,335,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e771074e72b37acac7c7c74eca658b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_http_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接受HTTP应答数据, 数据会从用户设置的 <a class="el" href="aiot__http__api_8h.html#ac72e91210620b4a4c1ae579b0525349d">aiot_http_event_handler_t</a> 回调函数输出 </p>
+<p>服务器响应数据格式为 { "code": 0, // 业务状态码 "message": "success", // 业务信息 "info": { "messageId": 892687627916247040, } } </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>HTTP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=</td><td>0, 接受到的HTTP body数据长度 </td></tr>
+    <tr><td class="paramname">STATE_HTTP_HANDLE_IS_NULL,HTTP句柄为NULL</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER,用户输入参数为NULL</td><td></td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE,buffer_len为0</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_RSP_MSG_ERROR,服务器应答消息错误</td><td></td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_NWK_CLOSED,网络连接已关闭</td><td></td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_NWK_READ_OVERTIME,网络接收超时</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_RECV_LINE_TOO_LONG,HTTP单行数据过长,内部无法解析</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_PARSE_STATUS_LINE_FAILED,无法解析状态码</td><td></td></tr>
+    <tr><td class="paramname">STATE_HTTP_GET_CONTENT_LEN_FAILED,获取Content-Length失败</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__http__api_8h_a5e771074e72b37acac7c7c74eca658b6_cgraph.png" border="0" usemap="#aiot__http__api_8h_a5e771074e72b37acac7c7c74eca658b6_cgraph" alt=""/></div>
+<map name="aiot__http__api_8h_a5e771074e72b37acac7c7c74eca658b6_cgraph" id="aiot__http__api_8h_a5e771074e72b37acac7c7c74eca658b6_cgraph">
+<area shape="rect" id="node2" href="aiot__http__api_8c.html#a7365b4e585c1e6842544336bae8a63a7" title="_core_aiot_http_exec_inc" alt="" coords="159,5,330,32"/>
+<area shape="rect" id="node3" href="aiot__http__api_8c.html#ab939de1219e4899de28594a8fc4091a5" title="_core_http_recv_handler" alt="" coords="163,56,327,83"/>
+<area shape="rect" id="node4" href="aiot__http__api_8c.html#ae92e6b0902fe65706d5745a511c3f4a8" title="_core_aiot_http_exec_dec" alt="" coords="157,107,332,133"/>
+<area shape="rect" id="node5" href="aiot__http__api_8c.html#a8fc63ddd4c441240f8961fdb83d5e9de" title="_core_aiot_http_token\l_expired_event" alt="" coords="169,158,320,199"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b92247d17fb616733ea2137bab4ecac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_http_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>p_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁参数p_handle所指定的HTTP实例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_handle</td><td>指向HTTP句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>参数p_handle为NULL或者p_handle指向的句柄为NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

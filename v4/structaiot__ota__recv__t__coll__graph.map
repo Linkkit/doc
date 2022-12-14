@@ -1,0 +1,3 @@
+<map id="aiot_ota_recv_t" name="aiot_ota_recv_t">
+<area shape="rect" id="node2" href="$structaiot__download__task__desc__t.html" title="云端下推的固件升级任务的描述信息, 包括url, 大小, 签名等 " alt="" coords="5,5,143,47"/>
+</map>

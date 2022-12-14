@@ -1,0 +1,11 @@
+<map id="aiot_mqtt_download_setopt" name="aiot_mqtt_download_setopt">
+<area shape="rect" id="node2" href="$aiot__ota__api_8c.html#a947d444d21e74d78733064a42c286b64" title="_download_deep_copy\l_task_desc" alt="" coords="197,25,352,66"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__download__api_8c.html#a0a89403cc0e45b0a5c988e3105e3be9f" title="_md_core_mqtt_process\l_handler" alt="" coords="192,90,357,131"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="213,156,336,183"/>
+<area shape="rect" id="node3" href="$aiot__ota__api_8c.html#a72a55bc6536d7decc4a0851e0369baa9" title="_download_deep_copy_base" alt="" coords="422,5,611,32"/>
+<area shape="rect" id="node4" href="$aiot__ota__api_8c.html#a683d28b1a5a9c42931ee746ce887f5f4" title="_download_deep_free\l_task_desc" alt="" coords="443,57,591,98"/>
+<area shape="rect" id="node7" href="$aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="406,128,627,155"/>
+<area shape="rect" id="node9" href="$aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="405,183,628,209"/>
+<area shape="rect" id="node8" href="$aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="676,117,816,158"/>
+<area shape="rect" id="node10" href="$aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="676,182,816,223"/>
+</map>

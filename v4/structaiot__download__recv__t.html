@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: aiot_download_recv_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structaiot__download__recv__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_download_recv_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>下载固件过程中收到的分片的报文的描述, 包括类型, 以及所存储的buffer地址, buffer的长度, 以及当前的下载进度  
+ <a href="structaiot__download__recv__t.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="aiot__ota__api_8h_source.html">aiot_ota_api.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2d01fe0e384105431d7e99e3987f87d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html#a2d01fe0e384105431d7e99e3987f87d5">type</a></td></tr>
+<tr class="memdesc:a2d01fe0e384105431d7e99e3987f87d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中收到的分片的报文的类型, 具体见<a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a>  <a href="#a2d01fe0e384105431d7e99e3987f87d5">更多...</a><br /></td></tr>
+<tr class="separator:a2d01fe0e384105431d7e99e3987f87d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0365e566a642a9a448529ca5447ba09"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:aed8eac6174330c8efaa7a63eb227fbab"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#aa7e50e0e6e609fc7a69954a59ca425bb">buffer</a></td></tr>
+<tr class="memdesc:aed8eac6174330c8efaa7a63eb227fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer地址.在回调函数结束后SDK就会主动释放.用户需要自行将报文拷贝保存.  <a href="#aed8eac6174330c8efaa7a63eb227fbab">更多...</a><br /></td></tr>
+<tr class="separator:aed8eac6174330c8efaa7a63eb227fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a2873ed16ba0412f13ea95e22cf9db6c0">len</a></td></tr>
+<tr class="memdesc:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整  <a href="#a92e30da9acd6eb8d1d90305a9ee8b0f9">更多...</a><br /></td></tr>
+<tr class="separator:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19dd1142092efa2eb32c031340f0cf0"><td class="memItemLeft" >&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a44b0323ee9a372d00a469982c060f7eb">percent</a></td></tr>
+<tr class="memdesc:ae19dd1142092efa2eb32c031340f0cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的下载进度的百分比  <a href="#ae19dd1142092efa2eb32c031340f0cf0">更多...</a><br /></td></tr>
+<tr class="separator:ae19dd1142092efa2eb32c031340f0cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0365e566a642a9a448529ca5447ba09"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html#ad0365e566a642a9a448529ca5447ba09">data</a></td></tr>
+<tr class="separator:ad0365e566a642a9a448529ca5447ba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>下载固件过程中收到的分片的报文的描述, 包括类型, 以及所存储的buffer地址, buffer的长度, 以及当前的下载进度 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a2d01fe0e384105431d7e99e3987f87d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a> aiot_download_recv_t::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下载固件过程中收到的分片的报文的类型, 具体见<a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7e50e0e6e609fc7a69954a59ca425bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* aiot_download_recv_t::buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer地址.在回调函数结束后SDK就会主动释放.用户需要自行将报文拷贝保存. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2873ed16ba0412f13ea95e22cf9db6c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t aiot_download_recv_t::len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整 </p>
+
+</div>
+</div>
+<a class="anchor" id="a44b0323ee9a372d00a469982c060f7eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_download_recv_t::percent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前的下载进度的百分比 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0365e566a642a9a448529ca5447ba09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   aiot_download_recv_t::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>components/ota/<a class="el" href="aiot__ota__api_8h_source.html">aiot_ota_api.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

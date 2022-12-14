@@ -1,0 +1,8 @@
+<map id="_task_core_mqtt_operate_process_handler" name="_task_core_mqtt_operate_process_handler">
+<area shape="rect" id="node2" href="$aiot__task__api_8c.html#a04e5d26e482e9a374f428bbb789d9b60" title="_task_core_mqtt_process\l_handler" alt="" coords="223,5,395,47"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="247,71,370,98"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="443,43,665,70"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="443,98,665,125"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="713,32,853,73"/>
+<area shape="rect" id="node7" href="$aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="713,97,853,139"/>
+</map>

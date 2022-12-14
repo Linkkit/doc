@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/dynreg/aiot_dynreg_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_dce0113453c964ccb86d0f673a33fb98.html">dynreg</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_dynreg_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>dynreg模块的API接口实现, 提供获取设备信息的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;dynreg_private.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;core_auth.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_dynreg_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dynreg__api_8c__incl.png" border="0" usemap="#components_2dynreg_2aiot__dynreg__api_8c" alt=""/></div>
+<map name="components_2dynreg_2aiot__dynreg__api_8c" id="components_2dynreg_2aiot__dynreg__api_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4248a7322cdc3432d16df10047edbdd3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3">_dynreg_exec_inc</a> (dynreg_handle_t *dynreg_handle)</td></tr>
+<tr class="separator:a4248a7322cdc3432d16df10047edbdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfec26b819735044ef8b03da65cdfcd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd">_dynreg_exec_dec</a> (dynreg_handle_t *dynreg_handle)</td></tr>
+<tr class="separator:a6bfec26b819735044ef8b03da65cdfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7f2dcc0f1beec05e355624b24585ce"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#aad7f2dcc0f1beec05e355624b24585ce">_dynreg_sign</a> (dynreg_handle_t *dynreg_handle, char *random, char sign_str[65])</td></tr>
+<tr class="separator:aad7f2dcc0f1beec05e355624b24585ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4457ee379c77a984e38c93d4406545d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a4457ee379c77a984e38c93d4406545d2">_dynreg_recv_handler</a> (void *handle, const <a class="el" href="structaiot__http__recv__t.html">aiot_http_recv_t</a> *packet, void *userdata)</td></tr>
+<tr class="separator:a4457ee379c77a984e38c93d4406545d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c48d126ade92bfce12dfc8a0201284"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a00c48d126ade92bfce12dfc8a0201284">_dynreg_device_info</a> (dynreg_handle_t *dynreg_handle, char **device_secret)</td></tr>
+<tr class="separator:a00c48d126ade92bfce12dfc8a0201284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd29e99451a66294c60d2b99055a7fb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a7cd29e99451a66294c60d2b99055a7fb">aiot_dynreg_init</a> (void)</td></tr>
+<tr class="memdesc:a7cd29e99451a66294c60d2b99055a7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建dynreg会话实例, 并以默认值配置会话参数  <a href="#a7cd29e99451a66294c60d2b99055a7fb">更多...</a><br /></td></tr>
+<tr class="separator:a7cd29e99451a66294c60d2b99055a7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95423cf9fbb8509a6388fd2c14737e0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#ab95423cf9fbb8509a6388fd2c14737e0">aiot_dynreg_setopt</a> (void *handle, <a class="el" href="aiot__dynreg__api_8h.html#ae1bb100bb5ef335ef46349e889873987">aiot_dynreg_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ab95423cf9fbb8509a6388fd2c14737e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置dynreg会话  <a href="#ab95423cf9fbb8509a6388fd2c14737e0">更多...</a><br /></td></tr>
+<tr class="separator:ab95423cf9fbb8509a6388fd2c14737e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832cfd519a7b741d365a8f8887712caa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a832cfd519a7b741d365a8f8887712caa">aiot_dynreg_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a832cfd519a7b741d365a8f8887712caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束dynreg会话, 销毁实例并回收资源  <a href="#a832cfd519a7b741d365a8f8887712caa">更多...</a><br /></td></tr>
+<tr class="separator:a832cfd519a7b741d365a8f8887712caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510ec538526d8ceddb884d6200403155"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#a510ec538526d8ceddb884d6200403155">aiot_dynreg_send_request</a> (void *handle)</td></tr>
+<tr class="memdesc:a510ec538526d8ceddb884d6200403155"><td class="mdescLeft">&#160;</td><td class="mdescRight">向dynreg服务器发送dynreg消息请求  <a href="#a510ec538526d8ceddb884d6200403155">更多...</a><br /></td></tr>
+<tr class="separator:a510ec538526d8ceddb884d6200403155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40b21cd7c06045eb7ac8a0a03d683bd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__dynreg__api_8c.html#ab40b21cd7c06045eb7ac8a0a03d683bd">aiot_dynreg_recv</a> (void *handle)</td></tr>
+<tr class="memdesc:ab40b21cd7c06045eb7ac8a0a03d683bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">从网络上收取dynreg消息  <a href="#ab40b21cd7c06045eb7ac8a0a03d683bd">更多...</a><br /></td></tr>
+<tr class="separator:ab40b21cd7c06045eb7ac8a0a03d683bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>dynreg模块的API接口实现, 提供获取设备信息的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4248a7322cdc3432d16df10047edbdd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _dynreg_exec_inc </td>
+          <td>(</td>
+          <td class="paramtype">dynreg_handle_t *&#160;</td>
+          <td class="paramname"><em>dynreg_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bfec26b819735044ef8b03da65cdfcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _dynreg_exec_dec </td>
+          <td>(</td>
+          <td class="paramtype">dynreg_handle_t *&#160;</td>
+          <td class="paramname"><em>dynreg_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad7f2dcc0f1beec05e355624b24585ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _dynreg_sign </td>
+          <td>(</td>
+          <td class="paramtype">dynreg_handle_t *&#160;</td>
+          <td class="paramname"><em>dynreg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>random</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sign_str</em>[65]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4457ee379c77a984e38c93d4406545d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _dynreg_recv_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structaiot__http__recv__t.html">aiot_http_recv_t</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00c48d126ade92bfce12dfc8a0201284"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _dynreg_device_info </td>
+          <td>(</td>
+          <td class="paramtype">dynreg_handle_t *&#160;</td>
+          <td class="paramname"><em>dynreg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>device_secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7cd29e99451a66294c60d2b99055a7fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_dynreg_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建dynreg会话实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>dynreg实例的句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dynreg__api_8c_a7cd29e99451a66294c60d2b99055a7fb_cgraph.png" border="0" usemap="#aiot__dynreg__api_8c_a7cd29e99451a66294c60d2b99055a7fb_cgraph" alt=""/></div>
+<map name="aiot__dynreg__api_8c_a7cd29e99451a66294c60d2b99055a7fb_cgraph" id="aiot__dynreg__api_8c_a7cd29e99451a66294c60d2b99055a7fb_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="167,5,329,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab95423cf9fbb8509a6388fd2c14737e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dynreg_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__dynreg__api_8h.html#ae1bb100bb5ef335ef46349e889873987">aiot_dynreg_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置dynreg会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>dynreg会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__dynreg__api_8h.html#ae1bb100bb5ef335ef46349e889873987">aiot_dynreg_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__dynreg__api_8h.html#ae1bb100bb5ef335ef46349e889873987">aiot_dynreg_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数配置失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dynreg__api_8c_ab95423cf9fbb8509a6388fd2c14737e0_cgraph.png" border="0" usemap="#aiot__dynreg__api_8c_ab95423cf9fbb8509a6388fd2c14737e0_cgraph" alt=""/></div>
+<map name="aiot__dynreg__api_8c_ab95423cf9fbb8509a6388fd2c14737e0_cgraph" id="aiot__dynreg__api_8c_ab95423cf9fbb8509a6388fd2c14737e0_cgraph">
+<area shape="rect" id="node2" href="aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3" title="_dynreg_exec_inc" alt="" coords="187,5,314,32"/>
+<area shape="rect" id="node3" href="aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd" title="_dynreg_exec_dec" alt="" coords="185,56,316,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a832cfd519a7b741d365a8f8887712caa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dynreg_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束dynreg会话, 销毁实例并回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向dynreg会话句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a510ec538526d8ceddb884d6200403155"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dynreg_send_request </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向dynreg服务器发送dynreg消息请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>dynreg会话句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>请求发送失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dynreg__api_8c_a510ec538526d8ceddb884d6200403155_cgraph.png" border="0" usemap="#aiot__dynreg__api_8c_a510ec538526d8ceddb884d6200403155_cgraph" alt=""/></div>
+<map name="aiot__dynreg__api_8c_a510ec538526d8ceddb884d6200403155_cgraph" id="aiot__dynreg__api_8c_a510ec538526d8ceddb884d6200403155_cgraph">
+<area shape="rect" id="node2" href="aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3" title="_dynreg_exec_inc" alt="" coords="239,5,366,32"/>
+<area shape="rect" id="node3" href="aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd" title="_dynreg_exec_dec" alt="" coords="237,56,368,83"/>
+<area shape="rect" id="node4" href="aiot__dynreg__api_8c.html#a4457ee379c77a984e38c93d4406545d2" title="_dynreg_recv_handler" alt="" coords="228,107,377,133"/>
+<area shape="rect" id="node5" href="aiot__dynreg__api_8c.html#aad7f2dcc0f1beec05e355624b24585ce" title="_dynreg_sign" alt="" coords="253,157,352,184"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab40b21cd7c06045eb7ac8a0a03d683bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_dynreg_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从网络上收取dynreg消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>dynreg会话句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>数据接收失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>数据接收成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__dynreg__api_8c_ab40b21cd7c06045eb7ac8a0a03d683bd_cgraph.png" border="0" usemap="#aiot__dynreg__api_8c_ab40b21cd7c06045eb7ac8a0a03d683bd_cgraph" alt=""/></div>
+<map name="aiot__dynreg__api_8c_ab40b21cd7c06045eb7ac8a0a03d683bd_cgraph" id="aiot__dynreg__api_8c_ab40b21cd7c06045eb7ac8a0a03d683bd_cgraph">
+<area shape="rect" id="node2" href="aiot__dynreg__api_8c.html#a4248a7322cdc3432d16df10047edbdd3" title="_dynreg_exec_inc" alt="" coords="182,5,309,32"/>
+<area shape="rect" id="node3" href="aiot__dynreg__api_8c.html#a6bfec26b819735044ef8b03da65cdfcd" title="_dynreg_exec_dec" alt="" coords="180,56,311,83"/>
+<area shape="rect" id="node4" href="aiot__dynreg__api_8c.html#a00c48d126ade92bfce12dfc8a0201284" title="_dynreg_device_info" alt="" coords="175,107,316,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

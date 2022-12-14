@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/ntp/aiot_ntp_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_d2ed982ca46c4a165414cd11da30dcbf.html">ntp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_ntp_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ntp模块头文件, 提供获取utc时间的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_ntp_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ntp__api_8h__incl.png" border="0" usemap="#components_2ntp_2aiot__ntp__api_8h" alt=""/></div>
+<map name="components_2ntp_2aiot__ntp__api_8h" id="components_2ntp_2aiot__ntp__api_8h">
+</map>
+</div>
+</div>
+<p><a href="aiot__ntp__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ntp__recv__t.html">aiot_ntp_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp模块收到从网络上来的报文时, 通知用户的报文内容  <a href="structaiot__ntp__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ntp__event__t.html">aiot_ntp_event_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NTP内部事件  <a href="structaiot__ntp__event__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a5f1f38d7cb64ff41440f7b95f7d88dd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#a5f1f38d7cb64ff41440f7b95f7d88dd7">STATE_NTP_BASE</a>&#160;&#160;&#160;(-0x1100)</td></tr>
+<tr class="memdesc:a5f1f38d7cb64ff41440f7b95f7d88dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x1100~-0x11FF表达SDK在ntp模块内的状态码  <a href="#a5f1f38d7cb64ff41440f7b95f7d88dd7">更多...</a><br /></td></tr>
+<tr class="separator:a5f1f38d7cb64ff41440f7b95f7d88dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bf07bd228d102cdbfcd5d7b93e7e1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#a81bf07bd228d102cdbfcd5d7b93e7e1a">STATE_NTP_MISSING_MQTT_HANDLE</a>&#160;&#160;&#160;(-0x1101)</td></tr>
+<tr class="memdesc:a81bf07bd228d102cdbfcd5d7b93e7e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT会话句柄未设置, 请通过 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 设置MQTT会话句柄  <a href="#a81bf07bd228d102cdbfcd5d7b93e7e1a">更多...</a><br /></td></tr>
+<tr class="separator:a81bf07bd228d102cdbfcd5d7b93e7e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ac5ecd8cf04e6b55bb3c459d43e8f3781"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#ac5ecd8cf04e6b55bb3c459d43e8f3781">aiot_ntp_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__ntp__recv__t.html">aiot_ntp_recv_t</a> *packet, void *userdata)</td></tr>
+<tr class="memdesc:ac5ecd8cf04e6b55bb3c459d43e8f3781"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp模块收到从网络上来的报文时, 通知用户所调用的数据回调函数  <a href="#ac5ecd8cf04e6b55bb3c459d43e8f3781">更多...</a><br /></td></tr>
+<tr class="separator:ac5ecd8cf04e6b55bb3c459d43e8f3781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2223f5780b4b32a8f49d79afb6c50f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#aad2223f5780b4b32a8f49d79afb6c50f">aiot_ntp_event_handler_t</a>) (void *handle, const <a class="el" href="structaiot__ntp__event__t.html">aiot_ntp_event_t</a> *event, void *userdata)</td></tr>
+<tr class="memdesc:aad2223f5780b4b32a8f49d79afb6c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp事件回调函数  <a href="#aad2223f5780b4b32a8f49d79afb6c50f">更多...</a><br /></td></tr>
+<tr class="separator:aad2223f5780b4b32a8f49d79afb6c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8eec7ea643e4b52a5623c69b50541b6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6d">aiot_ntp_recv_type_t</a> { <a class="el" href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6da3beff7142ce7162eb64f4e3601256b9a">AIOT_NTPRECV_LOCAL_TIME</a>
+ }<tr class="memdesc:a8eec7ea643e4b52a5623c69b50541b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp模块收到从网络上来的报文时, 通知用户的报文类型  <a href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a8eec7ea643e4b52a5623c69b50541b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dddcb7794bea2646e2de8a4da91e9ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#a1dddcb7794bea2646e2de8a4da91e9ed">aiot_ntp_event_type_t</a> { <a class="el" href="aiot__ntp__api_8h.html#a1dddcb7794bea2646e2de8a4da91e9eda823b14a38aff16466a5c10631bb8ae67">AIOT_NTPEVT_INVALID_RESPONSE</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#a1dddcb7794bea2646e2de8a4da91e9eda57d91ee146b6163a206ebc7ac0c16cbb">AIOT_NTPEVT_INVALID_TIME_FORMAT</a>
+ }<tr class="memdesc:a1dddcb7794bea2646e2de8a4da91e9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp内部事件类型  <a href="aiot__ntp__api_8h.html#a1dddcb7794bea2646e2de8a4da91e9ed">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a1dddcb7794bea2646e2de8a4da91e9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb884a58ce19f15c29a47efabc2f2be1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a3f3c8b4d11e333a2932dd1db728b6d6e">AIOT_NTPOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ac44ab74d3ce407ddcdaec835dd299a7a">AIOT_NTPOPT_TIME_ZONE</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a2e51c6c3c13dff6970db61a699f15182">AIOT_NTPOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ac113e021f31e43f8b3bcaf34934d76b3">AIOT_NTPOPT_EVENT_HANDLER</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a7297cb75119bbd3d5561072299bb8622">AIOT_NTPOPT_USERDATA</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1aafc58dffa877eb7e0b328f8633b6a641">AIOT_NTPOPT_DEINIT_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ad5766c24661d81dd86ba850fc9f3efa7">AIOT_NTPOPT_MAX</a>
+<br />
+ }<tr class="memdesc:aeb884a58ce19f15c29a47efabc2f2be1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 接口的option参数可选值.  <a href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aeb884a58ce19f15c29a47efabc2f2be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa83c4dbdee7154be53bc96657e617df0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#aa83c4dbdee7154be53bc96657e617df0">aiot_ntp_init</a> (void)</td></tr>
+<tr class="memdesc:aa83c4dbdee7154be53bc96657e617df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建ntp会话实例, 并以默认值配置会话参数  <a href="#aa83c4dbdee7154be53bc96657e617df0">更多...</a><br /></td></tr>
+<tr class="separator:aa83c4dbdee7154be53bc96657e617df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cceafe10a47b7237928b4577c07498"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> (void *handle, <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ac4cceafe10a47b7237928b4577c07498"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置ntp会话  <a href="#ac4cceafe10a47b7237928b4577c07498">更多...</a><br /></td></tr>
+<tr class="separator:ac4cceafe10a47b7237928b4577c07498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fcaefbbfbd7320e9e1af8bb39927a4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#ab5fcaefbbfbd7320e9e1af8bb39927a4">aiot_ntp_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:ab5fcaefbbfbd7320e9e1af8bb39927a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束ntp会话, 销毁实例并回收资源  <a href="#ab5fcaefbbfbd7320e9e1af8bb39927a4">更多...</a><br /></td></tr>
+<tr class="separator:ab5fcaefbbfbd7320e9e1af8bb39927a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e583c8441de19f764f9e347a42163f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__ntp__api_8h.html#ab5e583c8441de19f764f9e347a42163f">aiot_ntp_send_request</a> (void *handle)</td></tr>
+<tr class="memdesc:ab5e583c8441de19f764f9e347a42163f"><td class="mdescLeft">&#160;</td><td class="mdescRight">向ntp服务器发送ntp消息请求  <a href="#ab5e583c8441de19f764f9e347a42163f">更多...</a><br /></td></tr>
+<tr class="separator:ab5e583c8441de19f764f9e347a42163f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>ntp模块头文件, 提供获取utc时间的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited</dd></dl>
+<p>NTP模块用于从阿里云物联网平台上获取UTC时间, API的使用流程如下:</p>
+<ol type="1">
+<li>首先参考 <a class="el" href="aiot__mqtt__api_8h.html">aiot_mqtt_api.h</a> 的说明, 保证成功建立与物联网平台的<code>MQTT</code>连接</li>
+<li>调用 <a class="el" href="aiot__ntp__api_8h.html#aa83c4dbdee7154be53bc96657e617df0">aiot_ntp_init</a> 初始化ntp会话, 获取会话句柄</li>
+<li>调用 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 配置NTP会话的参数, 常用配置项见 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 的说明</li>
+<li>调用 <a class="el" href="aiot__ntp__api_8h.html#ab5e583c8441de19f764f9e347a42163f">aiot_ntp_send_request</a> 发送NTP请求</li>
+<li>收到的UTC时间经SDK处理后会调用由 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 配置的 <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a2e51c6c3c13dff6970db61a699f15182">AIOT_NTPOPT_RECV_HANDLER</a> 回调函数, 通知用户当前的时间 </li>
+</ol>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a5f1f38d7cb64ff41440f7b95f7d88dd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_NTP_BASE&#160;&#160;&#160;(-0x1100)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x1100~-0x11FF表达SDK在ntp模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a81bf07bd228d102cdbfcd5d7b93e7e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_NTP_MISSING_MQTT_HANDLE&#160;&#160;&#160;(-0x1101)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT会话句柄未设置, 请通过 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 设置MQTT会话句柄 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ac5ecd8cf04e6b55bb3c459d43e8f3781"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  aiot_ntp_recv_handler_t) (void *handle, const <a class="el" href="structaiot__ntp__recv__t.html">aiot_ntp_recv_t</a> *packet, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ntp模块收到从网络上来的报文时, 通知用户所调用的数据回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>ntp会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>ntp消息结构体, 存放收到的ntp报文内容 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aad2223f5780b4b32a8f49d79afb6c50f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_ntp_event_handler_t) (void *handle, const <a class="el" href="structaiot__ntp__event__t.html">aiot_ntp_event_t</a> *event, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ntp事件回调函数 </p>
+<p>当NTP内部事件被触发时, 调用此函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a8eec7ea643e4b52a5623c69b50541b6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6d">aiot_ntp_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ntp模块收到从网络上来的报文时, 通知用户的报文类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a8eec7ea643e4b52a5623c69b50541b6da3beff7142ce7162eb64f4e3601256b9a"></a>AIOT_NTPRECV_LOCAL_TIME&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a1dddcb7794bea2646e2de8a4da91e9ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ntp__api_8h.html#a1dddcb7794bea2646e2de8a4da91e9ed">aiot_ntp_event_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ntp内部事件类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a1dddcb7794bea2646e2de8a4da91e9eda823b14a38aff16466a5c10631bb8ae67"></a>AIOT_NTPEVT_INVALID_RESPONSE&#160;</td><td class="fielddoc">
+<p>收到的ntp应答中字段不合法 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1dddcb7794bea2646e2de8a4da91e9eda57d91ee146b6163a206ebc7ac0c16cbb"></a>AIOT_NTPEVT_INVALID_TIME_FORMAT&#160;</td><td class="fielddoc">
+<p>收到的ntp应答中时间字段格式错误 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 接口的option参数可选值. </p>
+<p>下文每个选项中的数据类型, 指的是<a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 中, data参数的数据类型</p>
+<ol type="1">
+<li><p class="startli">data的数据类型是char *时, 以配置<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a3f3c8b4d11e333a2932dd1db728b6d6e">AIOT_NTPOPT_MQTT_HANDLE</a> 为例:</p>
+<p class="startli">void *mqtt_handle = <a class="el" href="aiot__mqtt__api_8c.html#a5a11b1a4ec6467b38120f3e03ddc57fe" title="初始化mqtt实例并设置默认参数 ">aiot_mqtt_init()</a>; aiot_ntp_setopt(ntp_handle, AIOT_NTPOPT_MQTT_HANDLE, mqtt_handle);</p>
+</li>
+<li><p class="startli">data的数据类型是其他数据类型时, 以配置<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ac44ab74d3ce407ddcdaec835dd299a7a">AIOT_NTPOPT_TIME_ZONE</a> 为例:</p>
+<p class="startli">int8_t time_zone = 8; aiot_mqtt_setopt(ntp_handle, AIOT_NTPOPT_TIME_ZONE, (void *)&amp;time_zone); </p>
+</li>
+</ol>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1a3f3c8b4d11e333a2932dd1db728b6d6e"></a>AIOT_NTPOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>ntp会话 需要的MQTT句柄, 需要先建立MQTT连接, 再设置MQTT句柄 </p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1ac44ab74d3ce407ddcdaec835dd299a7a"></a>AIOT_NTPOPT_TIME_ZONE&#160;</td><td class="fielddoc">
+<p>ntp会话 获取到utc时间后会根据此时区值转换成本地时间, 再通过 <a class="el" href="aiot__ntp__api_8h.html#ac5ecd8cf04e6b55bb3c459d43e8f3781">aiot_ntp_recv_handler_t</a> 通知 </p>
+<p>取值示例: 东8区, 取值为8; 西3区, 取值为-3</p>
+<p>数据类型: (int8_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1a2e51c6c3c13dff6970db61a699f15182"></a>AIOT_NTPOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>设置回调, 它在SDK收到网络报文的时候被调用, 告知用户 </p>
+<p>数据类型: ( <a class="el" href="aiot__ntp__api_8h.html#ac5ecd8cf04e6b55bb3c459d43e8f3781">aiot_ntp_recv_handler_t</a> ) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1ac113e021f31e43f8b3bcaf34934d76b3"></a>AIOT_NTPOPT_EVENT_HANDLER&#160;</td><td class="fielddoc">
+<p>ntp内部发生的事件会从此回调函数进行通知 </p>
+<p>数据类型: ( <a class="el" href="aiot__ntp__api_8h.html#aad2223f5780b4b32a8f49d79afb6c50f">aiot_ntp_event_handler_t</a> ) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1a7297cb75119bbd3d5561072299bb8622"></a>AIOT_NTPOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<p>这个上下文指针会在 AIOT_NTPOPT_RECV_HANDLER 和 AIOT_NTPOPT_EVENT_HANDLER 设置的回调被调用时, 由SDK传给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1aafc58dffa877eb7e0b328f8633b6a641"></a>AIOT_NTPOPT_DEINIT_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>销毁ntp实例时, 等待其他api执行完毕的时间 </p>
+<p>当调用<a class="el" href="aiot__ntp__api_8h.html#ab5fcaefbbfbd7320e9e1af8bb39927a4">aiot_ntp_deinit</a> 销毁NTP实例时, 若继续调用其他aiot_ntp_xxx API, API会返回<a class="el" href="aiot__state__api_8h.html#a5b9b1bacae6b65a43f868a62d6df5e86">STATE_USER_INPUT_EXEC_DISABLED</a> 错误</p>
+<p>此时, 用户应该停止调用其他aiot_ntp_xxx API</p>
+<p>数据类型: (uint32_t *) 默认值: (2 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aeb884a58ce19f15c29a47efabc2f2be1ad5766c24661d81dd86ba850fc9f3efa7"></a>AIOT_NTPOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="aa83c4dbdee7154be53bc96657e617df0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_ntp_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建ntp会话实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>ntp实例的句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ntp__api_8h_aa83c4dbdee7154be53bc96657e617df0_cgraph.png" border="0" usemap="#aiot__ntp__api_8h_aa83c4dbdee7154be53bc96657e617df0_cgraph" alt=""/></div>
+<map name="aiot__ntp__api_8h_aa83c4dbdee7154be53bc96657e617df0_cgraph" id="aiot__ntp__api_8h_aa83c4dbdee7154be53bc96657e617df0_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="145,5,308,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4cceafe10a47b7237928b4577c07498"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ntp_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置ntp会话 </p>
+<p>常见的配置项如下</p>
+<ul>
+<li><code>AIOT_NTPOPT_MQTT_HANDLE</code>: 已建立连接的MQTT会话句柄</li>
+<li><code>AIOT_NTPOPT_TIME_ZONE</code>: 时区设置, SDK会将收到的UTC时间按配置的时区进行转换</li>
+<li><code>AIOT_NTPOPT_RECV_HANDLER</code>: 时间数据接收回调函数, SDK将UTC时间转换完成后, 通过此回调函数输出</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>ntp会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1">aiot_ntp_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数配置失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ntp__api_8h_ac4cceafe10a47b7237928b4577c07498_cgraph.png" border="0" usemap="#aiot__ntp__api_8h_ac4cceafe10a47b7237928b4577c07498_cgraph" alt=""/></div>
+<map name="aiot__ntp__api_8h_ac4cceafe10a47b7237928b4577c07498_cgraph" id="aiot__ntp__api_8h_ac4cceafe10a47b7237928b4577c07498_cgraph">
+<area shape="rect" id="node2" href="aiot__ntp__api_8c.html#ace6fdc4df789b301713e58cc9fab6c66" title="_core_ntp_exec_inc" alt="" coords="177,68,315,95"/>
+<area shape="rect" id="node3" href="aiot__ntp__api_8c.html#afa1983877549228112af404303227a8e" title="_ntp_operate_topic_map" alt="" coords="164,119,328,145"/>
+<area shape="rect" id="node17" href="aiot__ntp__api_8c.html#ae798eea1d0874c6433bdcdd26f126efe" title="_ntp_core_mqtt_operate\l_process_handler" alt="" coords="165,195,327,237"/>
+<area shape="rect" id="node24" href="aiot__ntp__api_8c.html#aab5f1d99f0ef22103344d8293a96b6d1" title="_core_ntp_exec_dec" alt="" coords="175,261,317,288"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="379,5,562,32"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="376,56,565,83"/>
+<area shape="rect" id="node6" href="aiot__ntp__api_8c.html#a76f7f18eef9c956fe5e1b16b682b9080" title="_ntp_recv_handler" alt="" coords="407,107,535,133"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="411,157,530,184"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="651,39,798,65"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="647,89,803,116"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="623,140,826,167"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="623,191,827,217"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="649,241,800,268"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="885,142,1023,183"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="888,77,1020,118"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1072,77,1225,118"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="888,207,1020,249"/>
+<area shape="rect" id="node18" href="aiot__ntp__api_8c.html#a8fd505935233c33836fd1b1fc5d5c117" title="_ntp_core_mqtt_process\l_handler" alt="" coords="388,209,553,250"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="409,292,532,319"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="614,292,835,319"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="613,347,836,373"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="884,281,1024,322"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="884,346,1024,387"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5fcaefbbfbd7320e9e1af8bb39927a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ntp_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束ntp会话, 销毁实例并回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向ntp会话句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ntp__api_8h_ab5fcaefbbfbd7320e9e1af8bb39927a4_cgraph.png" border="0" usemap="#aiot__ntp__api_8h_ab5fcaefbbfbd7320e9e1af8bb39927a4_cgraph" alt=""/></div>
+<map name="aiot__ntp__api_8h_ab5fcaefbbfbd7320e9e1af8bb39927a4_cgraph" id="aiot__ntp__api_8h_ab5fcaefbbfbd7320e9e1af8bb39927a4_cgraph">
+<area shape="rect" id="node2" href="aiot__ntp__api_8c.html#ae798eea1d0874c6433bdcdd26f126efe" title="_ntp_core_mqtt_operate\l_process_handler" alt="" coords="161,64,323,105"/>
+<area shape="rect" id="node9" href="aiot__ntp__api_8c.html#afa1983877549228112af404303227a8e" title="_ntp_operate_topic_map" alt="" coords="160,173,324,199"/>
+<area shape="rect" id="node3" href="aiot__ntp__api_8c.html#a8fd505935233c33836fd1b1fc5d5c117" title="_ntp_core_mqtt_process\l_handler" alt="" coords="384,5,549,47"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="405,71,528,98"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="610,42,831,69"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="609,97,832,123"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="880,28,1020,69"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="880,93,1020,135"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="375,122,558,149"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="372,173,561,199"/>
+<area shape="rect" id="node12" href="aiot__ntp__api_8c.html#a76f7f18eef9c956fe5e1b16b682b9080" title="_ntp_recv_handler" alt="" coords="403,223,531,250"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="407,274,526,301"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="647,173,794,199"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="643,223,799,250"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="619,274,822,301"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="619,325,823,351"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="645,375,796,402"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="881,292,1019,333"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="884,227,1016,268"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1068,227,1221,268"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="884,357,1016,399"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5e583c8441de19f764f9e347a42163f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_ntp_send_request </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向ntp服务器发送ntp消息请求 </p>
+<p>发送NTP请求, 然后SDK会调用通过 <a class="el" href="aiot__ntp__api_8h.html#ac4cceafe10a47b7237928b4577c07498">aiot_ntp_setopt</a> 配置的 <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1a2e51c6c3c13dff6970db61a699f15182">AIOT_NTPOPT_RECV_HANDLER</a> 回调函数, 通知用户当前的时间</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>ntp会话句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>请求发送失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__ntp__api_8h_ab5e583c8441de19f764f9e347a42163f_cgraph.png" border="0" usemap="#aiot__ntp__api_8h_ab5e583c8441de19f764f9e347a42163f_cgraph" alt=""/></div>
+<map name="aiot__ntp__api_8h_ab5e583c8441de19f764f9e347a42163f_cgraph" id="aiot__ntp__api_8h_ab5e583c8441de19f764f9e347a42163f_cgraph">
+<area shape="rect" id="node2" href="aiot__ntp__api_8c.html#ace6fdc4df789b301713e58cc9fab6c66" title="_core_ntp_exec_inc" alt="" coords="232,241,371,268"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="210,292,393,319"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="207,343,396,369"/>
+<area shape="rect" id="node5" href="aiot__ntp__api_8c.html#aab5f1d99f0ef22103344d8293a96b6d1" title="_core_ntp_exec_dec" alt="" coords="230,393,373,420"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="249,444,353,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="444,444,591,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="639,444,753,471"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1067,189,1215,230"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="827,670,963,711"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1037,677,1244,704"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1292,298,1449,339"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="815,269,975,310"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="825,101,965,142"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="822,385,969,412"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1065,532,1216,559"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="825,502,966,543"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="820,568,971,595"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="810,335,981,361"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="822,437,969,478"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="829,735,961,777"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="834,852,957,879"/>
+<area shape="rect" id="node26" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="801,217,989,244"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1063,101,1219,142"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1071,357,1210,398"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1053,852,1229,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/logpost/aiot_logpost_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_c0197be8b87916668c953358b58c5249.html">logpost</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_logpost_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>logpost模块头文件, 提供设备端日志上云的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_logpost_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__logpost__api_8h__incl.png" border="0" usemap="#components_2logpost_2aiot__logpost__api_8h" alt=""/></div>
+<map name="components_2logpost_2aiot__logpost__api_8h" id="components_2logpost_2aiot__logpost__api_8h">
+</map>
+</div>
+</div>
+<p><a href="aiot__logpost__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__logpost__msg__t.html">aiot_logpost_msg_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志数据结构体定义  <a href="structaiot__logpost__msg__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__logpost__event__t.html">aiot_logpost_event_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">logpost模块内部发生值得用户关注的状态变化时, 通知用户的事件内容  <a href="structaiot__logpost__event__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2b2e97ae98a8214c7e40c92ba5fae832"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a2b2e97ae98a8214c7e40c92ba5fae832">STATE_LOGPOST_BASE</a>&#160;&#160;&#160;(-0x1500)</td></tr>
+<tr class="memdesc:a2b2e97ae98a8214c7e40c92ba5fae832"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x1500~-0x15FF表达SDK在logpost模块内的状态码  <a href="#a2b2e97ae98a8214c7e40c92ba5fae832">更多...</a><br /></td></tr>
+<tr class="separator:a2b2e97ae98a8214c7e40c92ba5fae832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633effd8504d772418594cfe65fb6fdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a633effd8504d772418594cfe65fb6fdd">STATE_LOGPOST_MQTT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x1501)</td></tr>
+<tr class="memdesc:a633effd8504d772418594cfe65fb6fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户未调用<a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 配置MQTT句柄  <a href="#a633effd8504d772418594cfe65fb6fdd">更多...</a><br /></td></tr>
+<tr class="separator:a633effd8504d772418594cfe65fb6fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cebd3924e7a51f73d24351aa1ca6cee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a1cebd3924e7a51f73d24351aa1ca6cee">STATE_LOGPOST_POST_TURN_OFF</a>&#160;&#160;&#160;(-0x1502)</td></tr>
+<tr class="memdesc:a1cebd3924e7a51f73d24351aa1ca6cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志上报被云端配置为关闭状态  <a href="#a1cebd3924e7a51f73d24351aa1ca6cee">更多...</a><br /></td></tr>
+<tr class="separator:a1cebd3924e7a51f73d24351aa1ca6cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a5c858ef8317f8fd5aacec9438d53d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a31a5c858ef8317f8fd5aacec9438d53d">STATE_LOGPOST_LOGLEVEL_ERROR</a>&#160;&#160;&#160;(-0x1503)</td></tr>
+<tr class="memdesc:a31a5c858ef8317f8fd5aacec9438d53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志消息的日志级别有误  <a href="#a31a5c858ef8317f8fd5aacec9438d53d">更多...</a><br /></td></tr>
+<tr class="separator:a31a5c858ef8317f8fd5aacec9438d53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fd7972ff52010d2ab9c0c10bf364aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a43fd7972ff52010d2ab9c0c10bf364aa">STATE_LOGPOST_LOG_MODULE_NAME_IS_NULL</a>&#160;&#160;&#160;(-0x1504)</td></tr>
+<tr class="memdesc:a43fd7972ff52010d2ab9c0c10bf364aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志消息的模块名称字段为NULL  <a href="#a43fd7972ff52010d2ab9c0c10bf364aa">更多...</a><br /></td></tr>
+<tr class="separator:a43fd7972ff52010d2ab9c0c10bf364aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bc48ea4a88309d60134342441a2c4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a41bc48ea4a88309d60134342441a2c4a">STATE_LOGPOST_LOG_CONTENT_IS_NULL</a>&#160;&#160;&#160;(-0x1505)</td></tr>
+<tr class="memdesc:a41bc48ea4a88309d60134342441a2c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志消息的日志内容字段为NULL  <a href="#a41bc48ea4a88309d60134342441a2c4a">更多...</a><br /></td></tr>
+<tr class="separator:a41bc48ea4a88309d60134342441a2c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fa63a93e6c0bb4cd02ca83203d4bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a28fa63a93e6c0bb4cd02ca83203d4bb1">STATE_LOGPOST_LOG_CONTENT_TOO_LONG</a>&#160;&#160;&#160;(-0x1506)</td></tr>
+<tr class="memdesc:a28fa63a93e6c0bb4cd02ca83203d4bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志消息的日志内容字段字符串长度大于4096个字节  <a href="#a28fa63a93e6c0bb4cd02ca83203d4bb1">更多...</a><br /></td></tr>
+<tr class="separator:a28fa63a93e6c0bb4cd02ca83203d4bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa502b8f1190ae4616aa116d6789a2f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#aa502b8f1190ae4616aa116d6789a2f63">STATE_LOGPOST_LOG_RECV</a>&#160;&#160;&#160;(-0x1507)</td></tr>
+<tr class="memdesc:aa502b8f1190ae4616aa116d6789a2f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到服务器下行消息时的内部日志状态码  <a href="#aa502b8f1190ae4616aa116d6789a2f63">更多...</a><br /></td></tr>
+<tr class="separator:aa502b8f1190ae4616aa116d6789a2f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38db384910aaac4137b9e84507f23abe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a38db384910aaac4137b9e84507f23abe">SATAE_LOGPOST_LOG_PARSE_MSG_FAILED</a>&#160;&#160;&#160;(-0x1508)</td></tr>
+<tr class="memdesc:a38db384910aaac4137b9e84507f23abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析服务器下行消息失败时的内部日志状态码  <a href="#a38db384910aaac4137b9e84507f23abe">更多...</a><br /></td></tr>
+<tr class="separator:a38db384910aaac4137b9e84507f23abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:abaef226a59337e2978c14b8423c740e6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#abaef226a59337e2978c14b8423c740e6">aiot_logpost_event_handler_t</a>) (void *handle, const <a class="el" href="structaiot__logpost__event__t.html">aiot_logpost_event_t</a> *event, void *userdata)</td></tr>
+<tr class="memdesc:abaef226a59337e2978c14b8423c740e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">logpost模块内部发生值得用户关注的状态变化时, 通知用户所调用的事件回调函数  <a href="#abaef226a59337e2978c14b8423c740e6">更多...</a><br /></td></tr>
+<tr class="separator:abaef226a59337e2978c14b8423c740e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ac987feb0db48179f4fc230e709847318"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318a17bb023f4037b358cfd99b0926743be6">AIOT_LOGPOSTOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318a8c18edb0c6ff7ad6050d7413a98813fd">AIOT_LOGPOSTOPT_EVENT_HANDLER</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318ad704a68be51182a521c5d32cd17dd07b">AIOT_LOGPOSTOPT_USERDATA</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318a9d30092c63d8d6cba34ad4d32a890f85">AIOT_LOGPOSTOPT_SYS_LOG</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318a2d22b7c2e53040e6d82fc28685c71c2b">AIOT_LOGPOSTOPT_MAX</a>
+<br />
+ }<tr class="memdesc:ac987feb0db48179f4fc230e709847318"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 接口的option参数可选值.  <a href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ac987feb0db48179f4fc230e709847318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0385a9881c9e8b4b1f2d1335ec2b73d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73d">aiot_logpost_level_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73da13834c4f4e2efb588eff0210bc6eb36c">AIOT_LOGPOST_LEVEL_FATAL</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73daab5fe012770704ef68a3108937db065f">AIOT_LOGPOST_LEVEL_ERR</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73dae72f37b65ac6443516dd08b299ef2bc1">AIOT_LOGPOST_LEVEL_WARN</a>, 
+<a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73da6045befd101ba38cf827593008b88120">AIOT_LOGPOST_LEVEL_INFO</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73daec0b30b6d1e81fa728fa06a87688c66a">AIOT_LOGPOST_LEVEL_DEBUG</a>
+<br />
+ }<tr class="memdesc:ac0385a9881c9e8b4b1f2d1335ec2b73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志级别枚举类型定义  <a href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ac0385a9881c9e8b4b1f2d1335ec2b73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e587ba78ac8187b280ba45d7476ca2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a32e587ba78ac8187b280ba45d7476ca2">aiot_logpost_event_type_t</a> { <a class="el" href="aiot__logpost__api_8h.html#a32e587ba78ac8187b280ba45d7476ca2a49fc3baf8978deaeebcfc81ac2cd7d95">AIOT_LOGPOSTEVT_CONFIG_DATA</a>
+ }<tr class="memdesc:a32e587ba78ac8187b280ba45d7476ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">logpost模块内部发生值得用户关注的状态变化时, 通知用户的事件类型  <a href="aiot__logpost__api_8h.html#a32e587ba78ac8187b280ba45d7476ca2">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a32e587ba78ac8187b280ba45d7476ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4de5a619f6fb2e021fb83facefd58afd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a4de5a619f6fb2e021fb83facefd58afd">aiot_logpost_init</a> (void)</td></tr>
+<tr class="memdesc:a4de5a619f6fb2e021fb83facefd58afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建logpost会话实例, 并以默认值配置会话参数  <a href="#a4de5a619f6fb2e021fb83facefd58afd">更多...</a><br /></td></tr>
+<tr class="separator:a4de5a619f6fb2e021fb83facefd58afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c3b9a76577e0a6a5e4e038ab30171e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> (void *handle, <a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ae1c3b9a76577e0a6a5e4e038ab30171e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置logpost会话  <a href="#ae1c3b9a76577e0a6a5e4e038ab30171e">更多...</a><br /></td></tr>
+<tr class="separator:ae1c3b9a76577e0a6a5e4e038ab30171e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144cea9ee5bda7bd783ea4632af7ab54"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#a144cea9ee5bda7bd783ea4632af7ab54">aiot_logpost_send</a> (void *handle, <a class="el" href="structaiot__logpost__msg__t.html">aiot_logpost_msg_t</a> *msg)</td></tr>
+<tr class="memdesc:a144cea9ee5bda7bd783ea4632af7ab54"><td class="mdescLeft">&#160;</td><td class="mdescRight">向服务器发送日志消息  <a href="#a144cea9ee5bda7bd783ea4632af7ab54">更多...</a><br /></td></tr>
+<tr class="separator:a144cea9ee5bda7bd783ea4632af7ab54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78f8eb7cff894f7bd672344e7389ec1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__logpost__api_8h.html#af78f8eb7cff894f7bd672344e7389ec1">aiot_logpost_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:af78f8eb7cff894f7bd672344e7389ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束logpost会话, 销毁实例并回收资源  <a href="#af78f8eb7cff894f7bd672344e7389ec1">更多...</a><br /></td></tr>
+<tr class="separator:af78f8eb7cff894f7bd672344e7389ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>logpost模块头文件, 提供设备端日志上云的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited</dd></dl>
+<ol type="1">
+<li>在使用日志上云模块前, 用户应首先创建好一个MQTT实例</li>
+<li>调用<code>aiot_logpost_init</code>创建一个日志上云实例, 保存实例句柄</li>
+<li>调用<code>aiot_logpost_setopt</code>配置<code>AIOT_LOGPOSTOPT_MQTT_HANDLE</code>选项以设置MQTT句柄, 此选项为强制配置选项</li>
+<li>调用<code>aiot_logpost_setopt</code>配置<code>AIOT_LOGPOSTOPT_EVENT_HANDLER</code>和<code>AIOT_LOGPOSTOPT_USER_DATA</code>选项以注册事件接收回调函数和用户上下文数据指针</li>
+<li>在使用<code>aiot_logpost_send</code>发送日志消息前, 应先完成MQTT实例的建连 </li>
+</ol>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a2b2e97ae98a8214c7e40c92ba5fae832"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_BASE&#160;&#160;&#160;(-0x1500)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x1500~-0x15FF表达SDK在logpost模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a633effd8504d772418594cfe65fb6fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_MQTT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x1501)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户未调用<a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 配置MQTT句柄 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1cebd3924e7a51f73d24351aa1ca6cee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_POST_TURN_OFF&#160;&#160;&#160;(-0x1502)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志上报被云端配置为关闭状态 </p>
+
+</div>
+</div>
+<a class="anchor" id="a31a5c858ef8317f8fd5aacec9438d53d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_LOGLEVEL_ERROR&#160;&#160;&#160;(-0x1503)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志消息的日志级别有误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a43fd7972ff52010d2ab9c0c10bf364aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_LOG_MODULE_NAME_IS_NULL&#160;&#160;&#160;(-0x1504)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志消息的模块名称字段为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a41bc48ea4a88309d60134342441a2c4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_LOG_CONTENT_IS_NULL&#160;&#160;&#160;(-0x1505)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志消息的日志内容字段为NULL </p>
+
+</div>
+</div>
+<a class="anchor" id="a28fa63a93e6c0bb4cd02ca83203d4bb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_LOG_CONTENT_TOO_LONG&#160;&#160;&#160;(-0x1506)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志消息的日志内容字段字符串长度大于4096个字节 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa502b8f1190ae4616aa116d6789a2f63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_LOGPOST_LOG_RECV&#160;&#160;&#160;(-0x1507)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收到服务器下行消息时的内部日志状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a38db384910aaac4137b9e84507f23abe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SATAE_LOGPOST_LOG_PARSE_MSG_FAILED&#160;&#160;&#160;(-0x1508)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析服务器下行消息失败时的内部日志状态码 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="abaef226a59337e2978c14b8423c740e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_logpost_event_handler_t) (void *handle, const <a class="el" href="structaiot__logpost__event__t.html">aiot_logpost_event_t</a> *event, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>logpost模块内部发生值得用户关注的状态变化时, 通知用户所调用的事件回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>logpost会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>logpost模块中发生的事件的内容 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>指向用户上下文数据的指针, 这个指针由用户通过调用<a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 配置<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318ad704a68be51182a521c5d32cd17dd07b">AIOT_LOGPOSTOPT_USERDATA</a> 选项设置</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ac987feb0db48179f4fc230e709847318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 接口的option参数可选值. </p>
+<p>下文每个选项中的数据类型, 指的是<a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 中, data参数的数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ac987feb0db48179f4fc230e709847318a17bb023f4037b358cfd99b0926743be6"></a>AIOT_LOGPOSTOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>模块依赖的MQTT句柄 </p>
+<p>LOGPOST模块依赖底层的MQTT模块, 用户必需配置正确的MQTT句柄, 否则无法正常工作, 数据类型为(void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac987feb0db48179f4fc230e709847318a8c18edb0c6ff7ad6050d7413a98813fd"></a>AIOT_LOGPOSTOPT_EVENT_HANDLER&#160;</td><td class="fielddoc">
+<p>设置回调, 它在SDK收到网络报文的时候被调用, 告知用户, 数据类型为(aiot_logpost_recv_handler_t) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac987feb0db48179f4fc230e709847318ad704a68be51182a521c5d32cd17dd07b"></a>AIOT_LOGPOSTOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文, 数据类型为(void *) </p>
+<p>这个上下文指针会在 AIOT_LOGPOSTOPT_RECV_HANDLER 设置的回调被调用时, 由SDK传给用户 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac987feb0db48179f4fc230e709847318a9d30092c63d8d6cba34ad4d32a890f85"></a>AIOT_LOGPOSTOPT_SYS_LOG&#160;</td><td class="fielddoc">
+<p>系统日志的开关. </p>
+<p>设置为1表示要上报系统日志, 设置为0表示不上报系统日志. 这里的系统日志是指建连耗时和网络延时 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac987feb0db48179f4fc230e709847318a2d22b7c2e53040e6d82fc28685c71c2b"></a>AIOT_LOGPOSTOPT_MAX&#160;</td><td class="fielddoc">
+<p>配置选项数量最大值, 不可用作配置参数 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__logpost__api_8h.html#ac0385a9881c9e8b4b1f2d1335ec2b73d">aiot_logpost_level_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志级别枚举类型定义 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73da13834c4f4e2efb588eff0210bc6eb36c"></a>AIOT_LOGPOST_LEVEL_FATAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73daab5fe012770704ef68a3108937db065f"></a>AIOT_LOGPOST_LEVEL_ERR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73dae72f37b65ac6443516dd08b299ef2bc1"></a>AIOT_LOGPOST_LEVEL_WARN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73da6045befd101ba38cf827593008b88120"></a>AIOT_LOGPOST_LEVEL_INFO&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac0385a9881c9e8b4b1f2d1335ec2b73daec0b30b6d1e81fa728fa06a87688c66a"></a>AIOT_LOGPOST_LEVEL_DEBUG&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a32e587ba78ac8187b280ba45d7476ca2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__logpost__api_8h.html#a32e587ba78ac8187b280ba45d7476ca2">aiot_logpost_event_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>logpost模块内部发生值得用户关注的状态变化时, 通知用户的事件类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a32e587ba78ac8187b280ba45d7476ca2a49fc3baf8978deaeebcfc81ac2cd7d95"></a>AIOT_LOGPOSTEVT_CONFIG_DATA&#160;</td><td class="fielddoc">
+<p>接受到云端下发的日志配置数据 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4de5a619f6fb2e021fb83facefd58afd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_logpost_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建logpost会话实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>logpost实例的句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__logpost__api_8h_a4de5a619f6fb2e021fb83facefd58afd_cgraph.png" border="0" usemap="#aiot__logpost__api_8h_a4de5a619f6fb2e021fb83facefd58afd_cgraph" alt=""/></div>
+<map name="aiot__logpost__api_8h_a4de5a619f6fb2e021fb83facefd58afd_cgraph" id="aiot__logpost__api_8h_a4de5a619f6fb2e021fb83facefd58afd_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="169,5,332,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1c3b9a76577e0a6a5e4e038ab30171e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_logpost_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置logpost会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>logpost会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__logpost__api_8h.html#ac987feb0db48179f4fc230e709847318">aiot_logpost_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数配置失败 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参handle或data为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参optioin的枚举值&gt;=AIOT_LOGPOSTOPT_MAX </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__logpost__api_8h_ae1c3b9a76577e0a6a5e4e038ab30171e_cgraph.png" border="0" usemap="#aiot__logpost__api_8h_ae1c3b9a76577e0a6a5e4e038ab30171e_cgraph" alt=""/></div>
+<map name="aiot__logpost__api_8h_ae1c3b9a76577e0a6a5e4e038ab30171e_cgraph" id="aiot__logpost__api_8h_ae1c3b9a76577e0a6a5e4e038ab30171e_cgraph">
+<area shape="rect" id="node2" href="aiot__logpost__api_8c.html#aba160bf08e75fc4e538b0cd375cbcd5e" title="_logpost_config_data\l_handler" alt="" coords="202,139,347,181"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="1325,132,1444,159"/>
+<area shape="rect" id="node13" href="aiot__logpost__api_8c.html#a0f1a9ee9b6be62bf4d0fa2ede509d456" title="_logpost_process_handler" alt="" coords="188,281,361,308"/>
+<area shape="rect" id="node41" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="213,416,336,443"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1521,208,1667,235"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="1516,5,1672,32"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="1493,107,1695,133"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="1492,56,1696,83"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1772,267,1923,293"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="1778,74,1917,115"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="1781,139,1913,181"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="2001,139,2154,181"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="1781,9,1913,50"/>
+<area shape="rect" id="node14" href="aiot__logpost__api_8c.html#a939a6c44e1670731faa70e8e35ba58c8" title="_logpost_send_nwkstats_conn" alt="" coords="420,256,621,283"/>
+<area shape="rect" id="node39" href="aiot__logpost__api_8c.html#a648e3dd5e22a157027a0e4e11de790c5" title="_logpost_send_nwkstats_rtt" alt="" coords="428,307,613,333"/>
+<area shape="rect" id="node40" href="aiot__logpost__api_8c.html#a74f2619293a633cf20893a1b8100d821" title="_logpost_get_config" alt="" coords="693,357,832,384"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a7e633775774cd6956052d5f9e156f46e" title="core_mqtt_get_nwkstats" alt="" coords="680,307,845,333"/>
+<area shape="rect" id="node16" href="aiot__logpost__api_8c.html#a144cea9ee5bda7bd783ea4632af7ab54" title="向服务器发送日志消息 " alt="" coords="699,256,826,283"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="897,408,1079,435"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="893,307,1083,333"/>
+<area shape="rect" id="node19" href="aiot__logpost__api_8c.html#a3e7349177972ae0a3798fea8c4bc0563" title="_should_report_sys_log" alt="" coords="909,256,1067,283"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="936,357,1040,384"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="1131,427,1277,453"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="1327,573,1442,600"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1773,511,1921,553"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1526,595,1662,637"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1744,599,1951,625"/>
+<area shape="rect" id="node26" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1999,642,2156,683"/>
+<area shape="rect" id="node27" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1514,814,1674,855"/>
+<area shape="rect" id="node28" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1524,879,1664,921"/>
+<area shape="rect" id="node30" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1523,945,1665,986"/>
+<area shape="rect" id="node31" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1519,1011,1669,1037"/>
+<area shape="rect" id="node32" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1509,712,1679,739"/>
+<area shape="rect" id="node34" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1521,259,1667,301"/>
+<area shape="rect" id="node35" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1528,377,1660,418"/>
+<area shape="rect" id="node36" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1533,443,1655,469"/>
+<area shape="rect" id="node38" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1500,493,1688,520"/>
+<area shape="rect" id="node29" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1769,879,1925,921"/>
+<area shape="rect" id="node33" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1778,701,1917,742"/>
+<area shape="rect" id="node37" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1759,443,1935,469"/>
+<area shape="rect" id="node42" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="410,416,631,443"/>
+<area shape="rect" id="node44" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="409,473,632,500"/>
+<area shape="rect" id="node43" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="693,409,833,450"/>
+<area shape="rect" id="node45" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="693,474,833,515"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a144cea9ee5bda7bd783ea4632af7ab54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_logpost_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__logpost__msg__t.html">aiot_logpost_msg_t</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向服务器发送日志消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>logpost会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>消息结构体, 可指定日志对应模块, 日志级别等, 更多信息请参考<a class="el" href="structaiot__logpost__msg__t.html">aiot_logpost_msg_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参<em>handle</em>或<em>msg</em>为NULL </td></tr>
+    <tr><td class="paramname">STATE_SYS_DEPEND_MALLOC_FAILED</td><td>内存分配失败 </td></tr>
+    <tr><td class="paramname">STATE_LOGPOST_MQTT_HANDLE_IS_NULL</td><td>用户未调用<a class="el" href="aiot__logpost__api_8h.html#ae1c3b9a76577e0a6a5e4e038ab30171e">aiot_logpost_setopt</a> 配置MQTT句柄 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__shadow__api_8h.html#a36c9a49b9803c34af20247e98c2119ff">STATE_SHADOW_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__logpost__api_8h_a144cea9ee5bda7bd783ea4632af7ab54_cgraph.png" border="0" usemap="#aiot__logpost__api_8h_a144cea9ee5bda7bd783ea4632af7ab54_cgraph" alt=""/></div>
+<map name="aiot__logpost__api_8h_a144cea9ee5bda7bd783ea4632af7ab54_cgraph" id="aiot__logpost__api_8h_a144cea9ee5bda7bd783ea4632af7ab54_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="183,292,366,319"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="180,343,369,369"/>
+<area shape="rect" id="node4" href="aiot__logpost__api_8c.html#a3e7349177972ae0a3798fea8c4bc0563" title="_should_report_sys_log" alt="" coords="195,393,354,420"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="223,444,327,471"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="417,444,564,471"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="612,444,727,471"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1040,189,1188,230"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="801,670,937,711"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1011,677,1217,704"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1265,298,1423,339"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="789,269,949,310"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="799,101,939,142"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="795,385,942,412"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1039,532,1189,559"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="798,502,939,543"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="793,568,944,595"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="783,335,954,361"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="795,437,942,478"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="803,735,935,777"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="807,852,930,879"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="775,217,963,244"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1036,101,1192,142"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1045,357,1183,398"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1026,852,1202,879"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af78f8eb7cff894f7bd672344e7389ec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_logpost_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束logpost会话, 销毁实例并回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向logpost会话句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__logpost__api_8h_af78f8eb7cff894f7bd672344e7389ec1_cgraph.png" border="0" usemap="#aiot__logpost__api_8h_af78f8eb7cff894f7bd672344e7389ec1_cgraph" alt=""/></div>
+<map name="aiot__logpost__api_8h_af78f8eb7cff894f7bd672344e7389ec1_cgraph" id="aiot__logpost__api_8h_af78f8eb7cff894f7bd672344e7389ec1_cgraph">
+<area shape="rect" id="node2" href="aiot__logpost__api_8c.html#a0f1a9ee9b6be62bf4d0fa2ede509d456" title="_logpost_process_handler" alt="" coords="184,697,357,724"/>
+<area shape="rect" id="node32" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="209,828,332,855"/>
+<area shape="rect" id="node37" href="aiot__logpost__api_8c.html#aba160bf08e75fc4e538b0cd375cbcd5e" title="_logpost_config_data\l_handler" alt="" coords="198,879,343,921"/>
+<area shape="rect" id="node38" href="aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="1321,883,1440,909"/>
+<area shape="rect" id="node3" href="aiot__logpost__api_8c.html#a939a6c44e1670731faa70e8e35ba58c8" title="_logpost_send_nwkstats_conn" alt="" coords="416,672,617,699"/>
+<area shape="rect" id="node30" href="aiot__logpost__api_8c.html#a648e3dd5e22a157027a0e4e11de790c5" title="_logpost_send_nwkstats_rtt" alt="" coords="424,621,609,648"/>
+<area shape="rect" id="node31" href="aiot__logpost__api_8c.html#a74f2619293a633cf20893a1b8100d821" title="_logpost_get_config" alt="" coords="689,723,828,749"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a7e633775774cd6956052d5f9e156f46e" title="core_mqtt_get_nwkstats" alt="" coords="676,672,841,699"/>
+<area shape="rect" id="node5" href="aiot__logpost__api_8c.html#a144cea9ee5bda7bd783ea4632af7ab54" title="向服务器发送日志消息 " alt="" coords="695,621,822,648"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="893,621,1075,648"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="889,672,1079,699"/>
+<area shape="rect" id="node8" href="aiot__logpost__api_8c.html#a3e7349177972ae0a3798fea8c4bc0563" title="_should_report_sys_log" alt="" coords="905,571,1063,597"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="932,723,1036,749"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#acfcd74b08ea2ae9fb8ee91c2b022c1db" title="_mqtt_pub_with_prop" alt="" coords="1127,519,1273,545"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a3bea481dd17a29e9bd973f3367807899" title="_core_mqtt_pub" alt="" coords="1323,417,1438,444"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1769,74,1917,115"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5918b10c5ac9af5eedacb1cbce76265e" title="_core_mqtt_general\l_property_is_valid" alt="" coords="1522,209,1658,250"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a2c0dd862baf47b0c6afa0b16a2ab6b72" title="_core_get_general_property_len" alt="" coords="1740,275,1947,301"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1995,267,2152,309"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1510,377,1670,418"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1520,442,1660,483"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1517,807,1663,833"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1768,756,1919,783"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1519,507,1661,549"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1515,573,1665,600"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#af80b4cdabf249995c909496c18569967" title="_core_write_general_prop" alt="" coords="1505,157,1675,184"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1517,690,1663,731"/>
+<area shape="rect" id="node26" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1524,625,1656,666"/>
+<area shape="rect" id="node27" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1529,5,1651,32"/>
+<area shape="rect" id="node29" href="aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1496,107,1684,133"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a888df082f37fe03f422f1d873f08aee3" title="_core_mqtt_topic_alias\l_list_insert" alt="" coords="1765,442,1921,483"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#a62d1baa3bc45c143a1fe44879a71943a" title="_read_variable_byte\l_interger" alt="" coords="1774,209,1913,250"/>
+<area shape="rect" id="node28" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1755,5,1931,32"/>
+<area shape="rect" id="node33" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="406,831,627,857"/>
+<area shape="rect" id="node35" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="405,888,628,915"/>
+<area shape="rect" id="node34" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="689,825,829,866"/>
+<area shape="rect" id="node36" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="689,890,829,931"/>
+<area shape="rect" id="node39" href="aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="1512,959,1668,985"/>
+<area shape="rect" id="node40" href="aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="1489,1009,1691,1036"/>
+<area shape="rect" id="node44" href="aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="1488,908,1692,935"/>
+<area shape="rect" id="node41" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="1774,951,1913,993"/>
+<area shape="rect" id="node42" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="1777,1017,1909,1058"/>
+<area shape="rect" id="node43" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1997,1017,2150,1058"/>
+<area shape="rect" id="node45" href="aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="1777,886,1909,927"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

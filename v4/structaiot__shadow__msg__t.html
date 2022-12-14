@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: aiot_shadow_msg_t结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structaiot__shadow__msg__t-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_shadow_msg_t结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>data-model模块发送消息的消息结构体  
+ <a href="structaiot__shadow__msg__t.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="aiot__shadow__api_8h_source.html">aiot_shadow_api.h</a>&gt;</code></p>
+<div class="dynheader">
+aiot_shadow_msg_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structaiot__shadow__msg__t__coll__graph.png" border="0" usemap="#aiot__shadow__msg__t_coll__map" alt="Collaboration graph"/></div>
+<map name="aiot__shadow__msg__t_coll__map" id="aiot__shadow__msg__t_coll__map">
+<area shape="rect" id="node2" href="structaiot__shadow__msg__get__t.html" title="用于获取设备影子的消息结构体, " alt="" coords="16,5,179,32"/>
+<area shape="rect" id="node3" href="structaiot__shadow__msg__delete__reported__t.html" title="用于删除设备影子中的reported数据的消息结构体 " alt="" coords="13,57,182,98"/>
+<area shape="rect" id="node4" href="structaiot__shadow__msg__update__t.html" title="用于更新设备影子中的reported数据的消息结构体 " alt="" coords="5,123,189,149"/>
+<area shape="rect" id="node5" href="structaiot__shadow__msg__clean__desired__t.html" title="用于清除设备影子中的desired数据的消息结构体 " alt="" coords="15,174,180,215"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a7eadbad0d4a5a2b1c65d28d2baa6e7dd"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__shadow__msg__t.html#a7eadbad0d4a5a2b1c65d28d2baa6e7dd">product_key</a></td></tr>
+<tr class="memdesc:a7eadbad0d4a5a2b1c65d28d2baa6e7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息所属设备的product_key, 若为NULL则使用通过aiot_shadow_setopt配置的product_key <br />
+在网关子设备场景下, 可通过指定为子设备的product_key来发送子设备的消息到云端  <a href="#a7eadbad0d4a5a2b1c65d28d2baa6e7dd">更多...</a><br /></td></tr>
+<tr class="separator:a7eadbad0d4a5a2b1c65d28d2baa6e7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a8aea094fb0183c61477fc6d79f7cc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__shadow__msg__t.html#a39a8aea094fb0183c61477fc6d79f7cc">device_name</a></td></tr>
+<tr class="memdesc:a39a8aea094fb0183c61477fc6d79f7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息所属设备的device_name, 若为NULL则使用通过aiot_shadow_setopt配置的device_name <br />
+在网关子设备场景下, 可通过指定为子设备的product_key来发送子设备的消息到云端  <a href="#a39a8aea094fb0183c61477fc6d79f7cc">更多...</a><br /></td></tr>
+<tr class="separator:a39a8aea094fb0183c61477fc6d79f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad085764925014529818b20f55ed94908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__shadow__api_8h.html#aa83cf116462b66e852d7ce5b36c25d71">aiot_shadow_msg_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__shadow__msg__t.html#ad085764925014529818b20f55ed94908">type</a></td></tr>
+<tr class="memdesc:ad085764925014529818b20f55ed94908"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息类型, 可参考<a class="el" href="aiot__shadow__api_8h.html#aa83cf116462b66e852d7ce5b36c25d71">aiot_shadow_msg_type_t</a>  <a href="#ad085764925014529818b20f55ed94908">更多...</a><br /></td></tr>
+<tr class="separator:ad085764925014529818b20f55ed94908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1125ffe05d7b50b42081570756d6f8b"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a5a3e31298d8ba99a1a498fe2bee9fab3"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__update__t.html">aiot_shadow_msg_update_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__t.html#ae8dfedd315899642281119123008889e">update</a></td></tr>
+<tr class="separator:a5a3e31298d8ba99a1a498fe2bee9fab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12b1aa42ee52529977de72440d98bf6"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__clean__desired__t.html">aiot_shadow_msg_clean_desired_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__t.html#a1c3e0163ff5995b560f71c28571fb475">clean_desired</a></td></tr>
+<tr class="separator:ab12b1aa42ee52529977de72440d98bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb716959e2c154c4a3c1342a192471c"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__get__t.html">aiot_shadow_msg_get_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__t.html#a24093606ae2ff84ac0082a0966de92f3">get</a></td></tr>
+<tr class="separator:aaeb716959e2c154c4a3c1342a192471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829eff3e0c0a839cf603baca5db68319"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__delete__reported__t.html">aiot_shadow_msg_delete_reported_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__shadow__msg__t.html#af01347fd0b7568fb6b99a161431d0f45">delete_reporte</a></td></tr>
+<tr class="separator:a829eff3e0c0a839cf603baca5db68319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1125ffe05d7b50b42081570756d6f8b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__shadow__msg__t.html#ae1125ffe05d7b50b42081570756d6f8b">data</a></td></tr>
+<tr class="memdesc:ae1125ffe05d7b50b42081570756d6f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息数据联合体, 不同的消息类型将使用不同的消息结构体  <a href="#ae1125ffe05d7b50b42081570756d6f8b">更多...</a><br /></td></tr>
+<tr class="separator:ae1125ffe05d7b50b42081570756d6f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>data-model模块发送消息的消息结构体 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a7eadbad0d4a5a2b1c65d28d2baa6e7dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_shadow_msg_t::product_key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>消息所属设备的product_key, 若为NULL则使用通过aiot_shadow_setopt配置的product_key <br />
+在网关子设备场景下, 可通过指定为子设备的product_key来发送子设备的消息到云端 </p>
+
+</div>
+</div>
+<a class="anchor" id="a39a8aea094fb0183c61477fc6d79f7cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* aiot_shadow_msg_t::device_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>消息所属设备的device_name, 若为NULL则使用通过aiot_shadow_setopt配置的device_name <br />
+在网关子设备场景下, 可通过指定为子设备的product_key来发送子设备的消息到云端 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad085764925014529818b20f55ed94908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="aiot__shadow__api_8h.html#aa83cf116462b66e852d7ce5b36c25d71">aiot_shadow_msg_type_t</a> aiot_shadow_msg_t::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>消息类型, 可参考<a class="el" href="aiot__shadow__api_8h.html#aa83cf116462b66e852d7ce5b36c25d71">aiot_shadow_msg_type_t</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8dfedd315899642281119123008889e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__shadow__msg__update__t.html">aiot_shadow_msg_update_t</a> aiot_shadow_msg_t::update</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c3e0163ff5995b560f71c28571fb475"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__shadow__msg__clean__desired__t.html">aiot_shadow_msg_clean_desired_t</a> aiot_shadow_msg_t::clean_desired</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24093606ae2ff84ac0082a0966de92f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__shadow__msg__get__t.html">aiot_shadow_msg_get_t</a> aiot_shadow_msg_t::get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af01347fd0b7568fb6b99a161431d0f45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__shadow__msg__delete__reported__t.html">aiot_shadow_msg_delete_reported_t</a> aiot_shadow_msg_t::delete_reporte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1125ffe05d7b50b42081570756d6f8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   aiot_shadow_msg_t::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>消息数据联合体, 不同的消息类型将使用不同的消息结构体 </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>components/shadow/<a class="el" href="aiot__shadow__api_8h_source.html">aiot_shadow_api.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

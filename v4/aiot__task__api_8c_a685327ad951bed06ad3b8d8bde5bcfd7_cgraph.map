@@ -1,0 +1,5 @@
+<map id="_task_recv_update_reply_handler" name="_task_recv_update_reply_handler">
+<area shape="rect" id="node2" href="$aiot__task__api_8c.html#a3d59eb9ecc9784f218083e9700538304" title="_task_parse_json" alt="" coords="240,5,364,32"/>
+<area shape="rect" id="node3" href="$aiot__task__api_8c.html#ae12ca6891ff70b933463b64825d0df81" title="_task_free_update_reply" alt="" coords="220,56,384,83"/>
+<area shape="rect" id="node4" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="432,56,595,83"/>
+</map>
