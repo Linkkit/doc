@@ -1,0 +1,9 @@
+<map id="_coap_recv_message_handler" name="_coap_recv_message_handler">
+<area shape="rect" id="node2" href="$aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="215,57,357,98"/>
+<area shape="rect" id="node5" href="$aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="210,123,362,149"/>
+<area shape="rect" id="node7" href="$aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="203,173,369,200"/>
+<area shape="rect" id="node8" href="$aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="223,224,349,251"/>
+<area shape="rect" id="node3" href="$aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="426,5,589,32"/>
+<area shape="rect" id="node4" href="$aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="417,57,597,98"/>
+<area shape="rect" id="node6" href="$aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="452,123,563,149"/>
+</map>

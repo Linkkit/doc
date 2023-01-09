@@ -1,5 +1,0 @@
-<map id="aiot_rtc_invite_guest" name="aiot_rtc_invite_guest">
-<area shape="rect" id="node2" href="$aiot__rtc__api_8c.html#aab40fd083418886fb13125a00c41b175" title="_rtc_prepare_send_topic" alt="" coords="196,31,360,57"/>
-<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="411,5,594,32"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="408,56,597,83"/>
-</map>

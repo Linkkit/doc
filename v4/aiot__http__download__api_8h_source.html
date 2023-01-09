@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/ota/aiot_http_download_api.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_662d71ffb131aa122771b20f4c8404c5.html">ota</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">aiot_http_download_api.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="aiot__http__download__api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __AIOT_HTTP_DOWNLOAD_API_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __AIOT_HTTP_DOWNLOAD_API_H__</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a">   35</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a">AIOT_DLOPT_NETWORK_CRED</a>,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2">   46</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2">AIOT_DLOPT_NETWORK_PORT</a>,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6">   55</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6">AIOT_DLOPT_RECV_TIMEOUT_MS</a>,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86">   64</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86">AIOT_DLOPT_RECV_HANDLER</a>,</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1">   75</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1">AIOT_DLOPT_USERDATA</a>,</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2">   88</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2">AIOT_DLOPT_TASK_DESC</a>,</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c">  101</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c">AIOT_DLOPT_RANGE_START</a>,</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152">  114</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152">AIOT_DLOPT_RANGE_END</a>,</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">  124</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a>,</div><div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada">  125</a></span>&#160;    <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada">AIOT_DLOPT_MAX</a></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <a class="code" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span>   *<a class="code" href="aiot__http__download__api_8h.html#a23b449e24d16dae0d2bfb0776b833398">aiot_download_init</a>();</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;int32_t <a class="code" href="aiot__http__download__api_8h.html#a3816b1c0bebf108eb75fcaddf06d5b8a">aiot_download_deinit</a>(<span class="keywordtype">void</span> **handle);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;int32_t <a class="code" href="aiot__http__download__api_8h.html#a03f3ae8a8436c540989720c3b774c806">aiot_download_recv</a>(<span class="keywordtype">void</span> *handle); <span class="comment">/* 返回条件: 网络出错 | 校验出错 | 读到EOF | buf填满 */</span></div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;int32_t <a class="code" href="aiot__http__download__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a>(<span class="keywordtype">void</span> *handle, aiot_download_option_t option, <span class="keywordtype">void</span> *data);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;int32_t <a class="code" href="aiot__http__download__api_8h.html#a5cfaae5554051c4bee6baba1baedeaac">aiot_download_send_request</a>(<span class="keywordtype">void</span> *handle);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;int32_t <a class="code" href="aiot__http__download__api_8h.html#a3344813afce70327b5a32f36640ce963">aiot_download_report_progress</a>(<span class="keywordtype">void</span> *handle, int32_t percent);</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* #ifndef __AIOT_HTTP_DOWNLOAD_API_H__ */</span><span class="preprocessor"></span></div><div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1f237c0dbfb947687fcb6367d889692a">AIOT_DLOPT_NETWORK_CRED</a></div><div class="ttdoc">设备通过HTTP与固件服务器建联时, 网络使用的安全凭据 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:35</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_a23b449e24d16dae0d2bfb0776b833398"><div class="ttname"><a href="aiot__http__download__api_8h.html#a23b449e24d16dae0d2bfb0776b833398">aiot_download_init</a></div><div class="ttdeci">void * aiot_download_init()</div><div class="ttdoc">初始化download实例并设置默认参数 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:17</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a6c14d7e486ac576bc183b459a4254e86">AIOT_DLOPT_RECV_HANDLER</a></div><div class="ttdoc">HTTP 数据接收回调函数 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:64</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a74119aee904aa00991de8f1692abcada">AIOT_DLOPT_MAX</a></div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:125</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_a3816b1c0bebf108eb75fcaddf06d5b8a"><div class="ttname"><a href="aiot__http__download__api_8h.html#a3816b1c0bebf108eb75fcaddf06d5b8a">aiot_download_deinit</a></div><div class="ttdeci">int32_t aiot_download_deinit(void **handle)</div><div class="ttdoc">释放download实例句柄的资源 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:57</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_af3f392f2755b7498b17d60bd377faf91"><div class="ttname"><a href="aiot__http__download__api_8h.html#af3f392f2755b7498b17d60bd377faf91">aiot_download_setopt</a></div><div class="ttdeci">int32_t aiot_download_setopt(void *handle, aiot_download_option_t option, void *data)</div><div class="ttdoc">设置download句柄参数 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:91</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a1731c318387ff7a9d563a332123404c2">AIOT_DLOPT_NETWORK_PORT</a></div><div class="ttdoc">设备通过HTTP访问固件下载服务器的端口号 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:46</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_a03f3ae8a8436c540989720c3b774c806"><div class="ttname"><a href="aiot__http__download__api_8h.html#a03f3ae8a8436c540989720c3b774c806">aiot_download_recv</a></div><div class="ttdeci">int32_t aiot_download_recv(void *handle)</div><div class="ttdoc">通过download实例句柄下载一段buffer </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:223</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8">aiot_download_option_t</a></div><div class="ttdeci">aiot_download_option_t</div><div class="ttdoc">调用 aiot_download_setopt 接口时, option参数的可用值 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:16</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a72d5e68aa32f3105e19e97a732fb16e2">AIOT_DLOPT_TASK_DESC</a></div><div class="ttdoc">设置download实例句柄所包含下载任务的具体内容 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:88</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8abb4cfcd7b124704f379ff51fc1d03df1">AIOT_DLOPT_USERDATA</a></div><div class="ttdoc">用户需要SDK暂存的上下文 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:75</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a08bfe2684a5be37e895521f211ca1fd6">AIOT_DLOPT_RECV_TIMEOUT_MS</a></div><div class="ttdoc">通过HTTP接收固件内容时, 在协议栈花费的最长时间 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:55</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_a3344813afce70327b5a32f36640ce963"><div class="ttname"><a href="aiot__http__download__api_8h.html#a3344813afce70327b5a32f36640ce963">aiot_download_report_progress</a></div><div class="ttdeci">int32_t aiot_download_report_progress(void *handle, int32_t percent)</div><div class="ttdoc">上报下载完成度的百分比或者错误码 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:182</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_a5cfaae5554051c4bee6baba1baedeaac"><div class="ttname"><a href="aiot__http__download__api_8h.html#a5cfaae5554051c4bee6baba1baedeaac">aiot_download_send_request</a></div><div class="ttdeci">int32_t aiot_download_send_request(void *handle)</div><div class="ttdoc">向云端发送GET固件报文请求 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.c:346</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8aa7631fcec4f9b756b2cf483ca108477c">AIOT_DLOPT_RANGE_START</a></div><div class="ttdoc">设置按照range下载的起始地址 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:101</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8acd89a4884dbcd03bb03a968b31cfb152">AIOT_DLOPT_RANGE_END</a></div><div class="ttdoc">设置按照range下载的结束地址 </div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:114</div></div>
+<div class="ttc" id="aiot__http__download__api_8h_html_ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c"><div class="ttname"><a href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a></div><div class="ttdoc">当设备从固件下载服务器接收返回的http报文时, 每次从 aiot_download_recv_handler_t 回调函数中给出的body�...</div><div class="ttdef"><b>Definition:</b> aiot_http_download_api.h:124</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

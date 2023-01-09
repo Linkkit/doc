@@ -1,5 +1,10 @@
 <map id="core/aiot_sysdep_api.h" name="core/aiot_sysdep_api.h">
-<area shape="rect" id="node2" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="5,80,188,121"/>
-<area shape="rect" id="node3" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="213,169,337,211"/>
-<area shape="rect" id="node4" href="$aiot__at__api_8h.html" title="AT模块头文件, 提供对接AT模组的能力 " alt="" coords="264,80,388,121"/>
+<area shape="rect" id="node2" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="5,87,188,129"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="212,80,395,136"/>
+<area shape="rect" id="node4" href="$at-port_2at_2aiot__at__api_8c.html" title="portfiles/at&#45;port/at\l/aiot_at_api.c" alt="" coords="389,191,513,233"/>
+<area shape="rect" id="node5" href="$at-port_2at_2aiot__at__api_8h.html" title="portfiles/at&#45;port/at\l/aiot_at_api.h" alt="" coords="471,87,595,129"/>
+<area shape="rect" id="node6" href="$freertos__tcp__modem__port_2aiot__at__api_8c.html" title="portfiles/freertos\l_tcp_modem_port/aiot\l_at_api.c" alt="" coords="577,184,728,240"/>
+<area shape="rect" id="node7" href="$freertos__tcp__modem__port_2aiot__at__api_8h.html" title="portfiles/freertos\l_tcp_modem_port/aiot\l_at_api.h" alt="" coords="671,80,821,136"/>
+<area shape="rect" id="node8" href="$linux-at-modem-port_2aiot__at__api_8c.html" title="portfiles/linux&#45;at\l&#45;modem&#45;port/aiot_at_api.c" alt="" coords="834,191,1007,233"/>
+<area shape="rect" id="node9" href="$linux-at-modem-port_2aiot__at__api_8h.html" title="portfiles/linux&#45;at\l&#45;modem&#45;port/aiot_at_api.h" alt="" coords="897,87,1070,129"/>
 </map>

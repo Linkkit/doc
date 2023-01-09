@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['leave',['LEAVE',['../aiot__rtc__api_8h.html#a7163628873f2da3901cbb66a4b3357d2ae09e07839103de682cb13fa773793fc0',1,'aiot_rtc_api.h']]]
+  ['upload_5ffile_5ffailed_5fblock_5fcrc',['UPLOAD_FILE_FAILED_BLOCK_CRC',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba351ee6ef5a019784bd3b33dc19175227',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fblock_5fsize_5fless',['UPLOAD_FILE_FAILED_BLOCK_SIZE_LESS',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba0ddc6d332c57b8941e02a9467ea0cf64',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fmax_5ffilesize',['UPLOAD_FILE_FAILED_MAX_FILESIZE',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba18aee997971c701b72d4141fb5203683',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fnot_5ffile_5ftask',['UPLOAD_FILE_FAILED_NOT_FILE_TASK',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba5044e82dfbdf3342e88776184ada7a81',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5foffset_5funequal',['UPLOAD_FILE_FAILED_OFFSET_UNEQUAL',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba75a8624749389866330889e2ba1888ed',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fparams',['UPLOAD_FILE_FAILED_PARAMS',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba8fad54b1ae2fa7fe834ddc5ef6f75e22',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fpayload_5ferror',['UPLOAD_FILE_FAILED_PAYLOAD_ERROR',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba19a2225cda545aab96627013c58e3824',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fqps_5flimit',['UPLOAD_FILE_FAILED_QPS_LIMIT',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba94d51d2816db353a7a9d326995cce51a',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fsame_5ffile',['UPLOAD_FILE_FAILED_SAME_FILE',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bab93b4477094ea41a64d5aec19144871e',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fserver_5fother',['UPLOAD_FILE_FAILED_SERVER_OTHER',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba60d3c031d2406e7fc09c6c73de33ba97',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffailed_5fwhole_5fcheck',['UPLOAD_FILE_FAILED_WHOLE_CHECK',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bae0793c4ec7a28b32ad98fd684a30bf4b',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffaled_5fblock_5fsize_5fmore',['UPLOAD_FILE_FALED_BLOCK_SIZE_MORE',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2baee0b79a4d475334bff0fdc60ac0db247',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5ffile_5fblock_5fduplication',['UPLOAD_FILE_FILE_BLOCK_DUPLICATION',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba5e1a693c3800419dbad464dad831f6ed',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5fhave_5ffinished',['UPLOAD_FILE_HAVE_FINISHED',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2baedd2e53a2654e38bf30ce303bede74aa',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5fmessage_5flimit',['UPLOAD_FILE_MESSAGE_LIMIT',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bacb80d1cf3d14922d21fa41ad76409de2',1,'aiot_mqtt_upload_api.h']]],
+  ['upload_5ffile_5fok',['UPLOAD_FILE_OK',['../aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bacf3eeba408c8e69bb73d2f55491a5474',1,'aiot_mqtt_upload_api.h']]]
 ];

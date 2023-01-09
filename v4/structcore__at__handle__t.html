@@ -93,19 +93,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <p>AT组件上下文数据结构体  
  <a href="structcore__at__handle__t.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="aiot__at__api_8h_source.html">aiot_at_api.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="at-port_2at_2aiot__at__api_8h_source.html">aiot_at_api.h</a>&gt;</code></p>
 <div class="dynheader">
 core_at_handle_t 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="structcore__at__handle__t__coll__graph.png" border="0" usemap="#core__at__handle__t_coll__map" alt="Collaboration graph"/></div>
 <map name="core__at__handle__t_coll__map" id="core__at__handle__t_coll__map">
-<area shape="rect" id="node2" href="structcore__at__read__t.html" title="core_at_read_t" alt="" coords="5,168,113,195"/>
-<area shape="rect" id="node3" href="structcore__at__cmd__item__t.html" title="AT命令请求响应结构体定义 " alt="" coords="92,5,232,32"/>
-<area shape="rect" id="node6" href="structat__device__t.html" title="AT设备结构化数据 " alt="" coords="295,168,384,195"/>
-<area shape="rect" id="node4" href="structcore__ringbuf__t.html" title="ringbuf结构体定义 " alt="" coords="606,5,710,32"/>
-<area shape="rect" id="node5" href="structlink__descript__t.html" title="数据链路上下文结构体 " alt="" coords="605,168,711,195"/>
-<area shape="rect" id="node7" href="structcore__at__urc__item__t.html" title="AT主动上报命令 " alt="" coords="257,5,390,32"/>
-<area shape="rect" id="node8" href="structcore__at__recv__data__prefix.html" title="AT主动上报接收的数据，可识别头 " alt="" coords="414,5,582,32"/>
+<area shape="rect" id="node2" href="structcore__at__parse__sm__t.html" title="core_at_parse_sm_t" alt="" coords="324,5,464,32"/>
+<area shape="rect" id="node3" href="structcore__at__read__t.html" title="core_at_read_t" alt="" coords="340,56,448,83"/>
+<area shape="rect" id="node4" href="structcore__at__cmd__item__t.html" title="AT命令请求响应结构体定义 " alt="" coords="19,157,159,184"/>
+<area shape="rect" id="node7" href="structat__device__t.html" title="AT设备结构化数据 " alt="" coords="349,239,439,265"/>
+<area shape="rect" id="node5" href="structcore__ringbuf__t.html" title="ringbuf结构体定义 " alt="" coords="37,377,141,404"/>
+<area shape="rect" id="node6" href="structlink__descript__t.html" title="数据链路上下文结构体 " alt="" coords="341,412,447,439"/>
+<area shape="rect" id="node8" href="structcore__at__urc__item__t.html" title="AT主动上报命令 " alt="" coords="23,259,156,285"/>
+<area shape="rect" id="node9" href="structcore__at__recv__data__prefix.html" title="AT主动上报接收的数据，可识别头 " alt="" coords="5,309,173,336"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
@@ -113,10 +114,10 @@ core_at_handle_t 的协作图:</div>
 Public 属性</h2></td></tr>
 <tr class="memitem:afb75c8fd842cd4ffe51c274950cebb93"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#afb75c8fd842cd4ffe51c274950cebb93">is_init</a></td></tr>
 <tr class="separator:afb75c8fd842cd4ffe51c274950cebb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb498b9c2f594339ccfc01d09742625e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aeb498b9c2f594339ccfc01d09742625e">ip_status</a></td></tr>
+<tr class="memitem:aeb498b9c2f594339ccfc01d09742625e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="at-port_2at_2aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aeb498b9c2f594339ccfc01d09742625e">ip_status</a></td></tr>
 <tr class="separator:aeb498b9c2f594339ccfc01d09742625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa93a366a0a6d9ac380a8d362220f47f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlink__descript__t.html">link_descript_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aa93a366a0a6d9ac380a8d362220f47f9">fd</a> [<a class="el" href="aiot__at__api_8h.html#a7b4e88ee365cac65d0717d90bfe84e22">AIOT_AT_SOCKET_NUM</a>]</td></tr>
-<tr class="separator:aa93a366a0a6d9ac380a8d362220f47f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f78ab8ecfe8658c88f41ddc21d910c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlink__descript__t.html">link_descript_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a1f78ab8ecfe8658c88f41ddc21d910c9">fd</a> [<a class="el" href="linux-at-modem-port_2aiot__at__api_8h.html#a7b4e88ee365cac65d0717d90bfe84e22">AIOT_AT_SOCKET_NUM</a>]</td></tr>
+<tr class="separator:a1f78ab8ecfe8658c88f41ddc21d910c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcef9cc53ca85ca844968d256ea576df"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#afcef9cc53ca85ca844968d256ea576df">tx_timeout</a></td></tr>
 <tr class="separator:afcef9cc53ca85ca844968d256ea576df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d3ed52bee2d29b8580f40ca6056179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcore__at__read__t.html">core_at_read_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a18d3ed52bee2d29b8580f40ca6056179">reader</a></td></tr>
@@ -125,20 +126,26 @@ Public 属性</h2></td></tr>
 <tr class="separator:a5019c7a441ce79c7b7a8b20f44e66c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9784879b40023c146e6e05964dbd329a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcore__ringbuf__t.html">core_ringbuf_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a9784879b40023c146e6e05964dbd329a">rsp_rb</a></td></tr>
 <tr class="separator:a9784879b40023c146e6e05964dbd329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2f7c42134b90a3f8ae9bec5018a0d5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aee2f7c42134b90a3f8ae9bec5018a0d5">rsp_buf</a> [<a class="el" href="aiot__at__api_8h.html#aa5e34ef6b1e37b199c02b4257d65cd26">AIOT_AT_RSP_LEN_MAXIMUM</a>]</td></tr>
-<tr class="separator:aee2f7c42134b90a3f8ae9bec5018a0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b74fa64561ab01404528b829183ab66"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a0b74fa64561ab01404528b829183ab66">rsp_buf</a> [<a class="el" href="linux-at-modem-port_2aiot__at__api_8h.html#aa5e34ef6b1e37b199c02b4257d65cd26">AIOT_AT_RSP_LEN_MAXIMUM</a>]</td></tr>
+<tr class="separator:a0b74fa64561ab01404528b829183ab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6d2c15cdcc1b846f6db988789d7c13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a7a6d2c15cdcc1b846f6db988789d7c13">rsp_buf_offset</a></td></tr>
 <tr class="separator:a7a6d2c15cdcc1b846f6db988789d7c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393ceab7b325056f11aa54e0190a804b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481">aiot_at_uart_tx_func_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a393ceab7b325056f11aa54e0190a804b">uart_tx_func</a></td></tr>
+<tr class="memitem:a393ceab7b325056f11aa54e0190a804b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linux-at-modem-port_2aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481">aiot_at_uart_tx_func_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a393ceab7b325056f11aa54e0190a804b">uart_tx_func</a></td></tr>
 <tr class="separator:a393ceab7b325056f11aa54e0190a804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b25e2cc8d42d6e47fde0b9976586645"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a7b25e2cc8d42d6e47fde0b9976586645">cmd_mutex</a></td></tr>
 <tr class="separator:a7b25e2cc8d42d6e47fde0b9976586645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cfed187964b15e05740308f66e8a344"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a6cfed187964b15e05740308f66e8a344">send_mutex</a></td></tr>
 <tr class="separator:a6cfed187964b15e05740308f66e8a344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08acb37b866e453827e9f0fad02755c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#ac08acb37b866e453827e9f0fad02755c">user_data</a></td></tr>
-<tr class="separator:ac08acb37b866e453827e9f0fad02755c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455ad14924e2311ef4ee9be4951b0a59"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a455ad14924e2311ef4ee9be4951b0a59">user_data</a></td></tr>
+<tr class="separator:a455ad14924e2311ef4ee9be4951b0a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8e80d506fac008433dd3b42049f309"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structat__device__t.html">at_device_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a8a8e80d506fac008433dd3b42049f309">device</a></td></tr>
 <tr class="separator:a8a8e80d506fac008433dd3b42049f309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4505c9f10beecac24ddeeff26d4438b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aa4505c9f10beecac24ddeeff26d4438b">rsp_timeout</a></td></tr>
+<tr class="separator:aa4505c9f10beecac24ddeeff26d4438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a49c153d704c8a29a14b18148a62025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcore__at__parse__sm__t.html">core_at_parse_sm_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#a8a49c153d704c8a29a14b18148a62025">sm</a></td></tr>
+<tr class="separator:a8a49c153d704c8a29a14b18148a62025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0478f2f68b5085ab339841b8aa9af6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__at__handle__t.html#aef0478f2f68b5085ab339841b8aa9af6">tx_mutex</a></td></tr>
+<tr class="separator:aef0478f2f68b5085ab339841b8aa9af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>AT组件上下文数据结构体 </p>
@@ -160,19 +167,19 @@ Public 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a> core_at_handle_t::ip_status</td>
+          <td class="memname"><a class="el" href="at-port_2at_2aiot__at__api_8h.html#a0e4885391a8b4ccc8e4b02484477b646">core_ip_status_t</a> core_at_handle_t::ip_status</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa93a366a0a6d9ac380a8d362220f47f9"></a>
+<a class="anchor" id="a1f78ab8ecfe8658c88f41ddc21d910c9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structlink__descript__t.html">link_descript_t</a> core_at_handle_t::fd[<a class="el" href="aiot__at__api_8h.html#a7b4e88ee365cac65d0717d90bfe84e22">AIOT_AT_SOCKET_NUM</a>]</td>
+          <td class="memname"><a class="el" href="structlink__descript__t.html">link_descript_t</a> core_at_handle_t::fd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -227,12 +234,12 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee2f7c42134b90a3f8ae9bec5018a0d5"></a>
+<a class="anchor" id="a0b74fa64561ab01404528b829183ab66"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char core_at_handle_t::rsp_buf[<a class="el" href="aiot__at__api_8h.html#aa5e34ef6b1e37b199c02b4257d65cd26">AIOT_AT_RSP_LEN_MAXIMUM</a>]</td>
+          <td class="memname">char core_at_handle_t::rsp_buf</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -256,7 +263,7 @@ Public 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481">aiot_at_uart_tx_func_t</a> core_at_handle_t::uart_tx_func</td>
+          <td class="memname"><a class="el" href="linux-at-modem-port_2aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481">aiot_at_uart_tx_func_t</a> core_at_handle_t::uart_tx_func</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,12 +294,12 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac08acb37b866e453827e9f0fad02755c"></a>
+<a class="anchor" id="a455ad14924e2311ef4ee9be4951b0a59"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* core_at_handle_t::user_data</td>
+          <td class="memname">void * core_at_handle_t::user_data</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,8 +318,44 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa4505c9f10beecac24ddeeff26d4438b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t core_at_handle_t::rsp_timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a49c153d704c8a29a14b18148a62025"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcore__at__parse__sm__t.html">core_at_parse_sm_t</a> core_at_handle_t::sm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef0478f2f68b5085ab339841b8aa9af6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * core_at_handle_t::tx_mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li>portfiles/at-port/at/<a class="el" href="aiot__at__api_8h_source.html">aiot_at_api.h</a></li>
+<li>portfiles/at-port/at/<a class="el" href="at-port_2at_2aiot__at__api_8h_source.html">aiot_at_api.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

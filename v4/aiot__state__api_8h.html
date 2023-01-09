@@ -109,9 +109,14 @@ aiot_state_api.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="aiot__state__api_8h__dep__incl.png" border="0" usemap="#core_2aiot__state__api_8hdep" alt=""/></div>
 <map name="core_2aiot__state__api_8hdep" id="core_2aiot__state__api_8hdep">
-<area shape="rect" id="node2" href="aiot__state__api_8c.html" title="状态码模块实现 " alt="" coords="5,87,148,114"/>
-<area shape="rect" id="node3" href="aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="172,80,355,121"/>
-<area shape="rect" id="node4" href="aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="379,80,503,121"/>
+<area shape="rect" id="node2" href="aiot__state__api_8c.html" title="状态码模块实现 " alt="" coords="5,95,148,121"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html" title="COAP模块实现, 其中包含了连接到物联网平台和收发数据的API接口 " alt="" coords="172,87,323,129"/>
+<area shape="rect" id="node4" href="aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="347,87,529,129"/>
+<area shape="rect" id="node5" href="aiot__tunnel__api_8c.html" title="隧道管理模块，管理的隧道的连接及消息收发 " alt="" coords="553,87,736,129"/>
+<area shape="rect" id="node6" href="aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="760,80,943,136"/>
+<area shape="rect" id="node7" href="at-port_2at_2aiot__at__api_8c.html" title="portfiles/at&#45;port/at\l/aiot_at_api.c" alt="" coords="967,87,1091,129"/>
+<area shape="rect" id="node8" href="freertos__tcp__modem__port_2aiot__at__api_8c.html" title="portfiles/freertos\l_tcp_modem_port/aiot\l_at_api.c" alt="" coords="1115,80,1265,136"/>
+<area shape="rect" id="node9" href="linux-at-modem-port_2aiot__at__api_8c.html" title="portfiles/linux&#45;at\l&#45;modem&#45;port/aiot_at_api.c" alt="" coords="1290,87,1463,129"/>
 </map>
 </div>
 </div>
@@ -287,33 +292,6 @@ aiot_state_api.h 的引用(Include)关系图:</div>
 <tr class="memitem:a0f4e6db30a62f5102c6ca0c95e396389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0f4e6db30a62f5102c6ca0c95e396389">STATE_MQTT_RECV_INVALID_PUBACK_PACKET</a>&#160;&#160;&#160;(-0x0320)</td></tr>
 <tr class="memdesc:a0f4e6db30a62f5102c6ca0c95e396389"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到非法的MQTT PUBACK报文  <a href="#a0f4e6db30a62f5102c6ca0c95e396389">更多...</a><br /></td></tr>
 <tr class="separator:a0f4e6db30a62f5102c6ca0c95e396389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa309b228b9d24355393acb6596eec3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aa309b228b9d24355393acb6596eec3c5">STATE_MQTT_UNKNOWN_PROPERTY_OPTION</a>&#160;&#160;&#160;(-0x0321)</td></tr>
-<tr class="memdesc:aa309b228b9d24355393acb6596eec3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">mqtt 5.0属性未解析成功  <a href="#aa309b228b9d24355393acb6596eec3c5">更多...</a><br /></td></tr>
-<tr class="separator:aa309b228b9d24355393acb6596eec3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3ad8d20175040d0592c830f06cc9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#afe3ad8d20175040d0592c830f06cc9ac">STATE_MQTT_INVALID_PROTOCOL_VERSION</a>&#160;&#160;&#160;(-0x0322)</td></tr>
-<tr class="memdesc:afe3ad8d20175040d0592c830f06cc9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">mqtt协议版本号未设置正确. 在使用5.0协议的接口(_with_prop结尾)时, 如果没有通过AIOT_MQTTOPT_VERSION将版本号设置为AIOT_MQTT_VERSION_5_0就会报这个错误  <a href="#afe3ad8d20175040d0592c830f06cc9ac">更多...</a><br /></td></tr>
-<tr class="separator:afe3ad8d20175040d0592c830f06cc9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7766b6f60c1bbc71444db338b0e2586c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7766b6f60c1bbc71444db338b0e2586c">STATE_MQTT_RECV_INVALID_SERVER_DISCONNECT_PACKET</a>&#160;&#160;&#160;(-0x0323)</td></tr>
-<tr class="memdesc:a7766b6f60c1bbc71444db338b0e2586c"><td class="mdescLeft">&#160;</td><td class="mdescRight">云端下行的server disconnect报文格式不对  <a href="#a7766b6f60c1bbc71444db338b0e2586c">更多...</a><br /></td></tr>
-<tr class="separator:a7766b6f60c1bbc71444db338b0e2586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22abf12547abb157cd9edafd5310da56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a22abf12547abb157cd9edafd5310da56">STATE_MQTT_INVALID_USER_PERPERTY_DATA</a>&#160;&#160;&#160;(-0x0324)</td></tr>
-<tr class="memdesc:a22abf12547abb157cd9edafd5310da56"><td class="mdescLeft">&#160;</td><td class="mdescRight">在用户输入的用户属性的len值&gt;0的情况下, 用户输入的user property的value为空指针  <a href="#a22abf12547abb157cd9edafd5310da56">更多...</a><br /></td></tr>
-<tr class="separator:a22abf12547abb157cd9edafd5310da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bb7c423bfdcf732b99115169a893184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a0bb7c423bfdcf732b99115169a893184">STATE_MQTT_INVALID_USER_PERPERTY_LEN</a>&#160;&#160;&#160;(-0x0325)</td></tr>
-<tr class="memdesc:a0bb7c423bfdcf732b99115169a893184"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户属性的长度值超出范围(当前是0-128个字节)  <a href="#a0bb7c423bfdcf732b99115169a893184">更多...</a><br /></td></tr>
-<tr class="separator:a0bb7c423bfdcf732b99115169a893184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a7f4802337c41b555cb1ccc7e39b6ff5c">STATE_MQTT_INVALID_TX_PACK_SIZE</a>&#160;&#160;&#160;(-0x0326)</td></tr>
-<tr class="memdesc:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户上行报文的大小超过平台限制(默认是256KB)  <a href="#a7f4802337c41b555cb1ccc7e39b6ff5c">更多...</a><br /></td></tr>
-<tr class="separator:a7f4802337c41b555cb1ccc7e39b6ff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aae6f3150c6a3ebd54cf484ccbd9b40f2">STATE_MQTT_RECEIVE_MAX_EXCEEDED</a>&#160;&#160;&#160;(-0x0327)</td></tr>
-<tr class="memdesc:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备上行的qos 1报文超过流控限制  <a href="#aae6f3150c6a3ebd54cf484ccbd9b40f2">更多...</a><br /></td></tr>
-<tr class="separator:aae6f3150c6a3ebd54cf484ccbd9b40f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9361faaeff32a92e3b0b1990da14727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ab9361faaeff32a92e3b0b1990da14727">STATE_MQTT_INVALID_SUBSCRIPTION_IDENTIFIER</a>&#160;&#160;&#160;(-0x0328)</td></tr>
-<tr class="memdesc:ab9361faaeff32a92e3b0b1990da14727"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户输入的subscription identifier值超过限制(0-0xFFFFFFF)  <a href="#ab9361faaeff32a92e3b0b1990da14727">更多...</a><br /></td></tr>
-<tr class="separator:ab9361faaeff32a92e3b0b1990da14727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1157c352344c2f3edea11d01df5dc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5a1157c352344c2f3edea11d01df5dc8">STATE_MQTT_INVALID_PROPERTY_LEN</a>&#160;&#160;&#160;(-0x0329)</td></tr>
-<tr class="memdesc:a5a1157c352344c2f3edea11d01df5dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性的长度为非法值, 比如大于MQTT的remainLen长度值  <a href="#a5a1157c352344c2f3edea11d01df5dc8">更多...</a><br /></td></tr>
-<tr class="separator:a5a1157c352344c2f3edea11d01df5dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#ad715b1fb65c88fba9b945dcd3e47fbdb">STATE_MQTT_LOG_HOST</a>&#160;&#160;&#160;(-0x032A)</td></tr>
 <tr class="memdesc:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT连接服务器时, 使用的host的日志状态码  <a href="#ad715b1fb65c88fba9b945dcd3e47fbdb">更多...</a><br /></td></tr>
 <tr class="separator:ad715b1fb65c88fba9b945dcd3e47fbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,6 +472,9 @@ aiot_state_api.h 的引用(Include)关系图:</div>
 <tr class="memitem:aaf3eb567fd1619692a43fc847153e048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#aaf3eb567fd1619692a43fc847153e048">STATE_PORT_DTLS_HANDSHAKE_IN_PROGRESS</a>&#160;&#160;&#160;(-0x0F27)</td></tr>
 <tr class="memdesc:aaf3eb567fd1619692a43fc847153e048"><td class="mdescLeft">&#160;</td><td class="mdescRight">之前的DTLS握手还在进行中  <a href="#aaf3eb567fd1619692a43fc847153e048">更多...</a><br /></td></tr>
 <tr class="separator:aaf3eb567fd1619692a43fc847153e048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f15afd63ac7dd9bf5e22e5d6309ef6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a8f15afd63ac7dd9bf5e22e5d6309ef6d">STATE_QOS_CACHE_EXCEEDS_LIMIT</a>&#160;&#160;&#160;(-0x0F28)</td></tr>
+<tr class="memdesc:a8f15afd63ac7dd9bf5e22e5d6309ef6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">缓存的qos 1消息数量超出预期  <a href="#a8f15afd63ac7dd9bf5e22e5d6309ef6d">更多...</a><br /></td></tr>
+<tr class="separator:a8f15afd63ac7dd9bf5e22e5d6309ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__state__api_8h.html#a5baed8aa59df8f4cd8e7cc654f12d5e1">STATE_ADAPTER_COMMON</a>&#160;&#160;&#160;(-0x1000)</td></tr>
 <tr class="memdesc:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">core_adapter适配模块  <a href="#a5baed8aa59df8f4cd8e7cc654f12d5e1">更多...</a><br /></td></tr>
 <tr class="separator:a5baed8aa59df8f4cd8e7cc654f12d5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1296,132 +1277,6 @@ aiot_state_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>接收到非法的MQTT PUBACK报文 </p>
-
-</div>
-</div>
-<a class="anchor" id="aa309b228b9d24355393acb6596eec3c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_UNKNOWN_PROPERTY_OPTION&#160;&#160;&#160;(-0x0321)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>mqtt 5.0属性未解析成功 </p>
-
-</div>
-</div>
-<a class="anchor" id="afe3ad8d20175040d0592c830f06cc9ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_PROTOCOL_VERSION&#160;&#160;&#160;(-0x0322)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>mqtt协议版本号未设置正确. 在使用5.0协议的接口(_with_prop结尾)时, 如果没有通过AIOT_MQTTOPT_VERSION将版本号设置为AIOT_MQTT_VERSION_5_0就会报这个错误 </p>
-
-</div>
-</div>
-<a class="anchor" id="a7766b6f60c1bbc71444db338b0e2586c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_RECV_INVALID_SERVER_DISCONNECT_PACKET&#160;&#160;&#160;(-0x0323)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>云端下行的server disconnect报文格式不对 </p>
-
-</div>
-</div>
-<a class="anchor" id="a22abf12547abb157cd9edafd5310da56"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_USER_PERPERTY_DATA&#160;&#160;&#160;(-0x0324)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>在用户输入的用户属性的len值&gt;0的情况下, 用户输入的user property的value为空指针 </p>
-
-</div>
-</div>
-<a class="anchor" id="a0bb7c423bfdcf732b99115169a893184"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_USER_PERPERTY_LEN&#160;&#160;&#160;(-0x0325)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>用户属性的长度值超出范围(当前是0-128个字节) </p>
-
-</div>
-</div>
-<a class="anchor" id="a7f4802337c41b555cb1ccc7e39b6ff5c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_TX_PACK_SIZE&#160;&#160;&#160;(-0x0326)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>用户上行报文的大小超过平台限制(默认是256KB) </p>
-
-</div>
-</div>
-<a class="anchor" id="aae6f3150c6a3ebd54cf484ccbd9b40f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_RECEIVE_MAX_EXCEEDED&#160;&#160;&#160;(-0x0327)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设备上行的qos 1报文超过流控限制 </p>
-
-</div>
-</div>
-<a class="anchor" id="ab9361faaeff32a92e3b0b1990da14727"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_SUBSCRIPTION_IDENTIFIER&#160;&#160;&#160;(-0x0328)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>用户输入的subscription identifier值超过限制(0-0xFFFFFFF) </p>
-
-</div>
-</div>
-<a class="anchor" id="a5a1157c352344c2f3edea11d01df5dc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STATE_MQTT_INVALID_PROPERTY_LEN&#160;&#160;&#160;(-0x0329)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>属性的长度为非法值, 比如大于MQTT的remainLen长度值 </p>
 
 </div>
 </div>
@@ -2262,6 +2117,20 @@ aiot_state_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>之前的DTLS握手还在进行中 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8f15afd63ac7dd9bf5e22e5d6309ef6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_QOS_CACHE_EXCEEDS_LIMIT&#160;&#160;&#160;(-0x0F28)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>缓存的qos 1消息数量超出预期 </p>
 
 </div>
 </div>

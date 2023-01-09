@@ -1,6 +1,0 @@
-<map id="_diag_core_diag_callback" name="_diag_core_diag_callback">
-<area shape="rect" id="node2" href="$aiot__diag__api_8c.html#af01fe19eef7e2de922279d21edd2f39c" title="_diag_raw_data" alt="" coords="224,64,337,91"/>
-<area shape="rect" id="node3" href="$aiot__diag__api_8c.html#aed367d618e1f45150263c57a1be46c55" title="_diag_get_extra_data" alt="" coords="397,5,544,32"/>
-<area shape="rect" id="node4" href="$aiot__diag__api_8c.html#a5b545401eb897d7cd1817ccf344110b2" title="_diag_running_state\l_start" alt="" coords="401,57,540,98"/>
-<area shape="rect" id="node5" href="$aiot__diag__api_8c.html#a1f249d2e6f6606dfd3134f78c0591f5e" title="_diag_running_state_stop" alt="" coords="385,123,556,149"/>
-</map>

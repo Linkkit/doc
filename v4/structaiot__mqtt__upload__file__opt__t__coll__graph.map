@@ -1,0 +1,4 @@
+<map id="aiot_mqtt_upload_file_opt_t" name="aiot_mqtt_upload_file_opt_t">
+<area shape="rect" id="node2" href="$structaiot__mqtt__upload__recv__t.html" title="MQTT UPLOAD模块收到服务端应答的报文信息, 通知用户的报文内容 " alt="" coords="7,95,171,121"/>
+<area shape="rect" id="node3" href="$structaiot__mqtt__upload__desc__t.html" title="接收到的服务端应答消息的报文信息 " alt="" coords="5,5,172,32"/>
+</map>

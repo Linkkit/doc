@@ -1,0 +1,13 @@
+<map id="aiot_coap_request_message" name="aiot_coap_request_message">
+<area shape="rect" id="node2" href="$aiot__coap__api_8c.html#a3c027ea7b098dec305fe29601ed2cafb" title="发送COAP报文 " alt="" coords="241,191,355,217"/>
+<area shape="rect" id="node3" href="$aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="423,49,573,90"/>
+<area shape="rect" id="node7" href="$aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d" title="_coap_uri_to_option" alt="" coords="429,115,567,141"/>
+<area shape="rect" id="node8" href="$aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="415,165,581,192"/>
+<area shape="rect" id="node9" href="$aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="435,216,561,243"/>
+<area shape="rect" id="node10" href="$aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e" title="is_content_format_supported" alt="" coords="403,267,593,293"/>
+<area shape="rect" id="node11" href="$aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="422,317,574,344"/>
+<area shape="rect" id="node4" href="$aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="650,5,813,32"/>
+<area shape="rect" id="node5" href="$aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="657,56,806,83"/>
+<area shape="rect" id="node6" href="$aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="641,107,821,149"/>
+<area shape="rect" id="node12" href="$aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="676,317,787,344"/>
+</map>

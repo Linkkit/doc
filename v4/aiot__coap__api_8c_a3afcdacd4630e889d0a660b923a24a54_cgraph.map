@@ -1,0 +1,8 @@
+<map id="_coap_creat_register_message" name="_coap_creat_register_message">
+<area shape="rect" id="node2" href="$aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="200,49,351,90"/>
+<area shape="rect" id="node6" href="$aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="212,115,339,141"/>
+<area shape="rect" id="node7" href="$aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="196,165,355,192"/>
+<area shape="rect" id="node3" href="$aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="411,5,574,32"/>
+<area shape="rect" id="node4" href="$aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="418,56,567,83"/>
+<area shape="rect" id="node5" href="$aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="403,107,583,149"/>
+</map>

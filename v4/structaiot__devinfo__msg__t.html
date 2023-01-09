@@ -111,15 +111,18 @@ Public 属性</h2></td></tr>
 <tr class="memitem:acd3eba8edab0ab7932d485c5dcccc270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__devinfo__api_8h.html#a7699cef06c02f6474f797c1109348046">aiot_devinfo_msg_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__devinfo__msg__t.html#acd3eba8edab0ab7932d485c5dcccc270">type</a></td></tr>
 <tr class="memdesc:acd3eba8edab0ab7932d485c5dcccc270"><td class="mdescLeft">&#160;</td><td class="mdescRight">消息类型, 更多信息请参考<a class="el" href="aiot__devinfo__api_8h.html#a7699cef06c02f6474f797c1109348046">aiot_devinfo_msg_type_t</a>  <a href="#acd3eba8edab0ab7932d485c5dcccc270">更多...</a><br /></td></tr>
 <tr class="separator:acd3eba8edab0ab7932d485c5dcccc270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb98b070cbb336d3c38a896401dda6dc"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a9eb1cc138d26bf6caed23530a5588940"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__t.html#a57b8c5fc04474f65a5b3ecf73a9f0326">update</a></td></tr>
-<tr class="memdesc:a9eb1cc138d26bf6caed23530a5588940"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新设备标签, 格式："[{\"attrKey":"xxx","attrValue":"yyy"}]"  <a href="#a9eb1cc138d26bf6caed23530a5588940">更多...</a><br /></td></tr>
-<tr class="separator:a9eb1cc138d26bf6caed23530a5588940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f089aa1a9451ee962d9d7bfaec8f6c6"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__t.html#a48210d80c640286ea6040492084f3b5d">delete</a></td></tr>
-<tr class="memdesc:a7f089aa1a9451ee962d9d7bfaec8f6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除设备标签, 格式："[{\"attrKey":"xxx"}]"  <a href="#a7f089aa1a9451ee962d9d7bfaec8f6c6">更多...</a><br /></td></tr>
-<tr class="separator:a7f089aa1a9451ee962d9d7bfaec8f6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb98b070cbb336d3c38a896401dda6dc"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__devinfo__msg__t.html#afb98b070cbb336d3c38a896401dda6dc">data</a></td></tr>
-<tr class="separator:afb98b070cbb336d3c38a896401dda6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f725c7f0721014d9fbbc2455ee78ca8"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a36a6a3af411042a7939ede9c39ed15bf"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__t.html#a57b8c5fc04474f65a5b3ecf73a9f0326">update</a></td></tr>
+<tr class="memdesc:a36a6a3af411042a7939ede9c39ed15bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新设备标签, 格式："[{\"attrKey":"xxx","attrValue":"yyy"}]"  <a href="#a36a6a3af411042a7939ede9c39ed15bf">更多...</a><br /></td></tr>
+<tr class="separator:a36a6a3af411042a7939ede9c39ed15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3ca5626665ad94896a054543dcd963"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__t.html#a48210d80c640286ea6040492084f3b5d">delete</a></td></tr>
+<tr class="memdesc:a3d3ca5626665ad94896a054543dcd963"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除设备标签, 格式："[{\"attrKey":"xxx"}]"  <a href="#a3d3ca5626665ad94896a054543dcd963">更多...</a><br /></td></tr>
+<tr class="separator:a3d3ca5626665ad94896a054543dcd963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20c79b6cdc995fe20932e35ad30b3ef"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a>&#160;&#160;&#160;<a class="el" href="structaiot__devinfo__msg__t.html#a5c2ddc59e34af7158f7fc8d99b8e0ed1">get</a></td></tr>
+<tr class="memdesc:ac20c79b6cdc995fe20932e35ad30b3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备标签, 格式："{\"attrKeys":["xxx", "yyyy"] }"  <a href="#ac20c79b6cdc995fe20932e35ad30b3ef">更多...</a><br /></td></tr>
+<tr class="separator:ac20c79b6cdc995fe20932e35ad30b3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f725c7f0721014d9fbbc2455ee78ca8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__devinfo__msg__t.html#a3f725c7f0721014d9fbbc2455ee78ca8">data</a></td></tr>
+<tr class="separator:a3f725c7f0721014d9fbbc2455ee78ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">类成员变量说明</h2>
 <a class="anchor" id="add710aead5a165c40cdbd2fe70f23cd3"></a>
@@ -194,7 +197,22 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb98b070cbb336d3c38a896401dda6dc"></a>
+<a class="anchor" id="a5c2ddc59e34af7158f7fc8d99b8e0ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__devinfo__msg__data__t.html">aiot_devinfo_msg_data_t</a> aiot_devinfo_msg_t::get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询设备标签, 格式："{\"attrKeys":["xxx", "yyyy"] }" </p>
+<p>从上述格式可以看出，查询设备标签的格式是一个JSON，一次可在value中指定多个标签进行查询 当前支持一次最多查询10个标签 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f725c7f0721014d9fbbc2455ee78ca8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">

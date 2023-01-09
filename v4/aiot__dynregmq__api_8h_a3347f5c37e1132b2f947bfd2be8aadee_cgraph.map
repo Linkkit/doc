@@ -1,9 +1,8 @@
 <map id="aiot_dynregmq_deinit" name="aiot_dynregmq_deinit">
-<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#a5ca82d220faa9c9e0402433df6adebfe" title="释放mqtt实例句柄的资源 " alt="" coords="199,143,313,170"/>
-<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a3db0603aa8e2859c972d9973ef63e379" title="_core_mqtt_topic_alias\l_list_remove_all" alt="" coords="361,5,517,47"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#aae071d4a76c16cfea8cd726e7d22a8f0" title="_core_mqtt_process\l_data_process" alt="" coords="369,71,509,112"/>
-<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#a0d30adb53f19f7c3605042c7ccfdbb7b" title="_core_mqtt_sublist\l_destroy" alt="" coords="373,136,505,177"/>
-<area shape="rect" id="node7" href="$aiot__mqtt__api_8c.html#a778848041f4b058bf3e4eab0686a382d" title="_core_mqtt_publist\l_destroy" alt="" coords="373,201,505,243"/>
-<area shape="rect" id="node8" href="$aiot__mqtt__api_8c.html#a9d4f909a9b56298193dd4a2c7648c698" title="_core_mqtt_process\l_datalist_destroy" alt="" coords="369,267,509,308"/>
-<area shape="rect" id="node6" href="$aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="565,136,704,177"/>
+<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#a5ca82d220faa9c9e0402433df6adebfe" title="释放mqtt实例句柄的资源 " alt="" coords="199,111,313,138"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#aae071d4a76c16cfea8cd726e7d22a8f0" title="_core_mqtt_process\l_data_process" alt="" coords="361,5,501,47"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a0d30adb53f19f7c3605042c7ccfdbb7b" title="_core_mqtt_sublist\l_destroy" alt="" coords="365,71,497,112"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__api_8c.html#a778848041f4b058bf3e4eab0686a382d" title="_core_mqtt_publist\l_destroy" alt="" coords="365,136,497,177"/>
+<area shape="rect" id="node7" href="$aiot__mqtt__api_8c.html#a9d4f909a9b56298193dd4a2c7648c698" title="_core_mqtt_process\l_datalist_destroy" alt="" coords="361,201,501,243"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="549,71,688,112"/>
 </map>

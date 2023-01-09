@@ -1,5 +1,3 @@
 <map id="_core_mqtt_puback_handler" name="_core_mqtt_puback_handler">
-<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#acc74e614978755a07336379c1a1d3758" title="_core_mqtt_flow_control_inc" alt="" coords="239,5,427,32"/>
-<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="475,23,623,65"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a15b20c7ee535247af7549f2a27110882" title="_core_mqtt_publist\l_remove" alt="" coords="267,107,399,149"/>
+<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#a15b20c7ee535247af7549f2a27110882" title="_core_mqtt_publist\l_remove" alt="" coords="239,5,371,47"/>
 </map>

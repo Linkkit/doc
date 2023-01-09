@@ -1,0 +1,5 @@
+<map id="_coap_create_request_message" name="_coap_create_request_message">
+<area shape="rect" id="node2" href="$aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="213,5,375,32"/>
+<area shape="rect" id="node3" href="$aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="219,56,369,83"/>
+<area shape="rect" id="node4" href="$aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="204,107,384,149"/>
+</map>

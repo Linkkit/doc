@@ -1,0 +1,1568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/coap/aiot_coap_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_c545ef009200ef40bd9908138088b0f0.html">coap</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_coap_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>COAP模块实现, 其中包含了连接到物联网平台和收发数据的API接口  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;coap_private.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;core_auth.h&quot;</code><br />
+<code>#include &quot;core_string.h&quot;</code><br />
+<code>#include &quot;core_sha256.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+<code>#include &quot;core_aes.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_coap_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c__incl.png" border="0" usemap="#components_2coap_2aiot__coap__api_8c" alt=""/></div>
+<map name="components_2coap_2aiot__coap__api_8c" id="components_2coap_2aiot__coap__api_8c">
+<area shape="rect" id="node11" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="1204,109,1319,136"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a46c57df76a9a931e985f3e0ab721441c"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c">_coap_message_assemble_header</a> (const coap_message_t *message, uint8_t *buff)</td></tr>
+<tr class="separator:a46c57df76a9a931e985f3e0ab721441c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c67114e3d5ff23c7450e272b7dbebd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd">_coap_token_iteration</a> (uint8_t *token, uint8_t tkl)</td></tr>
+<tr class="separator:a59c67114e3d5ff23c7450e272b7dbebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30089bb789aec2914ca46375a293f1cc"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc">_coap_message_parse</a> (coap_handle_t *coap_handle, coap_message_t *coap_message, const uint8_t *buff, uint32_t len)</td></tr>
+<tr class="separator:a30089bb789aec2914ca46375a293f1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71820eb4b87cbc3fc0bb20c76bb08d6d"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d">_coap_uri_to_option</a> (const char *uri, coap_option_t *option_array, uint8_t *option_cnt)</td></tr>
+<tr class="separator:a71820eb4b87cbc3fc0bb20c76bb08d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d0667ff510b9284765cd8a98de2b8b"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b">_coap_malloc_message</a> (<a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *sysdep, coap_message_t **msg, uint32_t buff_len)</td></tr>
+<tr class="separator:a76d0667ff510b9284765cd8a98de2b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a530a98240479df0559b3e97d477e2"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2">_coap_create_request_message</a> (void *handle, coap_request_method_t method, <a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a> msg_type, coap_message_t **request)</td></tr>
+<tr class="separator:ad7a530a98240479df0559b3e97d477e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573af492b202388126fe5449bae4d773"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773">_coap_create_empty_message</a> (void *handle, <a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a> type, uint32_t msg_id, coap_message_t **empty)</td></tr>
+<tr class="separator:a573af492b202388126fe5449bae4d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c2a1ca8776befa4289f756c5118bd6"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6">_coap_add_option</a> (coap_handle_t *coap_handle, coap_message_t *message, uint16_t opt_num, uint8_t *opt_data, uint32_t opt_len)</td></tr>
+<tr class="separator:aa6c2a1ca8776befa4289f756c5118bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888d13b2f1d8d184a968aa585c795f24"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24">_coap_connect</a> (void *handle)</td></tr>
+<tr class="separator:a888d13b2f1d8d184a968aa585c795f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa68a124061cb8a39ea878245269a09"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09">_coap_send_message</a> (void *handle, coap_message_t *coap_message, uint8_t *payload, uint32_t payload_len)</td></tr>
+<tr class="separator:abaa68a124061cb8a39ea878245269a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eeaa9e6dc277051b99fce92db031a3"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3">_cal_auth_payload_buff</a> (coap_message_t *coap_message, uint8_t **auth_payload)</td></tr>
+<tr class="separator:ab7eeaa9e6dc277051b99fce92db031a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2275ea7a5b5e896c539a6551e933dfe1"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a2275ea7a5b5e896c539a6551e933dfe1">_send_coap_auth_msg</a> (coap_handle_t *coap_handle, coap_message_t *message)</td></tr>
+<tr class="separator:a2275ea7a5b5e896c539a6551e933dfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163ef2a142a4b0453a79223366c2e63"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63">_coap_release_message</a> (void *handle, coap_message_t *message)</td></tr>
+<tr class="separator:a9163ef2a142a4b0453a79223366c2e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea49f94a56c02ecaacba7ce47e084d0f"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f">_token_str2uint32</a> (<a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *sysdep, uint8_t *token, uint8_t token_len)</td></tr>
+<tr class="separator:aea49f94a56c02ecaacba7ce47e084d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127bc2fbb7cbaab3f829d0743d7ff911"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911">_coap_recv_message_handler</a> (coap_handle_t *coap_handle, coap_message_t *message, coap_request_cache_t *auth_req_cache)</td></tr>
+<tr class="separator:a127bc2fbb7cbaab3f829d0743d7ff911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a52d4d75916f38f3a6e08c4c8b4aa0f"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f">_coap_recv</a> (void *handle, coap_request_cache_t *auth_req_cache)</td></tr>
+<tr class="separator:a6a52d4d75916f38f3a6e08c4c8b4aa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3ed2528829bec7a9847cd458dbdf44"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a6b3ed2528829bec7a9847cd458dbdf44">_coap_auth_response_handler</a> (void *handle, const coap_message_t *response, void *user_data)</td></tr>
+<tr class="separator:a6b3ed2528829bec7a9847cd458dbdf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850ac848860a8fd4b07bf0a354c32e0e"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e">is_content_format_supported</a> (<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678d">aiot_coap_content_format_t</a> format)</td></tr>
+<tr class="separator:a850ac848860a8fd4b07bf0a354c32e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9731e314d55e99ee7cdf506d6ccc610"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#ab9731e314d55e99ee7cdf506d6ccc610">aiot_coap_init</a> (void)</td></tr>
+<tr class="memdesc:ab9731e314d55e99ee7cdf506d6ccc610"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化coap实例并设置默认参数  <a href="#ab9731e314d55e99ee7cdf506d6ccc610">更多...</a><br /></td></tr>
+<tr class="separator:ab9731e314d55e99ee7cdf506d6ccc610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> (void *handle, <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置coap参数  <a href="#ad4bb234720464e64a7a0ff5afaf3e8c8">更多...</a><br /></td></tr>
+<tr class="separator:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5309714abcd291c4ae359d0f4078bdc"><td class="memItemLeft" align="right" valign="top">static coap_message_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#ad5309714abcd291c4ae359d0f4078bdc">_coap_creat_auth_message</a> (coap_handle_t *coap_handle, const char *secret)</td></tr>
+<tr class="separator:ad5309714abcd291c4ae359d0f4078bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630b77aa943bf811fc1a645a7d34e131"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> (void *handle)</td></tr>
+<tr class="memdesc:a630b77aa943bf811fc1a645a7d34e131"><td class="mdescLeft">&#160;</td><td class="mdescRight">让coap模块与服务器通信, 并且获取auth token  <a href="#a630b77aa943bf811fc1a645a7d34e131">更多...</a><br /></td></tr>
+<tr class="separator:a630b77aa943bf811fc1a645a7d34e131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c027ea7b098dec305fe29601ed2cafb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a3c027ea7b098dec305fe29601ed2cafb">aiot_coap_send</a> (void *handle, const char *uri, <a class="el" href="structaiot__coap__request__t.html">aiot_coap_request_t</a> *request)</td></tr>
+<tr class="memdesc:a3c027ea7b098dec305fe29601ed2cafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送COAP报文  <a href="#a3c027ea7b098dec305fe29601ed2cafb">更多...</a><br /></td></tr>
+<tr class="separator:a3c027ea7b098dec305fe29601ed2cafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f576ad8aad477f2e5dece6d0f18abb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> (void *handle)</td></tr>
+<tr class="memdesc:a42f576ad8aad477f2e5dece6d0f18abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">从网络收取COAP报文  <a href="#a42f576ad8aad477f2e5dece6d0f18abb">更多...</a><br /></td></tr>
+<tr class="separator:a42f576ad8aad477f2e5dece6d0f18abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09587dad5f06f53a8af7ff87b0123f43"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a09587dad5f06f53a8af7ff87b0123f43">aiot_coap_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a09587dad5f06f53a8af7ff87b0123f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放COAP实例句柄的资源  <a href="#a09587dad5f06f53a8af7ff87b0123f43">更多...</a><br /></td></tr>
+<tr class="separator:a09587dad5f06f53a8af7ff87b0123f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a7addc40f3177e4c1ff0e7c763e85bda0">aiot_coap_request_message</a> (void *handle, int32_t counter)</td></tr>
+<tr class="memdesc:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备主动请求下拉消息  <a href="#a7addc40f3177e4c1ff0e7c763e85bda0">更多...</a><br /></td></tr>
+<tr class="separator:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8c93f4ff705f86c9e73c7c9c3479d9"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a6e8c93f4ff705f86c9e73c7c9c3479d9">_coap_dynreg_response_handler</a> (void *handle, const coap_message_t *response, void *user_data)</td></tr>
+<tr class="separator:a6e8c93f4ff705f86c9e73c7c9c3479d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afcdacd4630e889d0a660b923a24a54"><td class="memItemLeft" align="right" valign="top">static coap_message_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a3afcdacd4630e889d0a660b923a24a54">_coap_creat_register_message</a> (coap_handle_t *coap_handle, const char *secret)</td></tr>
+<tr class="separator:a3afcdacd4630e889d0a660b923a24a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb73760c85323b6df1559d1dcb8fce4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8c.html#a2cb73760c85323b6df1559d1dcb8fce4">aiot_coap_dynreg</a> (void *handle, const char *product_secret, char *out_secret, uint32_t out_secret_len)</td></tr>
+<tr class="memdesc:a2cb73760c85323b6df1559d1dcb8fce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备动态注册，返回设备密钥  <a href="#a2cb73760c85323b6df1559d1dcb8fce4">更多...</a><br /></td></tr>
+<tr class="separator:a2cb73760c85323b6df1559d1dcb8fce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>COAP模块实现, 其中包含了连接到物联网平台和收发数据的API接口 </p>
+<dl class="section date"><dt>日期</dt><dd>2020-02-28</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a46c57df76a9a931e985f3e0ab721441c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_message_assemble_header </td>
+          <td>(</td>
+          <td class="paramtype">const coap_message_t *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59c67114e3d5ff23c7450e272b7dbebd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _coap_token_iteration </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tkl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30089bb789aec2914ca46375a293f1cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_message_parse </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>coap_message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71820eb4b87cbc3fc0bb20c76bb08d6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_uri_to_option </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_option_t *&#160;</td>
+          <td class="paramname"><em>option_array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>option_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76d0667ff510b9284765cd8a98de2b8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_malloc_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *&#160;</td>
+          <td class="paramname"><em>sysdep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t **&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>buff_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7a530a98240479df0559b3e97d477e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_create_request_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_request_method_t&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a>&#160;</td>
+          <td class="paramname"><em>msg_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t **&#160;</td>
+          <td class="paramname"><em>request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_ad7a530a98240479df0559b3e97d477e2_cgraph.png" border="0" usemap="#aiot__coap__api_8c_ad7a530a98240479df0559b3e97d477e2_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_ad7a530a98240479df0559b3e97d477e2_cgraph" id="aiot__coap__api_8c_ad7a530a98240479df0559b3e97d477e2_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="213,5,375,32"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="219,56,369,83"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="204,107,384,149"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a573af492b202388126fe5449bae4d773"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_create_empty_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t **&#160;</td>
+          <td class="paramname"><em>empty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a573af492b202388126fe5449bae4d773_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a573af492b202388126fe5449bae4d773_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a573af492b202388126fe5449bae4d773_cgraph" id="aiot__coap__api_8c_a573af492b202388126fe5449bae4d773_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="205,5,367,32"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="196,57,376,98"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6c2a1ca8776befa4289f756c5118bd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_add_option </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>opt_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>opt_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>opt_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a888d13b2f1d8d184a968aa585c795f24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_connect </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abaa68a124061cb8a39ea878245269a09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_send_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>coap_message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payload_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_abaa68a124061cb8a39ea878245269a09_cgraph.png" border="0" usemap="#aiot__coap__api_8c_abaa68a124061cb8a39ea878245269a09_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_abaa68a124061cb8a39ea878245269a09_cgraph" id="aiot__coap__api_8c_abaa68a124061cb8a39ea878245269a09_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="205,5,316,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7eeaa9e6dc277051b99fce92db031a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _cal_auth_payload_buff </td>
+          <td>(</td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>coap_message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>auth_payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2275ea7a5b5e896c539a6551e933dfe1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _send_coap_auth_msg </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a2275ea7a5b5e896c539a6551e933dfe1_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a2275ea7a5b5e896c539a6551e933dfe1_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a2275ea7a5b5e896c539a6551e933dfe1_cgraph" id="aiot__coap__api_8c_a2275ea7a5b5e896c539a6551e933dfe1_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="209,5,320,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9163ef2a142a4b0453a79223366c2e63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _coap_release_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea49f94a56c02ecaacba7ce47e084d0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t _token_str2uint32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structaiot__sysdep__portfile__t.html">aiot_sysdep_portfile_t</a> *&#160;</td>
+          <td class="paramname"><em>sysdep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>token_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a127bc2fbb7cbaab3f829d0743d7ff911"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_recv_message_handler </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_message_t *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_request_cache_t *&#160;</td>
+          <td class="paramname"><em>auth_req_cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a127bc2fbb7cbaab3f829d0743d7ff911_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a127bc2fbb7cbaab3f829d0743d7ff911_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a127bc2fbb7cbaab3f829d0743d7ff911_cgraph" id="aiot__coap__api_8c_a127bc2fbb7cbaab3f829d0743d7ff911_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="215,57,357,98"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="210,123,362,149"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="203,173,369,200"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="223,224,349,251"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="426,5,589,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="417,57,597,98"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="452,123,563,149"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a52d4d75916f38f3a6e08c4c8b4aa0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">coap_request_cache_t *&#160;</td>
+          <td class="paramname"><em>auth_req_cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a6a52d4d75916f38f3a6e08c4c8b4aa0f_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a6a52d4d75916f38f3a6e08c4c8b4aa0f_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a6a52d4d75916f38f3a6e08c4c8b4aa0f_cgraph" id="aiot__coap__api_8c_a6a52d4d75916f38f3a6e08c4c8b4aa0f_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="596,6,707,32"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="143,31,299,58"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="146,82,295,124"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="359,82,501,124"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="354,31,506,58"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="347,148,513,175"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="367,199,493,226"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="570,74,733,100"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="561,125,741,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b3ed2528829bec7a9847cd458dbdf44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_auth_response_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const coap_message_t *&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a850ac848860a8fd4b07bf0a354c32e0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t is_content_format_supported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678d">aiot_coap_content_format_t</a>&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9731e314d55e99ee7cdf506d6ccc610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_coap_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化coap实例并设置默认参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>COAP实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_ab9731e314d55e99ee7cdf506d6ccc610_cgraph.png" border="0" usemap="#aiot__coap__api_8c_ab9731e314d55e99ee7cdf506d6ccc610_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_ab9731e314d55e99ee7cdf506d6ccc610_cgraph" id="aiot__coap__api_8c_ab9731e314d55e99ee7cdf506d6ccc610_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="156,5,319,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4bb234720464e64a7a0ff5afaf3e8c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置coap参数 </p>
+<p>下面列出常用的配置选项, 至少需要配置以下选项才可使用COAP的基本功能</p>
+<p>其余配置选项均设有默认值, 可按业务需要进行调整</p>
+<ul>
+<li><code>AIOT_COAPOPT_HOST</code>: 配置连接的阿里云COAP站点地址</li>
+<li><code>AIOT_COAPOPT_PORT</code>: 配置连接的阿里云COAP站点端口号</li>
+<li><code>AIOT_COAPOPT_PRODUCT_KEY</code>: 配置设备的 productKey</li>
+<li><code>AIOT_COAPOPT_DEVICE_NAME</code>: 配置设备的 deviceName</li>
+<li><code>AIOT_COAPOPT_DEVICE_SECRET</code>: 配置设备的 deviceSecret</li>
+<li><code>AIOT_COAPOPT_NETWORK_CRED</code>: 配置建立COAP连接时的安全凭据</li>
+<li><code>AIOT_COAPOPT_RECV_HANDLER</code>: 配置默认的数据接收回调函数</li>
+<li><code>AIOT_COAPOPT_EVENT_HANDLER</code>: 配置COAP事件通知回调函数</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数设置失败, 更多信息请本文件后面关于错误码的定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad5309714abcd291c4ae359d0f4078bdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static coap_message_t* _coap_creat_auth_message </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_ad5309714abcd291c4ae359d0f4078bdc_cgraph.png" border="0" usemap="#aiot__coap__api_8c_ad5309714abcd291c4ae359d0f4078bdc_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_ad5309714abcd291c4ae359d0f4078bdc_cgraph" id="aiot__coap__api_8c_ad5309714abcd291c4ae359d0f4078bdc_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="247,49,397,90"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="259,115,385,141"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="243,165,401,192"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="239,216,405,243"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="462,5,625,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="469,56,618,83"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="453,107,633,149"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a630b77aa943bf811fc1a645a7d34e131"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_auth </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>让coap模块与服务器通信, 并且获取auth token </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_AUTH_HANDLE_IS_NULL</td><td>获取auth token时coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_DEVICE_INFO_MISSING</td><td>获取auth token时设备的三元组为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SIGN_SRC_MALLOC_FAILED</td><td>获取auth token时为计算签名分配内存失败 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_TIMEOUT</td><td>获取auth token发生超时, 超过了 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 所定义的超时时间 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>获取auth token成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a630b77aa943bf811fc1a645a7d34e131_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a630b77aa943bf811fc1a645a7d34e131_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a630b77aa943bf811fc1a645a7d34e131_cgraph" id="aiot__coap__api_8c_a630b77aa943bf811fc1a645a7d34e131_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="851,57,961,84"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#ad5309714abcd291c4ae359d0f4078bdc" title="_coap_creat_auth_message" alt="" coords="368,360,553,386"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="601,301,768,328"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a6b3ed2528829bec7a9847cd458dbdf44" title="_coap_auth_response\l_handler" alt="" coords="167,395,317,436"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a2275ea7a5b5e896c539a6551e933dfe1" title="_send_coap_auth_msg" alt="" coords="164,109,320,136"/>
+<area shape="rect" id="node13" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="197,210,287,237"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="609,352,760,394"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="621,418,748,445"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="605,469,764,496"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="825,242,987,269"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="831,360,981,386"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="816,294,996,335"/>
+<area shape="rect" id="node14" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="383,242,539,269"/>
+<area shape="rect" id="node15" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="386,176,535,218"/>
+<area shape="rect" id="node16" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="613,235,756,276"/>
+<area shape="rect" id="node17" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="609,133,761,160"/>
+<area shape="rect" id="node18" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="622,184,747,210"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c027ea7b098dec305fe29601ed2cafb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__coap__request__t.html">aiot_coap_request_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送COAP报文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>目标topic </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>指向要发送报文的内容的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_SEND_HANDLE_IS_NULL</td><td>发送的报文时, coap_handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_TOPIC_IS_NULL</td><td>发送的报文时, topic为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_REQUEST_IS_NULL</td><td>发送的报文时, request为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_PAYLOAD_IS_NULL</td><td>发送的报文时, payload为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_WITHOUT_AUTHORIZATION</td><td>发送消息时auth_token还没有获取到 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_INVALID_MSG_TYPE</td><td>发送消息时, 消息的类型既不是CON, 也不是NON </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>发送coap报文成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a3c027ea7b098dec305fe29601ed2cafb_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a3c027ea7b098dec305fe29601ed2cafb_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a3c027ea7b098dec305fe29601ed2cafb_cgraph" id="aiot__coap__api_8c_a3c027ea7b098dec305fe29601ed2cafb_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="187,49,337,90"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d" title="_coap_uri_to_option" alt="" coords="193,115,331,141"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="179,165,345,192"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="199,216,325,243"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e" title="is_content_format_supported" alt="" coords="167,267,357,293"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="186,317,338,344"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="414,5,577,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="421,56,570,83"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="405,107,585,149"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="440,317,551,344"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a42f576ad8aad477f2e5dece6d0f18abb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从网络收取COAP报文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_RECV_HANDLE_IS_NULL</td><td>收取网络报文时, coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_RECV_WITHOUT_AUTHORIZATION</td><td>收取网络报文时, auth token还没有获取到 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>收取COAP报文成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a42f576ad8aad477f2e5dece6d0f18abb_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a42f576ad8aad477f2e5dece6d0f18abb_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a42f576ad8aad477f2e5dece6d0f18abb_cgraph" id="aiot__coap__api_8c_a42f576ad8aad477f2e5dece6d0f18abb_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="164,31,253,58"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="755,6,865,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="301,31,457,58"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="305,82,454,124"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="517,82,660,124"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="513,31,665,58"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="505,148,672,175"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="526,199,651,226"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="729,74,891,100"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="720,125,900,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a09587dad5f06f53a8af7ff87b0123f43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放COAP实例句柄的资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向mqtt实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7addc40f3177e4c1ff0e7c763e85bda0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_request_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>counter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备主动请求下拉消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counter</td><td>下拉的最大消息数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>返回coap协议的消息id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph" id="aiot__coap__api_8c_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a3c027ea7b098dec305fe29601ed2cafb" title="发送COAP报文 " alt="" coords="241,191,355,217"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="423,49,573,90"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d" title="_coap_uri_to_option" alt="" coords="429,115,567,141"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="415,165,581,192"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="435,216,561,243"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e" title="is_content_format_supported" alt="" coords="403,267,593,293"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="422,317,574,344"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="650,5,813,32"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="657,56,806,83"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="641,107,821,149"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="676,317,787,344"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e8c93f4ff705f86c9e73c7c9c3479d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _coap_dynreg_response_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const coap_message_t *&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3afcdacd4630e889d0a660b923a24a54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static coap_message_t* _coap_creat_register_message </td>
+          <td>(</td>
+          <td class="paramtype">coap_handle_t *&#160;</td>
+          <td class="paramname"><em>coap_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a3afcdacd4630e889d0a660b923a24a54_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a3afcdacd4630e889d0a660b923a24a54_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a3afcdacd4630e889d0a660b923a24a54_cgraph" id="aiot__coap__api_8c_a3afcdacd4630e889d0a660b923a24a54_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="200,49,351,90"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="212,115,339,141"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="196,165,355,192"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="411,5,574,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="418,56,567,83"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="403,107,583,149"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cb73760c85323b6df1559d1dcb8fce4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_dynreg </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>product_secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>out_secret_maxlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备动态注册，返回设备密钥 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">product_secret</td><td>产品密钥 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_secret</td><td>输出的设备密钥 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_secret_maxlen</td><td>保存设备密钥的内存大小</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_AUTH_HANDLE_IS_NULL</td><td>获取device_secret时coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_DEVICE_INFO_MISSING</td><td>获取device_secret时设备的三元组为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SIGN_SRC_MALLOC_FAILED</td><td>获取device_secret时为计算签名分配内存失败 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_TIMEOUT</td><td>获取device_secret发生超时, 超过了 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 所定义的超时时间 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>获取device_secret成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8c_a2cb73760c85323b6df1559d1dcb8fce4_cgraph.png" border="0" usemap="#aiot__coap__api_8c_a2cb73760c85323b6df1559d1dcb8fce4_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8c_a2cb73760c85323b6df1559d1dcb8fce4_cgraph" id="aiot__coap__api_8c_a2cb73760c85323b6df1559d1dcb8fce4_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="841,61,952,87"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a3afcdacd4630e889d0a660b923a24a54" title="_coap_creat_register\l_message" alt="" coords="395,385,537,427"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a6e8c93f4ff705f86c9e73c7c9c3479d9" title="_coap_dynreg_response\l_handler" alt="" coords="177,399,340,440"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a2275ea7a5b5e896c539a6551e933dfe1" title="_send_coap_auth_msg" alt="" coords="181,101,337,127"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="592,305,759,331"/>
+<area shape="rect" id="node13" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="214,217,303,243"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="600,356,751,397"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="612,422,739,449"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="596,473,755,499"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="815,246,978,273"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="822,363,971,390"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="807,297,987,339"/>
+<area shape="rect" id="node14" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="388,246,544,273"/>
+<area shape="rect" id="node15" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="391,180,541,221"/>
+<area shape="rect" id="node16" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="604,239,747,280"/>
+<area shape="rect" id="node17" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="599,137,751,163"/>
+<area shape="rect" id="node18" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="613,187,738,214"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

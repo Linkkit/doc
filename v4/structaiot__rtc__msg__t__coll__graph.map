@@ -1,8 +1,0 @@
-<map id="aiot_rtc_msg_t" name="aiot_rtc_msg_t">
-<area shape="rect" id="node2" href="$structaiot__rtc__msg__channel__request__t.html" title="主叫方发起的会议邀请 " alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node3" href="$structaiot__rtc__msg__remove__guest__t.html" title="将某个用户踢出会议的请求 " alt="" coords="7,71,153,112"/>
-<area shape="rect" id="node4" href="$structaiot__rtc__msg__invite__more__guest__t.html" title="发起更多的邀请 " alt="" coords="13,136,147,177"/>
-<area shape="rect" id="node5" href="$structaiot__rtc__msg__guest__reply__t.html" title="被叫方回复 " alt="" coords="12,201,148,243"/>
-<area shape="rect" id="node6" href="$structaiot__rtc__msg__guest__leave__channel__t.html" title="某个用户要离开会议的请求 " alt="" coords="12,267,148,308"/>
-<area shape="rect" id="node7" href="$structaiot__rtc__msg__cancel__channel__t.html" title="结束整个会议的请求 " alt="" coords="9,332,151,373"/>
-</map>

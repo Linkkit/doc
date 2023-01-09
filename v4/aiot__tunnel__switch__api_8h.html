@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/remote-access/tunnel_switch/aiot_tunnel_switch_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_46cb2c0db3019d151f6e8ad2f26a0eed.html">remote-access</a></li><li class="navelem"><a class="el" href="dir_24599e80baaa00041e64eb54fad97b6a.html">tunnel_switch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_tunnel_switch_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>远程隧道的开关的实现文件，实现mqtt消息的订阅及解析  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_tunnel_switch_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h__incl.png" border="0" usemap="#components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8h" alt=""/></div>
+<map name="components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8h" id="components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h__dep__incl.png" border="0" usemap="#components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8hdep" alt=""/></div>
+<map name="components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8hdep" id="components_2remote-access_2tunnel__switch_2aiot__tunnel__switch__api_8hdep">
+<area shape="rect" id="node2" href="aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="5,117,188,158"/>
+<area shape="rect" id="node3" href="aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="212,109,395,165"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__tunnel__switch__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__tunnel__switch__recv__data__t.html">aiot_tunnel_switch_recv_data_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a0d57f7406b96156eb27d4d6343ab5992"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a0d57f7406b96156eb27d4d6343ab5992">aiot_tunnel_switch_recv_handler_t</a>) (void *handle, const <a class="el" href="structaiot__tunnel__switch__recv__data__t.html">aiot_tunnel_switch_recv_data_t</a> *recv, void *userdata)</td></tr>
+<tr class="memdesc:a0d57f7406b96156eb27d4d6343ab5992"><td class="mdescLeft">&#160;</td><td class="mdescRight">tunnel_swtich模块消息接收回调函数的函数原型定义, 当模块接收到服务器下行数据后将调用此回调函数, 并将消息数据通过<em>recv</em>参数输入给用户, <br />
+同时将用户上下文数据指针通过<em>userdata</em>参数返回给用户  <a href="#a0d57f7406b96156eb27d4d6343ab5992">更多...</a><br /></td></tr>
+<tr class="separator:a0d57f7406b96156eb27d4d6343ab5992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ab687921d749a1fbcc0297c4406561ab1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#ab687921d749a1fbcc0297c4406561ab1">aiot_tunnel_switch_operation_t</a> { <a class="el" href="aiot__tunnel__switch__api_8h.html#ab687921d749a1fbcc0297c4406561ab1a8d033dbc4686978ce50b46339da04be9">AIOT_TUNNEL_OPERATOPN_CLOSE</a>, 
+<a class="el" href="aiot__tunnel__switch__api_8h.html#ab687921d749a1fbcc0297c4406561ab1ac77b0c1f9cf0528ac6b41372d3b9b5e4">AIOT_TUNNEL_OPERATOPN_OPEN</a>, 
+<a class="el" href="aiot__tunnel__switch__api_8h.html#ab687921d749a1fbcc0297c4406561ab1a530152c9f5b280734fc5ed57b6c07c48">AIOT_TUNNEL_OPERATOPN_UPDATE</a>
+ }</td></tr>
+<tr class="separator:ab687921d749a1fbcc0297c4406561ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936c6e80b3e44aee960ee59a1af7afcd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a> { <a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcda47c820d8c86d3ee8fcb4511191a4aca6">AIOT_TSOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcdae1f6fd49110be3005fd36d3558f2aed1">AIOT_TSOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcda60cda1e26548aedb9cdf495eace96160">AIOT_TSOPT_USERDATA</a>, 
+<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcda362f32da4840ae78e3feab6e7e0abbf5">AIOT_TSOPT_MAX</a>
+ }</td></tr>
+<tr class="separator:a936c6e80b3e44aee960ee59a1af7afcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a84a269c86fc890da81e2d1385a4714ad"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a84a269c86fc890da81e2d1385a4714ad">aiot_tunnel_switch_init</a> ()</td></tr>
+<tr class="memdesc:a84a269c86fc890da81e2d1385a4714ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化tunnel_switch实例  <a href="#a84a269c86fc890da81e2d1385a4714ad">更多...</a><br /></td></tr>
+<tr class="separator:a84a269c86fc890da81e2d1385a4714ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dee8852ec07ce6e4bd7c075f340e580"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a9dee8852ec07ce6e4bd7c075f340e580">aiot_tunnel_switch_setopt</a> (void *handle, <a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:a9dee8852ec07ce6e4bd7c075f340e580"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置tunnel_switch参数  <a href="#a9dee8852ec07ce6e4bd7c075f340e580">更多...</a><br /></td></tr>
+<tr class="separator:a9dee8852ec07ce6e4bd7c075f340e580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b642b198628c092d224488bc7046300"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a2b642b198628c092d224488bc7046300">aiot_tunnel_switch_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a2b642b198628c092d224488bc7046300"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁tunnel_switch实例, 释放资源  <a href="#a2b642b198628c092d224488bc7046300">更多...</a><br /></td></tr>
+<tr class="separator:a2b642b198628c092d224488bc7046300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241768d0e33857c677a7ef40c67b733b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__switch__api_8h.html#a241768d0e33857c677a7ef40c67b733b">aiot_tunnel_switch_request</a> (void *handle)</td></tr>
+<tr class="memdesc:a241768d0e33857c677a7ef40c67b733b"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送获取隧道信息  <a href="#a241768d0e33857c677a7ef40c67b733b">更多...</a><br /></td></tr>
+<tr class="separator:a241768d0e33857c677a7ef40c67b733b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>远程隧道的开关的实现文件，实现mqtt消息的订阅及解析 </p>
+<dl class="section date"><dt>日期</dt><dd>2019-12-27</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a0d57f7406b96156eb27d4d6343ab5992"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_tunnel_switch_recv_handler_t) (void *handle, const <a class="el" href="structaiot__tunnel__switch__recv__data__t.html">aiot_tunnel_switch_recv_data_t</a> *recv, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tunnel_swtich模块消息接收回调函数的函数原型定义, 当模块接收到服务器下行数据后将调用此回调函数, 并将消息数据通过<em>recv</em>参数输入给用户, <br />
+同时将用户上下文数据指针通过<em>userdata</em>参数返回给用户 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>tunnel_switch实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv</td><td>服务下发的消息数据, <b>消息结构体中的所有数据指针在离开回调函数后将失效, 保存消息数据必须使用内存复制的方式</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>指向用户上下文数据的指针, 这个指针由用户通过调用<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a> 配置<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcda60cda1e26548aedb9cdf495eace96160">AIOT_TSOPT_USERDATA</a> 选项设置</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ab687921d749a1fbcc0297c4406561ab1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__tunnel__switch__api_8h.html#ab687921d749a1fbcc0297c4406561ab1">aiot_tunnel_switch_operation_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ab687921d749a1fbcc0297c4406561ab1a8d033dbc4686978ce50b46339da04be9"></a>AIOT_TUNNEL_OPERATOPN_CLOSE&#160;</td><td class="fielddoc">
+<p>关闭隧道连接 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab687921d749a1fbcc0297c4406561ab1ac77b0c1f9cf0528ac6b41372d3b9b5e4"></a>AIOT_TUNNEL_OPERATOPN_OPEN&#160;</td><td class="fielddoc">
+<p>打开隧道连接 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab687921d749a1fbcc0297c4406561ab1a530152c9f5b280734fc5ed57b6c07c48"></a>AIOT_TUNNEL_OPERATOPN_UPDATE&#160;</td><td class="fielddoc">
+<p>更新隧道连接信息 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a936c6e80b3e44aee960ee59a1af7afcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a936c6e80b3e44aee960ee59a1af7afcda47c820d8c86d3ee8fcb4511191a4aca6"></a>AIOT_TSOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>模块依赖的MQTT句柄 </p>
+<p>tunnel_switch模块依赖底层的MQTT模块, 用户必需配置正确的MQTT句柄, 否则无法正常工作</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a936c6e80b3e44aee960ee59a1af7afcdae1f6fd49110be3005fd36d3558f2aed1"></a>AIOT_TSOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>数据接收回调函数, tunnel_switch接收物联网平台的下行消息后调用此回调函数 </p>
+<p>数据类型: (aiot_tunnel_switch_recv_handler_t), 详细查看<a class="el" href="aiot__tunnel__switch__api_8h.html#a0d57f7406b96156eb27d4d6343ab5992">aiot_tunnel_switch_recv_handler_t</a> 回调函数原型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a936c6e80b3e44aee960ee59a1af7afcda60cda1e26548aedb9cdf495eace96160"></a>AIOT_TSOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>指向用户上下文数据的指针 </p>
+<p>在用户注册的<a class="el" href="aiot__tunnel__switch__api_8h.html#a0d57f7406b96156eb27d4d6343ab5992">aiot_tunnel_switch_recv_handler_t</a> 数据接收回调函数中会同过userdata参数将此指针返回给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a936c6e80b3e44aee960ee59a1af7afcda362f32da4840ae78e3feab6e7e0abbf5"></a>AIOT_TSOPT_MAX&#160;</td><td class="fielddoc">
+<p>配置选项数量最大值, 不可用作配置参数 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a84a269c86fc890da81e2d1385a4714ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_tunnel_switch_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化tunnel_switch实例 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>tunnel_switch实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h_a84a269c86fc890da81e2d1385a4714ad_cgraph.png" border="0" usemap="#aiot__tunnel__switch__api_8h_a84a269c86fc890da81e2d1385a4714ad_cgraph" alt=""/></div>
+<map name="aiot__tunnel__switch__api_8h_a84a269c86fc890da81e2d1385a4714ad_cgraph" id="aiot__tunnel__switch__api_8h_a84a269c86fc890da81e2d1385a4714ad_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="208,5,371,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dee8852ec07ce6e4bd7c075f340e580"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_switch_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置tunnel_switch参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>tunnel_switch实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请查看<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置数据, 更多信息请查看<a class="el" href="aiot__tunnel__switch__api_8h.html#a936c6e80b3e44aee960ee59a1af7afcd">aiot_tunnel_switch_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h_a9dee8852ec07ce6e4bd7c075f340e580_cgraph.png" border="0" usemap="#aiot__tunnel__switch__api_8h_a9dee8852ec07ce6e4bd7c075f340e580_cgraph" alt=""/></div>
+<map name="aiot__tunnel__switch__api_8h_a9dee8852ec07ce6e4bd7c075f340e580_cgraph" id="aiot__tunnel__switch__api_8h_a9dee8852ec07ce6e4bd7c075f340e580_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__switch__api_8c.html#a4ee1c246b2b952183f1ca12c314a5d15" title="_sub_switch_topic" alt="" coords="184,167,315,194"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="366,66,549,93"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="363,117,552,143"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a822e6905d3954106fc1a074748a20b7b" title="发送一条mqtt SUBSCRIBE报文到MQTT服务器, 用于订阅指定的topic " alt="" coords="405,167,509,194"/>
+<area shape="rect" id="node17" href="aiot__tunnel__switch__api_8c.html#a988d0a9063137c104beedf33128ad734" title="_tunnel_switch_notify\l_topic_handler" alt="" coords="383,219,531,260"/>
+<area shape="rect" id="node20" href="aiot__tunnel__switch__api_8c.html#a59ccd6a9dce265d50e93e86bb83767b8" title="_tunnel_switch_request\l_reply_topic_handler" alt="" coords="378,284,537,325"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a9db5147279af8b87846bd35462cf1229" title="_core_mqtt_sub" alt="" coords="633,155,747,182"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="840,5,979,47"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="836,71,983,98"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="843,123,975,164"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#afe668b75616d0c2fabc57c7e5f89967c" title="_core_mqtt_subunsub" alt="" coords="834,189,985,215"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="834,239,985,266"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1041,87,1194,128"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1039,152,1196,193"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1042,218,1193,245"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1056,269,1179,295"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1244,269,1420,295"/>
+<area shape="rect" id="node18" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="828,290,991,317"/>
+<area shape="rect" id="node19" href="aiot__tunnel__switch__api_8c.html#a1098916d410b75a49ea00d2f966d5bf4" title="_core_json_get_value_char" alt="" coords="600,277,780,303"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b642b198628c092d224488bc7046300"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_switch_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁tunnel_switch实例, 释放资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel_switch实例句柄的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h_a2b642b198628c092d224488bc7046300_cgraph.png" border="0" usemap="#aiot__tunnel__switch__api_8h_a2b642b198628c092d224488bc7046300_cgraph" alt=""/></div>
+<map name="aiot__tunnel__switch__api_8h_a2b642b198628c092d224488bc7046300_cgraph" id="aiot__tunnel__switch__api_8h_a2b642b198628c092d224488bc7046300_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__switch__api_8c.html#ad167f480e802ec69ff075cad421d7ad2" title="_unsub_switch_topic" alt="" coords="184,79,328,106"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="379,29,562,55"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="376,79,565,106"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#ac5bf829313794c8532eeafa84956e4da" title="发送一条mqtt UNSUBSCRIBE报文到MQTT服务器, 用于取消订阅指定的topic " alt="" coords="411,130,530,157"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#ac3e17e60da5d53ec67d18d6e6ef9f225" title="_core_mqtt_unsub" alt="" coords="613,130,743,157"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="797,5,935,47"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="793,71,939,98"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#aa89de609d4ede93b6c37f1b2dd76ac30" title="_core_mqtt_sublist\l_remove" alt="" coords="800,123,932,164"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#afe668b75616d0c2fabc57c7e5f89967c" title="_core_mqtt_subunsub" alt="" coords="791,189,941,215"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="791,239,941,266"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="999,87,1137,128"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="989,152,1147,193"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="993,218,1143,245"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1007,269,1129,295"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1195,269,1371,295"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a241768d0e33857c677a7ef40c67b733b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_switch_request </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送获取隧道信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel_switch实例句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__switch__api_8h_a241768d0e33857c677a7ef40c67b733b_cgraph.png" border="0" usemap="#aiot__tunnel__switch__api_8h_a241768d0e33857c677a7ef40c67b733b_cgraph" alt=""/></div>
+<map name="aiot__tunnel__switch__api_8h_a241768d0e33857c677a7ef40c67b733b_cgraph" id="aiot__tunnel__switch__api_8h_a241768d0e33857c677a7ef40c67b733b_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="187,28,370,55"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="184,79,373,105"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="227,129,331,156"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="421,63,587,105"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a7f699157e4a591241ad1a894918ee01a" title="_core_mqtt_pub_prepare" alt="" coords="421,129,587,156"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="447,180,561,207"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="640,5,787,32"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="638,56,789,83"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="635,107,792,149"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="643,173,784,214"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="638,239,789,265"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="647,290,779,331"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="652,356,775,383"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="840,356,1016,383"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

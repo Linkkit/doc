@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/remote-access/tunnel/aiot_tunnel_api.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_46cb2c0db3019d151f6e8ad2f26a0eed.html">remote-access</a></li><li class="navelem"><a class="el" href="dir_6ff6fb80eaaa61fee604f07c339fb1f0.html">tunnel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_tunnel_api.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>隧道管理模块，管理的隧道的连接及消息收发  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;core_stdinc.h&quot;</code><br />
+<code>#include &quot;core_log.h&quot;</code><br />
+<code>#include &quot;tunnel_proxy_private.h&quot;</code><br />
+<code>#include &quot;tunnel_private.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="aiot__state__api_8h_source.html">aiot_state_api.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_tunnel_api.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c__incl.png" border="0" usemap="#components_2remote-access_2tunnel_2aiot__tunnel__api_8c" alt=""/></div>
+<map name="components_2remote-access_2tunnel_2aiot__tunnel__api_8c" id="components_2remote-access_2tunnel_2aiot__tunnel__api_8c">
+<area shape="rect" id="node11" href="aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="1179,117,1293,143"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7fb200ca68a65ae8b0d54d5222bf333e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a7fb200ca68a65ae8b0d54d5222bf333e">aiot_tunnel_init</a> (void)</td></tr>
+<tr class="memdesc:a7fb200ca68a65ae8b0d54d5222bf333e"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建tunnel管理模块实例, 并以默认值配置会话参数  <a href="#a7fb200ca68a65ae8b0d54d5222bf333e">更多...</a><br /></td></tr>
+<tr class="separator:a7fb200ca68a65ae8b0d54d5222bf333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5af6b4543e15c845d0aa0e967186e2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#abb5af6b4543e15c845d0aa0e967186e2">aiot_tunnel_setopt</a> (void *handle, <a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:abb5af6b4543e15c845d0aa0e967186e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置tunnel管理模块  <a href="#abb5af6b4543e15c845d0aa0e967186e2">更多...</a><br /></td></tr>
+<tr class="separator:abb5af6b4543e15c845d0aa0e967186e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4a8f469b6cb43e9c58d9ec3647dce8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#aea4a8f469b6cb43e9c58d9ec3647dce8">_release_all_service_info</a> (LOCAL_SERVICES_S *local_services)</td></tr>
+<tr class="separator:aea4a8f469b6cb43e9c58d9ec3647dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1481208d7353858e4a59fd293ebfe7a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#ac1481208d7353858e4a59fd293ebfe7a">aiot_tunnel_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:ac1481208d7353858e4a59fd293ebfe7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束tunnel管理模块, 销毁实例并回收资源  <a href="#ac1481208d7353858e4a59fd293ebfe7a">更多...</a><br /></td></tr>
+<tr class="separator:ac1481208d7353858e4a59fd293ebfe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2545892de16ab1bb70b3a665d0e7c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#aca2545892de16ab1bb70b3a665d0e7c1">_tunnel_event_callack</a> (tunnel_manager_handle_t *tunnel_handle, <a class="el" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009">aiot_tunnel_event_type</a> type, char *tunnel_id)</td></tr>
+<tr class="separator:aca2545892de16ab1bb70b3a665d0e7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2f38fdab1dad4de08cacf7b0705893"><td class="memItemLeft" align="right" valign="top">static REMOTE_PROXY_INFO_S *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a7f2f38fdab1dad4de08cacf7b0705893">_tunnel_create_new_tunnel</a> (char *tunnel_id, <a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *params)</td></tr>
+<tr class="separator:a7f2f38fdab1dad4de08cacf7b0705893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2ff8afdb76cb7aa2f3ca7978454814"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#abb2ff8afdb76cb7aa2f3ca7978454814">_tunnel_execute_cmd</a> (tunnel_manager_handle_t *tunnel_handle, tunnel_cmd_node_t *cmd)</td></tr>
+<tr class="separator:abb2ff8afdb76cb7aa2f3ca7978454814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cb437ce4a7cff2d3ee731412ca13fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#ad7cb437ce4a7cff2d3ee731412ca13fa">_tunnel_check_cmd_list</a> (tunnel_manager_handle_t *tunnel_handle)</td></tr>
+<tr class="separator:ad7cb437ce4a7cff2d3ee731412ca13fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a575a2cdaecd51d48fe742101593aa"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#ae4a575a2cdaecd51d48fe742101593aa">_tunnel_push_to_cmd_list</a> (tunnel_manager_handle_t *tunnel_handle, char *tunnel_id, tunnel_cmd_type_t type, <a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *params)</td></tr>
+<tr class="separator:ae4a575a2cdaecd51d48fe742101593aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0616d3fa80fcbad1b068691dc080f1"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#afb0616d3fa80fcbad1b068691dc080f1">remote_proxy_thread</a> (void *params)</td></tr>
+<tr class="separator:afb0616d3fa80fcbad1b068691dc080f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f2adeddd5b387060d65f40baa0e68e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a56f2adeddd5b387060d65f40baa0e68e">aiot_tunnel_start</a> (void *handle)</td></tr>
+<tr class="memdesc:a56f2adeddd5b387060d65f40baa0e68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始tunnel管理服务，作为后台线程开始运行，会一直阻塞，直至退出  <a href="#a56f2adeddd5b387060d65f40baa0e68e">更多...</a><br /></td></tr>
+<tr class="separator:a56f2adeddd5b387060d65f40baa0e68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f611bacacba2e91735847a46da54eb1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a2f611bacacba2e91735847a46da54eb1">aiot_tunnel_stop</a> (void *handle)</td></tr>
+<tr class="memdesc:a2f611bacacba2e91735847a46da54eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭tunnel管理服务，作为线程开始运行  <a href="#a2f611bacacba2e91735847a46da54eb1">更多...</a><br /></td></tr>
+<tr class="separator:a2f611bacacba2e91735847a46da54eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f29a0b87de3e55a179de27a0d9f960e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a7f29a0b87de3e55a179de27a0d9f960e">aiot_tunnel_add</a> (void *handle, char *tunnel_id, <a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *params)</td></tr>
+<tr class="memdesc:a7f29a0b87de3e55a179de27a0d9f960e"><td class="mdescLeft">&#160;</td><td class="mdescRight">向隧道管理模块增加隧道，并建连  <a href="#a7f29a0b87de3e55a179de27a0d9f960e">更多...</a><br /></td></tr>
+<tr class="separator:a7f29a0b87de3e55a179de27a0d9f960e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81602913e2377da4ac510c5b62e4c28"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#ae81602913e2377da4ac510c5b62e4c28">aiot_tunnel_update</a> (void *handle, char *tunnel_id, <a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *params)</td></tr>
+<tr class="memdesc:ae81602913e2377da4ac510c5b62e4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新隧道建来呢信息  <a href="#ae81602913e2377da4ac510c5b62e4c28">更多...</a><br /></td></tr>
+<tr class="separator:ae81602913e2377da4ac510c5b62e4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a1d1dbac5c8125c45c3202ee09beb1"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#ad3a1d1dbac5c8125c45c3202ee09beb1">aiot_tunnel_delete</a> (void *handle, char *tunnel_id)</td></tr>
+<tr class="memdesc:ad3a1d1dbac5c8125c45c3202ee09beb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">从隧道管理模块删除隧道，并断连  <a href="#ad3a1d1dbac5c8125c45c3202ee09beb1">更多...</a><br /></td></tr>
+<tr class="separator:ad3a1d1dbac5c8125c45c3202ee09beb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a676f91d4b0a77e3127c181c5129aafc7"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__tunnel__api_8c.html#a676f91d4b0a77e3127c181c5129aafc7">TAG</a> = &quot;TUNNEL&quot;</td></tr>
+<tr class="separator:a676f91d4b0a77e3127c181c5129aafc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>隧道管理模块，管理的隧道的连接及消息收发 </p>
+<dl class="section date"><dt>日期</dt><dd>2020-01-20</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a7fb200ca68a65ae8b0d54d5222bf333e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_tunnel_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建tunnel管理模块实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>tunnel实例的句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_a7fb200ca68a65ae8b0d54d5222bf333e_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_a7fb200ca68a65ae8b0d54d5222bf333e_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_a7fb200ca68a65ae8b0d54d5222bf333e_cgraph" id="aiot__tunnel__api_8c_a7fb200ca68a65ae8b0d54d5222bf333e_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="163,5,325,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb5af6b4543e15c845d0aa0e967186e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置tunnel管理模块 </p>
+<p>[in] handle tunnel管理模块句柄 [in] option 配置选项, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a> [in] data 配置选项数据, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a></p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数配置失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_abb5af6b4543e15c845d0aa0e967186e2_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_abb5af6b4543e15c845d0aa0e967186e2_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_abb5af6b4543e15c845d0aa0e967186e2_cgraph" id="aiot__tunnel__api_8c_abb5af6b4543e15c845d0aa0e967186e2_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="181,5,344,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aea4a8f469b6cb43e9c58d9ec3647dce8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _release_all_service_info </td>
+          <td>(</td>
+          <td class="paramtype">LOCAL_SERVICES_S *&#160;</td>
+          <td class="paramname"><em>local_services</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_aea4a8f469b6cb43e9c58d9ec3647dce8_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_aea4a8f469b6cb43e9c58d9ec3647dce8_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_aea4a8f469b6cb43e9c58d9ec3647dce8_cgraph" id="aiot__tunnel__api_8c_aea4a8f469b6cb43e9c58d9ec3647dce8_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="221,5,384,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1481208d7353858e4a59fd293ebfe7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束tunnel管理模块, 销毁实例并回收资源 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_ac1481208d7353858e4a59fd293ebfe7a_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_ac1481208d7353858e4a59fd293ebfe7a_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_ac1481208d7353858e4a59fd293ebfe7a_cgraph" id="aiot__tunnel__api_8c_ac1481208d7353858e4a59fd293ebfe7a_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="392,5,555,32"/>
+<area shape="rect" id="node3" href="aiot__tunnel__api_8c.html#aea4a8f469b6cb43e9c58d9ec3647dce8" title="_release_all_service_info" alt="" coords="176,31,344,57"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aca2545892de16ab1bb70b3a665d0e7c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _tunnel_event_callack </td>
+          <td>(</td>
+          <td class="paramtype">tunnel_manager_handle_t *&#160;</td>
+          <td class="paramname"><em>tunnel_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__tunnel__api_8h.html#aac0622677b1d89cd237260d7ed004009">aiot_tunnel_event_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f2f38fdab1dad4de08cacf7b0705893"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static REMOTE_PROXY_INFO_S* _tunnel_create_new_tunnel </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_a7f2f38fdab1dad4de08cacf7b0705893_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_a7f2f38fdab1dad4de08cacf7b0705893_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_a7f2f38fdab1dad4de08cacf7b0705893_cgraph" id="aiot__tunnel__api_8c_a7f2f38fdab1dad4de08cacf7b0705893_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="192,13,355,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb2ff8afdb76cb7aa2f3ca7978454814"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _tunnel_execute_cmd </td>
+          <td>(</td>
+          <td class="paramtype">tunnel_manager_handle_t *&#160;</td>
+          <td class="paramname"><em>tunnel_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tunnel_cmd_node_t *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_abb2ff8afdb76cb7aa2f3ca7978454814_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_abb2ff8afdb76cb7aa2f3ca7978454814_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_abb2ff8afdb76cb7aa2f3ca7978454814_cgraph" id="aiot__tunnel__api_8c_abb2ff8afdb76cb7aa2f3ca7978454814_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="401,5,564,32"/>
+<area shape="rect" id="node3" href="aiot__tunnel__api_8c.html#a7f2f38fdab1dad4de08cacf7b0705893" title="_tunnel_create_new\l_tunnel" alt="" coords="209,27,347,69"/>
+<area shape="rect" id="node4" href="aiot__tunnel__api_8c.html#aca2545892de16ab1bb70b3a665d0e7c1" title="_tunnel_event_callack" alt="" coords="203,93,353,120"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7cb437ce4a7cff2d3ee731412ca13fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _tunnel_check_cmd_list </td>
+          <td>(</td>
+          <td class="paramtype">tunnel_manager_handle_t *&#160;</td>
+          <td class="paramname"><em>tunnel_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_ad7cb437ce4a7cff2d3ee731412ca13fa_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_ad7cb437ce4a7cff2d3ee731412ca13fa_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_ad7cb437ce4a7cff2d3ee731412ca13fa_cgraph" id="aiot__tunnel__api_8c_ad7cb437ce4a7cff2d3ee731412ca13fa_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__api_8c.html#abb2ff8afdb76cb7aa2f3ca7978454814" title="_tunnel_execute_cmd" alt="" coords="216,35,365,61"/>
+<area shape="rect" id="node3" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="612,5,775,32"/>
+<area shape="rect" id="node4" href="aiot__tunnel__api_8c.html#a7f2f38fdab1dad4de08cacf7b0705893" title="_tunnel_create_new\l_tunnel" alt="" coords="419,27,558,69"/>
+<area shape="rect" id="node5" href="aiot__tunnel__api_8c.html#aca2545892de16ab1bb70b3a665d0e7c1" title="_tunnel_event_callack" alt="" coords="413,93,564,120"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a575a2cdaecd51d48fe742101593aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int32_t _tunnel_push_to_cmd_list </td>
+          <td>(</td>
+          <td class="paramtype">tunnel_manager_handle_t *&#160;</td>
+          <td class="paramname"><em>tunnel_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tunnel_cmd_type_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb0616d3fa80fcbad1b068691dc080f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* remote_proxy_thread </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_afb0616d3fa80fcbad1b068691dc080f1_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_afb0616d3fa80fcbad1b068691dc080f1_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_afb0616d3fa80fcbad1b068691dc080f1_cgraph" id="aiot__tunnel__api_8c_afb0616d3fa80fcbad1b068691dc080f1_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="804,98,967,125"/>
+<area shape="rect" id="node3" href="aiot__tunnel__api_8c.html#aca2545892de16ab1bb70b3a665d0e7c1" title="_tunnel_event_callack" alt="" coords="605,47,756,74"/>
+<area shape="rect" id="node4" href="aiot__tunnel__api_8c.html#ad7cb437ce4a7cff2d3ee731412ca13fa" title="_tunnel_check_cmd_list" alt="" coords="197,98,360,125"/>
+<area shape="rect" id="node5" href="aiot__tunnel__api_8c.html#abb2ff8afdb76cb7aa2f3ca7978454814" title="_tunnel_execute_cmd" alt="" coords="408,98,557,125"/>
+<area shape="rect" id="node6" href="aiot__tunnel__api_8c.html#a7f2f38fdab1dad4de08cacf7b0705893" title="_tunnel_create_new\l_tunnel" alt="" coords="611,149,750,191"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a56f2adeddd5b387060d65f40baa0e68e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_tunnel_start </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始tunnel管理服务，作为后台线程开始运行，会一直阻塞，直至退出 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考 STATE_TUNNEL_* 定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_a56f2adeddd5b387060d65f40baa0e68e_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_a56f2adeddd5b387060d65f40baa0e68e_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_a56f2adeddd5b387060d65f40baa0e68e_cgraph" id="aiot__tunnel__api_8c_a56f2adeddd5b387060d65f40baa0e68e_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__api_8c.html#afb0616d3fa80fcbad1b068691dc080f1" title="remote_proxy_thread" alt="" coords="172,47,316,74"/>
+<area shape="rect" id="node3" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="971,98,1133,125"/>
+<area shape="rect" id="node4" href="aiot__tunnel__api_8c.html#aca2545892de16ab1bb70b3a665d0e7c1" title="_tunnel_event_callack" alt="" coords="772,47,923,74"/>
+<area shape="rect" id="node5" href="aiot__tunnel__api_8c.html#ad7cb437ce4a7cff2d3ee731412ca13fa" title="_tunnel_check_cmd_list" alt="" coords="364,98,527,125"/>
+<area shape="rect" id="node6" href="aiot__tunnel__api_8c.html#abb2ff8afdb76cb7aa2f3ca7978454814" title="_tunnel_execute_cmd" alt="" coords="575,98,724,125"/>
+<area shape="rect" id="node7" href="aiot__tunnel__api_8c.html#a7f2f38fdab1dad4de08cacf7b0705893" title="_tunnel_create_new\l_tunnel" alt="" coords="778,149,917,191"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f611bacacba2e91735847a46da54eb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_stop </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭tunnel管理服务，作为线程开始运行 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考 STATE_TUNNEL_* 定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f29a0b87de3e55a179de27a0d9f960e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_add </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向隧道管理模块增加隧道，并建连 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道id [in] params 隧道的建连信息</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考 STATE_TUNNEL_* 定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_a7f29a0b87de3e55a179de27a0d9f960e_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_a7f29a0b87de3e55a179de27a0d9f960e_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_a7f29a0b87de3e55a179de27a0d9f960e_cgraph" id="aiot__tunnel__api_8c_a7f29a0b87de3e55a179de27a0d9f960e_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__api_8c.html#ae4a575a2cdaecd51d48fe742101593aa" title="_tunnel_push_to_cmd_list" alt="" coords="167,5,340,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae81602913e2377da4ac510c5b62e4c28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_update </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__tunnel__connect__param__t.html">aiot_tunnel_connect_param_t</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新隧道建来呢信息 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道id [in] params 隧道的建连信息</p>
+<pre class="fragment">当该隧道id已经存在，且在线时，会断连后使用新的建连信息建连
+当该隧道id已经存在，且不在线时，会使用新的建连信息建连
+当该隧道id不存在，会直接使用新的建连信息建连
+</pre> <dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考 STATE_TUNNEL_* 定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_ae81602913e2377da4ac510c5b62e4c28_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_ae81602913e2377da4ac510c5b62e4c28_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_ae81602913e2377da4ac510c5b62e4c28_cgraph" id="aiot__tunnel__api_8c_ae81602913e2377da4ac510c5b62e4c28_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__api_8c.html#ae4a575a2cdaecd51d48fe742101593aa" title="_tunnel_push_to_cmd_list" alt="" coords="184,5,357,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3a1d1dbac5c8125c45c3202ee09beb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_tunnel_delete </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tunnel_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从隧道管理模块删除隧道，并断连 </p>
+<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道的信息</p>
+<dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败, 更多信息请参考 STATE_TUNNEL_* 定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__tunnel__api_8c_ad3a1d1dbac5c8125c45c3202ee09beb1_cgraph.png" border="0" usemap="#aiot__tunnel__api_8c_ad3a1d1dbac5c8125c45c3202ee09beb1_cgraph" alt=""/></div>
+<map name="aiot__tunnel__api_8c_ad3a1d1dbac5c8125c45c3202ee09beb1_cgraph" id="aiot__tunnel__api_8c_ad3a1d1dbac5c8125c45c3202ee09beb1_cgraph">
+<area shape="rect" id="node2" href="aiot__tunnel__api_8c.html#ae4a575a2cdaecd51d48fe742101593aa" title="_tunnel_push_to_cmd_list" alt="" coords="180,5,353,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a676f91d4b0a77e3127c181c5129aafc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* TAG = &quot;TUNNEL&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

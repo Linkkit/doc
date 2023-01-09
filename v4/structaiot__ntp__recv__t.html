@@ -100,29 +100,29 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a05ad279de3c49a375707a830d15b71aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6d">aiot_ntp_recv_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ntp__recv__t.html#a05ad279de3c49a375707a830d15b71aa">type</a></td></tr>
 <tr class="memdesc:a05ad279de3c49a375707a830d15b71aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">报文内容所对应的报文类型, 更多信息请参考<a class="el" href="aiot__ntp__api_8h.html#a8eec7ea643e4b52a5623c69b50541b6d">aiot_ntp_recv_type_t</a>  <a href="#a05ad279de3c49a375707a830d15b71aa">更多...</a><br /></td></tr>
 <tr class="separator:a05ad279de3c49a375707a830d15b71aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9fec7372ec9eb0336ba9bf4b9b5aa65"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:ac4bfa7fd947ee292b3a840b6624509f6"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a2087c6fdf8aec364a20b3c08d16f869c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#ac57bad291d6d6a0f0684fe91d38e833d">timestamp</a></td></tr>
-<tr class="separator:a2087c6fdf8aec364a20b3c08d16f869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9bf9f3fa9fd08456bbf82056c5a52a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a09c1cf26a630aeb969a41ea997ec7b10">year</a></td></tr>
-<tr class="separator:a2e9bf9f3fa9fd08456bbf82056c5a52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac025530e31f852b9aaed4c6fc26002"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a26733001fd1bf44cd38b56224c50695e">mon</a></td></tr>
-<tr class="separator:aeac025530e31f852b9aaed4c6fc26002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557c81b94b37bd65b85b3b15d224effd"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a29274fce4933908a5fb29bec6b546830">day</a></td></tr>
-<tr class="separator:a557c81b94b37bd65b85b3b15d224effd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b024be7a42b104e21994b10b963066"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a11640ee211240923984c66dbf149ef2e">hour</a></td></tr>
-<tr class="separator:a06b024be7a42b104e21994b10b963066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3b219814937239ac2c8eb2f825faf5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a78de41444b1b903f9a92dc1f9f2aafe7">min</a></td></tr>
-<tr class="separator:aca3b219814937239ac2c8eb2f825faf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6da200c19186b517fe380774fd3bdab"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#ac2dd3705849fe748a6ddd64a3001fecb">sec</a></td></tr>
-<tr class="separator:ac6da200c19186b517fe380774fd3bdab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaba28b02842f671b6a295eff7cd79e7"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a99518cdeb66ebb55f46bb7d91a162378">msec</a></td></tr>
-<tr class="separator:acaba28b02842f671b6a295eff7cd79e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4bfa7fd947ee292b3a840b6624509f6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a6fd7b2a674209fe037ee2cbc30fdb421">local_time</a></td></tr>
-<tr class="memdesc:ac4bfa7fd947ee292b3a840b6624509f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">utc事件戳以及时区换算后的日期, 以 <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ac44ab74d3ce407ddcdaec835dd299a7a">AIOT_NTPOPT_TIME_ZONE</a> 设置的时区为准  <a href="#ac4bfa7fd947ee292b3a840b6624509f6">更多...</a><br /></td></tr>
-<tr class="separator:ac4bfa7fd947ee292b3a840b6624509f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9fec7372ec9eb0336ba9bf4b9b5aa65"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ntp__recv__t.html#ab9fec7372ec9eb0336ba9bf4b9b5aa65">data</a></td></tr>
-<tr class="separator:ab9fec7372ec9eb0336ba9bf4b9b5aa65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04477b9bd51d3c511d25f07a9745f97"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a07a647a62f21b7d94a44d40b172e796a"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a5bbf7ce23842bebee4fca047051017f0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#ac57bad291d6d6a0f0684fe91d38e833d">timestamp</a></td></tr>
+<tr class="separator:a5bbf7ce23842bebee4fca047051017f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932016080903ae25ce6e5359576fc979"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a09c1cf26a630aeb969a41ea997ec7b10">year</a></td></tr>
+<tr class="separator:a932016080903ae25ce6e5359576fc979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22fda2202cf5dc3b3b8e1589b8ee1908"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a26733001fd1bf44cd38b56224c50695e">mon</a></td></tr>
+<tr class="separator:a22fda2202cf5dc3b3b8e1589b8ee1908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d10912ff03af3bdd8963c385640568"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a29274fce4933908a5fb29bec6b546830">day</a></td></tr>
+<tr class="separator:a92d10912ff03af3bdd8963c385640568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0809ade1e26d235719cc4445c7619b62"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a11640ee211240923984c66dbf149ef2e">hour</a></td></tr>
+<tr class="separator:a0809ade1e26d235719cc4445c7619b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2cc4120c330515fbe2d8e2d17c6721"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a78de41444b1b903f9a92dc1f9f2aafe7">min</a></td></tr>
+<tr class="separator:a1e2cc4120c330515fbe2d8e2d17c6721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a784cc74cd11f18ceaa3b4ca546ee1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#ac2dd3705849fe748a6ddd64a3001fecb">sec</a></td></tr>
+<tr class="separator:ab6a784cc74cd11f18ceaa3b4ca546ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb31817a260111907148b81827baae2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#a99518cdeb66ebb55f46bb7d91a162378">msec</a></td></tr>
+<tr class="separator:a7eb31817a260111907148b81827baae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a647a62f21b7d94a44d40b172e796a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structaiot__ntp__recv__t.html#aef9e03627c070deff47f3e9d69519767">local_time</a></td></tr>
+<tr class="memdesc:a07a647a62f21b7d94a44d40b172e796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">utc事件戳以及时区换算后的日期, 以 <a class="el" href="aiot__ntp__api_8h.html#aeb884a58ce19f15c29a47efabc2f2be1ac44ab74d3ce407ddcdaec835dd299a7a">AIOT_NTPOPT_TIME_ZONE</a> 设置的时区为准  <a href="#a07a647a62f21b7d94a44d40b172e796a">更多...</a><br /></td></tr>
+<tr class="separator:a07a647a62f21b7d94a44d40b172e796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04477b9bd51d3c511d25f07a9745f97"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__ntp__recv__t.html#ab04477b9bd51d3c511d25f07a9745f97">data</a></td></tr>
+<tr class="separator:ab04477b9bd51d3c511d25f07a9745f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>ntp模块收到从网络上来的报文时, 通知用户的报文内容 </p>
@@ -237,7 +237,7 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6fd7b2a674209fe037ee2cbc30fdb421"></a>
+<a class="anchor" id="aef9e03627c070deff47f3e9d69519767"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -251,7 +251,7 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab9fec7372ec9eb0336ba9bf4b9b5aa65"></a>
+<a class="anchor" id="ab04477b9bd51d3c511d25f07a9745f97"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">

@@ -100,18 +100,18 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a2d01fe0e384105431d7e99e3987f87d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html#a2d01fe0e384105431d7e99e3987f87d5">type</a></td></tr>
 <tr class="memdesc:a2d01fe0e384105431d7e99e3987f87d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中收到的分片的报文的类型, 具体见<a class="el" href="aiot__ota__api_8h.html#aa5ec93406d3fbd7ba4604b317fd2aa8d">aiot_download_recv_type_t</a>  <a href="#a2d01fe0e384105431d7e99e3987f87d5">更多...</a><br /></td></tr>
 <tr class="separator:a2d01fe0e384105431d7e99e3987f87d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0365e566a642a9a448529ca5447ba09"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:aed8eac6174330c8efaa7a63eb227fbab"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#aa7e50e0e6e609fc7a69954a59ca425bb">buffer</a></td></tr>
-<tr class="memdesc:aed8eac6174330c8efaa7a63eb227fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer地址.在回调函数结束后SDK就会主动释放.用户需要自行将报文拷贝保存.  <a href="#aed8eac6174330c8efaa7a63eb227fbab">更多...</a><br /></td></tr>
-<tr class="separator:aed8eac6174330c8efaa7a63eb227fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a2873ed16ba0412f13ea95e22cf9db6c0">len</a></td></tr>
-<tr class="memdesc:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整  <a href="#a92e30da9acd6eb8d1d90305a9ee8b0f9">更多...</a><br /></td></tr>
-<tr class="separator:a92e30da9acd6eb8d1d90305a9ee8b0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19dd1142092efa2eb32c031340f0cf0"><td class="memItemLeft" >&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a44b0323ee9a372d00a469982c060f7eb">percent</a></td></tr>
-<tr class="memdesc:ae19dd1142092efa2eb32c031340f0cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的下载进度的百分比  <a href="#ae19dd1142092efa2eb32c031340f0cf0">更多...</a><br /></td></tr>
-<tr class="separator:ae19dd1142092efa2eb32c031340f0cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0365e566a642a9a448529ca5447ba09"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html#ad0365e566a642a9a448529ca5447ba09">data</a></td></tr>
-<tr class="separator:ad0365e566a642a9a448529ca5447ba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac037a90532992090e6e42b896a8ba38b"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a44d612c8c3ccf3aadac06b3d9355f66c"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#aa7e50e0e6e609fc7a69954a59ca425bb">buffer</a></td></tr>
+<tr class="memdesc:a44d612c8c3ccf3aadac06b3d9355f66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer地址.在回调函数结束后SDK就会主动释放.用户需要自行将报文拷贝保存.  <a href="#a44d612c8c3ccf3aadac06b3d9355f66c">更多...</a><br /></td></tr>
+<tr class="separator:a44d612c8c3ccf3aadac06b3d9355f66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b54bd77030ec64adfe1e13ef0ed3337"><td class="memItemLeft" >&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a2873ed16ba0412f13ea95e22cf9db6c0">len</a></td></tr>
+<tr class="memdesc:a3b54bd77030ec64adfe1e13ef0ed3337"><td class="mdescLeft">&#160;</td><td class="mdescRight">下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整  <a href="#a3b54bd77030ec64adfe1e13ef0ed3337">更多...</a><br /></td></tr>
+<tr class="separator:a3b54bd77030ec64adfe1e13ef0ed3337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f65ad4e1cd6407510ab91331bcc34f"><td class="memItemLeft" >&#160;&#160;&#160;int32_t&#160;&#160;&#160;<a class="el" href="structaiot__download__recv__t.html#a44b0323ee9a372d00a469982c060f7eb">percent</a></td></tr>
+<tr class="memdesc:a25f65ad4e1cd6407510ab91331bcc34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的下载进度的百分比  <a href="#a25f65ad4e1cd6407510ab91331bcc34f">更多...</a><br /></td></tr>
+<tr class="separator:a25f65ad4e1cd6407510ab91331bcc34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac037a90532992090e6e42b896a8ba38b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__download__recv__t.html#ac037a90532992090e6e42b896a8ba38b">data</a></td></tr>
+<tr class="separator:ac037a90532992090e6e42b896a8ba38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>下载固件过程中收到的分片的报文的描述, 包括类型, 以及所存储的buffer地址, buffer的长度, 以及当前的下载进度 </p>
@@ -154,7 +154,7 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__ota__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整 </p>
+<p>下载固件过程中, SDK分配出来的存储云端下行的固件内容的buffer的大小, 用户可以通过<a class="el" href="aiot__http__download__api_8h.html#ab94e882c00926519a68ef631edf7d8a8a471bb96809a5bd674a5c1df0ae7d785c">AIOT_DLOPT_BODY_BUFFER_MAX_LEN</a> 来调整 </p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Public 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad0365e566a642a9a448529ca5447ba09"></a>
+<a class="anchor" id="ac037a90532992090e6e42b896a8ba38b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">

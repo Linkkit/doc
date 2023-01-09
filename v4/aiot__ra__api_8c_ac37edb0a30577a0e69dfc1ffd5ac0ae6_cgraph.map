@@ -1,3 +1,6 @@
 <map id="aiot_ra_init" name="aiot_ra_init">
-<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="139,5,301,32"/>
+<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="315,26,477,53"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__api_8c.html#a7fb200ca68a65ae8b0d54d5222bf333e" title="创建tunnel管理模块实例, 并以默认值配置会话参数 " alt="" coords="148,26,257,53"/>
+<area shape="rect" id="node4" href="$aiot__tunnel__api_8c.html#abb5af6b4543e15c845d0aa0e967186e2" title="配置tunnel管理模块 " alt="" coords="139,77,267,104"/>
+<area shape="rect" id="node5" href="$aiot__ra__api_8c.html#a85c7f384439e44638f6d1ca34cec2b7b" title="_tunnel_event_cb" alt="" coords="141,128,265,154"/>
 </map>

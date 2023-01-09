@@ -1,0 +1,7 @@
+<map id="_ra_tunnel_switch_recv_handle" name="_ra_tunnel_switch_recv_handle">
+<area shape="rect" id="node2" href="$aiot__tunnel__api_8c.html#a7f29a0b87de3e55a179de27a0d9f960e" title="向隧道管理模块增加隧道，并建连 " alt="" coords="225,5,339,32"/>
+<area shape="rect" id="node4" href="$aiot__ra__api_8c.html#af30f1f2a18765d17bea403b5a35165a5" title="remote_proxy_event\l_handle" alt="" coords="212,57,352,98"/>
+<area shape="rect" id="node5" href="$aiot__tunnel__api_8c.html#ad3a1d1dbac5c8125c45c3202ee09beb1" title="从隧道管理模块删除隧道，并断连 " alt="" coords="219,123,345,149"/>
+<area shape="rect" id="node6" href="$aiot__tunnel__api_8c.html#ae81602913e2377da4ac510c5b62e4c28" title="更新隧道建来呢信息 " alt="" coords="217,173,347,200"/>
+<area shape="rect" id="node3" href="$aiot__tunnel__api_8c.html#ae4a575a2cdaecd51d48fe742101593aa" title="_tunnel_push_to_cmd_list" alt="" coords="400,123,573,149"/>
+</map>

@@ -1,0 +1,1543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/mqtt-upload/aiot_mqtt_upload_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_9c106abe81f950d0b32156dcb3a37660.html">mqtt-upload</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_mqtt_upload_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>MQTT UPLOAD模块头文件, 提供通过mqtt进行文件上传的能力  
+<a href="#details">更多...</a></p>
+
+<p><a href="aiot__mqtt__upload__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__upload__desc__t.html">aiot_mqtt_upload_desc_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收到的服务端应答消息的报文信息  <a href="structaiot__mqtt__upload__desc__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD模块收到服务端应答的报文信息, 通知用户的报文内容  <a href="structaiot__mqtt__upload__recv__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__upload__result__t.html">aiot_mqtt_upload_result_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aiot_mqtt_upload_process 循环处理，返回对应文件的上传状态给到用户  <a href="structaiot__mqtt__upload__result__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__mqtt__upload__file__opt__t.html">aiot_mqtt_upload_file_opt_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__mqtt__upload__api_8h.html#aedb3e57f1adfb4e65b81db5a81406020">aiot_mqtt_upload_setopt</a> 对应参数AIOT_MQTT_UPLOADOPT_FILE_OPTION的结构体  <a href="structaiot__mqtt__upload__file__opt__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a40184975ba765d772cfbdbec2f1fefc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a40184975ba765d772cfbdbec2f1fefc8">STATE_MQTT_UPLOAD_BASE</a>&#160;&#160;&#160;(-0x2100)</td></tr>
+<tr class="memdesc:a40184975ba765d772cfbdbec2f1fefc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x2100~-0x21FF表达SDK在mqtt_upload模块内的状态码  <a href="#a40184975ba765d772cfbdbec2f1fefc8">更多...</a><br /></td></tr>
+<tr class="separator:a40184975ba765d772cfbdbec2f1fefc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbe498709b95cc5ede23e8c6051bcf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a8fbe498709b95cc5ede23e8c6051bcf5">STATE_MQTT_UPLOAD_MQTT_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x2101)</td></tr>
+<tr class="memdesc:a8fbe498709b95cc5ede23e8c6051bcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD Handle 为空  <a href="#a8fbe498709b95cc5ede23e8c6051bcf5">更多...</a><br /></td></tr>
+<tr class="separator:a8fbe498709b95cc5ede23e8c6051bcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34bbdcd2d8cf0b160996452782b5b80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ae34bbdcd2d8cf0b160996452782b5b80">STATE_MQTT_UPLOAD_FILENAME_IS_NULL</a>&#160;&#160;&#160;(-0x2102)</td></tr>
+<tr class="memdesc:ae34bbdcd2d8cf0b160996452782b5b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 请求上传文件时，文件名是空的  <a href="#ae34bbdcd2d8cf0b160996452782b5b80">更多...</a><br /></td></tr>
+<tr class="separator:ae34bbdcd2d8cf0b160996452782b5b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aae81944a840599619f341a4aae03f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a5aae81944a840599619f341a4aae03f4">STATE_MQTT_UPLOAD_PARAMS_IS_NULL</a>&#160;&#160;&#160;(-0x2103)</td></tr>
+<tr class="memdesc:a5aae81944a840599619f341a4aae03f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD PUB到服务端的时候参数为空  <a href="#a5aae81944a840599619f341a4aae03f4">更多...</a><br /></td></tr>
+<tr class="separator:a5aae81944a840599619f341a4aae03f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c1944f4dfcb9a597fa9a1043e03e25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#af2c1944f4dfcb9a597fa9a1043e03e25">STATE_MQTT_UPLOAD_FILE_DATA_IS_NULL</a>&#160;&#160;&#160;(-0x2104)</td></tr>
+<tr class="memdesc:af2c1944f4dfcb9a597fa9a1043e03e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD上传文件数据为空  <a href="#af2c1944f4dfcb9a597fa9a1043e03e25">更多...</a><br /></td></tr>
+<tr class="separator:af2c1944f4dfcb9a597fa9a1043e03e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace98aacf66feaedf9bfc568f6dec8b25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ace98aacf66feaedf9bfc568f6dec8b25">STATE_MQTT_UPLOAD_MQTT_SYSDEP_IS_NULL</a>&#160;&#160;&#160;(-0x2105)</td></tr>
+<tr class="memdesc:ace98aacf66feaedf9bfc568f6dec8b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT portfile是空的  <a href="#ace98aacf66feaedf9bfc568f6dec8b25">更多...</a><br /></td></tr>
+<tr class="separator:ace98aacf66feaedf9bfc568f6dec8b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96842c04e1a710d1a0c0a6ccdb20bea2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a96842c04e1a710d1a0c0a6ccdb20bea2">STATE_MQTT_UPLOAD_PARSE_INIT_FAILED</a>&#160;&#160;&#160;(-0x2106)</td></tr>
+<tr class="memdesc:a96842c04e1a710d1a0c0a6ccdb20bea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 解析服务端初始化应答的Json数据失败  <a href="#a96842c04e1a710d1a0c0a6ccdb20bea2">更多...</a><br /></td></tr>
+<tr class="separator:a96842c04e1a710d1a0c0a6ccdb20bea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4991c79f0753d68bc666616bd55ce7cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a4991c79f0753d68bc666616bd55ce7cb">STATE_MQTT_UPLOAD_PARSE_UPLOAD_REPLY_FAILED</a>&#160;&#160;&#160;(-0x2107)</td></tr>
+<tr class="memdesc:a4991c79f0753d68bc666616bd55ce7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 解析服务端文件数据上传应答的Json数据失败  <a href="#a4991c79f0753d68bc666616bd55ce7cb">更多...</a><br /></td></tr>
+<tr class="separator:a4991c79f0753d68bc666616bd55ce7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80738974a6daa9f712adbd4bae13e8c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a80738974a6daa9f712adbd4bae13e8c4">STATE_MQTT_UPLOAD_PARSE_CANCEL_FAILED</a>&#160;&#160;&#160;(-0x2108)</td></tr>
+<tr class="memdesc:a80738974a6daa9f712adbd4bae13e8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 解析服务端取消应答的Json数据失败  <a href="#a80738974a6daa9f712adbd4bae13e8c4">更多...</a><br /></td></tr>
+<tr class="separator:a80738974a6daa9f712adbd4bae13e8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3eb121adc5720b26c9f59e0c415fe14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ab3eb121adc5720b26c9f59e0c415fe14">STATE_MQTT_UPLOAD_PARSE_JSON_FAILED</a>&#160;&#160;&#160;(-0x2109)</td></tr>
+<tr class="memdesc:ab3eb121adc5720b26c9f59e0c415fe14"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 解析服务端应答的Json数据失败  <a href="#ab3eb121adc5720b26c9f59e0c415fe14">更多...</a><br /></td></tr>
+<tr class="separator:ab3eb121adc5720b26c9f59e0c415fe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958cda84ebba8941d67587a80f7aee61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a958cda84ebba8941d67587a80f7aee61">STATE_MQTT_UPLOAD_RECV_FILE_INFO_ERROR</a>&#160;&#160;&#160;(-0x210A)</td></tr>
+<tr class="memdesc:a958cda84ebba8941d67587a80f7aee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 接收到的服务端应答文件信息不对  <a href="#a958cda84ebba8941d67587a80f7aee61">更多...</a><br /></td></tr>
+<tr class="separator:a958cda84ebba8941d67587a80f7aee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a265f7cf26a99f59501bbd2403485de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a5a265f7cf26a99f59501bbd2403485de">STATE_MQTT_UPLOAD_RECV_UPLOADID_ERROR</a>&#160;&#160;&#160;(-0x210B)</td></tr>
+<tr class="memdesc:a5a265f7cf26a99f59501bbd2403485de"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD uploadId不匹配或者设备端为初始化请求  <a href="#a5a265f7cf26a99f59501bbd2403485de">更多...</a><br /></td></tr>
+<tr class="separator:a5a265f7cf26a99f59501bbd2403485de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbede5874ba8aad5681392c4a40db1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a5cbede5874ba8aad5681392c4a40db1b">STATE_MQTT_UPLOAD_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x210C)</td></tr>
+<tr class="memdesc:a5cbede5874ba8aad5681392c4a40db1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD malloc失败  <a href="#a5cbede5874ba8aad5681392c4a40db1b">更多...</a><br /></td></tr>
+<tr class="separator:a5cbede5874ba8aad5681392c4a40db1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0b5248918d25ef11d7a53a43201c6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a8a0b5248918d25ef11d7a53a43201c6c">STATE_MQTT_UPLOAD_UPTASK_IS_NULL</a>&#160;&#160;&#160;(-0x210D)</td></tr>
+<tr class="memdesc:a8a0b5248918d25ef11d7a53a43201c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 初始化文件upload的句柄时失败  <a href="#a8a0b5248918d25ef11d7a53a43201c6c">更多...</a><br /></td></tr>
+<tr class="separator:a8a0b5248918d25ef11d7a53a43201c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0c360bb0b927e533939b0b29829f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a0a0c360bb0b927e533939b0b29829f26">STATE_MQTT_UPLOAD_UPLOAD_REPLY_ERROR</a>&#160;&#160;&#160;(-0x210E)</td></tr>
+<tr class="memdesc:a0a0c360bb0b927e533939b0b29829f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 收到服务端应答的文件上传的偏移量和分包大小错误，与上次上传的不相同  <a href="#a0a0c360bb0b927e533939b0b29829f26">更多...</a><br /></td></tr>
+<tr class="separator:a0a0c360bb0b927e533939b0b29829f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00644bb63c6b64e8385047df770b81c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a00644bb63c6b64e8385047df770b81c4">STATE_MQTT_UPLOAD_HANDLE_DEINIT</a>&#160;&#160;&#160;(-0x210F)</td></tr>
+<tr class="memdesc:a00644bb63c6b64e8385047df770b81c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 反初始化  <a href="#a00644bb63c6b64e8385047df770b81c4">更多...</a><br /></td></tr>
+<tr class="separator:a00644bb63c6b64e8385047df770b81c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420b659502d5e5d255132cd149c0789a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a420b659502d5e5d255132cd149c0789a">STATE_MQTT_UPLOAD_FILE_RESTART_FAILED</a>&#160;&#160;&#160;(-0x2110)</td></tr>
+<tr class="memdesc:a420b659502d5e5d255132cd149c0789a"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新启动文件上传失败  <a href="#a420b659502d5e5d255132cd149c0789a">更多...</a><br /></td></tr>
+<tr class="separator:a420b659502d5e5d255132cd149c0789a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424c909d5a988eb970c2a467940f4909"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a424c909d5a988eb970c2a467940f4909">STATE_MQTT_UPLOAD_BLOCK_SIZE_ERROR</a>&#160;&#160;&#160;(-0x2111)</td></tr>
+<tr class="memdesc:a424c909d5a988eb970c2a467940f4909"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 配置分包上传的大小错误，不在256~128K范围内，继续保持默认的2K.  <a href="#a424c909d5a988eb970c2a467940f4909">更多...</a><br /></td></tr>
+<tr class="separator:a424c909d5a988eb970c2a467940f4909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbce01349360e09aa3d8d2243c68992c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#abbce01349360e09aa3d8d2243c68992c">STATE_MQTT_UPLOAD_READ_DATA_HANDLER_IS_NULL</a>&#160;&#160;&#160;(-0x2112)</td></tr>
+<tr class="memdesc:abbce01349360e09aa3d8d2243c68992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 请求文件上传，回调函数为空  <a href="#abbce01349360e09aa3d8d2243c68992c">更多...</a><br /></td></tr>
+<tr class="separator:abbce01349360e09aa3d8d2243c68992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca3b7f4c7fd54053440bfa098c6cdec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#aeca3b7f4c7fd54053440bfa098c6cdec">STATE_MQTT_UPLOAD_HANDLE_INIT</a>&#160;&#160;&#160;(-0x2113)</td></tr>
+<tr class="memdesc:aeca3b7f4c7fd54053440bfa098c6cdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 初始化  <a href="#aeca3b7f4c7fd54053440bfa098c6cdec">更多...</a><br /></td></tr>
+<tr class="separator:aeca3b7f4c7fd54053440bfa098c6cdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90812b9a022cc583db5e7e238375eaf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a90812b9a022cc583db5e7e238375eaf4">STATE_MQTT_UPLOAD_PROCESS_REPLY_ERROR</a>&#160;&#160;&#160;(-0x2114)</td></tr>
+<tr class="memdesc:a90812b9a022cc583db5e7e238375eaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD 处理服务端应答的回调时失败  <a href="#a90812b9a022cc583db5e7e238375eaf4">更多...</a><br /></td></tr>
+<tr class="separator:a90812b9a022cc583db5e7e238375eaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af15b200aba3e6f9b945618408783f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a8af15b200aba3e6f9b945618408783f9">STATE_MQTT_UPLOAD_NONE</a>&#160;&#160;&#160;(-0x2115)</td></tr>
+<tr class="memdesc:a8af15b200aba3e6f9b945618408783f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">无任何状态，未开始进行文件上传的处理  <a href="#a8af15b200aba3e6f9b945618408783f9">更多...</a><br /></td></tr>
+<tr class="separator:a8af15b200aba3e6f9b945618408783f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa51009e4c22e23512e7c161be71689f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#afa51009e4c22e23512e7c161be71689f">STATE_MQTT_UPLOAD_REQUEST_INIT</a>&#160;&#160;&#160;(-0x2116)</td></tr>
+<tr class="memdesc:afa51009e4c22e23512e7c161be71689f"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求服务端进行文件上传，等待服务端返回结果  <a href="#afa51009e4c22e23512e7c161be71689f">更多...</a><br /></td></tr>
+<tr class="separator:afa51009e4c22e23512e7c161be71689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0615d89cb6dc9e3194d0784746089273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a0615d89cb6dc9e3194d0784746089273">STATE_MQTT_UPLOAD_IS_UPLOADING</a>&#160;&#160;&#160;(-0x2117)</td></tr>
+<tr class="memdesc:a0615d89cb6dc9e3194d0784746089273"><td class="mdescLeft">&#160;</td><td class="mdescRight">正在执行文件上传任务  <a href="#a0615d89cb6dc9e3194d0784746089273">更多...</a><br /></td></tr>
+<tr class="separator:a0615d89cb6dc9e3194d0784746089273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bb756401f37808674864d48999c781"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a89bb756401f37808674864d48999c781">STATE_MQTT_UPLOAD_REQUEST_CANCEL</a>&#160;&#160;&#160;(-0x2118)</td></tr>
+<tr class="memdesc:a89bb756401f37808674864d48999c781"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知服务端取消文件上传。  <a href="#a89bb756401f37808674864d48999c781">更多...</a><br /></td></tr>
+<tr class="separator:a89bb756401f37808674864d48999c781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842e3fec2a8ccf774d9a663dd5f42873"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a842e3fec2a8ccf774d9a663dd5f42873">STATE_MQTT_UPLOAD_CANCEL_SUCCESS</a>&#160;&#160;&#160;(-0x2119)</td></tr>
+<tr class="memdesc:a842e3fec2a8ccf774d9a663dd5f42873"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件上传，取消上传任务成功，取消成功后会销毁对应的upload task释放内存资源  <a href="#a842e3fec2a8ccf774d9a663dd5f42873">更多...</a><br /></td></tr>
+<tr class="separator:a842e3fec2a8ccf774d9a663dd5f42873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d562cc2d29e5ab26deb815d84922cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ab1d562cc2d29e5ab26deb815d84922cc">STATE_MQTT_UPLOAD_CANCEL_FAILED</a>&#160;&#160;&#160;(-0x2120)</td></tr>
+<tr class="memdesc:ab1d562cc2d29e5ab26deb815d84922cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件上传，取消上传任务失败  <a href="#ab1d562cc2d29e5ab26deb815d84922cc">更多...</a><br /></td></tr>
+<tr class="separator:ab1d562cc2d29e5ab26deb815d84922cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17298f85f626bb6823a94cd3b3c71e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ad17298f85f626bb6823a94cd3b3c71e7">STATE_MQTT_UPLOAD_FAILED</a>&#160;&#160;&#160;(-0x2121)</td></tr>
+<tr class="memdesc:ad17298f85f626bb6823a94cd3b3c71e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件上传失败  <a href="#ad17298f85f626bb6823a94cd3b3c71e7">更多...</a><br /></td></tr>
+<tr class="separator:ad17298f85f626bb6823a94cd3b3c71e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff1a7a6def766d37389cf79acc6327b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a4ff1a7a6def766d37389cf79acc6327b">STATE_MQTT_UPLOAD_FAILED_TIMEOUT</a>&#160;&#160;&#160;(-0x2122)</td></tr>
+<tr class="memdesc:a4ff1a7a6def766d37389cf79acc6327b"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件上传超时失败  <a href="#a4ff1a7a6def766d37389cf79acc6327b">更多...</a><br /></td></tr>
+<tr class="separator:a4ff1a7a6def766d37389cf79acc6327b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01bbc89c7ec06ab16f65109d517bf2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ac01bbc89c7ec06ab16f65109d517bf2b">STATE_MQTT_UPLOAD_FAILED_WHOLE_CHECK</a>&#160;&#160;&#160;(-0x2124)</td></tr>
+<tr class="memdesc:ac01bbc89c7ec06ab16f65109d517bf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件完整性校验失败  <a href="#ac01bbc89c7ec06ab16f65109d517bf2b">更多...</a><br /></td></tr>
+<tr class="separator:ac01bbc89c7ec06ab16f65109d517bf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fcf83500e45da15e43837a75c7128d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a98fcf83500e45da15e43837a75c7128d">STATE_MQTT_UPLOAD_FINISHED</a>&#160;&#160;&#160;(-0x2125)</td></tr>
+<tr class="memdesc:a98fcf83500e45da15e43837a75c7128d"><td class="mdescLeft">&#160;</td><td class="mdescRight">已经完成文件上传的任务，完成文件上传后会销毁对应的upload task释放内存资源  <a href="#a98fcf83500e45da15e43837a75c7128d">更多...</a><br /></td></tr>
+<tr class="separator:a98fcf83500e45da15e43837a75c7128d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab5f74c8b71d2b757d26723c4e5e9be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a2ab5f74c8b71d2b757d26723c4e5e9be">STATE_MQTT_UPLOAD_NO_UPLOAD_TASK</a>&#160;&#160;&#160;(-0x2126)</td></tr>
+<tr class="memdesc:a2ab5f74c8b71d2b757d26723c4e5e9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">没有文件上传任务，无法执行取消操作  <a href="#a2ab5f74c8b71d2b757d26723c4e5e9be">更多...</a><br /></td></tr>
+<tr class="separator:a2ab5f74c8b71d2b757d26723c4e5e9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3060993db7c1bcc67352d8e8e351bcbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a3060993db7c1bcc67352d8e8e351bcbe">STATE_MQTT_UPLOAD_EXTRA_PARAMS_NOT_JSON</a>&#160;&#160;&#160;(-0x2127)</td></tr>
+<tr class="memdesc:a3060993db7c1bcc67352d8e8e351bcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户设置的extra_params参数不是json格式  <a href="#a3060993db7c1bcc67352d8e8e351bcbe">更多...</a><br /></td></tr>
+<tr class="separator:a3060993db7c1bcc67352d8e8e351bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407c9968b09d7de3d879f1a2e8c08691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a407c9968b09d7de3d879f1a2e8c08691">AIOT_MQTT_UPLOAD_FILE_MODE_OVERWRITE</a>&#160;&#160;&#160;&quot;overwrite&quot;</td></tr>
+<tr class="memdesc:a407c9968b09d7de3d879f1a2e8c08691"><td class="mdescLeft">&#160;</td><td class="mdescRight">同名的文件的处理策略 overwrite: 覆盖模式，服务端删除之前的同名文件，原有文件无法找回  <a href="#a407c9968b09d7de3d879f1a2e8c08691">更多...</a><br /></td></tr>
+<tr class="separator:a407c9968b09d7de3d879f1a2e8c08691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5472e39f27df59edd0a98dbd3afc05d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ae5472e39f27df59edd0a98dbd3afc05d">AIOT_MQTT_UPLOAD_FILE_MODE_APPEND</a>&#160;&#160;&#160;&quot;append&quot;</td></tr>
+<tr class="memdesc:ae5472e39f27df59edd0a98dbd3afc05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">同名的文件的处理策略 append:文件追加模式 有同名文件未完成上传：在服务端文件未完成上传的情况下，云端返回当前已上传文件的信息，以便设备端继续上传后续的文件内 容，未完成的文件云端保留24H，超过24小时后删除未完成的文件，下次请求时重新建立 有同名已完成上传：返回错误码 UPLOAD_FILE_FAILED_SAME_FILE ，请求上传失败 无同名文件：服务端新建文件信息  <a href="#ae5472e39f27df59edd0a98dbd3afc05d">更多...</a><br /></td></tr>
+<tr class="separator:ae5472e39f27df59edd0a98dbd3afc05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fc03dd58c4b1cea76f833901f41d49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ae3fc03dd58c4b1cea76f833901f41d49">AIOT_MQTT_UPLOAD_FILE_MODE_FAIL</a>&#160;&#160;&#160;&quot;reject&quot;</td></tr>
+<tr class="memdesc:ae3fc03dd58c4b1cea76f833901f41d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">同名的文件的处理策略 reject: 拒绝模式，服务端返回文件已经存在不能再次上传的错误码 UPLOAD_FILE_FAILED_SAME_FILE  <a href="#ae3fc03dd58c4b1cea76f833901f41d49">更多...</a><br /></td></tr>
+<tr class="separator:ae3fc03dd58c4b1cea76f833901f41d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474510d416e96ace1812b3c7d2ac53d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a474510d416e96ace1812b3c7d2ac53d0">MQTT_UPLOAD_DEFAULT_FILENAME_LEN</a>&#160;&#160;&#160;(128)</td></tr>
+<tr class="memdesc:a474510d416e96ace1812b3c7d2ac53d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT上传文件名的最大长度  <a href="#a474510d416e96ace1812b3c7d2ac53d0">更多...</a><br /></td></tr>
+<tr class="separator:a474510d416e96ace1812b3c7d2ac53d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10648736a319e44965aa3f84d5226e64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a10648736a319e44965aa3f84d5226e64">MQTT_UPLOAD_DEFAULT_CRC64_LEN</a>&#160;&#160;&#160;(32)</td></tr>
+<tr class="memdesc:a10648736a319e44965aa3f84d5226e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC64数据校验的长度  <a href="#a10648736a319e44965aa3f84d5226e64">更多...</a><br /></td></tr>
+<tr class="separator:a10648736a319e44965aa3f84d5226e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03894535c2b6d7735cbc025c5347bb04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a03894535c2b6d7735cbc025c5347bb04">MQTT_UPLOAD_DEFAULT_UPLOAD_SIZE</a>&#160;&#160;&#160;(64)</td></tr>
+<tr class="memdesc:a03894535c2b6d7735cbc025c5347bb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">UploadID的数据长度  <a href="#a03894535c2b6d7735cbc025c5347bb04">更多...</a><br /></td></tr>
+<tr class="separator:a03894535c2b6d7735cbc025c5347bb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ad44f365cd3717a61f96594933034281d"><td class="memItemLeft" align="right" valign="top">typedef int32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#ad44f365cd3717a61f96594933034281d">aiot_mqtt_upload_read_handler_t</a>) (const <a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a> *packet, uint8_t *data, uint32_t size, void *userdata)</td></tr>
+<tr class="memdesc:ad44f365cd3717a61f96594933034281d"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数读取用户的本地文件或内存数据不能在回调函数中执行 <a class="el" href="aiot__mqtt__upload__api_8h.html#aaf3736bb5928d82eb33d574307680e16">aiot_mqtt_upload_open_stream</a> 和 <a class="el" href="aiot__mqtt__upload__api_8h.html#a206698b827890fcb7993956c9c3c2d94">aiot_mqtt_upload_cancel_stream</a> 多个文件同时请求上传时，可以使用不同的回调函数，也可以使用同一个回调函数用户根据file_name区分对应的文件或内存区  <a href="#ad44f365cd3717a61f96594933034281d">更多...</a><br /></td></tr>
+<tr class="separator:ad44f365cd3717a61f96594933034281d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a2c8e10887a1fd1a3f9231cbe25257e2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2b">aiot_mqtt_upload_result_code_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bacf3eeba408c8e69bb73d2f55491a5474">UPLOAD_FILE_OK</a> = 200, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba19a2225cda545aab96627013c58e3824">UPLOAD_FILE_FAILED_PAYLOAD_ERROR</a> = 400, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba94d51d2816db353a7a9d326995cce51a">UPLOAD_FILE_FAILED_QPS_LIMIT</a> = 429, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba8fad54b1ae2fa7fe834ddc5ef6f75e22">UPLOAD_FILE_FAILED_PARAMS</a> = 460, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba60d3c031d2406e7fc09c6c73de33ba97">UPLOAD_FILE_FAILED_SERVER_OTHER</a> = 500, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba18aee997971c701b72d4141fb5203683">UPLOAD_FILE_FAILED_MAX_FILESIZE</a> = 78117, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2baee0b79a4d475334bff0fdc60ac0db247">UPLOAD_FILE_FALED_BLOCK_SIZE_MORE</a> = 78118, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba75a8624749389866330889e2ba1888ed">UPLOAD_FILE_FAILED_OFFSET_UNEQUAL</a> = 78119, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba0ddc6d332c57b8941e02a9467ea0cf64">UPLOAD_FILE_FAILED_BLOCK_SIZE_LESS</a> = 78120, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba351ee6ef5a019784bd3b33dc19175227">UPLOAD_FILE_FAILED_BLOCK_CRC</a> = 78121, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba5044e82dfbdf3342e88776184ada7a81">UPLOAD_FILE_FAILED_NOT_FILE_TASK</a> = 78122, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bab93b4477094ea41a64d5aec19144871e">UPLOAD_FILE_FAILED_SAME_FILE</a> = 78123, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2baedd2e53a2654e38bf30ce303bede74aa">UPLOAD_FILE_HAVE_FINISHED</a> = 78124, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bae0793c4ec7a28b32ad98fd684a30bf4b">UPLOAD_FILE_FAILED_WHOLE_CHECK</a> = 78125, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2ba5e1a693c3800419dbad464dad831f6ed">UPLOAD_FILE_FILE_BLOCK_DUPLICATION</a> = 78126, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2bacb80d1cf3d14922d21fa41ad76409de2">UPLOAD_FILE_MESSAGE_LIMIT</a> = 78127
+<br />
+ }<tr class="memdesc:a2c8e10887a1fd1a3f9231cbe25257e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求文件上传和文件传输过程中的服务端返回的文件信息  <a href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2b">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a2c8e10887a1fd1a3f9231cbe25257e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4239f5d26343af9d45e2a975d390439"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439">aiot_mqtt_upload_recv_type_t</a> { <a class="el" href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439ac5b1a6e38e19e20ca94a9876a999b276">AIOT_MQTT_UPLOADRECV_INIT_REPLY</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439a9c1fccb5181ed769b4d70b4429280c1a">AIOT_MQTT_UPLOADRECV_UPLOAD_REPLY</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439a8e00aab0c75bd6bbf1146b5e6d7388cf">AIOT_MQTT_UPLOADRECV_CANCEL_REPLY</a>
+ }<tr class="memdesc:aa4239f5d26343af9d45e2a975d390439"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT UPLOAD模块收到从服务端应答的报文类型  <a href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa4239f5d26343af9d45e2a975d390439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ec5d9420f091c6c3a8fbb485f8ff82"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82ae6f0d04fd35ec337c63e6274d3777559">AIOT_MQTT_UPLOADOPT_MQTT_HANDLE</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82ab881c9c05400d48d242804fb479eba5c">AIOT_MQTT_UPLOADOPT_RSP_TIMEOUT_MS</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82a63a4bf3df33c185a2cf911e31d936ad6">AIOT_MQTT_UPLOADOPT_RETRY_COUNT</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82aa7478ca1afb9632a8e6cffd487975827">AIOT_MQTT_UPLOADOPT_DEFAULLT_BLOCK_SIZE</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82abf7a0efdb48476aa038deb8100caa341">AIOT_MQTT_UPLOADOPT_FILE_OPTION</a>, 
+<a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82a297d8e4a1a869500a6098786b9102274">AIOT_MQTT_UPLOADOPT_MAX</a>
+<br />
+ }<tr class="memdesc:a11ec5d9420f091c6c3a8fbb485f8ff82"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__mqtt__upload__api_8h.html#aedb3e57f1adfb4e65b81db5a81406020">aiot_mqtt_upload_setopt</a> 接口的option参数可选值.  <a href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a11ec5d9420f091c6c3a8fbb485f8ff82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:add266c2c6c301539797b59993192c98c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#add266c2c6c301539797b59993192c98c">aiot_mqtt_upload_init</a> (void)</td></tr>
+<tr class="memdesc:add266c2c6c301539797b59993192c98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建MQTT UPLOAD会话实例, 并以默认值配置会话参数  <a href="#add266c2c6c301539797b59993192c98c">更多...</a><br /></td></tr>
+<tr class="separator:add266c2c6c301539797b59993192c98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb3e57f1adfb4e65b81db5a81406020"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#aedb3e57f1adfb4e65b81db5a81406020">aiot_mqtt_upload_setopt</a> (void *handle, <a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:aedb3e57f1adfb4e65b81db5a81406020"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置MQTT UPLOAD会话  <a href="#aedb3e57f1adfb4e65b81db5a81406020">更多...</a><br /></td></tr>
+<tr class="separator:aedb3e57f1adfb4e65b81db5a81406020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94820842ad6a3c3beabd63bb7b1bd477"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a94820842ad6a3c3beabd63bb7b1bd477">aiot_mqtt_upload_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a94820842ad6a3c3beabd63bb7b1bd477"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束MQTT UPLOAD会话, 销毁实例并回收资源  <a href="#a94820842ad6a3c3beabd63bb7b1bd477">更多...</a><br /></td></tr>
+<tr class="separator:a94820842ad6a3c3beabd63bb7b1bd477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3736bb5928d82eb33d574307680e16"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#aaf3736bb5928d82eb33d574307680e16">aiot_mqtt_upload_open_stream</a> (void *handle, char *file_name, <a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a> *packet)</td></tr>
+<tr class="memdesc:aaf3736bb5928d82eb33d574307680e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">向MQTT UPLOAD 服务请求发送文件  <a href="#aaf3736bb5928d82eb33d574307680e16">更多...</a><br /></td></tr>
+<tr class="separator:aaf3736bb5928d82eb33d574307680e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206698b827890fcb7993956c9c3c2d94"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a206698b827890fcb7993956c9c3c2d94">aiot_mqtt_upload_cancel_stream</a> (void *handle, char *file_name)</td></tr>
+<tr class="memdesc:a206698b827890fcb7993956c9c3c2d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">向mqtt_upload服务器请求关闭MQTT通道数据上传命令  <a href="#a206698b827890fcb7993956c9c3c2d94">更多...</a><br /></td></tr>
+<tr class="separator:a206698b827890fcb7993956c9c3c2d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069d1bea8cb21e17f2a7de5715b93cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaiot__mqtt__upload__result__t.html">aiot_mqtt_upload_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#a069d1bea8cb21e17f2a7de5715b93cf5">aiot_mqtt_upload_process</a> (void *handle)</td></tr>
+<tr class="memdesc:a069d1bea8cb21e17f2a7de5715b93cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT Upload 处理函数,处理超时和重发逻辑，返回对应文件的执行的状态  <a href="#a069d1bea8cb21e17f2a7de5715b93cf5">更多...</a><br /></td></tr>
+<tr class="separator:a069d1bea8cb21e17f2a7de5715b93cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7b5ec311b4ef5f2a7edec4b523978d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__upload__api_8h.html#aba7b5ec311b4ef5f2a7edec4b523978d">aiot_mqtt_upload_send_data</a> (void *handle, char *file_name, uint8_t *data, uint32_t datalen, uint8_t is_complete)</td></tr>
+<tr class="memdesc:aba7b5ec311b4ef5f2a7edec4b523978d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT Upload 数据发送接口，如果没有配置aiot_mqtt_upload_read_handler_t时，使用该接口发送数据  <a href="#aba7b5ec311b4ef5f2a7edec4b523978d">更多...</a><br /></td></tr>
+<tr class="separator:aba7b5ec311b4ef5f2a7edec4b523978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>MQTT UPLOAD模块头文件, 提供通过mqtt进行文件上传的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a40184975ba765d772cfbdbec2f1fefc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_BASE&#160;&#160;&#160;(-0x2100)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x2100~-0x21FF表达SDK在mqtt_upload模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8fbe498709b95cc5ede23e8c6051bcf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_MQTT_HANDLE_IS_NULL&#160;&#160;&#160;(-0x2101)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD Handle 为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae34bbdcd2d8cf0b160996452782b5b80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FILENAME_IS_NULL&#160;&#160;&#160;(-0x2102)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 请求上传文件时，文件名是空的 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5aae81944a840599619f341a4aae03f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PARAMS_IS_NULL&#160;&#160;&#160;(-0x2103)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD PUB到服务端的时候参数为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="af2c1944f4dfcb9a597fa9a1043e03e25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FILE_DATA_IS_NULL&#160;&#160;&#160;(-0x2104)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD上传文件数据为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="ace98aacf66feaedf9bfc568f6dec8b25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_MQTT_SYSDEP_IS_NULL&#160;&#160;&#160;(-0x2105)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT portfile是空的 </p>
+
+</div>
+</div>
+<a class="anchor" id="a96842c04e1a710d1a0c0a6ccdb20bea2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PARSE_INIT_FAILED&#160;&#160;&#160;(-0x2106)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 解析服务端初始化应答的Json数据失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4991c79f0753d68bc666616bd55ce7cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PARSE_UPLOAD_REPLY_FAILED&#160;&#160;&#160;(-0x2107)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 解析服务端文件数据上传应答的Json数据失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a80738974a6daa9f712adbd4bae13e8c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PARSE_CANCEL_FAILED&#160;&#160;&#160;(-0x2108)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 解析服务端取消应答的Json数据失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3eb121adc5720b26c9f59e0c415fe14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PARSE_JSON_FAILED&#160;&#160;&#160;(-0x2109)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 解析服务端应答的Json数据失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a958cda84ebba8941d67587a80f7aee61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_RECV_FILE_INFO_ERROR&#160;&#160;&#160;(-0x210A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 接收到的服务端应答文件信息不对 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a265f7cf26a99f59501bbd2403485de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_RECV_UPLOADID_ERROR&#160;&#160;&#160;(-0x210B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD uploadId不匹配或者设备端为初始化请求 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5cbede5874ba8aad5681392c4a40db1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_MALLOC_FAILED&#160;&#160;&#160;(-0x210C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD malloc失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a0b5248918d25ef11d7a53a43201c6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_UPTASK_IS_NULL&#160;&#160;&#160;(-0x210D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 初始化文件upload的句柄时失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a0c360bb0b927e533939b0b29829f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_UPLOAD_REPLY_ERROR&#160;&#160;&#160;(-0x210E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 收到服务端应答的文件上传的偏移量和分包大小错误，与上次上传的不相同 </p>
+
+</div>
+</div>
+<a class="anchor" id="a00644bb63c6b64e8385047df770b81c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_HANDLE_DEINIT&#160;&#160;&#160;(-0x210F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 反初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a420b659502d5e5d255132cd149c0789a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FILE_RESTART_FAILED&#160;&#160;&#160;(-0x2110)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重新启动文件上传失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a424c909d5a988eb970c2a467940f4909"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_BLOCK_SIZE_ERROR&#160;&#160;&#160;(-0x2111)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 配置分包上传的大小错误，不在256~128K范围内，继续保持默认的2K. </p>
+
+</div>
+</div>
+<a class="anchor" id="abbce01349360e09aa3d8d2243c68992c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_READ_DATA_HANDLER_IS_NULL&#160;&#160;&#160;(-0x2112)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 请求文件上传，回调函数为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeca3b7f4c7fd54053440bfa098c6cdec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_HANDLE_INIT&#160;&#160;&#160;(-0x2113)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a90812b9a022cc583db5e7e238375eaf4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_PROCESS_REPLY_ERROR&#160;&#160;&#160;(-0x2114)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD 处理服务端应答的回调时失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8af15b200aba3e6f9b945618408783f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_NONE&#160;&#160;&#160;(-0x2115)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>无任何状态，未开始进行文件上传的处理 </p>
+
+</div>
+</div>
+<a class="anchor" id="afa51009e4c22e23512e7c161be71689f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_REQUEST_INIT&#160;&#160;&#160;(-0x2116)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求服务端进行文件上传，等待服务端返回结果 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0615d89cb6dc9e3194d0784746089273"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_IS_UPLOADING&#160;&#160;&#160;(-0x2117)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>正在执行文件上传任务 </p>
+
+</div>
+</div>
+<a class="anchor" id="a89bb756401f37808674864d48999c781"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_REQUEST_CANCEL&#160;&#160;&#160;(-0x2118)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通知服务端取消文件上传。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a842e3fec2a8ccf774d9a663dd5f42873"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_CANCEL_SUCCESS&#160;&#160;&#160;(-0x2119)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文件上传，取消上传任务成功，取消成功后会销毁对应的upload task释放内存资源 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1d562cc2d29e5ab26deb815d84922cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_CANCEL_FAILED&#160;&#160;&#160;(-0x2120)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文件上传，取消上传任务失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad17298f85f626bb6823a94cd3b3c71e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FAILED&#160;&#160;&#160;(-0x2121)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文件上传失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ff1a7a6def766d37389cf79acc6327b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FAILED_TIMEOUT&#160;&#160;&#160;(-0x2122)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文件上传超时失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac01bbc89c7ec06ab16f65109d517bf2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FAILED_WHOLE_CHECK&#160;&#160;&#160;(-0x2124)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文件完整性校验失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a98fcf83500e45da15e43837a75c7128d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_FINISHED&#160;&#160;&#160;(-0x2125)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>已经完成文件上传的任务，完成文件上传后会销毁对应的upload task释放内存资源 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ab5f74c8b71d2b757d26723c4e5e9be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_NO_UPLOAD_TASK&#160;&#160;&#160;(-0x2126)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>没有文件上传任务，无法执行取消操作 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3060993db7c1bcc67352d8e8e351bcbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_MQTT_UPLOAD_EXTRA_PARAMS_NOT_JSON&#160;&#160;&#160;(-0x2127)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户设置的extra_params参数不是json格式 </p>
+
+</div>
+</div>
+<a class="anchor" id="a407c9968b09d7de3d879f1a2e8c08691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AIOT_MQTT_UPLOAD_FILE_MODE_OVERWRITE&#160;&#160;&#160;&quot;overwrite&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同名的文件的处理策略 overwrite: 覆盖模式，服务端删除之前的同名文件，原有文件无法找回 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5472e39f27df59edd0a98dbd3afc05d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AIOT_MQTT_UPLOAD_FILE_MODE_APPEND&#160;&#160;&#160;&quot;append&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同名的文件的处理策略 append:文件追加模式 有同名文件未完成上传：在服务端文件未完成上传的情况下，云端返回当前已上传文件的信息，以便设备端继续上传后续的文件内 容，未完成的文件云端保留24H，超过24小时后删除未完成的文件，下次请求时重新建立 有同名已完成上传：返回错误码 UPLOAD_FILE_FAILED_SAME_FILE ，请求上传失败 无同名文件：服务端新建文件信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3fc03dd58c4b1cea76f833901f41d49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AIOT_MQTT_UPLOAD_FILE_MODE_FAIL&#160;&#160;&#160;&quot;reject&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同名的文件的处理策略 reject: 拒绝模式，服务端返回文件已经存在不能再次上传的错误码 UPLOAD_FILE_FAILED_SAME_FILE </p>
+
+</div>
+</div>
+<a class="anchor" id="a474510d416e96ace1812b3c7d2ac53d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MQTT_UPLOAD_DEFAULT_FILENAME_LEN&#160;&#160;&#160;(128)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT上传文件名的最大长度 </p>
+
+</div>
+</div>
+<a class="anchor" id="a10648736a319e44965aa3f84d5226e64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MQTT_UPLOAD_DEFAULT_CRC64_LEN&#160;&#160;&#160;(32)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CRC64数据校验的长度 </p>
+
+</div>
+</div>
+<a class="anchor" id="a03894535c2b6d7735cbc025c5347bb04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MQTT_UPLOAD_DEFAULT_UPLOAD_SIZE&#160;&#160;&#160;(64)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UploadID的数据长度 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ad44f365cd3717a61f96594933034281d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int32_t(* aiot_mqtt_upload_read_handler_t) (const <a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a> *packet, uint8_t *data, uint32_t size, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调函数读取用户的本地文件或内存数据不能在回调函数中执行 <a class="el" href="aiot__mqtt__upload__api_8h.html#aaf3736bb5928d82eb33d574307680e16">aiot_mqtt_upload_open_stream</a> 和 <a class="el" href="aiot__mqtt__upload__api_8h.html#a206698b827890fcb7993956c9c3c2d94">aiot_mqtt_upload_cancel_stream</a> 多个文件同时请求上传时，可以使用不同的回调函数，也可以使用同一个回调函数用户根据file_name区分对应的文件或内存区 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>服务端的应答报文,包含应答的状态和错误信息，更多信息参考 <a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>指向用于接收用户数据的缓冲块的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>数据缓冲区大小, 此大小在发送过程中会变化 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>指向用户上下文的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">用户实际拷贝到buf中的数据长度</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__mqtt__upload__api_8h.html#a2c8e10887a1fd1a3f9231cbe25257e2b">aiot_mqtt_upload_result_code_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求文件上传和文件传输过程中的服务端返回的文件信息 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2bacf3eeba408c8e69bb73d2f55491a5474"></a>UPLOAD_FILE_OK&#160;</td><td class="fielddoc">
+<p>文件上传正常 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba19a2225cda545aab96627013c58e3824"></a>UPLOAD_FILE_FAILED_PAYLOAD_ERROR&#160;</td><td class="fielddoc">
+<p>请求上传的payload格式非法，无法解析其中的json格式数据 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba94d51d2816db353a7a9d326995cce51a"></a>UPLOAD_FILE_FAILED_QPS_LIMIT&#160;</td><td class="fielddoc">
+<p>文件上传被限流 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba8fad54b1ae2fa7fe834ddc5ef6f75e22"></a>UPLOAD_FILE_FAILED_PARAMS&#160;</td><td class="fielddoc">
+<p>文件上传请求参数错误 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba60d3c031d2406e7fc09c6c73de33ba97"></a>UPLOAD_FILE_FAILED_SERVER_OTHER&#160;</td><td class="fielddoc">
+<p>服务端其他异常 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba18aee997971c701b72d4141fb5203683"></a>UPLOAD_FILE_FAILED_MAX_FILESIZE&#160;</td><td class="fielddoc">
+<p>申请使用mqtt协议上传文件时，文件大小超过阈值16M </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2baee0b79a4d475334bff0fdc60ac0db247"></a>UPLOAD_FILE_FALED_BLOCK_SIZE_MORE&#160;</td><td class="fielddoc">
+<p>设备上传文件分片时，分片大小超过阈值128KB </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba75a8624749389866330889e2ba1888ed"></a>UPLOAD_FILE_FAILED_OFFSET_UNEQUAL&#160;</td><td class="fielddoc">
+<p>设备上传文件分片时，当前分片的offset与已上传至的服务端文件大小不一致 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba0ddc6d332c57b8941e02a9467ea0cf64"></a>UPLOAD_FILE_FAILED_BLOCK_SIZE_LESS&#160;</td><td class="fielddoc">
+<p>设备上传文件分片时，当前分片的大小小于最小阈值，除最后一片文件外，传输过程中分片大小不得小于256Byte </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba351ee6ef5a019784bd3b33dc19175227"></a>UPLOAD_FILE_FAILED_BLOCK_CRC&#160;</td><td class="fielddoc">
+<p>设备上传文件分片时，当前分片的CRC校验失败，SDK内会自动对当前分片进行重传 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba5044e82dfbdf3342e88776184ada7a81"></a>UPLOAD_FILE_FAILED_NOT_FILE_TASK&#160;</td><td class="fielddoc">
+<p>上传文件的任务不存在，用户需要发起新的上传请求调用 aiot_mqtt_upload_open_stream </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2bab93b4477094ea41a64d5aec19144871e"></a>UPLOAD_FILE_FAILED_SAME_FILE&#160;</td><td class="fielddoc">
+<p>同名文件已经存在，在追加模式 AIOT_MQTT_UPLOAD_FILE_MODE_APPEND 和拒绝模式 AIOT_MQTT_UPLOAD_FILE_MODE_FAIL 下会返回该错误码 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2baedd2e53a2654e38bf30ce303bede74aa"></a>UPLOAD_FILE_HAVE_FINISHED&#160;</td><td class="fielddoc">
+<p>文件上传任务已经完成，通知用户对应的文件上传已经完成，销毁对应的upload task释放内存资源 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2bae0793c4ec7a28b32ad98fd684a30bf4b"></a>UPLOAD_FILE_FAILED_WHOLE_CHECK&#160;</td><td class="fielddoc">
+<p>文件完整性校验失败，在调用 aiot_mqtt_upload_open_stream 时，如果传入 degist参数服务端会对文件完整性进行校验，传入NULL时云端不校验 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2ba5e1a693c3800419dbad464dad831f6ed"></a>UPLOAD_FILE_FILE_BLOCK_DUPLICATION&#160;</td><td class="fielddoc">
+<p>重传或网络断开造成文件写入重复，忽略 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2c8e10887a1fd1a3f9231cbe25257e2bacb80d1cf3d14922d21fa41ad76409de2"></a>UPLOAD_FILE_MESSAGE_LIMIT&#160;</td><td class="fielddoc">
+<p>文件上传过程中，消息限流 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa4239f5d26343af9d45e2a975d390439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439">aiot_mqtt_upload_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT UPLOAD模块收到从服务端应答的报文类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa4239f5d26343af9d45e2a975d390439ac5b1a6e38e19e20ca94a9876a999b276"></a>AIOT_MQTT_UPLOADRECV_INIT_REPLY&#160;</td><td class="fielddoc">
+<p>收到的服务端应答请求初始化时的报文信息，通过回调函数反馈给用户 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa4239f5d26343af9d45e2a975d390439a9c1fccb5181ed769b4d70b4429280c1a"></a>AIOT_MQTT_UPLOADRECV_UPLOAD_REPLY&#160;</td><td class="fielddoc">
+<p>收到的服务端应答上传分片文件时的应答报文消息，通过回调反馈给用户，同时也会调用回调获取下一段分片文件 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa4239f5d26343af9d45e2a975d390439a8e00aab0c75bd6bbf1146b5e6d7388cf"></a>AIOT_MQTT_UPLOADRECV_CANCEL_REPLY&#160;</td><td class="fielddoc">
+<p>收到的服务端应答取消上传的报文应答 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__mqtt__upload__api_8h.html#aedb3e57f1adfb4e65b81db5a81406020">aiot_mqtt_upload_setopt</a> 接口的option参数可选值. </p>
+<p>下文每个选项中的数据类型, 指的是<a class="el" href="aiot__mqtt__upload__api_8h.html#aedb3e57f1adfb4e65b81db5a81406020">aiot_mqtt_upload_setopt</a> 中, data参数的数据类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82ae6f0d04fd35ec337c63e6274d3777559"></a>AIOT_MQTT_UPLOADOPT_MQTT_HANDLE&#160;</td><td class="fielddoc">
+<p>关联MQTT Handle会话，UPLOAD过程中使用MQTT的通道能力, 用以向服务端请求上传、发送分片文件、请求关闭通道 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82ab881c9c05400d48d242804fb479eba5c"></a>AIOT_MQTT_UPLOADOPT_RSP_TIMEOUT_MS&#160;</td><td class="fielddoc">
+<p>MQTT UPLOAD会话发送消息时，超时重发的最长时间间隔, 数据类型为(uint32_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82a63a4bf3df33c185a2cf911e31d936ad6"></a>AIOT_MQTT_UPLOADOPT_RETRY_COUNT&#160;</td><td class="fielddoc">
+<p>配置MQTT文件上传单包发送超时时候的重试次数, 数据类型为(uint32_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82aa7478ca1afb9632a8e6cffd487975827"></a>AIOT_MQTT_UPLOADOPT_DEFAULLT_BLOCK_SIZE&#160;</td><td class="fielddoc">
+<p>配置文件上传的分片长度，默认是2048byte, 数据类型为(uint32_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82abf7a0efdb48476aa038deb8100caa341"></a>AIOT_MQTT_UPLOADOPT_FILE_OPTION&#160;</td><td class="fielddoc">
+<p>配置需要上传的文件，数据类型为aiot_mqtt_upload_file_opt_t </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a11ec5d9420f091c6c3a8fbb485f8ff82a297d8e4a1a869500a6098786b9102274"></a>AIOT_MQTT_UPLOADOPT_MAX&#160;</td><td class="fielddoc">
+<p>设置MQTT的最大值，设置失败 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="add266c2c6c301539797b59993192c98c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_mqtt_upload_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建MQTT UPLOAD会话实例, 并以默认值配置会话参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL,返回mqtt_upload_handle_t实例的句柄</td><td></td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_add266c2c6c301539797b59993192c98c_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_add266c2c6c301539797b59993192c98c_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_add266c2c6c301539797b59993192c98c_cgraph" id="aiot__mqtt__upload__api_8h_add266c2c6c301539797b59993192c98c_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="199,5,361,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aedb3e57f1adfb4e65b81db5a81406020"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_upload_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置MQTT UPLOAD会话 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>MQTT UPLOAD会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考 <a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考 <a class="el" href="aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82">aiot_mqtt_upload_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>参数配置成功 </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_NULL_POINTER</td><td>入参handle或data为NULL </td></tr>
+    <tr><td class="paramname">STATE_USER_INPUT_OUT_RANGE</td><td>入参optioin的枚举值&gt;=AIOT_DMOPT_MAX </td></tr>
+    <tr><td class="paramname">others</td><td>参考 <a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_aedb3e57f1adfb4e65b81db5a81406020_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_aedb3e57f1adfb4e65b81db5a81406020_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_aedb3e57f1adfb4e65b81db5a81406020_cgraph" id="aiot__mqtt__upload__api_8h_aedb3e57f1adfb4e65b81db5a81406020_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#a003026d7d6a3f03bb54c6327783fb551" title="_mqtt_upload_subscribe" alt="" coords="227,130,390,157"/>
+<area shape="rect" id="node17" href="aiot__mqtt__upload__api_8c.html#a88fc29ef0f006197013ba030d62c7282" title="_mqtt_upload_mqtt_operate\l_process_handler" alt="" coords="217,261,400,303"/>
+<area shape="rect" id="node24" href="aiot__mqtt__upload__api_8c.html#a67b8c5b72a3761155e7aa9f04e4d3ad6" title="_mqtt_upload_block\l_size_is_valid" alt="" coords="239,327,378,368"/>
+<area shape="rect" id="node25" href="aiot__mqtt__upload__api_8c.html#a46ef61dca249e09b9666882d60dbea24" title="_upload_extra_params\l_is_json" alt="" coords="232,392,385,433"/>
+<area shape="rect" id="node30" href="aiot__mqtt__upload__api_8c.html#a7934286775ec56e2cac6ec5e25501680" title="_mqtt_upload_get_uuid" alt="" coords="231,458,387,485"/>
+<area shape="rect" id="node31" href="aiot__mqtt__upload__api_8c.html#afa1d5128a2497ad28f33bea7e7672127" title="_upload_get_crc64_hexstr" alt="" coords="221,509,396,535"/>
+<area shape="rect" id="node32" href="aiot__mqtt__upload__api_8c.html#a51677424f704cb21e228b3b7be2a5438" title="_mqtt_upload_file_task_init" alt="" coords="219,559,399,586"/>
+<area shape="rect" id="node34" href="aiot__mqtt__upload__api_8c.html#a5cfe2b0f95f965aaf20c4bc8cb1f21b2" title="_mqtt_upload_filelist\l_insert" alt="" coords="238,611,379,652"/>
+<area shape="rect" id="node3" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="451,54,634,81"/>
+<area shape="rect" id="node4" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="448,105,637,131"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a822e6905d3954106fc1a074748a20b7b" title="发送一条mqtt SUBSCRIBE报文到MQTT服务器, 用于订阅指定的topic " alt="" coords="491,155,595,182"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a9db5147279af8b87846bd35462cf1229" title="_core_mqtt_sub" alt="" coords="739,143,854,170"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="962,5,1101,47"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="958,71,1105,98"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="965,123,1097,164"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#afe668b75616d0c2fabc57c7e5f89967c" title="_core_mqtt_subunsub" alt="" coords="956,189,1107,215"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="956,239,1107,266"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1157,87,1310,128"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1155,152,1312,193"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1158,218,1309,245"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1172,269,1295,295"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1360,269,1536,295"/>
+<area shape="rect" id="node18" href="aiot__mqtt__upload__api_8c.html#a7bf5609b71279050a7f51be554afa6c6" title="_mqtt_upload_core_mqtt\l_process_handler" alt="" coords="460,232,625,273"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="481,298,604,325"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="686,298,907,325"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="685,357,908,383"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="961,291,1101,332"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="961,356,1101,397"/>
+<area shape="rect" id="node26" href="aiot__mqtt__upload__api_8c.html#a03b84ca1ece78e23da0d775b4752fc95" title="_json_pop" alt="" coords="502,349,583,375"/>
+<area shape="rect" id="node27" href="aiot__mqtt__upload__api_8c.html#aafdaf32d86fa90da3279fb9b5d33a480" title="_json_reject" alt="" coords="497,399,589,426"/>
+<area shape="rect" id="node28" href="aiot__mqtt__upload__api_8c.html#ae59e86941b64e4dc7406c6dd34c12b76" title="_json_push" alt="" coords="499,450,587,477"/>
+<area shape="rect" id="node29" href="aiot__mqtt__upload__api_8c.html#aff555bca9fc8f66247839ad436dc8806" title="_json_destroy" alt="" coords="491,501,594,527"/>
+<area shape="rect" id="node33" href="aiot__mqtt__upload__api_8c.html#a4c5240b88aadbb618da80fcef3e0cc7a" title="_mqtt_upload_creat\l_string_malloc" alt="" coords="475,552,611,593"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a94820842ad6a3c3beabd63bb7b1bd477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_upload_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结束MQTT UPLOAD会话, 销毁实例并回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向MQTT UPLOAD会话句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_a94820842ad6a3c3beabd63bb7b1bd477_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_a94820842ad6a3c3beabd63bb7b1bd477_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_a94820842ad6a3c3beabd63bb7b1bd477_cgraph" id="aiot__mqtt__upload__api_8h_a94820842ad6a3c3beabd63bb7b1bd477_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#ac7b61ea00b02a4cafc5a4433763cd8f7" title="_mqtt_upload_filelist\l_destroy" alt="" coords="230,18,371,59"/>
+<area shape="rect" id="node5" href="aiot__mqtt__upload__api_8c.html#a58b2bb18f599cbae343c8c94657806bb" title="_mqtt_upload_unsubscribe" alt="" coords="212,105,389,132"/>
+<area shape="rect" id="node20" href="aiot__mqtt__upload__api_8c.html#a7bf5609b71279050a7f51be554afa6c6" title="_mqtt_upload_core_mqtt\l_process_handler" alt="" coords="218,157,383,198"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="239,223,362,249"/>
+<area shape="rect" id="node3" href="aiot__mqtt__upload__api_8c.html#a8da850b3a69b983b313e6563c51f09e0" title="_mqtt_upload_up_task_free" alt="" coords="457,5,640,32"/>
+<area shape="rect" id="node4" href="aiot__mqtt__upload__api_8c.html#a50aec7c9facd1f399a80131fdedc8846" title="_mqtt_upload_desc_free" alt="" coords="708,5,872,32"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="457,56,640,83"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="454,107,643,133"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#ac5bf829313794c8532eeafa84956e4da" title="发送一条mqtt UNSUBSCRIBE报文到MQTT服务器, 用于取消订阅指定的topic " alt="" coords="489,157,608,184"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#ac3e17e60da5d53ec67d18d6e6ef9f225" title="_core_mqtt_unsub" alt="" coords="725,157,855,184"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="926,33,1065,74"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="922,99,1069,125"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#aa89de609d4ede93b6c37f1b2dd76ac30" title="_core_mqtt_sublist\l_remove" alt="" coords="929,150,1061,191"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afe668b75616d0c2fabc57c7e5f89967c" title="_core_mqtt_subunsub" alt="" coords="920,216,1071,243"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="920,267,1071,293"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="1128,114,1267,155"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1119,179,1276,221"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1122,245,1273,272"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1136,296,1259,323"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1324,296,1500,323"/>
+<area shape="rect" id="node22" href="aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="438,221,659,248"/>
+<area shape="rect" id="node24" href="aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="437,277,660,304"/>
+<area shape="rect" id="node23" href="aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="720,210,860,251"/>
+<area shape="rect" id="node25" href="aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="720,275,860,317"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf3736bb5928d82eb33d574307680e16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_upload_open_stream </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__mqtt__upload__recv__t.html">aiot_mqtt_upload_recv_t</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向MQTT UPLOAD 服务请求发送文件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>MQTT UPLOAD会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>需要在服务端创建的文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_size</td><td>需要上传的文件大小 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>同名的文件的处理策略, 更多信息请参考 <a class="el" href="aiot__mqtt__upload__api_8h.html#a407c9968b09d7de3d879f1a2e8c08691">AIOT_MQTT_UPLOAD_FILE_MODE_OVERWRITE</a> <a class="el" href="aiot__mqtt__upload__api_8h.html#ae5472e39f27df59edd0a98dbd3afc05d">AIOT_MQTT_UPLOAD_FILE_MODE_APPEND</a> <a class="el" href="aiot__mqtt__upload__api_8h.html#ae3fc03dd58c4b1cea76f833901f41d49">AIOT_MQTT_UPLOAD_FILE_MODE_FAIL</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digest</td><td>文件完整的CRC64，不需要完整性校验则为NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_data_handler</td><td>读取用户文件数据的回调函数, 更多信息请参考 <a class="el" href="aiot__mqtt__upload__api_8h.html#ad44f365cd3717a61f96594933034281d">aiot_mqtt_upload_read_handler_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>请求发送失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__mqtt__upload__api_8h.html#a40184975ba765d772cfbdbec2f1fefc8">STATE_MQTT_UPLOAD_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_aaf3736bb5928d82eb33d574307680e16_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_aaf3736bb5928d82eb33d574307680e16_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_aaf3736bb5928d82eb33d574307680e16_cgraph" id="aiot__mqtt__upload__api_8h_aaf3736bb5928d82eb33d574307680e16_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#ac94f789f5c185a768b1cd72c958830d3" title="_mqtt_upload_send_request_init" alt="" coords="209,56,419,83"/>
+<area shape="rect" id="node19" href="aiot__mqtt__upload__api_8c.html#ae9d04e14784a684635c601fe7a94a8e1" title="_mqtt_upload_desc_copy" alt="" coords="229,107,399,133"/>
+<area shape="rect" id="node3" href="aiot__mqtt__upload__api_8c.html#aca9d23f551b6f3b535901a7d8dd862d3" title="_mqtt_upload_get_payload" alt="" coords="467,5,644,32"/>
+<area shape="rect" id="node4" href="aiot__mqtt__upload__api_8c.html#a09701778eeac4c298763385740e674be" title="_mqtt_upload_get_topic" alt="" coords="475,56,635,83"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="503,144,607,171"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="695,5,878,32"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="692,56,881,83"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="704,107,869,149"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a7f699157e4a591241ad1a894918ee01a" title="_core_mqtt_pub_prepare" alt="" coords="704,173,869,200"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="729,224,844,251"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="935,49,1081,76"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="933,100,1083,127"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="929,151,1087,193"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="937,217,1079,258"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="933,283,1083,309"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="942,334,1074,375"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="947,400,1069,427"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1135,400,1311,427"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a206698b827890fcb7993956c9c3c2d94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_upload_cancel_stream </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向mqtt_upload服务器请求关闭MQTT通道数据上传命令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>MQTT UPLOAD会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>需要取消继续上传的文件名</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>请求发送失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__mqtt__upload__api_8h.html#a40184975ba765d772cfbdbec2f1fefc8">STATE_MQTT_UPLOAD_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_a206698b827890fcb7993956c9c3c2d94_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_a206698b827890fcb7993956c9c3c2d94_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_a206698b827890fcb7993956c9c3c2d94_cgraph" id="aiot__mqtt__upload__api_8h_a206698b827890fcb7993956c9c3c2d94_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#a8da850b3a69b983b313e6563c51f09e0" title="_mqtt_upload_up_task_free" alt="" coords="221,16,404,43"/>
+<area shape="rect" id="node4" href="aiot__mqtt__upload__api_8c.html#acc4b50df5099bf2359b6aadc76346fb9" title="_mqtt_upload_send_request\l_cancel" alt="" coords="220,89,405,130"/>
+<area shape="rect" id="node3" href="aiot__mqtt__upload__api_8c.html#a50aec7c9facd1f399a80131fdedc8846" title="_mqtt_upload_desc_free" alt="" coords="460,5,624,32"/>
+<area shape="rect" id="node5" href="aiot__mqtt__upload__api_8c.html#aca9d23f551b6f3b535901a7d8dd862d3" title="_mqtt_upload_get_payload" alt="" coords="453,56,631,83"/>
+<area shape="rect" id="node6" href="aiot__mqtt__upload__api_8c.html#a09701778eeac4c298763385740e674be" title="_mqtt_upload_get_topic" alt="" coords="462,107,622,133"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="490,195,594,221"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="682,56,865,83"/>
+<area shape="rect" id="node8" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="679,107,868,133"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="691,158,856,199"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a7f699157e4a591241ad1a894918ee01a" title="_core_mqtt_pub_prepare" alt="" coords="691,224,856,251"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="716,275,831,301"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="921,100,1068,127"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="919,151,1070,177"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="916,202,1073,243"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="924,267,1065,309"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="919,333,1070,360"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="929,385,1061,426"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="933,451,1056,477"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1121,451,1297,477"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a069d1bea8cb21e17f2a7de5715b93cf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaiot__mqtt__upload__result__t.html">aiot_mqtt_upload_result_t</a> aiot_mqtt_upload_process </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT Upload 处理函数,处理超时和重发逻辑，返回对应文件的执行的状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>MQTT UPLOAD 会话句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="structaiot__mqtt__upload__result__t.html" title="aiot_mqtt_upload_process 循环处理，返回对应文件的上传状态给到用户 ">aiot_mqtt_upload_result_t</a> 返回消息包括两个<em>status</em>, <em>file_name</em>; 更多信息请参考 <a class="el" href="structaiot__mqtt__upload__result__t.html">aiot_mqtt_upload_result_t</a> </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_NONE</td><td>无任何状态，未开始进行文件上传的处理 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_REQUEST_INIT</td><td>请求服务端进行文件上传，等待服务端返回结果 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_IS_UPLOADING</td><td>正在执行文件上传任务 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_REQUEST_CANCEL</td><td>通知服务端取消文件上传 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_CANCEL_SUCCESS</td><td>文件上传，取消上传任务成功，取消成功后会销毁对应的upload task释放内存资源 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_CANCEL_FAILED</td><td>文件上传，取消上传任务失败 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_FAILED</td><td>文件上传失败 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_FAILED_TIMEOUT</td><td>文件上传超时失败 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_FAILED_WHOLE_CHECK</td><td>文件完整性校验失败 </td></tr>
+    <tr><td class="paramname">STATE_MQTT_UPLOAD_FINISHED</td><td>已经完成文件上传的任务，完成文件上传后会销毁对应的upload task释放内存资源 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_a069d1bea8cb21e17f2a7de5715b93cf5_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_a069d1bea8cb21e17f2a7de5715b93cf5_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_a069d1bea8cb21e17f2a7de5715b93cf5_cgraph" id="aiot__mqtt__upload__api_8h_a069d1bea8cb21e17f2a7de5715b93cf5_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#af6b2e296e4bfa208b80f0600f0e2e09a" title="_mqtt_upload_resend_pub" alt="" coords="232,177,407,204"/>
+<area shape="rect" id="node23" href="aiot__mqtt__upload__api_8c.html#a8da850b3a69b983b313e6563c51f09e0" title="_mqtt_upload_up_task_free" alt="" coords="228,232,411,259"/>
+<area shape="rect" id="node3" href="aiot__mqtt__upload__api_8c.html#aa6060172655fa6b62a6823bc7ddc69c2" title="_mqtt_upload_send_block_file" alt="" coords="459,119,656,145"/>
+<area shape="rect" id="node22" href="aiot__mqtt__upload__api_8c.html#acc4b50df5099bf2359b6aadc76346fb9" title="_mqtt_upload_send_request\l_cancel" alt="" coords="465,170,650,211"/>
+<area shape="rect" id="node4" href="aiot__mqtt__upload__api_8c.html#aca9d23f551b6f3b535901a7d8dd862d3" title="_mqtt_upload_get_payload" alt="" coords="706,169,883,196"/>
+<area shape="rect" id="node5" href="aiot__mqtt__upload__api_8c.html#a09701778eeac4c298763385740e674be" title="_mqtt_upload_get_topic" alt="" coords="715,119,875,145"/>
+<area shape="rect" id="node8" href="aiot__mqtt__upload__api_8c.html#a4a83a990f226923af271d5b031b82a11" title="_mqtt_upload_data_encode\l_package" alt="" coords="704,31,885,73"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="743,220,847,247"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="937,79,1119,105"/>
+<area shape="rect" id="node7" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="933,129,1123,156"/>
+<area shape="rect" id="node9" href="aiot__mqtt__upload__api_8c.html#a04e5cf4d4d3f512c8a27e9aa13923b07" title="crc_ibm" alt="" coords="994,28,1062,55"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="945,231,1111,273"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#a7f699157e4a591241ad1a894918ee01a" title="_core_mqtt_pub_prepare" alt="" coords="945,297,1111,324"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="971,180,1085,207"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1176,5,1323,32"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1174,56,1325,83"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1171,107,1328,149"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1179,173,1320,214"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1174,239,1325,265"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1183,290,1315,331"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1188,356,1311,383"/>
+<area shape="rect" id="node21" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1376,356,1552,383"/>
+<area shape="rect" id="node24" href="aiot__mqtt__upload__api_8c.html#a50aec7c9facd1f399a80131fdedc8846" title="_mqtt_upload_desc_free" alt="" coords="475,236,639,263"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aba7b5ec311b4ef5f2a7edec4b523978d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_upload_send_data </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>is_complete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MQTT Upload 数据发送接口，如果没有配置aiot_mqtt_upload_read_handler_t时，使用该接口发送数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>MQTT UPLOAD会话句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>需要上传的文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>需要上传的数据缓冲区 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">datalen</td><td>需要上传数据的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_complete</td><td>数据是否上传完成,上传最后一包文件时需要设置为1,否则云端不会存储上传文件</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>请求发送失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>请求发送成功 </td></tr>
+    <tr><td class="paramname">others</td><td>参考<a class="el" href="aiot__state__api_8h.html">aiot_state_api.h</a> 或<a class="el" href="aiot__mqtt__upload__api_8h.html#a40184975ba765d772cfbdbec2f1fefc8">STATE_MQTT_UPLOAD_BASE</a> 中对应的错误码说明 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__upload__api_8h_aba7b5ec311b4ef5f2a7edec4b523978d_cgraph.png" border="0" usemap="#aiot__mqtt__upload__api_8h_aba7b5ec311b4ef5f2a7edec4b523978d_cgraph" alt=""/></div>
+<map name="aiot__mqtt__upload__api_8h_aba7b5ec311b4ef5f2a7edec4b523978d_cgraph" id="aiot__mqtt__upload__api_8h_aba7b5ec311b4ef5f2a7edec4b523978d_cgraph">
+<area shape="rect" id="node2" href="aiot__mqtt__upload__api_8c.html#aa6060172655fa6b62a6823bc7ddc69c2" title="_mqtt_upload_send_block_file" alt="" coords="241,85,439,112"/>
+<area shape="rect" id="node3" href="aiot__mqtt__upload__api_8c.html#aca9d23f551b6f3b535901a7d8dd862d3" title="_mqtt_upload_get_payload" alt="" coords="489,5,666,32"/>
+<area shape="rect" id="node4" href="aiot__mqtt__upload__api_8c.html#a09701778eeac4c298763385740e674be" title="_mqtt_upload_get_topic" alt="" coords="497,56,657,83"/>
+<area shape="rect" id="node7" href="aiot__mqtt__upload__api_8c.html#a4a83a990f226923af271d5b031b82a11" title="_mqtt_upload_data_encode\l_package" alt="" coords="487,107,668,149"/>
+<area shape="rect" id="node9" href="aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="525,201,629,228"/>
+<area shape="rect" id="node5" href="aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="719,7,902,33"/>
+<area shape="rect" id="node6" href="aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="716,57,905,84"/>
+<area shape="rect" id="node8" href="aiot__mqtt__upload__api_8c.html#a04e5cf4d4d3f512c8a27e9aa13923b07" title="crc_ibm" alt="" coords="777,112,845,139"/>
+<area shape="rect" id="node10" href="aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="728,163,893,205"/>
+<area shape="rect" id="node11" href="aiot__mqtt__api_8c.html#a7f699157e4a591241ad1a894918ee01a" title="_core_mqtt_pub_prepare" alt="" coords="728,229,893,256"/>
+<area shape="rect" id="node12" href="aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="753,280,868,307"/>
+<area shape="rect" id="node13" href="aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="959,105,1105,132"/>
+<area shape="rect" id="node14" href="aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="957,156,1107,183"/>
+<area shape="rect" id="node15" href="aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="953,207,1111,249"/>
+<area shape="rect" id="node16" href="aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="961,273,1103,314"/>
+<area shape="rect" id="node17" href="aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="957,339,1107,365"/>
+<area shape="rect" id="node18" href="aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="966,390,1098,431"/>
+<area shape="rect" id="node19" href="aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="971,456,1093,483"/>
+<area shape="rect" id="node20" href="aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1159,456,1335,483"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

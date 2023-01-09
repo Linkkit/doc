@@ -1,0 +1,6 @@
+<map id="components/ota/aiot_http_download_api.h" name="components/ota/aiot_http_download_api.h">
+<area shape="rect" id="node2" href="$aiot__ota__api_8h.html" title="OTA模块头文件, 提供设备获取固件升级和远程配置的能力 " alt="" coords="97,95,237,136"/>
+<area shape="rect" id="node5" href="$aiot__http__download__api_8c.html" title="components/ota/aiot\l_http_download_api.c" alt="" coords="261,95,409,136"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__download__api_8c.html" title="mqtt文件下载的实现文件 " alt="" coords="5,184,157,225"/>
+<area shape="rect" id="node4" href="$aiot__ota__api_8c.html" title="OTA模块接口实现文件, 其中包含了OTA的所有用户API. " alt="" coords="182,184,322,225"/>
+</map>

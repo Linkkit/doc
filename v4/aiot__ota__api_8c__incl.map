@@ -1,3 +1,4 @@
 <map id="components/ota/aiot_ota_api.c" name="components/ota/aiot_ota_api.c">
 <area shape="rect" id="node2" href="$aiot__ota__api_8h.html" title="OTA模块头文件, 提供设备获取固件升级和远程配置的能力 " alt="" coords="5,95,108,121"/>
+<area shape="rect" id="node4" href="$aiot__http__download__api_8h.html" title="aiot_http_download\l_api.h" alt="" coords="43,169,177,211"/>
 </map>

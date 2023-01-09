@@ -1,8 +1,0 @@
-<map id="aiot_diag_init" name="aiot_diag_init">
-<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="156,13,319,40"/>
-<area shape="rect" id="node3" href="$aiot__diag__api_8c.html#addccb2ccc9eb3e8172dbf4a784693020" title="_diag_core_diag_callback" alt="" coords="152,64,323,91"/>
-<area shape="rect" id="node4" href="$aiot__diag__api_8c.html#af01fe19eef7e2de922279d21edd2f39c" title="_diag_raw_data" alt="" coords="371,64,484,91"/>
-<area shape="rect" id="node5" href="$aiot__diag__api_8c.html#aed367d618e1f45150263c57a1be46c55" title="_diag_get_extra_data" alt="" coords="544,5,691,32"/>
-<area shape="rect" id="node6" href="$aiot__diag__api_8c.html#a5b545401eb897d7cd1817ccf344110b2" title="_diag_running_state\l_start" alt="" coords="548,57,687,98"/>
-<area shape="rect" id="node7" href="$aiot__diag__api_8c.html#a1f249d2e6f6606dfd3134f78c0591f5e" title="_diag_running_state_stop" alt="" coords="532,123,703,149"/>
-</map>

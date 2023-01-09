@@ -1,0 +1,1935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: components/coap/aiot_coap_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_409f97388efe006bc3438b95e9edef48.html">components</a></li><li class="navelem"><a class="el" href="dir_c545ef009200ef40bd9908138088b0f0.html">coap</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_coap_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>COAP模块头文件, 提供设备通过COAP连云的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_coap_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h__incl.png" border="0" usemap="#components_2coap_2aiot__coap__api_8h" alt=""/></div>
+<map name="components_2coap_2aiot__coap__api_8h" id="components_2coap_2aiot__coap__api_8h">
+</map>
+</div>
+</div>
+<p><a href="aiot__coap__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__coap__recv__t.html">aiot_coap_recv_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__coap__event__t.html">aiot_coap_event_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaiot__coap__request__t.html">aiot_coap_request_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 函数的aiot_coap_request_t参数  <a href="structaiot__coap__request__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aea7c49b9c9271d1e183d4eff2523b8c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aea7c49b9c9271d1e183d4eff2523b8c5">STATE_COAP_BASE</a>&#160;&#160;&#160;(-0x0800)</td></tr>
+<tr class="memdesc:aea7c49b9c9271d1e183d4eff2523b8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">-0x0800~-0x08FF表达SDK在COAP模块内的状态码  <a href="#aea7c49b9c9271d1e183d4eff2523b8c5">更多...</a><br /></td></tr>
+<tr class="separator:aea7c49b9c9271d1e183d4eff2523b8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba62784945ebf6d263d215e4960c0a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#abba62784945ebf6d263d215e4960c0a1">STATE_COAP_LOG_HEXDUMP</a>&#160;&#160;&#160;(-0x0801)</td></tr>
+<tr class="memdesc:abba62784945ebf6d263d215e4960c0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP收发消息时, SDK反馈COAP消息内容的状态码  <a href="#abba62784945ebf6d263d215e4960c0a1">更多...</a><br /></td></tr>
+<tr class="separator:abba62784945ebf6d263d215e4960c0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202fcd14aa838ef9ba1f40e401e4f131"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a202fcd14aa838ef9ba1f40e401e4f131">STATE_COAP_HEADER_TYPE_ERROR</a>&#160;&#160;&#160;(-0x0802)</td></tr>
+<tr class="memdesc:a202fcd14aa838ef9ba1f40e401e4f131"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP收发消息时, 消息header中type字段非法  <a href="#a202fcd14aa838ef9ba1f40e401e4f131">更多...</a><br /></td></tr>
+<tr class="separator:a202fcd14aa838ef9ba1f40e401e4f131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7944e64737470e53bbfde9ffe6cf1bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a7944e64737470e53bbfde9ffe6cf1bf3">STATE_COAP_HEADER_CODE_ERROR</a>&#160;&#160;&#160;(-0x0802)</td></tr>
+<tr class="memdesc:a7944e64737470e53bbfde9ffe6cf1bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP收发消息时, 消息header中code字段中的前三个bit所对应的数字是0/2/4/5之外的数字  <a href="#a7944e64737470e53bbfde9ffe6cf1bf3">更多...</a><br /></td></tr>
+<tr class="separator:a7944e64737470e53bbfde9ffe6cf1bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a788ce109a0ab4540d68dc17a09a5d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a6a788ce109a0ab4540d68dc17a09a5d2">STATE_COAP_MSG_LEN_ERROR</a>&#160;&#160;&#160;(-0x0803)</td></tr>
+<tr class="memdesc:a6a788ce109a0ab4540d68dc17a09a5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收COAP消息时, 收到的报文长度还不够header的长度(4个字节)  <a href="#a6a788ce109a0ab4540d68dc17a09a5d2">更多...</a><br /></td></tr>
+<tr class="separator:a6a788ce109a0ab4540d68dc17a09a5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640a87472feac95adf9550a6ae9c42aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a640a87472feac95adf9550a6ae9c42aa">STATE_COAP_MSG_TOKEN_LEN_TOO_SHORT</a>&#160;&#160;&#160;(-0x0804)</td></tr>
+<tr class="memdesc:a640a87472feac95adf9550a6ae9c42aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收COAP消息时, 收到的token的长度小于header中的tkl字段  <a href="#a640a87472feac95adf9550a6ae9c42aa">更多...</a><br /></td></tr>
+<tr class="separator:a640a87472feac95adf9550a6ae9c42aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39dfda1a4f56bf1bf99a1c7a60c81dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aa39dfda1a4f56bf1bf99a1c7a60c81dd">STATE_COAP_RX_OPTION_CNT_EXCEED_LIMIT</a>&#160;&#160;&#160;(-0x0805)</td></tr>
+<tr class="memdesc:aa39dfda1a4f56bf1bf99a1c7a60c81dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收COAP消息时, 收到的option的数据超过COAP_DEFAULT_OPTION_CNT_MAX(15)限制  <a href="#aa39dfda1a4f56bf1bf99a1c7a60c81dd">更多...</a><br /></td></tr>
+<tr class="separator:aa39dfda1a4f56bf1bf99a1c7a60c81dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4091d5050004824ce648fc436ffa099"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aa4091d5050004824ce648fc436ffa099">STATE_COAP_OPT_DELTA_THIRTEEN_OPT_LEN_ERROR</a>&#160;&#160;&#160;(-0x0806)</td></tr>
+<tr class="memdesc:aa4091d5050004824ce648fc436ffa099"><td class="mdescLeft">&#160;</td><td class="mdescRight">收到的报文中的option的opt_delta的第一个字段为13, 但报文的长度不足, 不足以完整地解出option字段  <a href="#aa4091d5050004824ce648fc436ffa099">更多...</a><br /></td></tr>
+<tr class="separator:aa4091d5050004824ce648fc436ffa099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e83a934b865d979682c785237ef4e38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a5e83a934b865d979682c785237ef4e38">STATE_COAP_OPTION_END_NOT_FOUND</a>&#160;&#160;&#160;(-0x0807)</td></tr>
+<tr class="memdesc:a5e83a934b865d979682c785237ef4e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">option结束的地方, 没有0XFF这个标记位  <a href="#a5e83a934b865d979682c785237ef4e38">更多...</a><br /></td></tr>
+<tr class="separator:a5e83a934b865d979682c785237ef4e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dbf26a3bfaf81b15b3903443e8b9af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a54dbf26a3bfaf81b15b3903443e8b9af">STATE_COAP_TX_URI_OPTION_CNT_EXCEED_LIMIT</a>&#160;&#160;&#160;(-0x0808)</td></tr>
+<tr class="memdesc:a54dbf26a3bfaf81b15b3903443e8b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送报文的时候, uri按照"/"拆分成分段后, 分段总数超出COAP_DEFAULT_OPTION_CNT_MAX-2,即13个的限制  <a href="#a54dbf26a3bfaf81b15b3903443e8b9af">更多...</a><br /></td></tr>
+<tr class="separator:a54dbf26a3bfaf81b15b3903443e8b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86ba11cac1bc0629e4d3a0280201c75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ab86ba11cac1bc0629e4d3a0280201c75">STATE_COAP_MALLOC_MSG_FAILED</a>&#160;&#160;&#160;(-0x0809)</td></tr>
+<tr class="memdesc:ab86ba11cac1bc0629e4d3a0280201c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建待发送的COAP报文的时候, 为COAP报文分配内存失败  <a href="#ab86ba11cac1bc0629e4d3a0280201c75">更多...</a><br /></td></tr>
+<tr class="separator:ab86ba11cac1bc0629e4d3a0280201c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8d4cbc56ef64d9d81f285a92a86739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aef8d4cbc56ef64d9d81f285a92a86739">STATE_COAP_MALLOC_MSG_BUFFER_FAILED</a>&#160;&#160;&#160;(-0x080A)</td></tr>
+<tr class="memdesc:aef8d4cbc56ef64d9d81f285a92a86739"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建待发送的COAP报文时, 为COAP报文中的payload字段分配内存失败  <a href="#aef8d4cbc56ef64d9d81f285a92a86739">更多...</a><br /></td></tr>
+<tr class="separator:aef8d4cbc56ef64d9d81f285a92a86739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb894772df3d75c682516911ed61ac1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a4bb894772df3d75c682516911ed61ac1">STATE_COAP_REQUEST_IS_NULL</a>&#160;&#160;&#160;(-0x080B)</td></tr>
+<tr class="memdesc:a4bb894772df3d75c682516911ed61ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建待发送的COAP报文时, 出参的指针request为空  <a href="#a4bb894772df3d75c682516911ed61ac1">更多...</a><br /></td></tr>
+<tr class="separator:a4bb894772df3d75c682516911ed61ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5770ed3aa10d1ce02d0ed177db9d4b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ad5770ed3aa10d1ce02d0ed177db9d4b5">STATE_COAP_OPT_DELTA_FOURTEEN_OPT_LEN_ERROR</a>&#160;&#160;&#160;(-0x080C)</td></tr>
+<tr class="memdesc:ad5770ed3aa10d1ce02d0ed177db9d4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, 当opt_delta第一个字段为14时, option内容太多,超出了总共发送buffer的大小  <a href="#ad5770ed3aa10d1ce02d0ed177db9d4b5">更多...</a><br /></td></tr>
+<tr class="separator:ad5770ed3aa10d1ce02d0ed177db9d4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae5336dd0b8a491d15e62d34177e647"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#abae5336dd0b8a491d15e62d34177e647">STATE_COAP_EMPTY_MSG_PARAM_ERROR</a>&#160;&#160;&#160;(-0x080D)</td></tr>
+<tr class="memdesc:abae5336dd0b8a491d15e62d34177e647"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建COAP空报文时, coap句柄为空, 出参的指针为空, 或者type字段为NON类型  <a href="#abae5336dd0b8a491d15e62d34177e647">更多...</a><br /></td></tr>
+<tr class="separator:abae5336dd0b8a491d15e62d34177e647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1096b115c07bbb3a54fbc6cadf52978"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ac1096b115c07bbb3a54fbc6cadf52978">STATE_COAP_EMPTY_MSG_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x080E)</td></tr>
+<tr class="memdesc:ac1096b115c07bbb3a54fbc6cadf52978"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建COAP空报文时, 分配内存错误  <a href="#ac1096b115c07bbb3a54fbc6cadf52978">更多...</a><br /></td></tr>
+<tr class="separator:ac1096b115c07bbb3a54fbc6cadf52978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac984c77a5a9ad07c9b0513392b8847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a0ac984c77a5a9ad07c9b0513392b8847">STATE_COAP_OPTION_NOT_IN_ORDER</a>&#160;&#160;&#160;(-0x080F)</td></tr>
+<tr class="memdesc:a0ac984c77a5a9ad07c9b0513392b8847"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建COAP消息时, option并没有按照顺序排列  <a href="#a0ac984c77a5a9ad07c9b0513392b8847">更多...</a><br /></td></tr>
+<tr class="separator:a0ac984c77a5a9ad07c9b0513392b8847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b233a20fc08ea3aca47e462ef069b8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a0b233a20fc08ea3aca47e462ef069b8d">STATE_COAP_HEADER_FORMAT_ERROR</a>&#160;&#160;&#160;(-0x0810)</td></tr>
+<tr class="memdesc:a0b233a20fc08ea3aca47e462ef069b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">解析收到的COAP消息时, 版本号不对, 或则token长度超过8  <a href="#a0b233a20fc08ea3aca47e462ef069b8d">更多...</a><br /></td></tr>
+<tr class="separator:a0b233a20fc08ea3aca47e462ef069b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2563b5ecf141a692ad7e009e1447ae6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a2563b5ecf141a692ad7e009e1447ae6e">STATE_COAP_OPTION_BUFFER_TOO_SHORT</a>&#160;&#160;&#160;(-0x081A)</td></tr>
+<tr class="memdesc:a2563b5ecf141a692ad7e009e1447ae6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, option太多, 以至于塞满了发送的buffer  <a href="#a2563b5ecf141a692ad7e009e1447ae6e">更多...</a><br /></td></tr>
+<tr class="separator:a2563b5ecf141a692ad7e009e1447ae6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c181745441ead9cdf9b9743af04579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a78c181745441ead9cdf9b9743af04579">STATE_COAP_SEND_MESSAGE_IS_NULL</a>&#160;&#160;&#160;(-0x081B)</td></tr>
+<tr class="memdesc:a78c181745441ead9cdf9b9743af04579"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送coap报文时, 报文为空  <a href="#a78c181745441ead9cdf9b9743af04579">更多...</a><br /></td></tr>
+<tr class="separator:a78c181745441ead9cdf9b9743af04579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab967629b12543775474db26df470db57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ab967629b12543775474db26df470db57">STATE_COAP_HEADER_BUFFER_IS_TOO_SHORT</a>&#160;&#160;&#160;(-0x081C)</td></tr>
+<tr class="memdesc:ab967629b12543775474db26df470db57"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, 为头部预留的空间小于4个字节, 无法存下头部  <a href="#ab967629b12543775474db26df470db57">更多...</a><br /></td></tr>
+<tr class="separator:ab967629b12543775474db26df470db57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57420fbbca78b57b9f80e116062a6977"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a57420fbbca78b57b9f80e116062a6977">STATE_COAP_OPT_LEN_THIRTEEN_OPT_LEN_ERROR</a>&#160;&#160;&#160;(-0x081D)</td></tr>
+<tr class="memdesc:a57420fbbca78b57b9f80e116062a6977"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, 当opt_len第一个字段为13时, option内容太多,超出了总共发送buffer的大小  <a href="#a57420fbbca78b57b9f80e116062a6977">更多...</a><br /></td></tr>
+<tr class="separator:a57420fbbca78b57b9f80e116062a6977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a4154611d98ff3a5d75bbe7b5af1b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a04a4154611d98ff3a5d75bbe7b5af1b9">STATE_COAP_CREATE_PSK_FAILED</a>&#160;&#160;&#160;(-0x081E)</td></tr>
+<tr class="memdesc:a04a4154611d98ff3a5d75bbe7b5af1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">auth过程中, 创建psk的id失败  <a href="#a04a4154611d98ff3a5d75bbe7b5af1b9">更多...</a><br /></td></tr>
+<tr class="separator:a04a4154611d98ff3a5d75bbe7b5af1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95351acb26150bd1bc42a3685f4c1d11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a95351acb26150bd1bc42a3685f4c1d11">STATE_COAP_SET_NWK_PARMS_FAILED</a>&#160;&#160;&#160;(-0x081F)</td></tr>
+<tr class="memdesc:a95351acb26150bd1bc42a3685f4c1d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">coap实例设置网络参数失败  <a href="#a95351acb26150bd1bc42a3685f4c1d11">更多...</a><br /></td></tr>
+<tr class="separator:a95351acb26150bd1bc42a3685f4c1d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac3c4164aba0f021ebc9c01265d201f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a7ac3c4164aba0f021ebc9c01265d201f">STATE_COAP_SEND_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0820)</td></tr>
+<tr class="memdesc:a7ac3c4164aba0f021ebc9c01265d201f"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送网络报文时, coap实例还没经过初始化  <a href="#a7ac3c4164aba0f021ebc9c01265d201f">更多...</a><br /></td></tr>
+<tr class="separator:a7ac3c4164aba0f021ebc9c01265d201f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3173347d6d4d4a22f3c1191daa167ece"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a3173347d6d4d4a22f3c1191daa167ece">STATE_COAP_SEND_TOPIC_IS_NULL</a>&#160;&#160;&#160;(-0x0821)</td></tr>
+<tr class="memdesc:a3173347d6d4d4a22f3c1191daa167ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送网络报文时, topic字段为空  <a href="#a3173347d6d4d4a22f3c1191daa167ece">更多...</a><br /></td></tr>
+<tr class="separator:a3173347d6d4d4a22f3c1191daa167ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec117fe53334543b6fec782e18fc57c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#abec117fe53334543b6fec782e18fc57c">STATE_COAP_SEND_REQUEST_IS_NULL</a>&#160;&#160;&#160;(-0x0822)</td></tr>
+<tr class="memdesc:abec117fe53334543b6fec782e18fc57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送网络报文时, 所填入的request参数是一个空指针  <a href="#abec117fe53334543b6fec782e18fc57c">更多...</a><br /></td></tr>
+<tr class="separator:abec117fe53334543b6fec782e18fc57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff301bcf67525890b2d45eb2ed4f1e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a4ff301bcf67525890b2d45eb2ed4f1e7">STATE_COAP_SEND_PAYLOAD_IS_NULL</a>&#160;&#160;&#160;(-0x0823)</td></tr>
+<tr class="memdesc:a4ff301bcf67525890b2d45eb2ed4f1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送网络报文时, request参数中的payload字段是一个空指针  <a href="#a4ff301bcf67525890b2d45eb2ed4f1e7">更多...</a><br /></td></tr>
+<tr class="separator:a4ff301bcf67525890b2d45eb2ed4f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc96a91111af166f02e5835e39bc5d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#adcc96a91111af166f02e5835e39bc5d1">STATE_COAP_SET_PSK_FAILED</a>&#160;&#160;&#160;(-0x0824)</td></tr>
+<tr class="memdesc:adcc96a91111af166f02e5835e39bc5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">coap实例设置PSK参数失败  <a href="#adcc96a91111af166f02e5835e39bc5d1">更多...</a><br /></td></tr>
+<tr class="separator:adcc96a91111af166f02e5835e39bc5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493b01dad8370e81ce970fb0a2d10d35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a493b01dad8370e81ce970fb0a2d10d35">STATE_COAP_NWK_ESTABLISH_FAILED</a>&#160;&#160;&#160;(-0x0825)</td></tr>
+<tr class="memdesc:a493b01dad8370e81ce970fb0a2d10d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">与coap服务器进行dtls-psk握手失败  <a href="#a493b01dad8370e81ce970fb0a2d10d35">更多...</a><br /></td></tr>
+<tr class="separator:a493b01dad8370e81ce970fb0a2d10d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf55fef13bd441eed1f78fdeaae40ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a1bf55fef13bd441eed1f78fdeaae40ca">STATE_COAP_RECV_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0826)</td></tr>
+<tr class="memdesc:a1bf55fef13bd441eed1f78fdeaae40ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> 进行收包时, coap句柄还没经过初始化  <a href="#a1bf55fef13bd441eed1f78fdeaae40ca">更多...</a><br /></td></tr>
+<tr class="separator:a1bf55fef13bd441eed1f78fdeaae40ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f0092ad720be9186a6d1fd14819754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a59f0092ad720be9186a6d1fd14819754">STATE_COAP_AUTH_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0827)</td></tr>
+<tr class="memdesc:a59f0092ad720be9186a6d1fd14819754"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, coap句柄还没经过初始化  <a href="#a59f0092ad720be9186a6d1fd14819754">更多...</a><br /></td></tr>
+<tr class="separator:a59f0092ad720be9186a6d1fd14819754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cf8b668a559ac29abbcca1a270e3b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ab9cf8b668a559ac29abbcca1a270e3b6">STATE_COAP_AUTH_DEVICE_INFO_MISSING</a>&#160;&#160;&#160;(-0x0828)</td></tr>
+<tr class="memdesc:ab9cf8b668a559ac29abbcca1a270e3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, 设备的三元组为空  <a href="#ab9cf8b668a559ac29abbcca1a270e3b6">更多...</a><br /></td></tr>
+<tr class="separator:ab9cf8b668a559ac29abbcca1a270e3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754eecc1f2c6b9f38fb96e7c599612a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a754eecc1f2c6b9f38fb96e7c599612a2">STATE_COAP_SIGN_SRC_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x0829)</td></tr>
+<tr class="memdesc:a754eecc1f2c6b9f38fb96e7c599612a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, 为计算签名分配内存失败  <a href="#a754eecc1f2c6b9f38fb96e7c599612a2">更多...</a><br /></td></tr>
+<tr class="separator:a754eecc1f2c6b9f38fb96e7c599612a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf68b959b93bc66f3a94aa9df5e1d00b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#adf68b959b93bc66f3a94aa9df5e1d00b">STATE_COAP_TX_TOTAL_OPTION_CNT_EXCEED_LIMIT</a>&#160;&#160;&#160;(-0x082A)</td></tr>
+<tr class="memdesc:adf68b959b93bc66f3a94aa9df5e1d00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送报文的时候, 所有option(包括uri拆散后得到的option和其他option)的总和超出COAP_DEFAULT_OPTION_CNT_MAX(15)的限制  <a href="#adf68b959b93bc66f3a94aa9df5e1d00b">更多...</a><br /></td></tr>
+<tr class="separator:adf68b959b93bc66f3a94aa9df5e1d00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a90a9468f6eb163dcedb0641c1ab3e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a2a90a9468f6eb163dcedb0641c1ab3e6">STATE_COAP_RECV_WITHOUT_AUTHORIZATION</a>&#160;&#160;&#160;(-0x082B)</td></tr>
+<tr class="memdesc:a2a90a9468f6eb163dcedb0641c1ab3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">在未得到auth token的情况下调用 <a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> 进行收包, 导致收包失败  <a href="#a2a90a9468f6eb163dcedb0641c1ab3e6">更多...</a><br /></td></tr>
+<tr class="separator:a2a90a9468f6eb163dcedb0641c1ab3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4533737912664cef43ad07587d1a9d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a4533737912664cef43ad07587d1a9d27">STATE_COAP_AUTH_TIMEOUT</a>&#160;&#160;&#160;(-0x082C)</td></tr>
+<tr class="memdesc:a4533737912664cef43ad07587d1a9d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">发出获取auth token的请求后, 并未在 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 设置的超时到达前获取到auth token  <a href="#a4533737912664cef43ad07587d1a9d27">更多...</a><br /></td></tr>
+<tr class="separator:a4533737912664cef43ad07587d1a9d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530e2d7f192f88663f9ff892eb117d6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a530e2d7f192f88663f9ff892eb117d6f">STATE_COAP_AUTH_RSP_TOKEN_IS_NULL</a>&#160;&#160;&#160;(-0x082D)</td></tr>
+<tr class="memdesc:a530e2d7f192f88663f9ff892eb117d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备端发出获取auth token的请求后, 云端下行的报文中auth token字段为空  <a href="#a530e2d7f192f88663f9ff892eb117d6f">更多...</a><br /></td></tr>
+<tr class="separator:a530e2d7f192f88663f9ff892eb117d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfa393a448cf6ef677580d4a347a928"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#accfa393a448cf6ef677580d4a347a928">STATE_COAP_AUTH_DEBUG</a>&#160;&#160;&#160;(-0x082E)</td></tr>
+<tr class="memdesc:accfa393a448cf6ef677580d4a347a928"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK反馈auth token内容的状态码  <a href="#accfa393a448cf6ef677580d4a347a928">更多...</a><br /></td></tr>
+<tr class="separator:accfa393a448cf6ef677580d4a347a928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de82ee15e64424616a688523149dd95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a5de82ee15e64424616a688523149dd95">STATE_COAP_AUTH_TOKEN_MALLOC_FAILED</a>&#160;&#160;&#160;(-0x082F)</td></tr>
+<tr class="memdesc:a5de82ee15e64424616a688523149dd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">coap句柄为云端下行报文中的auth token分配内存进行存储时, 分配内存失败  <a href="#a5de82ee15e64424616a688523149dd95">更多...</a><br /></td></tr>
+<tr class="separator:a5de82ee15e64424616a688523149dd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b85ada4dcc23ee516e11ef66eca624"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a91b85ada4dcc23ee516e11ef66eca624">STATE_COAP_SEND_INVALID_MSG_TYPE</a>&#160;&#160;&#160;(-0x0830)</td></tr>
+<tr class="memdesc:a91b85ada4dcc23ee516e11ef66eca624"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户要发送的消息既不是CON类型, 又不是NON类型  <a href="#a91b85ada4dcc23ee516e11ef66eca624">更多...</a><br /></td></tr>
+<tr class="separator:a91b85ada4dcc23ee516e11ef66eca624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5319bc39e43fcdf46906e87c7e2211"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aab5319bc39e43fcdf46906e87c7e2211">STATE_COAP_NWK_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0831)</td></tr>
+<tr class="memdesc:aab5319bc39e43fcdf46906e87c7e2211"><td class="mdescLeft">&#160;</td><td class="mdescRight">coap句柄中的network句柄初始化失败  <a href="#aab5319bc39e43fcdf46906e87c7e2211">更多...</a><br /></td></tr>
+<tr class="separator:aab5319bc39e43fcdf46906e87c7e2211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089a77da8778f213ff8d7b1fac3c8d88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a089a77da8778f213ff8d7b1fac3c8d88">AIOT_COAP_OPT_PARAMS_INVALID</a>&#160;&#160;&#160;(-0x0832)</td></tr>
+<tr class="memdesc:a089a77da8778f213ff8d7b1fac3c8d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 设置coap句柄参数时, coap句柄没有经过初始化, 或者传入的参数为空  <a href="#a089a77da8778f213ff8d7b1fac3c8d88">更多...</a><br /></td></tr>
+<tr class="separator:a089a77da8778f213ff8d7b1fac3c8d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea83d8362d1063e7ac26badcc478cc9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aea83d8362d1063e7ac26badcc478cc9d">STATE_COAP_INVALID_OPTION</a>&#160;&#160;&#160;(-0x0833)</td></tr>
+<tr class="memdesc:aea83d8362d1063e7ac26badcc478cc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 设置coap句柄参数时, option字段非法  <a href="#aea83d8362d1063e7ac26badcc478cc9d">更多...</a><br /></td></tr>
+<tr class="separator:aea83d8362d1063e7ac26badcc478cc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b30dff4aa0c8fc7243a3b5ebada734"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a78b30dff4aa0c8fc7243a3b5ebada734">STATE_COAP_UNSUPPORTED_CONTENT_FORMAT</a>&#160;&#160;&#160;(-0x0834)</td></tr>
+<tr class="memdesc:a78b30dff4aa0c8fc7243a3b5ebada734"><td class="mdescLeft">&#160;</td><td class="mdescRight">调用 <a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 发送消息时,消息的content format字段错误, 不在支持范围内  <a href="#a78b30dff4aa0c8fc7243a3b5ebada734">更多...</a><br /></td></tr>
+<tr class="separator:a78b30dff4aa0c8fc7243a3b5ebada734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6171b15598a1ada115826f1a9a9d219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ac6171b15598a1ada115826f1a9a9d219">STATE_COAP_SEND_WITHOUT_AUTHORIZATION</a>&#160;&#160;&#160;(-0x0835)</td></tr>
+<tr class="memdesc:ac6171b15598a1ada115826f1a9a9d219"><td class="mdescLeft">&#160;</td><td class="mdescRight">在未得到auth token的情况下调用 <a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 进行发包, 导致发包失败  <a href="#ac6171b15598a1ada115826f1a9a9d219">更多...</a><br /></td></tr>
+<tr class="separator:ac6171b15598a1ada115826f1a9a9d219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e7f69cae93f52f16e04c32d0e0c5ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a97e7f69cae93f52f16e04c32d0e0c5ff">STATE_COAP_OPT_LEN_FOURTEEN_OPT_LEN_ERROR</a>&#160;&#160;&#160;(-0x0836)</td></tr>
+<tr class="memdesc:a97e7f69cae93f52f16e04c32d0e0c5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, 当opt_len第一个字段为14时, option内容太多,超出了总共发送buffer的大小  <a href="#a97e7f69cae93f52f16e04c32d0e0c5ff">更多...</a><br /></td></tr>
+<tr class="separator:a97e7f69cae93f52f16e04c32d0e0c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e778e5607613fd61900370d52d99766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a4e778e5607613fd61900370d52d99766">STATE_COAP_PAYLOAD_BUFFER_IS_TOO_SHORT</a>&#160;&#160;&#160;(-0x0837)</td></tr>
+<tr class="memdesc:a4e778e5607613fd61900370d52d99766"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建coap报文时, 为头部预留的空间小于4个字节, 无法存下头部  <a href="#a4e778e5607613fd61900370d52d99766">更多...</a><br /></td></tr>
+<tr class="separator:a4e778e5607613fd61900370d52d99766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee97e20303e61badcee656f7a3dfa460"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aee97e20303e61badcee656f7a3dfa460">STATE_COAP_OPTION_LEN_ERROR</a>&#160;&#160;&#160;(-0x0838)</td></tr>
+<tr class="memdesc:aee97e20303e61badcee656f7a3dfa460"><td class="mdescLeft">&#160;</td><td class="mdescRight">收到的coap报文中, 声明的option的长度比实际长度要大  <a href="#aee97e20303e61badcee656f7a3dfa460">更多...</a><br /></td></tr>
+<tr class="separator:aee97e20303e61badcee656f7a3dfa460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d74be677365772fcf189a5c3ddcc70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a42d74be677365772fcf189a5c3ddcc70">STATE_COAP_LOG_AUTH_TOKEN</a>&#160;&#160;&#160;(-0x0839)</td></tr>
+<tr class="memdesc:a42d74be677365772fcf189a5c3ddcc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">收到auth token时, SDK反馈auth token消息内容的状态码  <a href="#a42d74be677365772fcf189a5c3ddcc70">更多...</a><br /></td></tr>
+<tr class="separator:a42d74be677365772fcf189a5c3ddcc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c05232ecddff384b3cfdb546caf89c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a69c05232ecddff384b3cfdb546caf89c">STATE_COAP_LOG_CONTENT</a>&#160;&#160;&#160;(-0x083A)</td></tr>
+<tr class="memdesc:a69c05232ecddff384b3cfdb546caf89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">收到auth token以外的其他内容时, SDK反馈消息内容的状态码  <a href="#a69c05232ecddff384b3cfdb546caf89c">更多...</a><br /></td></tr>
+<tr class="separator:a69c05232ecddff384b3cfdb546caf89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef250c204ee586b04ce1853585ea850a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aef250c204ee586b04ce1853585ea850a">STATE_COAP_INPUT_OUT_RANGE</a>&#160;&#160;&#160;(-0x083B)</td></tr>
+<tr class="memdesc:aef250c204ee586b04ce1853585ea850a"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求消息长度不在范围内  <a href="#aef250c204ee586b04ce1853585ea850a">更多...</a><br /></td></tr>
+<tr class="separator:aef250c204ee586b04ce1853585ea850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f6bd5738c9999d4f154d85cb0cefd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a13f6bd5738c9999d4f154d85cb0cefd6">STATE_COAP_DYNREG_SECRET_TOO_LONG</a>&#160;&#160;&#160;(-0x0840)</td></tr>
+<tr class="memdesc:a13f6bd5738c9999d4f154d85cb0cefd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态注册，接收的密钥长度超过内存长度，需要加大内存  <a href="#a13f6bd5738c9999d4f154d85cb0cefd6">更多...</a><br /></td></tr>
+<tr class="separator:a13f6bd5738c9999d4f154d85cb0cefd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b4cbf34fc93e1c018d9deef270afd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a28b4cbf34fc93e1c018d9deef270afd3">STATE_COAP_DYNREG_HANDLE_IS_NULL</a>&#160;&#160;&#160;(-0x0841)</td></tr>
+<tr class="memdesc:a28b4cbf34fc93e1c018d9deef270afd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态注册，coap handle为空  <a href="#a28b4cbf34fc93e1c018d9deef270afd3">更多...</a><br /></td></tr>
+<tr class="separator:a28b4cbf34fc93e1c018d9deef270afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d0796f95f87bae6fbe6e402f0aa9b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a91d0796f95f87bae6fbe6e402f0aa9b5">STATE_COAP_DYNREG_DEVICE_INFO_MISSING</a>&#160;&#160;&#160;(-0x0842)</td></tr>
+<tr class="memdesc:a91d0796f95f87bae6fbe6e402f0aa9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态注册，设备参数缺失  <a href="#a91d0796f95f87bae6fbe6e402f0aa9b5">更多...</a><br /></td></tr>
+<tr class="separator:a91d0796f95f87bae6fbe6e402f0aa9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae579deba76f82d5a8e5ec65a4550da06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ae579deba76f82d5a8e5ec65a4550da06">STATE_COAP_DYNREG_TIMEOUT</a>&#160;&#160;&#160;(-0x0843)</td></tr>
+<tr class="memdesc:ae579deba76f82d5a8e5ec65a4550da06"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态注册，云端返回消息超时  <a href="#ae579deba76f82d5a8e5ec65a4550da06">更多...</a><br /></td></tr>
+<tr class="separator:ae579deba76f82d5a8e5ec65a4550da06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe14be98acfbdaf4b5300258ceac151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a0fe14be98acfbdaf4b5300258ceac151">STATE_COAP_AUTH_FAILED</a>&#160;&#160;&#160;(-0x0844)</td></tr>
+<tr class="memdesc:a0fe14be98acfbdaf4b5300258ceac151"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备认证/动态注册，云端返回校验失败  <a href="#a0fe14be98acfbdaf4b5300258ceac151">更多...</a><br /></td></tr>
+<tr class="separator:a0fe14be98acfbdaf4b5300258ceac151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a3041917e878ef7034521492f267c390c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a3041917e878ef7034521492f267c390c">aiot_coap_recv_handler_t</a>) (void *handle, <a class="el" href="structaiot__coap__recv__t.html">aiot_coap_recv_t</a> *packet, void *userdata)</td></tr>
+<tr class="memdesc:a3041917e878ef7034521492f267c390c"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP报文接收回调函数原型  <a href="#a3041917e878ef7034521492f267c390c">更多...</a><br /></td></tr>
+<tr class="separator:a3041917e878ef7034521492f267c390c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5dc249545a65eb45739dd1d27644b94"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aa5dc249545a65eb45739dd1d27644b94">aiot_coap_event_handler_t</a>) (void *handle, <a class="el" href="structaiot__coap__event__t.html">aiot_coap_event_t</a> *event, void *userdata)</td></tr>
+<tr class="memdesc:aa5dc249545a65eb45739dd1d27644b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP事件回调函数  <a href="#aa5dc249545a65eb45739dd1d27644b94">更多...</a><br /></td></tr>
+<tr class="separator:aa5dc249545a65eb45739dd1d27644b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ad56630985efcf4ec3bc8fd4e1d995339"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ad56630985efcf4ec3bc8fd4e1d995339">aiot_coap_recv_type_t</a> { <a class="el" href="aiot__coap__api_8h.html#ad56630985efcf4ec3bc8fd4e1d995339a81c7b8c7a824f65fcc708399a741f41d">AIOT_COAPRECV_RESPONSE</a>
+ }<tr class="memdesc:ad56630985efcf4ec3bc8fd4e1d995339"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP报文类型  <a href="aiot__coap__api_8h.html#ad56630985efcf4ec3bc8fd4e1d995339">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ad56630985efcf4ec3bc8fd4e1d995339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f744b61ac7e5f40006fb8344cc4fc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aa9f744b61ac7e5f40006fb8344cc4fc0">aiot_coap_event_type_t</a> { <a class="el" href="aiot__coap__api_8h.html#aa9f744b61ac7e5f40006fb8344cc4fc0abc650aff702f72dc7a56248c512740b0">AIOT_COAPEVT_AUTH_TOKEN_RECEIVED</a>, 
+<a class="el" href="aiot__coap__api_8h.html#aa9f744b61ac7e5f40006fb8344cc4fc0a2c3508a35b944b8675fa30caf0067caa">AIOT_COAPEVT_AUTH_TOKEN_EXPIRED</a>
+ }<tr class="memdesc:aa9f744b61ac7e5f40006fb8344cc4fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">COAP内部事件类型  <a href="aiot__coap__api_8h.html#aa9f744b61ac7e5f40006fb8344cc4fc0">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa9f744b61ac7e5f40006fb8344cc4fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7508f32cdccaa160c7061833d98a53d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a715720accf0eceabeb9a88c76e5086d3">AIOT_COAPOPT_HOST</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2ae5fa106d3fc2a8dc31cda0c96f3e949f">AIOT_COAPOPT_PORT</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a696ddea640f3b565b318322b6517be24">AIOT_COAPOPT_PRODUCT_KEY</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2afb00f4471a8318e4ba6d5664f09d9130">AIOT_COAPOPT_DEVICE_NAME</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a7cc7c0303bf5ab82b3bef9c7c7e81409">AIOT_COAPOPT_DEVICE_SECRET</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a428ea3e40788cf53c0c95e7fcfd30774">AIOT_COAPOPT_CRED</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a36f20ac7f9a5fb483902fd1db5431e1c">AIOT_COAPOPT_RECV_TIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2aea89a148d0669cc3f2a35184fc8acb2d">AIOT_COAPOPT_SEND_TIMEOUT</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2acb56572d42f5ac90d5b13e812fa2d6dc">AIOT_COAPOPT_RECV_HANDLER</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a7d4d33f4e765bf3edcdcf8c0c86fcad7">AIOT_COAPOPT_EVENT_HANDLER</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a96b80e94301c256f1b3ad7c9b6264966">AIOT_COAPOPT_USERDATA</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a73598235f98e5c7f5c8ab6b9abb13add">AIOT_COAPOPT_PAYLOAD_ENCRYPTION</a>, 
+<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2aeb5ca6a7f96c699d00f09dcaa52fb230">AIOT_COAPOPT_MAX</a>
+<br />
+ }<tr class="memdesc:a7508f32cdccaa160c7061833d98a53d2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 函数的option参数. 对于下文每一个选项中的数据类型, 指的是<a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 中的data参数的数据类型  <a href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a7508f32cdccaa160c7061833d98a53d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1ef52731d54af26808302379de678d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678d">aiot_coap_content_format_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678dafd5cdb1e1ec15426dba5063b5672d6ef">AIOT_COAP_CT_TEXT_PLAIN</a> = 0, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da56220199cf9c7910b32b1ce8e0de9760">AIOT_COAP_CT_APP_LINK_FORMAT</a> = 40, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da647c74114842b7f07c233d61ed8ef5b6">AIOT_COAP_CT_APP_XML</a> = 41, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da0f7d0ed3ad6660e24a5310f9eaa24884">AIOT_COAP_CT_APP_OCTET_STREAM</a> = 42, 
+<br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da5e0e9675a1427d7a1ccdc0392c42afa1">AIOT_COAP_CT_APP_RDF_XML</a> = 43, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678dae1f73a29fcfe984a52d58a29ac5def0e">AIOT_COAP_CT_APP_EXI</a> = 47, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da931acc213a9c5c9e89b44a655a72eaeb">AIOT_COAP_CT_APP_JSON</a> = 50, 
+<a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678da0a8d4e90f0bf80e8bd6af49532bdccf5">AIOT_COAP_CT_APP_CBOR</a> = 60
+<br />
+ }<tr class="memdesc:afe1ef52731d54af26808302379de678d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 函数的aiot_coap_request_t参数中的content_format字段.  <a href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:afe1ef52731d54af26808302379de678d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa804fbbe00deb2121c809e9c1ac097a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1a158680c8038bc6b1c47738bb68687474">AIOT_COAP_MSG_TYPE_CON</a> = 0x00, 
+<a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1ad0f0cc415aad0c3e06c8b48b56461092">AIOT_COAP_MSG_TYPE_NON</a> = 0x01, 
+<a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1a99ca3337e01b68e2c1c9e6a197adafa9">AIOT_COAP_MSG_TYPE_ACK</a> = 0x02, 
+<a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1a63a594eafc554be0bf125c8e6dc405a6">AIOT_COAP_MSG_TYPE_RST</a> = 0x03, 
+<br />
+&#160;&#160;<a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1af1ca02c67b2f29613fd3eff4bcb83a83">AIOT_COAP_MSG_TYPE_MAX</a> = 0x04
+<br />
+ }<tr class="memdesc:aa804fbbe00deb2121c809e9c1ac097a1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 函数的aiot_coap_request_t参数中的msg_type字段.  <a href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa804fbbe00deb2121c809e9c1ac097a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab9731e314d55e99ee7cdf506d6ccc610"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ab9731e314d55e99ee7cdf506d6ccc610">aiot_coap_init</a> (void)</td></tr>
+<tr class="memdesc:ab9731e314d55e99ee7cdf506d6ccc610"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化coap实例并设置默认参数  <a href="#ab9731e314d55e99ee7cdf506d6ccc610">更多...</a><br /></td></tr>
+<tr class="separator:ab9731e314d55e99ee7cdf506d6ccc610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> (void *handle, <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a> option, void *data)</td></tr>
+<tr class="memdesc:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置coap参数  <a href="#ad4bb234720464e64a7a0ff5afaf3e8c8">更多...</a><br /></td></tr>
+<tr class="separator:ad4bb234720464e64a7a0ff5afaf3e8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b840562e9e33141b37ebf818e8e542e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> (void *handle, const char *topic, <a class="el" href="structaiot__coap__request__t.html">aiot_coap_request_t</a> *message)</td></tr>
+<tr class="memdesc:a2b840562e9e33141b37ebf818e8e542e"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送COAP报文  <a href="#a2b840562e9e33141b37ebf818e8e542e">更多...</a><br /></td></tr>
+<tr class="separator:a2b840562e9e33141b37ebf818e8e542e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f576ad8aad477f2e5dece6d0f18abb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> (void *handle)</td></tr>
+<tr class="memdesc:a42f576ad8aad477f2e5dece6d0f18abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">从网络收取COAP报文  <a href="#a42f576ad8aad477f2e5dece6d0f18abb">更多...</a><br /></td></tr>
+<tr class="separator:a42f576ad8aad477f2e5dece6d0f18abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09587dad5f06f53a8af7ff87b0123f43"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a09587dad5f06f53a8af7ff87b0123f43">aiot_coap_deinit</a> (void **handle)</td></tr>
+<tr class="memdesc:a09587dad5f06f53a8af7ff87b0123f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放COAP实例句柄的资源  <a href="#a09587dad5f06f53a8af7ff87b0123f43">更多...</a><br /></td></tr>
+<tr class="separator:a09587dad5f06f53a8af7ff87b0123f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630b77aa943bf811fc1a645a7d34e131"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> (void *handle)</td></tr>
+<tr class="memdesc:a630b77aa943bf811fc1a645a7d34e131"><td class="mdescLeft">&#160;</td><td class="mdescRight">让coap模块与服务器通信, 并且获取auth token  <a href="#a630b77aa943bf811fc1a645a7d34e131">更多...</a><br /></td></tr>
+<tr class="separator:a630b77aa943bf811fc1a645a7d34e131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61be7e76ce90a1709a9c74aee2627138"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a61be7e76ce90a1709a9c74aee2627138">aiot_coap_dynreg</a> (void *handle, const char *product_secret, char *out_secret, uint32_t out_secret_maxlen)</td></tr>
+<tr class="memdesc:a61be7e76ce90a1709a9c74aee2627138"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备动态注册，返回设备密钥  <a href="#a61be7e76ce90a1709a9c74aee2627138">更多...</a><br /></td></tr>
+<tr class="separator:a61be7e76ce90a1709a9c74aee2627138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__coap__api_8h.html#a7addc40f3177e4c1ff0e7c763e85bda0">aiot_coap_request_message</a> (void *handle, int32_t counter)</td></tr>
+<tr class="memdesc:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备主动请求下拉消息  <a href="#a7addc40f3177e4c1ff0e7c763e85bda0">更多...</a><br /></td></tr>
+<tr class="separator:a7addc40f3177e4c1ff0e7c763e85bda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>COAP模块头文件, 提供设备通过COAP连云的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2018 Alibaba Group Holding Limited</dd></dl>
+<p>COAP模块用于建立与阿里云物联网平台的连接, API使用流程如下:</p>
+<ol type="1">
+<li>调用 <a class="el" href="aiot__coap__api_8h.html#ab9731e314d55e99ee7cdf506d6ccc610">aiot_coap_init</a> 初始化COAP会话, 获取会话句柄</li>
+<li>调用 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 配置COAP会话的参数, 常用配置项见 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 的说明</li>
+<li>调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 使得设备获取连云需要的auth_token. 这一步执行成功才能进行消息的收发.</li>
+<li>调用 <a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 往云端发布消息</li>
+<li>启动一个线程, 线程中持续调用 <a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> 接收网络上的coap报文 </li>
+</ol>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aea7c49b9c9271d1e183d4eff2523b8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_BASE&#160;&#160;&#160;(-0x0800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>-0x0800~-0x08FF表达SDK在COAP模块内的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="abba62784945ebf6d263d215e4960c0a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_LOG_HEXDUMP&#160;&#160;&#160;(-0x0801)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP收发消息时, SDK反馈COAP消息内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a202fcd14aa838ef9ba1f40e401e4f131"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_HEADER_TYPE_ERROR&#160;&#160;&#160;(-0x0802)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP收发消息时, 消息header中type字段非法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7944e64737470e53bbfde9ffe6cf1bf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_HEADER_CODE_ERROR&#160;&#160;&#160;(-0x0802)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP收发消息时, 消息header中code字段中的前三个bit所对应的数字是0/2/4/5之外的数字 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a788ce109a0ab4540d68dc17a09a5d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_MSG_LEN_ERROR&#160;&#160;&#160;(-0x0803)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收COAP消息时, 收到的报文长度还不够header的长度(4个字节) </p>
+
+</div>
+</div>
+<a class="anchor" id="a640a87472feac95adf9550a6ae9c42aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_MSG_TOKEN_LEN_TOO_SHORT&#160;&#160;&#160;(-0x0804)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收COAP消息时, 收到的token的长度小于header中的tkl字段 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa39dfda1a4f56bf1bf99a1c7a60c81dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_RX_OPTION_CNT_EXCEED_LIMIT&#160;&#160;&#160;(-0x0805)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收COAP消息时, 收到的option的数据超过COAP_DEFAULT_OPTION_CNT_MAX(15)限制 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4091d5050004824ce648fc436ffa099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPT_DELTA_THIRTEEN_OPT_LEN_ERROR&#160;&#160;&#160;(-0x0806)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>收到的报文中的option的opt_delta的第一个字段为13, 但报文的长度不足, 不足以完整地解出option字段 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e83a934b865d979682c785237ef4e38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPTION_END_NOT_FOUND&#160;&#160;&#160;(-0x0807)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>option结束的地方, 没有0XFF这个标记位 </p>
+
+</div>
+</div>
+<a class="anchor" id="a54dbf26a3bfaf81b15b3903443e8b9af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_TX_URI_OPTION_CNT_EXCEED_LIMIT&#160;&#160;&#160;(-0x0808)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送报文的时候, uri按照"/"拆分成分段后, 分段总数超出COAP_DEFAULT_OPTION_CNT_MAX-2,即13个的限制 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab86ba11cac1bc0629e4d3a0280201c75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_MALLOC_MSG_FAILED&#160;&#160;&#160;(-0x0809)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建待发送的COAP报文的时候, 为COAP报文分配内存失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="aef8d4cbc56ef64d9d81f285a92a86739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_MALLOC_MSG_BUFFER_FAILED&#160;&#160;&#160;(-0x080A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建待发送的COAP报文时, 为COAP报文中的payload字段分配内存失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4bb894772df3d75c682516911ed61ac1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_REQUEST_IS_NULL&#160;&#160;&#160;(-0x080B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建待发送的COAP报文时, 出参的指针request为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5770ed3aa10d1ce02d0ed177db9d4b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPT_DELTA_FOURTEEN_OPT_LEN_ERROR&#160;&#160;&#160;(-0x080C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, 当opt_delta第一个字段为14时, option内容太多,超出了总共发送buffer的大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="abae5336dd0b8a491d15e62d34177e647"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_EMPTY_MSG_PARAM_ERROR&#160;&#160;&#160;(-0x080D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建COAP空报文时, coap句柄为空, 出参的指针为空, 或者type字段为NON类型 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1096b115c07bbb3a54fbc6cadf52978"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_EMPTY_MSG_MALLOC_FAILED&#160;&#160;&#160;(-0x080E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建COAP空报文时, 分配内存错误 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ac984c77a5a9ad07c9b0513392b8847"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPTION_NOT_IN_ORDER&#160;&#160;&#160;(-0x080F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建COAP消息时, option并没有按照顺序排列 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b233a20fc08ea3aca47e462ef069b8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_HEADER_FORMAT_ERROR&#160;&#160;&#160;(-0x0810)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>解析收到的COAP消息时, 版本号不对, 或则token长度超过8 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2563b5ecf141a692ad7e009e1447ae6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPTION_BUFFER_TOO_SHORT&#160;&#160;&#160;(-0x081A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, option太多, 以至于塞满了发送的buffer </p>
+
+</div>
+</div>
+<a class="anchor" id="a78c181745441ead9cdf9b9743af04579"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_MESSAGE_IS_NULL&#160;&#160;&#160;(-0x081B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送coap报文时, 报文为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab967629b12543775474db26df470db57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_HEADER_BUFFER_IS_TOO_SHORT&#160;&#160;&#160;(-0x081C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, 为头部预留的空间小于4个字节, 无法存下头部 </p>
+
+</div>
+</div>
+<a class="anchor" id="a57420fbbca78b57b9f80e116062a6977"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPT_LEN_THIRTEEN_OPT_LEN_ERROR&#160;&#160;&#160;(-0x081D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, 当opt_len第一个字段为13时, option内容太多,超出了总共发送buffer的大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="a04a4154611d98ff3a5d75bbe7b5af1b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_CREATE_PSK_FAILED&#160;&#160;&#160;(-0x081E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>auth过程中, 创建psk的id失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a95351acb26150bd1bc42a3685f4c1d11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SET_NWK_PARMS_FAILED&#160;&#160;&#160;(-0x081F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>coap实例设置网络参数失败 </p>
+<p>这里的参数包括host/port/cred/协议类型这4个字段 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ac3c4164aba0f021ebc9c01265d201f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0820)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送网络报文时, coap实例还没经过初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3173347d6d4d4a22f3c1191daa167ece"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_TOPIC_IS_NULL&#160;&#160;&#160;(-0x0821)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送网络报文时, topic字段为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="abec117fe53334543b6fec782e18fc57c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_REQUEST_IS_NULL&#160;&#160;&#160;(-0x0822)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送网络报文时, 所填入的request参数是一个空指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ff301bcf67525890b2d45eb2ed4f1e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_PAYLOAD_IS_NULL&#160;&#160;&#160;(-0x0823)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送网络报文时, request参数中的payload字段是一个空指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="adcc96a91111af166f02e5835e39bc5d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SET_PSK_FAILED&#160;&#160;&#160;(-0x0824)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>coap实例设置PSK参数失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a493b01dad8370e81ce970fb0a2d10d35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_NWK_ESTABLISH_FAILED&#160;&#160;&#160;(-0x0825)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>与coap服务器进行dtls-psk握手失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bf55fef13bd441eed1f78fdeaae40ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_RECV_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0826)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> 进行收包时, coap句柄还没经过初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a59f0092ad720be9186a6d1fd14819754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0827)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, coap句柄还没经过初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9cf8b668a559ac29abbcca1a270e3b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_DEVICE_INFO_MISSING&#160;&#160;&#160;(-0x0828)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, 设备的三元组为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="a754eecc1f2c6b9f38fb96e7c599612a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SIGN_SRC_MALLOC_FAILED&#160;&#160;&#160;(-0x0829)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#a630b77aa943bf811fc1a645a7d34e131">aiot_coap_auth</a> 获取auth token时, 为计算签名分配内存失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="adf68b959b93bc66f3a94aa9df5e1d00b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_TX_TOTAL_OPTION_CNT_EXCEED_LIMIT&#160;&#160;&#160;(-0x082A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送报文的时候, 所有option(包括uri拆散后得到的option和其他option)的总和超出COAP_DEFAULT_OPTION_CNT_MAX(15)的限制 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2a90a9468f6eb163dcedb0641c1ab3e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_RECV_WITHOUT_AUTHORIZATION&#160;&#160;&#160;(-0x082B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在未得到auth token的情况下调用 <a class="el" href="aiot__coap__api_8h.html#a42f576ad8aad477f2e5dece6d0f18abb">aiot_coap_recv</a> 进行收包, 导致收包失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4533737912664cef43ad07587d1a9d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_TIMEOUT&#160;&#160;&#160;(-0x082C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发出获取auth token的请求后, 并未在 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 设置的超时到达前获取到auth token </p>
+
+</div>
+</div>
+<a class="anchor" id="a530e2d7f192f88663f9ff892eb117d6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_RSP_TOKEN_IS_NULL&#160;&#160;&#160;(-0x082D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备端发出获取auth token的请求后, 云端下行的报文中auth token字段为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="accfa393a448cf6ef677580d4a347a928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_DEBUG&#160;&#160;&#160;(-0x082E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SDK反馈auth token内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5de82ee15e64424616a688523149dd95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_TOKEN_MALLOC_FAILED&#160;&#160;&#160;(-0x082F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>coap句柄为云端下行报文中的auth token分配内存进行存储时, 分配内存失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a91b85ada4dcc23ee516e11ef66eca624"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_INVALID_MSG_TYPE&#160;&#160;&#160;(-0x0830)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用户要发送的消息既不是CON类型, 又不是NON类型 </p>
+<p>当前coap模块会默认为下行的CON消息回复ack报文, 因此用户无需再回复. 当前用户能够发送的消息类型, 要么是CON类型, 要么是NON类型, 用户无法发送此外的其他类型 </p>
+
+</div>
+</div>
+<a class="anchor" id="aab5319bc39e43fcdf46906e87c7e2211"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_NWK_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0831)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>coap句柄中的network句柄初始化失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a089a77da8778f213ff8d7b1fac3c8d88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AIOT_COAP_OPT_PARAMS_INVALID&#160;&#160;&#160;(-0x0832)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 设置coap句柄参数时, coap句柄没有经过初始化, 或者传入的参数为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="aea83d8362d1063e7ac26badcc478cc9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_INVALID_OPTION&#160;&#160;&#160;(-0x0833)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 设置coap句柄参数时, option字段非法 </p>
+
+</div>
+</div>
+<a class="anchor" id="a78b30dff4aa0c8fc7243a3b5ebada734"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_UNSUPPORTED_CONTENT_FORMAT&#160;&#160;&#160;(-0x0834)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>调用 <a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 发送消息时,消息的content format字段错误, 不在支持范围内 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6171b15598a1ada115826f1a9a9d219"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_SEND_WITHOUT_AUTHORIZATION&#160;&#160;&#160;(-0x0835)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在未得到auth token的情况下调用 <a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 进行发包, 导致发包失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a97e7f69cae93f52f16e04c32d0e0c5ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPT_LEN_FOURTEEN_OPT_LEN_ERROR&#160;&#160;&#160;(-0x0836)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, 当opt_len第一个字段为14时, option内容太多,超出了总共发送buffer的大小 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e778e5607613fd61900370d52d99766"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_PAYLOAD_BUFFER_IS_TOO_SHORT&#160;&#160;&#160;(-0x0837)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建coap报文时, 为头部预留的空间小于4个字节, 无法存下头部 </p>
+
+</div>
+</div>
+<a class="anchor" id="aee97e20303e61badcee656f7a3dfa460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_OPTION_LEN_ERROR&#160;&#160;&#160;(-0x0838)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>收到的coap报文中, 声明的option的长度比实际长度要大 </p>
+
+</div>
+</div>
+<a class="anchor" id="a42d74be677365772fcf189a5c3ddcc70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_LOG_AUTH_TOKEN&#160;&#160;&#160;(-0x0839)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>收到auth token时, SDK反馈auth token消息内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="a69c05232ecddff384b3cfdb546caf89c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_LOG_CONTENT&#160;&#160;&#160;(-0x083A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>收到auth token以外的其他内容时, SDK反馈消息内容的状态码 </p>
+
+</div>
+</div>
+<a class="anchor" id="aef250c204ee586b04ce1853585ea850a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_INPUT_OUT_RANGE&#160;&#160;&#160;(-0x083B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求消息长度不在范围内 </p>
+
+</div>
+</div>
+<a class="anchor" id="a13f6bd5738c9999d4f154d85cb0cefd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_DYNREG_SECRET_TOO_LONG&#160;&#160;&#160;(-0x0840)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态注册，接收的密钥长度超过内存长度，需要加大内存 </p>
+
+</div>
+</div>
+<a class="anchor" id="a28b4cbf34fc93e1c018d9deef270afd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_DYNREG_HANDLE_IS_NULL&#160;&#160;&#160;(-0x0841)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态注册，coap handle为空 </p>
+
+</div>
+</div>
+<a class="anchor" id="a91d0796f95f87bae6fbe6e402f0aa9b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_DYNREG_DEVICE_INFO_MISSING&#160;&#160;&#160;(-0x0842)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态注册，设备参数缺失 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae579deba76f82d5a8e5ec65a4550da06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_DYNREG_TIMEOUT&#160;&#160;&#160;(-0x0843)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态注册，云端返回消息超时 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fe14be98acfbdaf4b5300258ceac151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_COAP_AUTH_FAILED&#160;&#160;&#160;(-0x0844)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备认证/动态注册，云端返回校验失败 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a3041917e878ef7034521492f267c390c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_coap_recv_handler_t) (void *handle, <a class="el" href="structaiot__coap__recv__t.html">aiot_coap_recv_t</a> *packet, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP报文接收回调函数原型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP实例句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>COAP报文结构体指针, 指向所收到的COAP报文的内存地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5dc249545a65eb45739dd1d27644b94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* aiot_coap_event_handler_t) (void *handle, <a class="el" href="structaiot__coap__event__t.html">aiot_coap_event_t</a> *event, void *userdata)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP事件回调函数 </p>
+<p>当COAP内部事件被触发时, 调用此函数. 如获取到auth_token的时候 </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ad56630985efcf4ec3bc8fd4e1d995339"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__coap__api_8h.html#ad56630985efcf4ec3bc8fd4e1d995339">aiot_coap_recv_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP报文类型 </p>
+<p>传入 <a class="el" href="aiot__coap__api_8h.html#a3041917e878ef7034521492f267c390c">aiot_coap_recv_handler_t</a> 的COAP报文类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ad56630985efcf4ec3bc8fd4e1d995339a81c7b8c7a824f65fcc708399a741f41d"></a>AIOT_COAPRECV_RESPONSE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa9f744b61ac7e5f40006fb8344cc4fc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__coap__api_8h.html#aa9f744b61ac7e5f40006fb8344cc4fc0">aiot_coap_event_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COAP内部事件类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa9f744b61ac7e5f40006fb8344cc4fc0abc650aff702f72dc7a56248c512740b0"></a>AIOT_COAPEVT_AUTH_TOKEN_RECEIVED&#160;</td><td class="fielddoc">
+<p>当COAP实例从云端获取到连云需要的auth_token时, 触发此事件 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa9f744b61ac7e5f40006fb8344cc4fc0a2c3508a35b944b8675fa30caf0067caa"></a>AIOT_COAPEVT_AUTH_TOKEN_EXPIRED&#160;</td><td class="fielddoc">
+<p>当COAP实例所用的auth token过期(当前有效期为7天)时, 触发此事件 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 函数的option参数. 对于下文每一个选项中的数据类型, 指的是<a class="el" href="aiot__coap__api_8h.html#ad4bb234720464e64a7a0ff5afaf3e8c8">aiot_coap_setopt</a> 中的data参数的数据类型 </p>
+<ol type="1">
+<li><p class="startli">data的数据类型是char *时, 以配置<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a715720accf0eceabeb9a88c76e5086d3">AIOT_COAPOPT_HOST</a> 为例:</p>
+<p class="startli">char *host = "xxx";</p>
+<p class="startli">aiot_coap_setopt(coap_handle, AIOT_COAPOPT_HOST, host);</p>
+</li>
+<li><p class="startli">data的数据类型是其他数据类型时, 以配置<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2ae5fa106d3fc2a8dc31cda0c96f3e949f">AIOT_COAPOPT_PORT</a> 为例:</p>
+<p class="startli">uint16_t port = 5684;</p>
+<p class="startli">aiot_coap_setopt(coap_handle, AIOT_COAPOPT_PORT, (void *)&amp;port); </p>
+</li>
+</ol>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a715720accf0eceabeb9a88c76e5086d3"></a>AIOT_COAPOPT_HOST&#160;</td><td class="fielddoc">
+<p>COAP 服务器的域名地址或者ip地址 </p>
+<p>阿里云物联网平台域名地址列表(必须使用自己的product key替换${pk}):</p>
+<p>使用dtls-psk证书方式建联:</p>
+<table class="doxtable">
+<tr>
+<th>域名地址 </th><th>区域 </th><th>端口号  </th></tr>
+<tr>
+<td>${pk}.coap.cn-shanghai.link.aliyuncs.com </td><td>上海 </td><td>5684 </td></tr>
+</table>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2ae5fa106d3fc2a8dc31cda0c96f3e949f"></a>AIOT_COAPOPT_PORT&#160;</td><td class="fielddoc">
+<p>COAP 服务器的端口号 </p>
+<p>连接阿里云物联网平台时:</p>
+<p>目前采用的是dtls-psk方式, 端口号为5684</p>
+<p>数据类型: (uint16_t *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a696ddea640f3b565b318322b6517be24"></a>AIOT_COAPOPT_PRODUCT_KEY&#160;</td><td class="fielddoc">
+<p>设备的product key, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2afb00f4471a8318e4ba6d5664f09d9130"></a>AIOT_COAPOPT_DEVICE_NAME&#160;</td><td class="fielddoc">
+<p>设备的device name, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a7cc7c0303bf5ab82b3bef9c7c7e81409"></a>AIOT_COAPOPT_DEVICE_SECRET&#160;</td><td class="fielddoc">
+<p>设备的device secret, 可从<a href="http://iot.console.aliyun.com/">阿里云物联网平台控制台</a>获取 </p>
+<p>数据类型: (char *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a428ea3e40788cf53c0c95e7fcfd30774"></a>AIOT_COAPOPT_CRED&#160;</td><td class="fielddoc">
+<p>COAP建联时, 网络使用的安全凭据 </p>
+<p>该配置项用于为底层网络配置<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 安全凭据数据</p>
+<p>由于当前只支持以dtls-psk方式建联, 因此需要将 <a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> 中option 配置为<a class="el" href="aiot__sysdep__api_8h.html#a6b105f01df5250c09a3296c9b869f610ab27b144992537de21fba0b04d99de9b4">AIOT_SYSDEP_NETWORK_CRED_SVRCERT_PSK</a></p>
+<p>数据类型: (<a class="el" href="structaiot__sysdep__network__cred__t.html">aiot_sysdep_network_cred_t</a> *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20"></a>AIOT_COAPOPT_AUTH_TIMEOUT&#160;</td><td class="fielddoc">
+<p>COAP连云时, 获取auth_token的超时时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (2 *1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a36f20ac7f9a5fb483902fd1db5431e1c"></a>AIOT_COAPOPT_RECV_TIMEOUT&#160;</td><td class="fielddoc">
+<p>COAP接收数据时, 在协议栈花费的最长时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (2 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2aea89a148d0669cc3f2a35184fc8acb2d"></a>AIOT_COAPOPT_SEND_TIMEOUT&#160;</td><td class="fielddoc">
+<p>COAP发送数据时, 在协议栈花费的最长时间 </p>
+<p>数据类型: (uint32_t *) 默认值: (2 * 1000) ms </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2acb56572d42f5ac90d5b13e812fa2d6dc"></a>AIOT_COAPOPT_RECV_HANDLER&#160;</td><td class="fielddoc">
+<p>从COAP服务器收取的数据从此回调函数通知用户 </p>
+<ol type="1">
+<li>若没有配置该回调函数, 当有消息到达时会被丢弃</li>
+<li>若已配置该回调函数, 当有消息到达从此回调函数对用户进行通知</li>
+</ol>
+<p>数据类型: ( <a class="el" href="aiot__coap__api_8h.html#a3041917e878ef7034521492f267c390c">aiot_coap_recv_handler_t</a> ) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a7d4d33f4e765bf3edcdcf8c0c86fcad7"></a>AIOT_COAPOPT_EVENT_HANDLER&#160;</td><td class="fielddoc">
+<p>COAP客户端内部发生的事件会从此回调函数进行通知, 如获取到token等 </p>
+<p>数据类型: ( <a class="el" href="aiot__coap__api_8h.html#aa5dc249545a65eb45739dd1d27644b94">aiot_coap_event_handler_t</a> ) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a96b80e94301c256f1b3ad7c9b6264966"></a>AIOT_COAPOPT_USERDATA&#160;</td><td class="fielddoc">
+<p>用户需要SDK暂存的上下文 </p>
+<p>上下文会在 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2acb56572d42f5ac90d5b13e812fa2d6dc">AIOT_COAPOPT_RECV_HANDLER</a> 和 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a7d4d33f4e765bf3edcdcf8c0c86fcad7">AIOT_COAPOPT_EVENT_HANDLER</a> 中传回给用户</p>
+<p>数据类型: (void *) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2a73598235f98e5c7f5c8ab6b9abb13add"></a>AIOT_COAPOPT_PAYLOAD_ENCRYPTION&#160;</td><td class="fielddoc">
+<p>应用层数据PAYLOAD使用AES加密啊 </p>
+<p>数据类型: (uint8_t *) 取值范围: 0(关闭AES对称加密), 1(开启AES对称加密) 默认值: 0; </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7508f32cdccaa160c7061833d98a53d2aeb5ca6a7f96c699d00f09dcaa52fb230"></a>AIOT_COAPOPT_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="afe1ef52731d54af26808302379de678d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__coap__api_8h.html#afe1ef52731d54af26808302379de678d">aiot_coap_content_format_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 函数的aiot_coap_request_t参数中的content_format字段. </p>
+<p>阿里云常用的字段格式为AIOT_COAP_CT_APP_JSON, 即json格式, 以此为例:</p>
+<p><a class="el" href="structaiot__coap__request__t.html" title="aiot_coap_send 函数的aiot_coap_request_t参数 ">aiot_coap_request_t</a> req = { ... .content_format = AIOT_COAP_CT_APP_JSON, }; </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678dafd5cdb1e1ec15426dba5063b5672d6ef"></a>AIOT_COAP_CT_TEXT_PLAIN&#160;</td><td class="fielddoc">
+<p>text/plain (UTF-8) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da56220199cf9c7910b32b1ce8e0de9760"></a>AIOT_COAP_CT_APP_LINK_FORMAT&#160;</td><td class="fielddoc">
+<p>application/link-format </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da647c74114842b7f07c233d61ed8ef5b6"></a>AIOT_COAP_CT_APP_XML&#160;</td><td class="fielddoc">
+<p>application/xml </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da0f7d0ed3ad6660e24a5310f9eaa24884"></a>AIOT_COAP_CT_APP_OCTET_STREAM&#160;</td><td class="fielddoc">
+<p>application/octet-stream </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da5e0e9675a1427d7a1ccdc0392c42afa1"></a>AIOT_COAP_CT_APP_RDF_XML&#160;</td><td class="fielddoc">
+<p>application/rdf+xml </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678dae1f73a29fcfe984a52d58a29ac5def0e"></a>AIOT_COAP_CT_APP_EXI&#160;</td><td class="fielddoc">
+<p>application/exi </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da931acc213a9c5c9e89b44a655a72eaeb"></a>AIOT_COAP_CT_APP_JSON&#160;</td><td class="fielddoc">
+<p>application/json </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="afe1ef52731d54af26808302379de678da0a8d4e90f0bf80e8bd6af49532bdccf5"></a>AIOT_COAP_CT_APP_CBOR&#160;</td><td class="fielddoc">
+<p>application/cbor </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__coap__api_8h.html#aa804fbbe00deb2121c809e9c1ac097a1">aiot_coap_msg_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="aiot__coap__api_8h.html#a2b840562e9e33141b37ebf818e8e542e">aiot_coap_send</a> 函数的aiot_coap_request_t参数中的msg_type字段. </p>
+<p>ACK和RST消息都是coap句柄自动发送的, 用户无需关心. 用户能够自定义发送COAP的消息类型分为CON/NON两种. 以发送AIOT_COAP_MSG_TYPE_CON消息为例:</p>
+<p><a class="el" href="structaiot__coap__request__t.html" title="aiot_coap_send 函数的aiot_coap_request_t参数 ">aiot_coap_request_t</a> req = { ... .msg_type = AIOT_COAP_MSG_TYPE_CON, }; </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1a158680c8038bc6b1c47738bb68687474"></a>AIOT_COAP_MSG_TYPE_CON&#160;</td><td class="fielddoc">
+<p>confirmable消息类型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1ad0f0cc415aad0c3e06c8b48b56461092"></a>AIOT_COAP_MSG_TYPE_NON&#160;</td><td class="fielddoc">
+<p>not confirmable消息类型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1a99ca3337e01b68e2c1c9e6a197adafa9"></a>AIOT_COAP_MSG_TYPE_ACK&#160;</td><td class="fielddoc">
+<p>ack消息类型 </p>
+<p>CoAP ack message type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1a63a594eafc554be0bf125c8e6dc405a6"></a>AIOT_COAP_MSG_TYPE_RST&#160;</td><td class="fielddoc">
+<p>reset消息类型 </p>
+<p>CoAP reset message type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa804fbbe00deb2121c809e9c1ac097a1af1ca02c67b2f29613fd3eff4bcb83a83"></a>AIOT_COAP_MSG_TYPE_MAX&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ab9731e314d55e99ee7cdf506d6ccc610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* aiot_coap_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化coap实例并设置默认参数 </p>
+<dl class="section return"><dt>返回</dt><dd>void* </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">非NULL</td><td>COAP实例句柄 </td></tr>
+    <tr><td class="paramname">NULL</td><td>初始化失败, 一般是内存分配失败导致 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_ab9731e314d55e99ee7cdf506d6ccc610_cgraph.png" border="0" usemap="#aiot__coap__api_8h_ab9731e314d55e99ee7cdf506d6ccc610_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_ab9731e314d55e99ee7cdf506d6ccc610_cgraph" id="aiot__coap__api_8h_ab9731e314d55e99ee7cdf506d6ccc610_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="156,5,319,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4bb234720464e64a7a0ff5afaf3e8c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_setopt </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置coap参数 </p>
+<p>下面列出常用的配置选项, 至少需要配置以下选项才可使用COAP的基本功能</p>
+<p>其余配置选项均设有默认值, 可按业务需要进行调整</p>
+<ul>
+<li><code>AIOT_COAPOPT_HOST</code>: 配置连接的阿里云COAP站点地址</li>
+<li><code>AIOT_COAPOPT_PORT</code>: 配置连接的阿里云COAP站点端口号</li>
+<li><code>AIOT_COAPOPT_PRODUCT_KEY</code>: 配置设备的 productKey</li>
+<li><code>AIOT_COAPOPT_DEVICE_NAME</code>: 配置设备的 deviceName</li>
+<li><code>AIOT_COAPOPT_DEVICE_SECRET</code>: 配置设备的 deviceSecret</li>
+<li><code>AIOT_COAPOPT_NETWORK_CRED</code>: 配置建立COAP连接时的安全凭据</li>
+<li><code>AIOT_COAPOPT_RECV_HANDLER</code>: 配置默认的数据接收回调函数</li>
+<li><code>AIOT_COAPOPT_EVENT_HANDLER</code>: 配置COAP事件通知回调函数</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2">aiot_coap_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>参数设置失败, 更多信息请本文件后面关于错误码的定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>参数设置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b840562e9e33141b37ebf818e8e542e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structaiot__coap__request__t.html">aiot_coap_request_t</a> *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送COAP报文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>目标topic </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>指向要发送报文的内容的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_SEND_HANDLE_IS_NULL</td><td>发送的报文时, coap_handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_TOPIC_IS_NULL</td><td>发送的报文时, topic为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_REQUEST_IS_NULL</td><td>发送的报文时, request为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_PAYLOAD_IS_NULL</td><td>发送的报文时, payload为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_WITHOUT_AUTHORIZATION</td><td>发送消息时auth_token还没有获取到 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SEND_INVALID_MSG_TYPE</td><td>发送消息时, 消息的类型既不是CON, 也不是NON </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>发送coap报文成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_a2b840562e9e33141b37ebf818e8e542e_cgraph.png" border="0" usemap="#aiot__coap__api_8h_a2b840562e9e33141b37ebf818e8e542e_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_a2b840562e9e33141b37ebf818e8e542e_cgraph" id="aiot__coap__api_8h_a2b840562e9e33141b37ebf818e8e542e_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="187,49,337,90"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d" title="_coap_uri_to_option" alt="" coords="193,115,331,141"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="179,165,345,192"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="199,216,325,243"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e" title="is_content_format_supported" alt="" coords="167,267,357,293"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="186,317,338,344"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="414,5,577,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="421,56,570,83"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="405,107,585,149"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="440,317,551,344"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a42f576ad8aad477f2e5dece6d0f18abb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_recv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从网络收取COAP报文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_RECV_HANDLE_IS_NULL</td><td>收取网络报文时, coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_RECV_WITHOUT_AUTHORIZATION</td><td>收取网络报文时, auth token还没有获取到 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">STATE_SUCCESS</td><td>收取COAP报文成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_a42f576ad8aad477f2e5dece6d0f18abb_cgraph.png" border="0" usemap="#aiot__coap__api_8h_a42f576ad8aad477f2e5dece6d0f18abb_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_a42f576ad8aad477f2e5dece6d0f18abb_cgraph" id="aiot__coap__api_8h_a42f576ad8aad477f2e5dece6d0f18abb_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="164,31,253,58"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="755,6,865,32"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="301,31,457,58"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="305,82,454,124"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="517,82,660,124"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="513,31,665,58"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="505,148,672,175"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="526,199,651,226"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="729,74,891,100"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="720,125,900,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a09587dad5f06f53a8af7ff87b0123f43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_deinit </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放COAP实例句柄的资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向mqtt实例句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a630b77aa943bf811fc1a645a7d34e131"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_auth </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>让coap模块与服务器通信, 并且获取auth token </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_AUTH_HANDLE_IS_NULL</td><td>获取auth token时coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_DEVICE_INFO_MISSING</td><td>获取auth token时设备的三元组为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SIGN_SRC_MALLOC_FAILED</td><td>获取auth token时为计算签名分配内存失败 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_TIMEOUT</td><td>获取auth token发生超时, 超过了 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 所定义的超时时间 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>获取auth token成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_a630b77aa943bf811fc1a645a7d34e131_cgraph.png" border="0" usemap="#aiot__coap__api_8h_a630b77aa943bf811fc1a645a7d34e131_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_a630b77aa943bf811fc1a645a7d34e131_cgraph" id="aiot__coap__api_8h_a630b77aa943bf811fc1a645a7d34e131_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="851,57,961,84"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#ad5309714abcd291c4ae359d0f4078bdc" title="_coap_creat_auth_message" alt="" coords="368,360,553,386"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="601,301,768,328"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a6b3ed2528829bec7a9847cd458dbdf44" title="_coap_auth_response\l_handler" alt="" coords="167,395,317,436"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a2275ea7a5b5e896c539a6551e933dfe1" title="_send_coap_auth_msg" alt="" coords="164,109,320,136"/>
+<area shape="rect" id="node13" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="197,210,287,237"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="609,352,760,394"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="621,418,748,445"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="605,469,764,496"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="825,242,987,269"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="831,360,981,386"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="816,294,996,335"/>
+<area shape="rect" id="node14" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="383,242,539,269"/>
+<area shape="rect" id="node15" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="386,176,535,218"/>
+<area shape="rect" id="node16" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="613,235,756,276"/>
+<area shape="rect" id="node17" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="609,133,761,160"/>
+<area shape="rect" id="node18" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="622,184,747,210"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a61be7e76ce90a1709a9c74aee2627138"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_dynreg </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>product_secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_secret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>out_secret_maxlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备动态注册，返回设备密钥 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">product_secret</td><td>产品密钥 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_secret</td><td>输出的设备密钥 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_secret_maxlen</td><td>保存设备密钥的内存大小</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">STATE_COAP_AUTH_HANDLE_IS_NULL</td><td>获取device_secret时coap handle为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_DEVICE_INFO_MISSING</td><td>获取device_secret时设备的三元组为空 </td></tr>
+    <tr><td class="paramname">STATE_COAP_SIGN_SRC_MALLOC_FAILED</td><td>获取device_secret时为计算签名分配内存失败 </td></tr>
+    <tr><td class="paramname">STATE_COAP_AUTH_TIMEOUT</td><td>获取device_secret发生超时, 超过了 <a class="el" href="aiot__coap__api_8h.html#a7508f32cdccaa160c7061833d98a53d2a93a14e72e48a03248521880a2d165d20">AIOT_COAPOPT_AUTH_TIMEOUT</a> 所定义的超时时间 </td></tr>
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">=STATE_SUCCESS</td><td>获取device_secret成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_a61be7e76ce90a1709a9c74aee2627138_cgraph.png" border="0" usemap="#aiot__coap__api_8h_a61be7e76ce90a1709a9c74aee2627138_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_a61be7e76ce90a1709a9c74aee2627138_cgraph" id="aiot__coap__api_8h_a61be7e76ce90a1709a9c74aee2627138_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="841,61,952,87"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#a3afcdacd4630e889d0a660b923a24a54" title="_coap_creat_register\l_message" alt="" coords="395,385,537,427"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a6e8c93f4ff705f86c9e73c7c9c3479d9" title="_coap_dynreg_response\l_handler" alt="" coords="177,399,340,440"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#a2275ea7a5b5e896c539a6551e933dfe1" title="_send_coap_auth_msg" alt="" coords="181,101,337,127"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="592,305,759,331"/>
+<area shape="rect" id="node13" href="aiot__coap__api_8c.html#a6a52d4d75916f38f3a6e08c4c8b4aa0f" title="_coap_recv" alt="" coords="214,217,303,243"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="600,356,751,397"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="612,422,739,449"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#ab7eeaa9e6dc277051b99fce92db031a3" title="_cal_auth_payload_buff" alt="" coords="596,473,755,499"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="815,246,978,273"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="822,363,971,390"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="807,297,987,339"/>
+<area shape="rect" id="node14" href="aiot__coap__api_8c.html#a30089bb789aec2914ca46375a293f1cc" title="_coap_message_parse" alt="" coords="388,246,544,273"/>
+<area shape="rect" id="node15" href="aiot__coap__api_8c.html#a127bc2fbb7cbaab3f829d0743d7ff911" title="_coap_recv_message\l_handler" alt="" coords="391,180,541,221"/>
+<area shape="rect" id="node16" href="aiot__coap__api_8c.html#a573af492b202388126fe5449bae4d773" title="_coap_create_empty\l_message" alt="" coords="604,239,747,280"/>
+<area shape="rect" id="node17" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="599,137,751,163"/>
+<area shape="rect" id="node18" href="aiot__coap__api_8c.html#aea49f94a56c02ecaacba7ce47e084d0f" title="_token_str2uint32" alt="" coords="613,187,738,214"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7addc40f3177e4c1ff0e7c763e85bda0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_coap_request_message </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>counter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设备主动请求下拉消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>COAP句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counter</td><td>下拉的最大消息数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS的其他其他错误</td><td>主要是网络有关的, 具体见本文件下面的错误码定义 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>返回coap协议的消息id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__coap__api_8h_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph.png" border="0" usemap="#aiot__coap__api_8h_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph" alt=""/></div>
+<map name="aiot__coap__api_8h_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph" id="aiot__coap__api_8h_a7addc40f3177e4c1ff0e7c763e85bda0_cgraph">
+<area shape="rect" id="node2" href="aiot__coap__api_8c.html#a3c027ea7b098dec305fe29601ed2cafb" title="发送COAP报文 " alt="" coords="241,191,355,217"/>
+<area shape="rect" id="node3" href="aiot__coap__api_8c.html#ad7a530a98240479df0559b3e97d477e2" title="_coap_create_request\l_message" alt="" coords="423,49,573,90"/>
+<area shape="rect" id="node7" href="aiot__coap__api_8c.html#a71820eb4b87cbc3fc0bb20c76bb08d6d" title="_coap_uri_to_option" alt="" coords="429,115,567,141"/>
+<area shape="rect" id="node8" href="aiot__coap__api_8c.html#a9163ef2a142a4b0453a79223366c2e63" title="_coap_release_message" alt="" coords="415,165,581,192"/>
+<area shape="rect" id="node9" href="aiot__coap__api_8c.html#aa6c2a1ca8776befa4289f756c5118bd6" title="_coap_add_option" alt="" coords="435,216,561,243"/>
+<area shape="rect" id="node10" href="aiot__coap__api_8c.html#a850ac848860a8fd4b07bf0a354c32e0e" title="is_content_format_supported" alt="" coords="403,267,593,293"/>
+<area shape="rect" id="node11" href="aiot__coap__api_8c.html#abaa68a124061cb8a39ea878245269a09" title="_coap_send_message" alt="" coords="422,317,574,344"/>
+<area shape="rect" id="node4" href="aiot__coap__api_8c.html#a76d0667ff510b9284765cd8a98de2b8b" title="_coap_malloc_message" alt="" coords="650,5,813,32"/>
+<area shape="rect" id="node5" href="aiot__coap__api_8c.html#a59c67114e3d5ff23c7450e272b7dbebd" title="_coap_token_iteration" alt="" coords="657,56,806,83"/>
+<area shape="rect" id="node6" href="aiot__coap__api_8c.html#a46c57df76a9a931e985f3e0ab721441c" title="_coap_message_assemble\l_header" alt="" coords="641,107,821,149"/>
+<area shape="rect" id="node12" href="aiot__coap__api_8c.html#a888d13b2f1d8d184a968aa585c795f24" title="_coap_connect" alt="" coords="676,317,787,344"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

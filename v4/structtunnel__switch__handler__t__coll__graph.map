@@ -1,0 +1,4 @@
+<map id="tunnel_switch_handler_t" name="tunnel_switch_handler_t">
+<area shape="rect" id="node2" href="$structaiot__tunnel__switch__recv__data__t.html" title="aiot_tunnel_switch\l_recv_data_t" alt="" coords="5,5,136,47"/>
+<area shape="rect" id="node3" href="$structaiot__sysdep__portfile__t.html" title="用以向SDK描述其运行硬件平台的资源如何使用的方法结构体 " alt="" coords="160,13,309,39"/>
+</map>

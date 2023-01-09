@@ -1,5 +1,0 @@
-<map id="_core_mqtt_server_disconnect_handler" name="_core_mqtt_server_disconnect_handler">
-<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="258,5,406,47"/>
-<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#ab4a4c7c97163a1114ac63bd950cfe940" title="_core_mqtt_disconnect\l_event_notify" alt="" coords="253,71,411,112"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a964ab61a31e1e25f210b60c4ac1f3c2a" title="_core_mqtt_event_notify\l_process_handler" alt="" coords="459,71,624,112"/>
-</map>

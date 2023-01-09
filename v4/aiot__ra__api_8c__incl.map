@@ -1,6 +1,7 @@
 <map id="components/remote&#45;access/aiot_ra_api.c" name="components/remote&#45;access/aiot_ra_api.c">
-<area shape="rect" id="node5" href="$aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="322,95,449,121"/>
-<area shape="rect" id="node7" href="$aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="473,95,588,121"/>
-<area shape="rect" id="node8" href="$aiot__ra__api_8h.html" title="remote&#45;access模块头文件, 提供远程登录调试的能力 " alt="" coords="612,95,708,121"/>
-<area shape="rect" id="node14" href="$aiot__mqtt__api_8h.html" title="MQTT模块头文件, 提供用MQTT协议连接阿里云物联网平台的能力 " alt="" coords="1402,95,1513,121"/>
+<area shape="rect" id="node5" href="$aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="322,102,449,129"/>
+<area shape="rect" id="node7" href="$aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="524,102,639,129"/>
+<area shape="rect" id="node8" href="$aiot__ra__api_8h.html" title="remote&#45;access模块头文件, 提供远程登录调试的能力 " alt="" coords="663,102,759,129"/>
+<area shape="rect" id="node9" href="$aiot__tunnel__api_8h.html" title="安全隧道能力连接的功能实现 " alt="" coords="783,102,903,129"/>
+<area shape="rect" id="node10" href="$aiot__tunnel__switch__api_8h.html" title="远程隧道的开关的实现文件，实现mqtt消息的订阅及解析 " alt="" coords="927,95,1057,136"/>
 </map>
