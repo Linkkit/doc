@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['core_5fat_5fcommands_5fsend_5fsync',['core_at_commands_send_sync',['../aiot__at__api_8c.html#a4114bb7e8297dfbfb5968f27653c1753',1,'aiot_at_api.c']]],
-  ['core_5fat_5fhal_5fprocess',['core_at_hal_process',['../aiot__at__api_8c.html#a23e435a4d2c2babc48c1e10a6b52fba4',1,'aiot_at_api.c']]],
-  ['core_5fat_5fip_5fstatus',['core_at_ip_status',['../aiot__at__api_8h.html#a29de87ca98fc8b899afa5d10ccba166b',1,'aiot_at_api.h']]],
-  ['core_5fat_5fnotify_5fip_5fstatus',['core_at_notify_ip_status',['../aiot__at__api_8c.html#ac171669a3c03323bc1cb312a830087a5',1,'aiot_at_api.c']]],
-  ['core_5fat_5fprocess_5fline',['core_at_process_line',['../aiot__at__api_8c.html#a075dd0d3dec34ae5018bb4bc9982f18b',1,'aiot_at_api.c']]],
-  ['core_5fat_5frecv_5fprefix_5fmatch',['core_at_recv_prefix_match',['../aiot__at__api_8c.html#a599c4558fdbecd9b1322d3fdd64f558b',1,'aiot_at_api.c']]],
-  ['core_5fat_5frsp_5fprocess_5fdefault',['core_at_rsp_process_default',['../aiot__at__api_8c.html#a1125d0747a6bc748df35e425007c1ea4',1,'aiot_at_api.c']]],
-  ['core_5fat_5fsend_5fpackage',['core_at_send_package',['../aiot__at__api_8c.html#aa15d0cd67694cfc2fda3b84cd56bc99a',1,'aiot_at_api.c']]],
-  ['core_5fat_5fset_5fdevice',['core_at_set_device',['../aiot__at__api_8c.html#addfd11358f40b10acb4c1f7d1cf4718c',1,'aiot_at_api.c']]],
-  ['core_5fat_5fsocket_5fstatus',['core_at_socket_status',['../aiot__at__api_8c.html#af2499e8dde7ede1ac17f47321bc32795',1,'core_at_socket_status(uint32_t id, core_at_link_status_t status):&#160;aiot_at_api.c'],['../aiot__at__api_8h.html#af2499e8dde7ede1ac17f47321bc32795',1,'core_at_socket_status(uint32_t id, core_at_link_status_t status):&#160;aiot_at_api.c']]],
-  ['core_5fat_5fuart_5ftx',['core_at_uart_tx',['../aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca',1,'aiot_at_api.c']]],
-  ['core_5fat_5fwait_5fresp',['core_at_wait_resp',['../aiot__at__api_8c.html#acdb299e424281bc1e4feb628142a3744',1,'aiot_at_api.c']]],
-  ['core_5fmqtt_5fget_5fdevice_5fname',['core_mqtt_get_device_name',['../aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4',1,'aiot_mqtt_api.c']]],
-  ['core_5fmqtt_5fget_5fnwkstats',['core_mqtt_get_nwkstats',['../aiot__mqtt__api_8c.html#a7e633775774cd6956052d5f9e156f46e',1,'aiot_mqtt_api.c']]],
-  ['core_5fmqtt_5fget_5fport',['core_mqtt_get_port',['../aiot__mqtt__api_8c.html#abe3247123c9b140d57dac44e3501b79f',1,'aiot_mqtt_api.c']]],
-  ['core_5fmqtt_5fget_5fproduct_5fkey',['core_mqtt_get_product_key',['../aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a',1,'aiot_mqtt_api.c']]],
-  ['core_5fmqtt_5fsetopt',['core_mqtt_setopt',['../aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a',1,'aiot_mqtt_api.c']]],
-  ['core_5fringbuf_5fdeinit',['core_ringbuf_deinit',['../aiot__at__api_8c.html#abf4849cb1df80a0447726fe922af8c23',1,'aiot_at_api.c']]],
-  ['core_5fringbuf_5fget_5foccupy',['core_ringbuf_get_occupy',['../aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7',1,'aiot_at_api.c']]],
-  ['core_5fringbuf_5finit',['core_ringbuf_init',['../aiot__at__api_8c.html#a4057361d8bf198d2985ffb75cb45ffc1',1,'aiot_at_api.c']]],
-  ['core_5fringbuf_5fread',['core_ringbuf_read',['../aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d',1,'aiot_at_api.c']]],
-  ['core_5fringbuf_5freset',['core_ringbuf_reset',['../aiot__at__api_8c.html#a3c5a500c764ccd9dbabcba8a306f13ba',1,'aiot_at_api.c']]],
-  ['core_5fringbuf_5fwrite',['core_ringbuf_write',['../aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb',1,'aiot_at_api.c']]],
-  ['crc_5fibm',['crc_ibm',['../aiot__mqtt__upload__api_8c.html#a04e5cf4d4d3f512c8a27e9aa13923b07',1,'crc_ibm(uint8_t const *buffer, size_t len):&#160;aiot_mqtt_upload_api.c'],['../aiot__mqtt__download__api_8c.html#a4c328796439c0604818d934c523aae4d',1,'crc_ibm(uint8_t const *buffer, size_t len):&#160;aiot_mqtt_download_api.c']]]
+  ['binary_5fcopy',['binary_copy',['../aiot__mqtt__props__api_8c.html#a7ee0415f07a8f16d7247b4582eabbcc5',1,'aiot_mqtt_props_api.c']]]
 ];

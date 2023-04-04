@@ -1,0 +1,7 @@
+<map id="core_mqtt_props_read" name="core_mqtt_props_read">
+<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="395,28,557,55"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#ad3b25368c05ab2790d4c2c1e40caa6aa" title="_read_variable" alt="" coords="423,155,529,181"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__props__api_8c.html#a582455b1f8ad1d1d3d81d15abf1d0bab" title="prop_read" alt="" coords="236,129,315,156"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d" title="get_type" alt="" coords="440,79,512,105"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__props__api_8c.html#a7ea195ec8c63a5b9af5b2cd60427374f" title="向属性集合中增加一条属性 " alt="" coords="204,28,347,55"/>
+</map>

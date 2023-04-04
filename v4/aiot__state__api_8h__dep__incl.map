@@ -1,8 +1,9 @@
 <map id="core/aiot_state_api.h" name="core/aiot_state_api.h">
-<area shape="rect" id="node2" href="$aiot__state__api_8c.html" title="状态码模块实现 " alt="" coords="5,95,148,121"/>
-<area shape="rect" id="node3" href="$aiot__coap__api_8c.html" title="COAP模块实现, 其中包含了连接到物联网平台和收发数据的API接口 " alt="" coords="172,87,323,129"/>
-<area shape="rect" id="node4" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="347,87,529,129"/>
-<area shape="rect" id="node5" href="$aiot__tunnel__api_8c.html" title="隧道管理模块，管理的隧道的连接及消息收发 " alt="" coords="553,87,736,129"/>
-<area shape="rect" id="node6" href="$aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="760,80,943,136"/>
-<area shape="rect" id="node7" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="967,87,1091,129"/>
+<area shape="rect" id="node2" href="$aiot__mqtt__props__api_8c.html" title="mqtt_prop模块的API接口实现, 提供mqtt 5.0属性管理的能力 " alt="" coords="5,87,149,129"/>
+<area shape="rect" id="node3" href="$aiot__state__api_8c.html" title="状态码模块实现 " alt="" coords="174,95,317,121"/>
+<area shape="rect" id="node4" href="$aiot__coap__api_8c.html" title="COAP模块实现, 其中包含了连接到物联网平台和收发数据的API接口 " alt="" coords="341,87,491,129"/>
+<area shape="rect" id="node5" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="515,87,698,129"/>
+<area shape="rect" id="node6" href="$aiot__tunnel__api_8c.html" title="隧道管理模块，管理的隧道的连接及消息收发 " alt="" coords="722,87,905,129"/>
+<area shape="rect" id="node7" href="$aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="929,80,1111,136"/>
+<area shape="rect" id="node8" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="1135,87,1259,129"/>
 </map>

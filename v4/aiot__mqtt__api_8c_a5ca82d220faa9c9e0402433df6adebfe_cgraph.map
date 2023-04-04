@@ -1,7 +1,11 @@
 <map id="aiot_mqtt_deinit" name="aiot_mqtt_deinit">
-<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#aae071d4a76c16cfea8cd726e7d22a8f0" title="_core_mqtt_process\l_data_process" alt="" coords="168,5,308,47"/>
-<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#a0d30adb53f19f7c3605042c7ccfdbb7b" title="_core_mqtt_sublist\l_destroy" alt="" coords="172,71,304,112"/>
-<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#a778848041f4b058bf3e4eab0686a382d" title="_core_mqtt_publist\l_destroy" alt="" coords="172,136,304,177"/>
-<area shape="rect" id="node6" href="$aiot__mqtt__api_8c.html#a9d4f909a9b56298193dd4a2c7648c698" title="_core_mqtt_process\l_datalist_destroy" alt="" coords="168,201,308,243"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="356,71,495,112"/>
+<area shape="rect" id="node2" href="$aiot__mqtt__api_8c.html#a3db0603aa8e2859c972d9973ef63e379" title="_core_mqtt_topic_alias\l_list_remove_all" alt="" coords="168,5,324,47"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__api_8c.html#aae071d4a76c16cfea8cd726e7d22a8f0" title="_core_mqtt_process\l_data_process" alt="" coords="176,71,316,112"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__props__api_8c.html#acaabb5c7d5577ba213d8bdcc909ce557" title="属性集合反初始化，回收资源 " alt="" coords="169,137,323,163"/>
+<area shape="rect" id="node7" href="$aiot__mqtt__api_8c.html#a0d30adb53f19f7c3605042c7ccfdbb7b" title="_core_mqtt_sublist\l_destroy" alt="" coords="180,188,312,229"/>
+<area shape="rect" id="node9" href="$aiot__mqtt__api_8c.html#a778848041f4b058bf3e4eab0686a382d" title="_core_mqtt_publist\l_destroy" alt="" coords="180,253,312,295"/>
+<area shape="rect" id="node10" href="$aiot__mqtt__api_8c.html#a9d4f909a9b56298193dd4a2c7648c698" title="_core_mqtt_process\l_datalist_destroy" alt="" coords="176,319,316,360"/>
+<area shape="rect" id="node5" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="372,86,535,113"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d" title="get_type" alt="" coords="417,137,489,163"/>
+<area shape="rect" id="node8" href="$aiot__mqtt__api_8c.html#aefb65662d681409d6c74c73f599cbc9d" title="_core_mqtt_sublist\l_handlerlist_destroy" alt="" coords="384,188,523,229"/>
 </map>

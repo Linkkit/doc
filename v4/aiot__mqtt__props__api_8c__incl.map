@@ -1,0 +1,5 @@
+<map id="core/aiot_mqtt_props_api.c" name="core/aiot_mqtt_props_api.c">
+<area shape="rect" id="node3" href="$aiot__sysdep__api_8h.html" title="SDK Core系统依赖头文件, 所有Core中的系统依赖均在此文件中列出 " alt="" coords="91,95,218,121"/>
+<area shape="rect" id="node5" href="$aiot__state__api_8h.html" title="SDK Core状态码头文件, 所有Core中的api返回值均在此列出 " alt="" coords="243,95,357,121"/>
+<area shape="rect" id="node6" href="$aiot__mqtt__props__api_8h.html" title="mqtt_prop模块头文件, 提供mqtt 5.0用户属性管理的能力 " alt="" coords="382,95,533,121"/>
+</map>

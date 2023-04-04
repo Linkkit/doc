@@ -1,0 +1,6 @@
+<map id="core/aiot_mqtt_props_api.h" name="core/aiot_mqtt_props_api.h">
+<area shape="rect" id="node2" href="$aiot__mqtt__api_8h.html" title="MQTT模块头文件, 提供用MQTT协议连接阿里云物联网平台的能力 " alt="" coords="97,102,237,129"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__props__api_8c.html" title="mqtt_prop模块的API接口实现, 提供mqtt 5.0属性管理的能力 " alt="" coords="261,95,405,136"/>
+<area shape="rect" id="node3" href="$aiot__logpost__api_8c.html" title="logpost模块的API接口实现, 提供设备端日志上云的能力 " alt="" coords="5,191,144,233"/>
+<area shape="rect" id="node4" href="$aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="169,184,351,240"/>
+</map>

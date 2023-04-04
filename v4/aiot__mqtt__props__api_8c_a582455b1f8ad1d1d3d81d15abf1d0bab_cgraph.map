@@ -1,0 +1,5 @@
+<map id="prop_read" name="prop_read">
+<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="132,5,295,32"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d" title="get_type" alt="" coords="177,56,249,83"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#ad3b25368c05ab2790d4c2c1e40caa6aa" title="_read_variable" alt="" coords="160,107,267,133"/>
+</map>

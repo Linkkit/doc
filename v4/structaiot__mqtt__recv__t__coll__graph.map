@@ -1,0 +1,6 @@
+<map id="aiot_mqtt_recv_t" name="aiot_mqtt_recv_t">
+<area shape="rect" id="node2" href="$structmqtt__properties__t.html" title="mqtt_properties_t" alt="" coords="5,288,128,315"/>
+<area shape="rect" id="node3" href="$structmqtt__property__t.html" title="mqtt_property_t" alt="" coords="10,199,123,225"/>
+<area shape="rect" id="node4" href="$structuser__property__t.html" title="MQTT 5.0协议中用户属性 " alt="" coords="75,109,187,136"/>
+<area shape="rect" id="node5" href="$structlen__value__t.html" title="value&#45;length 结构体. " alt="" coords="23,5,111,32"/>
+</map>

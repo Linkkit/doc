@@ -1,0 +1,5 @@
+<map id="aiot_mqtt_props_copy" name="aiot_mqtt_props_copy">
+<area shape="rect" id="node2" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="475,5,637,32"/>
+<area shape="rect" id="node3" href="$aiot__mqtt__props__api_8c.html#a7318f8ea13f58a786988baaedaca2173" title="prop_copy" alt="" coords="204,31,287,57"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__props__api_8c.html#a7ee0415f07a8f16d7247b4582eabbcc5" title="binary_copy" alt="" coords="335,31,427,57"/>
+</map>

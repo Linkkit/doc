@@ -1,37 +1,51 @@
 <map id="aiot_bootstrap_setopt" name="aiot_bootstrap_setopt">
-<area shape="rect" id="node2" href="$aiot__bootstrap__api_8c.html#a3f479af974adab936287f2d1a96b8029" title="_bootstrap_exec_inc" alt="" coords="216,301,359,327"/>
-<area shape="rect" id="node3" href="$aiot__bootstrap__api_8c.html#aa686dc19bacb2a9bc95d9520c8f9a027" title="_bootstrap_operate\l_topic_map" alt="" coords="221,352,354,393"/>
-<area shape="rect" id="node29" href="$aiot__bootstrap__api_8c.html#a73a89f85a4193593b9c6d79d381cf9e2" title="_bootstrap_core_mqtt\l_operate_process_handler" alt="" coords="200,439,375,480"/>
-<area shape="rect" id="node36" href="$aiot__bootstrap__api_8c.html#af6a37095391fa36e25c66352e00a3d91" title="_bootstrap_exec_dec" alt="" coords="214,505,361,531"/>
-<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="909,298,1091,325"/>
-<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="905,399,1095,426"/>
-<area shape="rect" id="node6" href="$aiot__bootstrap__api_8c.html#a190dff4522892ce2a4105dbd13485d43" title="_bootstrap_recv_handler" alt="" coords="423,349,587,375"/>
-<area shape="rect" id="node21" href="$aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="1166,179,1285,206"/>
-<area shape="rect" id="node7" href="$aiot__bootstrap__api_8c.html#aadb4e9a70f2eaab33ebd9b4ea2b79c60" title="_bootstrap_alink_reply" alt="" coords="670,349,822,375"/>
-<area shape="rect" id="node8" href="$aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="948,349,1052,375"/>
-<area shape="rect" id="node9" href="$aiot__mqtt__api_8c.html#aa2537b0027caddef380ce7b937af59f7" title="_core_mqtt_pub_params\l_check" alt="" coords="1143,400,1308,441"/>
-<area shape="rect" id="node10" href="$aiot__mqtt__api_8c.html#a60e9feee5c62afffb2c3b059a40bbe5e" title="_core_mqtt_append_rid" alt="" coords="1147,466,1304,493"/>
-<area shape="rect" id="node11" href="$aiot__mqtt__api_8c.html#a0d5e7f4105f552b73fdbb7b61bf02906" title="_core_mqtt_compress" alt="" coords="1150,298,1301,325"/>
-<area shape="rect" id="node12" href="$aiot__mqtt__api_8c.html#afdecdf08db75dc62d6cc9dd4a22ff1d6" title="_core_mqtt_pub" alt="" coords="1168,349,1283,375"/>
-<area shape="rect" id="node13" href="$aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1385,205,1531,231"/>
-<area shape="rect" id="node14" href="$aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1383,255,1533,282"/>
-<area shape="rect" id="node15" href="$aiot__mqtt__api_8c.html#a65111a875792262ea2566bbbab350e61" title="_core_mqtt_remain_len\l_encode" alt="" coords="1379,307,1537,348"/>
-<area shape="rect" id="node16" href="$aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1387,372,1529,413"/>
-<area shape="rect" id="node17" href="$aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1383,438,1533,465"/>
-<area shape="rect" id="node18" href="$aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1392,489,1524,531"/>
-<area shape="rect" id="node19" href="$aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1397,555,1519,582"/>
-<area shape="rect" id="node20" href="$aiot__mqtt__api_8c.html#af4f048a7481d88c228bdcb55aa33c7a2" title="_core_mqtt_sysdep_return" alt="" coords="1608,555,1784,582"/>
-<area shape="rect" id="node22" href="$aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="1380,154,1536,181"/>
-<area shape="rect" id="node23" href="$aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="1357,53,1559,79"/>
-<area shape="rect" id="node27" href="$aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="1356,103,1560,130"/>
-<area shape="rect" id="node24" href="$aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="1627,71,1765,112"/>
-<area shape="rect" id="node25" href="$aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="1630,5,1762,47"/>
-<area shape="rect" id="node26" href="$aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="1832,5,1985,47"/>
-<area shape="rect" id="node28" href="$aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="1630,136,1762,177"/>
-<area shape="rect" id="node30" href="$aiot__bootstrap__api_8c.html#ab849e3e9ddfe992d09e27730f5b2553e" title="_bootstrap_core_mqtt\l_process_handler" alt="" coords="431,451,579,492"/>
-<area shape="rect" id="node31" href="$aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="443,517,566,543"/>
-<area shape="rect" id="node32" href="$aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="635,465,857,491"/>
-<area shape="rect" id="node34" href="$aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="635,519,857,546"/>
-<area shape="rect" id="node33" href="$aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="930,453,1070,495"/>
-<area shape="rect" id="node35" href="$aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="930,519,1070,560"/>
+<area shape="rect" id="node2" href="$aiot__bootstrap__api_8c.html#a3f479af974adab936287f2d1a96b8029" title="_bootstrap_exec_inc" alt="" coords="216,755,359,781"/>
+<area shape="rect" id="node3" href="$aiot__bootstrap__api_8c.html#aa686dc19bacb2a9bc95d9520c8f9a027" title="_bootstrap_operate\l_topic_map" alt="" coords="221,806,354,847"/>
+<area shape="rect" id="node43" href="$aiot__bootstrap__api_8c.html#a73a89f85a4193593b9c6d79d381cf9e2" title="_bootstrap_core_mqtt\l_operate_process_handler" alt="" coords="200,893,375,934"/>
+<area shape="rect" id="node50" href="$aiot__bootstrap__api_8c.html#af6a37095391fa36e25c66352e00a3d91" title="_bootstrap_exec_dec" alt="" coords="214,959,361,985"/>
+<area shape="rect" id="node4" href="$aiot__mqtt__api_8c.html#a3aefc6194663f3db0d614840ffaffb9a" title="core_mqtt_get_product_key" alt="" coords="909,701,1091,728"/>
+<area shape="rect" id="node5" href="$aiot__mqtt__api_8c.html#af71393abdcc0bfbc5a0ecafb75a7b4c4" title="core_mqtt_get_device_name" alt="" coords="905,803,1095,829"/>
+<area shape="rect" id="node6" href="$aiot__bootstrap__api_8c.html#a190dff4522892ce2a4105dbd13485d43" title="_bootstrap_recv_handler" alt="" coords="423,752,587,779"/>
+<area shape="rect" id="node35" href="$aiot__mqtt__api_8c.html#a9dbaf4235dd1d28ffa87c32953987608" title="设置mqtt参数 " alt="" coords="1361,1016,1479,1043"/>
+<area shape="rect" id="node7" href="$aiot__bootstrap__api_8c.html#aadb4e9a70f2eaab33ebd9b4ea2b79c60" title="_bootstrap_alink_reply" alt="" coords="670,752,822,779"/>
+<area shape="rect" id="node8" href="$aiot__mqtt__api_8c.html#a207164cfd12422eb36a48624a1c31db8" title="发送一条PUBLISH报文到MQTT服务器, QoS为0, 用于发布指定的消息 " alt="" coords="948,752,1052,779"/>
+<area shape="rect" id="node9" href="$aiot__mqtt__api_8c.html#a9bcbf7b9f8cb24d13b722c4a0eb13d19" title="_mqtt_pub_with_prop" alt="" coords="1143,752,1289,779"/>
+<area shape="rect" id="node10" href="$aiot__mqtt__api_8c.html#a773894caedb9429c81d3f27cb6dbb3b4" title="_core_mqtt_pub_params\l_check" alt="" coords="1337,686,1503,727"/>
+<area shape="rect" id="node11" href="$aiot__mqtt__api_8c.html#a60e9feee5c62afffb2c3b059a40bbe5e" title="_core_mqtt_append_rid" alt="" coords="1341,752,1499,779"/>
+<area shape="rect" id="node12" href="$aiot__mqtt__api_8c.html#a0d5e7f4105f552b73fdbb7b61bf02906" title="_core_mqtt_compress" alt="" coords="1345,803,1495,829"/>
+<area shape="rect" id="node13" href="$aiot__mqtt__api_8c.html#a1d0774b54b793065fcab67670f69c844" title="_core_mqtt_pub" alt="" coords="1363,496,1477,523"/>
+<area shape="rect" id="node14" href="$aiot__mqtt__api_8c.html#a05def31a3eb8ed6087e370f1bf9962e6" title="_core_mqtt_5_feature\l_is_enabled" alt="" coords="1810,131,1958,173"/>
+<area shape="rect" id="node15" href="$aiot__mqtt__api_8c.html#a5be7993868caebd4eac9b8d981c35562" title="_core_mqtt_check_flow\l_control" alt="" coords="1573,489,1733,530"/>
+<area shape="rect" id="node16" href="$aiot__mqtt__props__api_8c.html#ad9a18fa4834a9d4df576e4a63bb2a4b3" title="深拷贝属性 " alt="" coords="1577,336,1728,363"/>
+<area shape="rect" id="node19" href="$aiot__mqtt__props__api_8c.html#af04e58baaafce36ee6b21e97bec8a6ef" title="mqtt消息属性集合初始化 " alt="" coords="1583,555,1722,581"/>
+<area shape="rect" id="node20" href="$aiot__mqtt__props__api_8c.html#a6c3d12408377c93dfcd22074c86e370e" title="core_mqtt_props_bound" alt="" coords="1572,656,1733,683"/>
+<area shape="rect" id="node22" href="$aiot__mqtt__api_8c.html#a8733dce5221abbb86359350a8fb559d6" title="_write_variable" alt="" coords="1829,656,1939,683"/>
+<area shape="rect" id="node23" href="$aiot__mqtt__props__api_8c.html#acaabb5c7d5577ba213d8bdcc909ce557" title="属性集合反初始化，回收资源 " alt="" coords="1576,387,1729,413"/>
+<area shape="rect" id="node24" href="$aiot__mqtt__api_8c.html#a3aeb41684c2dfb4a7a01ae7c8706b199" title="_core_mqtt_tx_topic\l_alias_process" alt="" coords="1583,874,1723,915"/>
+<area shape="rect" id="node25" href="$aiot__mqtt__props__api_8c.html#a7ea195ec8c63a5b9af5b2cd60427374f" title="向属性集合中增加一条属性 " alt="" coords="1581,437,1724,464"/>
+<area shape="rect" id="node26" href="$aiot__mqtt__api_8c.html#a5b01b201adad995c05fec1f82a356975" title="_core_mqtt_exec_inc" alt="" coords="1579,940,1726,967"/>
+<area shape="rect" id="node27" href="$aiot__mqtt__api_8c.html#afb769532cc8c423e79d5f8843ea6fab0" title="_core_mqtt_exec_dec" alt="" coords="1809,816,1959,843"/>
+<area shape="rect" id="node28" href="$aiot__mqtt__api_8c.html#ab57f5851072d495daaa6c945000d192f" title="_core_mqtt_set_utf8\l_encoded_str" alt="" coords="1582,51,1723,93"/>
+<area shape="rect" id="node29" href="$aiot__mqtt__api_8c.html#a541cad09a05feb91ff78eb23da4ef364" title="_core_mqtt_packet_id" alt="" coords="1577,117,1728,144"/>
+<area shape="rect" id="node30" href="$aiot__mqtt__props__api_8c.html#ad59867bd79eb98a6b1db953414842ebb" title="core_mqtt_props_write" alt="" coords="1575,605,1730,632"/>
+<area shape="rect" id="node31" href="$aiot__mqtt__api_8c.html#a6e1578f990242a9ead3a39a051386e9a" title="_core_mqtt_check_tx\l_payload_len" alt="" coords="1579,809,1726,850"/>
+<area shape="rect" id="node32" href="$aiot__mqtt__api_8c.html#ac8fbdef0975e187b70f30d5b2f887a46" title="_core_mqtt_publist\l_insert" alt="" coords="1587,169,1719,210"/>
+<area shape="rect" id="node33" href="$aiot__mqtt__api_8c.html#a589202977e7a0f8a467d51c021813ba5" title="_core_mqtt_write" alt="" coords="1591,235,1714,261"/>
+<area shape="rect" id="node34" href="$aiot__mqtt__api_8c.html#ab892e4746dc67d6424124c8efe8c7cab" title="_core_mqtt_check_flow_dec" alt="" coords="1559,285,1747,312"/>
+<area shape="rect" id="node17" href="$aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="1803,412,1965,439"/>
+<area shape="rect" id="node18" href="$aiot__mqtt__props__api_8c.html#a7318f8ea13f58a786988baaedaca2173" title="prop_copy" alt="" coords="1843,336,1925,363"/>
+<area shape="rect" id="node21" href="$aiot__mqtt__props__api_8c.html#a5493df82f561c44dfa1ce331558a284a" title="_calc_props_len" alt="" coords="1826,605,1942,632"/>
+<area shape="rect" id="node36" href="$aiot__mqtt__api_8c.html#a1a43c30bf9e224077c1f97e38a654a6b" title="_core_mqtt_sign_clean" alt="" coords="1575,1092,1731,1119"/>
+<area shape="rect" id="node37" href="$aiot__mqtt__api_8c.html#af5105b71be37f503f8738940f67a5ec5" title="_core_mqtt_append_topic_map" alt="" coords="1551,1041,1754,1068"/>
+<area shape="rect" id="node41" href="$aiot__mqtt__api_8c.html#aeb5a8ca4bfb7ff1a3072b6d3964d3cd9" title="_core_mqtt_remove_topic_map" alt="" coords="1551,1143,1755,1169"/>
+<area shape="rect" id="node38" href="$aiot__mqtt__api_8c.html#a6d574f84d8cf56f8f9e95650d74d1570" title="_core_mqtt_topic_is\l_valid" alt="" coords="1815,1085,1953,1126"/>
+<area shape="rect" id="node39" href="$aiot__mqtt__api_8c.html#a817132f1450e9f52b47aa341f660f0c6" title="_core_mqtt_sublist\l_insert" alt="" coords="1818,1019,1950,1061"/>
+<area shape="rect" id="node40" href="$aiot__mqtt__api_8c.html#a83e2def6390b763304d1646ae78f5237" title="_core_mqtt_handlerlist\l_insert" alt="" coords="2013,1019,2167,1061"/>
+<area shape="rect" id="node42" href="$aiot__mqtt__api_8c.html#a345b849e5620b4a96f7055480cf1ccea" title="_core_mqtt_sublist\l_remove_handler" alt="" coords="1818,1150,1950,1191"/>
+<area shape="rect" id="node44" href="$aiot__bootstrap__api_8c.html#ab849e3e9ddfe992d09e27730f5b2553e" title="_bootstrap_core_mqtt\l_process_handler" alt="" coords="431,905,579,946"/>
+<area shape="rect" id="node45" href="$aiot__mqtt__api_8c.html#a6b62ed693cf62c57cb64dd216de38d9a" title="core_mqtt_setopt" alt="" coords="443,971,566,997"/>
+<area shape="rect" id="node46" href="$aiot__mqtt__api_8c.html#a885a4308d8c2d140ebcb54af831dbb40" title="_core_mqtt_append_process_data" alt="" coords="635,919,857,945"/>
+<area shape="rect" id="node48" href="$aiot__mqtt__api_8c.html#ad74092a7f15163ad5a2ee1fdcda6aa0f" title="_core_mqtt_remove_process_data" alt="" coords="635,973,857,1000"/>
+<area shape="rect" id="node47" href="$aiot__mqtt__api_8c.html#a74e5d28c29840b62c9eeb5ba2ffe7a45" title="_core_mqtt_process\l_datalist_insert" alt="" coords="930,907,1070,949"/>
+<area shape="rect" id="node49" href="$aiot__mqtt__api_8c.html#a8d70d3084d5232c7604171dd8e8f5ddd" title="_core_mqtt_process\l_datalist_remove" alt="" coords="930,973,1070,1014"/>
 </map>

@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Link Kit C-SDK: core/aiot_mqtt_props_api.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Link Kit C-SDK
+   &#160;<span id="projectnumber">4.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">aiot_mqtt_props_api.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>mqtt_prop模块头文件, 提供mqtt 5.0用户属性管理的能力  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+aiot_mqtt_props_api.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h__incl.png" border="0" usemap="#core_2aiot__mqtt__props__api_8h" alt=""/></div>
+<map name="core_2aiot__mqtt__props__api_8h" id="core_2aiot__mqtt__props__api_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h__dep__incl.png" border="0" usemap="#core_2aiot__mqtt__props__api_8hdep" alt=""/></div>
+<map name="core_2aiot__mqtt__props__api_8hdep" id="core_2aiot__mqtt__props__api_8hdep">
+<area shape="rect" id="node2" href="aiot__mqtt__api_8h.html" title="MQTT模块头文件, 提供用MQTT协议连接阿里云物联网平台的能力 " alt="" coords="97,102,237,129"/>
+<area shape="rect" id="node5" href="aiot__mqtt__props__api_8c.html" title="mqtt_prop模块的API接口实现, 提供mqtt 5.0属性管理的能力 " alt="" coords="261,95,405,136"/>
+<area shape="rect" id="node3" href="aiot__logpost__api_8c.html" title="logpost模块的API接口实现, 提供设备端日志上云的能力 " alt="" coords="5,191,144,233"/>
+<area shape="rect" id="node4" href="aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="169,184,351,240"/>
+</map>
+</div>
+</div>
+<p><a href="aiot__mqtt__props__api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlen__value__t.html">len_value_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">value-length 结构体.  <a href="structlen__value__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuser__property__t.html">user_property_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT 5.0协议中用户属性  <a href="structuser__property__t.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmqtt__property__t.html">mqtt_property_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a30517ebf01fa683a7885af07c825a320"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320">mqtt_property_identify_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ac4e34be4f731b2762432d68f52181eb1">MQTT_PROP_ID_PAYLOAD_FORMAT_INDICATOR</a> = 1, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a85287b992054b77da08a2d95660bb9e9">MQTT_PROP_ID_MESSAGE_EXPIRY_INTERVAL</a> = 2, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a4412472a65ceff7426ce9526833eae38">MQTT_PROP_ID_CONTENT_TYPE</a> = 3, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320aead25e4209424279c51f920e6acbf2bf">MQTT_PROP_ID_RESPONSE_TOPIC</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a409749658ad5e6ddee039303a32e69e0">MQTT_PROP_ID_CORRELATION_DATA</a> = 9, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ab22aee20274ff79a181e608b985aeb3b">MQTT_PROP_ID_SUBSCRIPTION_IDENTIFIER</a> = 11, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a6e3b2395a376c2db5a2f08ef2c5035d6">MQTT_PROP_ID_SESSION_EXPIRY_INTERVAL</a> = 17, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a4d8a2194fbe673e873213f20b15c66ca">MQTT_PROP_ID_ASSIGNED_CLIENT_IDENTIFER</a> = 18, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ae98c4b5e57a5838d3bb2fa189bbad6e4">MQTT_PROP_ID_SERVER_KEEP_ALIVE</a> = 19, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a8bf61696e8b70c8f919123e2ec06abf4">MQTT_PROP_ID_AUTHENTICATION_METHOD</a> = 21, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a4624bef20258ebf08b92791c14829bed">MQTT_PROP_ID_AUTHENTICATION_DATA</a> = 22, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a2f6155828d3fb3e625a4c869e32671f1">MQTT_PROP_ID_REQUEST_PROBLEM_INFORMATION</a> = 23, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a132366df1189a46f2a8179ce571884b4">MQTT_PROP_ID_WILL_DELAY_INTERVAL</a> = 24, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320aa4f66e032cf897ea9da4cdf382063f4b">MQTT_PROP_ID_REQUEST_RESPONSE_INFORMATION</a> = 25, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a22ad08899c5700aef1286cac7d62c2fa">MQTT_PROP_ID_RESPONSE_INFORMATION</a> = 26, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a965f707a88009642599dcaef5102363c">MQTT_PROP_ID_SERVER_REFERENCE</a> = 28, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a79a94dbb4d31addba4f80e94e67cd4ed">MQTT_PROP_ID_REASON_STRING</a> = 31, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a5ea2e47eeb7aa910087b865754209acf">MQTT_PROP_ID_RECEIVE_MAXIMUM</a> = 33, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a7f0c63edaffe8992da372c4fc59a0ed9">MQTT_PROP_ID_TOPIC_ALIAS_MAXIMUM</a> = 34, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a7213c0af4e5ab015980931da77fe82ba">MQTT_PROP_ID_TOPIC_ALIAS</a> = 35, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ac9922596d224b9faa3399bf0ea7d2be5">MQTT_PROP_ID_MAXIMUM_QOS</a> = 36, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a712aba1f1c2099d14f1596a2123cc725">MQTT_PROP_ID_RETAIN_AVAILABLE</a> = 37, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ae4f4a3ffb8ce9b05c4eee970445dd2c4">MQTT_PROP_ID_USER_PROPERTY</a> = 38, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320aefc69e291834f7f79b30cd24aa38d188">MQTT_PROP_ID_MAXIMUM_PACKET_SIZE</a> = 39, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a5d2c8bc024f65908193a9bbf66be5672">MQTT_PROP_ID_WILDCARD_SUBSCRIPTION_AVAILABLE</a> = 40, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320a419f8b8a69dc132c934b02f3a6d01864">MQTT_PROP_ID_SUBSCRIPTION_IDENTIFIERS_AVAILABLE</a> = 41, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320ac71e335ef248da59e14ef67fe660c69b">MQTT_PROP_ID_SHARED_SUBSCRIPTION_AVAILABLE</a> = 42
+<br />
+ }</td></tr>
+<tr class="separator:a30517ebf01fa683a7885af07c825a320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8eeab56fe76ada36208ef09dfbcb571"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571">mqtt_property_type_t</a> { <br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a47451270c814271dcbbdf5889e022d30">MQTT_PROP_TYPE_UINT8</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a76e74ec69b2b56162ea2e0054eae0b1e">MQTT_PROP_TYPE_UINT16</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a6a9b77f2efc21ccf398f00e84b83cc58">MQTT_PROP_TYPE_UINT32</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a25d82ecee6fd2f9b21acb81940cc4c42">MQTT_PROP_TYPE_VARIABLE</a>, 
+<br />
+&#160;&#160;<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a28cbee9e768cba5da1d616b494ed5889">MQTT_PROP_TYPE_BINARY</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a87fac58096dcdb25e9f55f64248ff625">MQTT_PROP_TYPE_STRING</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571a0919ada31104e686a30dab6d165eba2f">MQTT_PROP_TYPE_STRING_PAIR</a>, 
+<a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571adcb33c9e7dc93d43bd78003248c7e053">MQTT_PROP_ID_INVALID</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:af8eeab56fe76ada36208ef09dfbcb571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af04e58baaafce36ee6b21e97bec8a6ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#af04e58baaafce36ee6b21e97bec8a6ef">aiot_mqtt_props_init</a> ()</td></tr>
+<tr class="memdesc:af04e58baaafce36ee6b21e97bec8a6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">mqtt消息属性集合初始化  <a href="#af04e58baaafce36ee6b21e97bec8a6ef">更多...</a><br /></td></tr>
+<tr class="separator:af04e58baaafce36ee6b21e97bec8a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea195ec8c63a5b9af5b2cd60427374f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#a7ea195ec8c63a5b9af5b2cd60427374f">aiot_mqtt_props_add</a> (<a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *props, <a class="el" href="structmqtt__property__t.html">mqtt_property_t</a> *prop)</td></tr>
+<tr class="memdesc:a7ea195ec8c63a5b9af5b2cd60427374f"><td class="mdescLeft">&#160;</td><td class="mdescRight">向属性集合中增加一条属性  <a href="#a7ea195ec8c63a5b9af5b2cd60427374f">更多...</a><br /></td></tr>
+<tr class="separator:a7ea195ec8c63a5b9af5b2cd60427374f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42755285ebb876327f6d59e25da5ad7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmqtt__property__t.html">mqtt_property_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#ac42755285ebb876327f6d59e25da5ad7">aiot_mqtt_props_get</a> (<a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *props, <a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320">mqtt_property_identify_t</a> id, int32_t index)</td></tr>
+<tr class="memdesc:ac42755285ebb876327f6d59e25da5ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">从属性集合中，查询属性  <a href="#ac42755285ebb876327f6d59e25da5ad7">更多...</a><br /></td></tr>
+<tr class="separator:ac42755285ebb876327f6d59e25da5ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fb49833448acbec61db37dd62080a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#a79fb49833448acbec61db37dd62080a6">aiot_mqtt_props_deinit</a> (<a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> **props)</td></tr>
+<tr class="memdesc:a79fb49833448acbec61db37dd62080a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">属性集合反初始化，回收资源  <a href="#a79fb49833448acbec61db37dd62080a6">更多...</a><br /></td></tr>
+<tr class="separator:a79fb49833448acbec61db37dd62080a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c690da00b04e586474865acc09941e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#a96c690da00b04e586474865acc09941e">aiot_mqtt_props_print</a> (<a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *props)</td></tr>
+<tr class="memdesc:a96c690da00b04e586474865acc09941e"><td class="mdescLeft">&#160;</td><td class="mdescRight">printf属性内容  <a href="#a96c690da00b04e586474865acc09941e">更多...</a><br /></td></tr>
+<tr class="separator:a96c690da00b04e586474865acc09941e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a18fa4834a9d4df576e4a63bb2a4b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aiot__mqtt__props__api_8h.html#ad9a18fa4834a9d4df576e4a63bb2a4b3">aiot_mqtt_props_copy</a> (<a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *props)</td></tr>
+<tr class="memdesc:ad9a18fa4834a9d4df576e4a63bb2a4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">深拷贝属性  <a href="#ad9a18fa4834a9d4df576e4a63bb2a4b3">更多...</a><br /></td></tr>
+<tr class="separator:ad9a18fa4834a9d4df576e4a63bb2a4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>mqtt_prop模块头文件, 提供mqtt 5.0用户属性管理的能力 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>Copyright (C) 2015-2020 Alibaba Group Holding Limited </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a30517ebf01fa683a7885af07c825a320"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320">mqtt_property_identify_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The one byte MQTT V5 property indicator </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ac4e34be4f731b2762432d68f52181eb1"></a>MQTT_PROP_ID_PAYLOAD_FORMAT_INDICATOR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a85287b992054b77da08a2d95660bb9e9"></a>MQTT_PROP_ID_MESSAGE_EXPIRY_INTERVAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a4412472a65ceff7426ce9526833eae38"></a>MQTT_PROP_ID_CONTENT_TYPE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320aead25e4209424279c51f920e6acbf2bf"></a>MQTT_PROP_ID_RESPONSE_TOPIC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a409749658ad5e6ddee039303a32e69e0"></a>MQTT_PROP_ID_CORRELATION_DATA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ab22aee20274ff79a181e608b985aeb3b"></a>MQTT_PROP_ID_SUBSCRIPTION_IDENTIFIER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a6e3b2395a376c2db5a2f08ef2c5035d6"></a>MQTT_PROP_ID_SESSION_EXPIRY_INTERVAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a4d8a2194fbe673e873213f20b15c66ca"></a>MQTT_PROP_ID_ASSIGNED_CLIENT_IDENTIFER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ae98c4b5e57a5838d3bb2fa189bbad6e4"></a>MQTT_PROP_ID_SERVER_KEEP_ALIVE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a8bf61696e8b70c8f919123e2ec06abf4"></a>MQTT_PROP_ID_AUTHENTICATION_METHOD&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a4624bef20258ebf08b92791c14829bed"></a>MQTT_PROP_ID_AUTHENTICATION_DATA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a2f6155828d3fb3e625a4c869e32671f1"></a>MQTT_PROP_ID_REQUEST_PROBLEM_INFORMATION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a132366df1189a46f2a8179ce571884b4"></a>MQTT_PROP_ID_WILL_DELAY_INTERVAL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320aa4f66e032cf897ea9da4cdf382063f4b"></a>MQTT_PROP_ID_REQUEST_RESPONSE_INFORMATION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a22ad08899c5700aef1286cac7d62c2fa"></a>MQTT_PROP_ID_RESPONSE_INFORMATION&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a965f707a88009642599dcaef5102363c"></a>MQTT_PROP_ID_SERVER_REFERENCE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a79a94dbb4d31addba4f80e94e67cd4ed"></a>MQTT_PROP_ID_REASON_STRING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a5ea2e47eeb7aa910087b865754209acf"></a>MQTT_PROP_ID_RECEIVE_MAXIMUM&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a7f0c63edaffe8992da372c4fc59a0ed9"></a>MQTT_PROP_ID_TOPIC_ALIAS_MAXIMUM&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a7213c0af4e5ab015980931da77fe82ba"></a>MQTT_PROP_ID_TOPIC_ALIAS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ac9922596d224b9faa3399bf0ea7d2be5"></a>MQTT_PROP_ID_MAXIMUM_QOS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a712aba1f1c2099d14f1596a2123cc725"></a>MQTT_PROP_ID_RETAIN_AVAILABLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ae4f4a3ffb8ce9b05c4eee970445dd2c4"></a>MQTT_PROP_ID_USER_PROPERTY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320aefc69e291834f7f79b30cd24aa38d188"></a>MQTT_PROP_ID_MAXIMUM_PACKET_SIZE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a5d2c8bc024f65908193a9bbf66be5672"></a>MQTT_PROP_ID_WILDCARD_SUBSCRIPTION_AVAILABLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320a419f8b8a69dc132c934b02f3a6d01864"></a>MQTT_PROP_ID_SUBSCRIPTION_IDENTIFIERS_AVAILABLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a30517ebf01fa683a7885af07c825a320ac71e335ef248da59e14ef67fe660c69b"></a>MQTT_PROP_ID_SHARED_SUBSCRIPTION_AVAILABLE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="aiot__mqtt__props__api_8h.html#af8eeab56fe76ada36208ef09dfbcb571">mqtt_property_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a47451270c814271dcbbdf5889e022d30"></a>MQTT_PROP_TYPE_UINT8&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a76e74ec69b2b56162ea2e0054eae0b1e"></a>MQTT_PROP_TYPE_UINT16&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a6a9b77f2efc21ccf398f00e84b83cc58"></a>MQTT_PROP_TYPE_UINT32&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a25d82ecee6fd2f9b21acb81940cc4c42"></a>MQTT_PROP_TYPE_VARIABLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a28cbee9e768cba5da1d616b494ed5889"></a>MQTT_PROP_TYPE_BINARY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a87fac58096dcdb25e9f55f64248ff625"></a>MQTT_PROP_TYPE_STRING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571a0919ada31104e686a30dab6d165eba2f"></a>MQTT_PROP_TYPE_STRING_PAIR&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af8eeab56fe76ada36208ef09dfbcb571adcb33c9e7dc93d43bd78003248c7e053"></a>MQTT_PROP_ID_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="af04e58baaafce36ee6b21e97bec8a6ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a>* aiot_mqtt_props_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mqtt消息属性集合初始化 </p>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">非空NULL</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h_af04e58baaafce36ee6b21e97bec8a6ef_cgraph.png" border="0" usemap="#aiot__mqtt__props__api_8h_af04e58baaafce36ee6b21e97bec8a6ef_cgraph" alt=""/></div>
+<map name="aiot__mqtt__props__api_8h_af04e58baaafce36ee6b21e97bec8a6ef_cgraph" id="aiot__mqtt__props__api_8h_af04e58baaafce36ee6b21e97bec8a6ef_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="192,5,355,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ea195ec8c63a5b9af5b2cd60427374f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_props_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td>
+          <td class="paramname"><em>props</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmqtt__property__t.html">mqtt_property_t</a> *&#160;</td>
+          <td class="paramname"><em>prop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向属性集合中增加一条属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">props</td><td>属性集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prop</td><td>单个属性</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&lt;STATE_SUCCESS</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">&gt;=STATE_SUCCESS</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h_a7ea195ec8c63a5b9af5b2cd60427374f_cgraph.png" border="0" usemap="#aiot__mqtt__props__api_8h_a7ea195ec8c63a5b9af5b2cd60427374f_cgraph" alt=""/></div>
+<map name="aiot__mqtt__props__api_8h_a7ea195ec8c63a5b9af5b2cd60427374f_cgraph" id="aiot__mqtt__props__api_8h_a7ea195ec8c63a5b9af5b2cd60427374f_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="196,5,359,32"/>
+<area shape="rect" id="node3" href="aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d" title="get_type" alt="" coords="241,56,313,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac42755285ebb876327f6d59e25da5ad7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmqtt__property__t.html">mqtt_property_t</a>* aiot_mqtt_props_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td>
+          <td class="paramname"><em>props</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="aiot__mqtt__props__api_8h.html#a30517ebf01fa683a7885af07c825a320">mqtt_property_identify_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从属性集合中，查询属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">props</td><td>属性集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>属性的identifer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>序号，相同id存在多个属性时，属性的序号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> * </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">NULL</td><td>执行失败 </td></tr>
+    <tr><td class="paramname">非空NULL</td><td>执行成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a79fb49833448acbec61db37dd62080a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aiot_mqtt_props_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> **&#160;</td>
+          <td class="paramname"><em>props</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>属性集合反初始化，回收资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">props</td><td>属性集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h_a79fb49833448acbec61db37dd62080a6_cgraph.png" border="0" usemap="#aiot__mqtt__props__api_8h_a79fb49833448acbec61db37dd62080a6_cgraph" alt=""/></div>
+<map name="aiot__mqtt__props__api_8h_a79fb49833448acbec61db37dd62080a6_cgraph" id="aiot__mqtt__props__api_8h_a79fb49833448acbec61db37dd62080a6_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="207,5,369,32"/>
+<area shape="rect" id="node3" href="aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d" title="get_type" alt="" coords="252,56,324,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96c690da00b04e586474865acc09941e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aiot_mqtt_props_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td>
+          <td class="paramname"><em>props</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>printf属性内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">props</td><td>属性集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h_a96c690da00b04e586474865acc09941e_cgraph.png" border="0" usemap="#aiot__mqtt__props__api_8h_a96c690da00b04e586474865acc09941e_cgraph" alt=""/></div>
+<map name="aiot__mqtt__props__api_8h_a96c690da00b04e586474865acc09941e_cgraph" id="aiot__mqtt__props__api_8h_a96c690da00b04e586474865acc09941e_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="200,5,363,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9a18fa4834a9d4df576e4a63bb2a4b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a>* aiot_mqtt_props_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmqtt__properties__t.html">mqtt_properties_t</a> *&#160;</td>
+          <td class="paramname"><em>props</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>深拷贝属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">props</td><td>属性集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="aiot__mqtt__props__api_8h_ad9a18fa4834a9d4df576e4a63bb2a4b3_cgraph.png" border="0" usemap="#aiot__mqtt__props__api_8h_ad9a18fa4834a9d4df576e4a63bb2a4b3_cgraph" alt=""/></div>
+<map name="aiot__mqtt__props__api_8h_ad9a18fa4834a9d4df576e4a63bb2a4b3_cgraph" id="aiot__mqtt__props__api_8h_ad9a18fa4834a9d4df576e4a63bb2a4b3_cgraph">
+<area shape="rect" id="node2" href="aiot__sysdep__api_8h.html#a1e5864627eedf7b3f23213b616f7e365" title="aiot_sysdep_get_portfile" alt="" coords="475,5,637,32"/>
+<area shape="rect" id="node3" href="aiot__mqtt__props__api_8c.html#a7318f8ea13f58a786988baaedaca2173" title="prop_copy" alt="" coords="204,31,287,57"/>
+<area shape="rect" id="node4" href="aiot__mqtt__props__api_8c.html#a7ee0415f07a8f16d7247b4582eabbcc5" title="binary_copy" alt="" coords="335,31,427,57"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

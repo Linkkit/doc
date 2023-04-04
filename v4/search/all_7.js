@@ -14,5 +14,6 @@ var searchData=
   ['get_5fdesired',['get_desired',['../structaiot__dm__msg__t.html#a89204c8509fd29602f133add7d49caab',1,'aiot_dm_msg_t']]],
   ['get_5fdetail_5freply',['get_detail_reply',['../structaiot__task__recv__t.html#a273f7d1145c9accbcea04e37b53f6897',1,'aiot_task_recv_t']]],
   ['get_5flist_5freply',['get_list_reply',['../structaiot__task__recv__t.html#ae9c24c30d0414efcd0a0fba6489d0715',1,'aiot_task_recv_t']]],
-  ['get_5freply',['get_reply',['../structaiot__devinfo__recv__t.html#a05f876c4eec6d8c3957314f39f8a26ce',1,'aiot_devinfo_recv_t::get_reply()'],['../structaiot__shadow__recv__t.html#abb39541649f39af4a4404d47972d813b',1,'aiot_shadow_recv_t::get_reply()']]]
+  ['get_5freply',['get_reply',['../structaiot__devinfo__recv__t.html#a05f876c4eec6d8c3957314f39f8a26ce',1,'aiot_devinfo_recv_t::get_reply()'],['../structaiot__shadow__recv__t.html#abb39541649f39af4a4404d47972d813b',1,'aiot_shadow_recv_t::get_reply()']]],
+  ['get_5ftype',['get_type',['../aiot__mqtt__props__api_8c.html#a63282666e9f0bafb5393f837ec26ff8d',1,'aiot_mqtt_props_api.c']]]
 ];

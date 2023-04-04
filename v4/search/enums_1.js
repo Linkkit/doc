@@ -36,6 +36,7 @@ var searchData=
   ['aiot_5fmqtt_5fdownload_5frecv_5ftype_5ft',['aiot_mqtt_download_recv_type_t',['../aiot__mqtt__download__api_8h.html#adaf331bd1819245feec4a85636266235',1,'aiot_mqtt_download_api.h']]],
   ['aiot_5fmqtt_5fevent_5ftype_5ft',['aiot_mqtt_event_type_t',['../aiot__mqtt__api_8h.html#a9e1232f80e7a783ce2f6dab85f8cd49a',1,'aiot_mqtt_api.h']]],
   ['aiot_5fmqtt_5foption_5ft',['aiot_mqtt_option_t',['../aiot__mqtt__api_8h.html#ab0fbd372e7696b7c356b5070d6ec0c9a',1,'aiot_mqtt_api.h']]],
+  ['aiot_5fmqtt_5fprotocol_5fversion',['aiot_mqtt_protocol_version',['../aiot__mqtt__api_8h.html#a8d85208ed934f80ee8756ea1b9671f65',1,'aiot_mqtt_api.h']]],
   ['aiot_5fmqtt_5frecv_5ftype_5ft',['aiot_mqtt_recv_type_t',['../aiot__mqtt__api_8h.html#ad4c3a28282a888ca3d99cbb531fe99ed',1,'aiot_mqtt_api.h']]],
   ['aiot_5fmqtt_5fupload_5foption_5ft',['aiot_mqtt_upload_option_t',['../aiot__mqtt__upload__api_8h.html#a11ec5d9420f091c6c3a8fbb485f8ff82',1,'aiot_mqtt_upload_api.h']]],
   ['aiot_5fmqtt_5fupload_5frecv_5ftype_5ft',['aiot_mqtt_upload_recv_type_t',['../aiot__mqtt__upload__api_8h.html#aa4239f5d26343af9d45e2a975d390439',1,'aiot_mqtt_upload_api.h']]],
