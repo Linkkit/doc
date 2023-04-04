@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['aiot_5fat_5foption_5ft',['aiot_at_option_t',['../at-port_2at_2aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419',1,'aiot_at_option_t():&#160;aiot_at_api.h'],['../freertos__tcp__modem__port_2aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419',1,'aiot_at_option_t():&#160;aiot_at_api.h'],['../linux-at-modem-port_2aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419',1,'aiot_at_option_t():&#160;aiot_at_api.h']]],
+  ['aiot_5fat_5foption_5ft',['aiot_at_option_t',['../aiot__at__api_8h.html#ae06beba59c197c9cd579e22b291a1419',1,'aiot_at_api.h']]],
   ['aiot_5fbootstrap_5fevent_5ftype_5ft',['aiot_bootstrap_event_type_t',['../aiot__bootstrap__api_8h.html#a42676ca4631968b382a2734c0f17109c',1,'aiot_bootstrap_api.h']]],
   ['aiot_5fbootstrap_5foption_5ft',['aiot_bootstrap_option_t',['../aiot__bootstrap__api_8h.html#a9cc177610fa0842f8287ed4fa438d56d',1,'aiot_bootstrap_api.h']]],
   ['aiot_5fbootstrap_5frecv_5ftype_5ft',['aiot_bootstrap_recv_type_t',['../aiot__bootstrap__api_8h.html#ac359fa28eb89ab6d581a344e89119718',1,'aiot_bootstrap_api.h']]],

@@ -15,11 +15,10 @@ var searchData=
   ['res',['res',['../structaiot__mqtt__recv__t.html#a436bf676f0935303cd13dd5909881c45',1,'aiot_mqtt_recv_t']]],
   ['resevered',['resevered',['../structaiot__shadow__msg__get__t.html#ae1ecc8180ff7b7da0982dbb589a988be',1,'aiot_shadow_msg_get_t']]],
   ['rrpc_5fid',['rrpc_id',['../structaiot__dm__msg__sync__service__reply__t.html#ae70ebd5d518aeee3bb8f58a8c15de9d2',1,'aiot_dm_msg_sync_service_reply_t::rrpc_id()'],['../structaiot__dm__msg__raw__service__reply__t.html#a02a986bece9771a6dac8f57a18cd73f9',1,'aiot_dm_msg_raw_service_reply_t::rrpc_id()'],['../structaiot__dm__recv__sync__service__invoke__t.html#a9595d9f27ab3bedb7e51d5869717aff4',1,'aiot_dm_recv_sync_service_invoke_t::rrpc_id()'],['../structaiot__dm__recv__raw__service__invoke__t.html#aebaf981ef9fdb9e6924019f42e7e94d9',1,'aiot_dm_recv_raw_service_invoke_t::rrpc_id()']]],
-  ['rsp',['rsp',['../structcore__at__cmd__item__t.html#a175b413d6c5a668d1695b13f66ca4da1',1,'core_at_cmd_item_t']]],
-  ['rsp_5fbuf',['rsp_buf',['../structcore__at__handle__t.html#a0b74fa64561ab01404528b829183ab66',1,'core_at_handle_t']]],
+  ['rsp',['rsp',['../structcore__at__cmd__item__t.html#a9228d9c33ab189c20f0b982f48b50510',1,'core_at_cmd_item_t']]],
+  ['rsp_5fbuf',['rsp_buf',['../structcore__at__handle__t.html#aee2f7c42134b90a3f8ae9bec5018a0d5',1,'core_at_handle_t']]],
   ['rsp_5fbuf_5foffset',['rsp_buf_offset',['../structcore__at__handle__t.html#a7a6d2c15cdcc1b846f6db988789d7c13',1,'core_at_handle_t']]],
   ['rsp_5fcode',['rsp_code',['../structaiot__coap__recv__t.html#a75448add062817e2cda3920b3f3f8c73',1,'aiot_coap_recv_t']]],
   ['rsp_5frb',['rsp_rb',['../structcore__at__handle__t.html#a9784879b40023c146e6e05964dbd329a',1,'core_at_handle_t']]],
-  ['rsp_5fresult_5ft',['rsp_result_t',['../at-port_2at_2aiot__at__api_8h.html#a282c8f7939c04d5aa43554f5afb58d7f',1,'aiot_at_api.h']]],
-  ['rsp_5ftimeout',['rsp_timeout',['../structcore__at__handle__t.html#aa4505c9f10beecac24ddeeff26d4438b',1,'core_at_handle_t']]]
+  ['rsp_5fresult_5ft',['rsp_result_t',['../aiot__at__api_8h.html#a282c8f7939c04d5aa43554f5afb58d7f',1,'aiot_at_api.h']]]
 ];

@@ -1,4 +1,0 @@
-<map id="core_ringbuf_read_sync_rsp" name="core_ringbuf_read_sync_rsp">
-<area shape="rect" id="node2" href="$at-port_2at_2aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="412,5,579,32"/>
-<area shape="rect" id="node3" href="$at-port_2at_2aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="239,31,364,57"/>
-</map>

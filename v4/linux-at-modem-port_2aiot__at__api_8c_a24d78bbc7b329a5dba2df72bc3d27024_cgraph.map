@@ -1,4 +1,0 @@
-<map id="aiot_at_uart_reception" name="aiot_at_uart_reception">
-<area shape="rect" id="node2" href="$at-port_2at_2aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb" title="core_ringbuf_write" alt="" coords="204,5,332,32"/>
-<area shape="rect" id="node3" href="$at-port_2at_2aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="380,5,547,32"/>
-</map>

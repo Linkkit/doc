@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['aiot_5fat_5fapi_2ec',['aiot_at_api.c',['../at-port_2at_2aiot__at__api_8c.html',1,'']]],
-  ['aiot_5fat_5fapi_2ec',['aiot_at_api.c',['../freertos__tcp__modem__port_2aiot__at__api_8c.html',1,'']]],
-  ['aiot_5fat_5fapi_2ec',['aiot_at_api.c',['../linux-at-modem-port_2aiot__at__api_8c.html',1,'']]],
-  ['aiot_5fat_5fapi_2eh',['aiot_at_api.h',['../at-port_2at_2aiot__at__api_8h.html',1,'']]],
-  ['aiot_5fat_5fapi_2eh',['aiot_at_api.h',['../freertos__tcp__modem__port_2aiot__at__api_8h.html',1,'']]],
-  ['aiot_5fat_5fapi_2eh',['aiot_at_api.h',['../linux-at-modem-port_2aiot__at__api_8h.html',1,'']]],
+  ['aiot_5fat_5fapi_2ec',['aiot_at_api.c',['../aiot__at__api_8c.html',1,'']]],
+  ['aiot_5fat_5fapi_2eh',['aiot_at_api.h',['../aiot__at__api_8h.html',1,'']]],
   ['aiot_5fbootstrap_5fapi_2ec',['aiot_bootstrap_api.c',['../aiot__bootstrap__api_8c.html',1,'']]],
   ['aiot_5fbootstrap_5fapi_2eh',['aiot_bootstrap_api.h',['../aiot__bootstrap__api_8h.html',1,'']]],
   ['aiot_5fcoap_5fapi_2ec',['aiot_coap_api.c',['../aiot__coap__api_8c.html',1,'']]],

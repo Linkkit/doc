@@ -1,7 +1,0 @@
-<map id="aiot_at_bootstrap" name="aiot_at_bootstrap">
-<area shape="rect" id="node2" href="$freertos__tcp__modem__port_2aiot__at__api_8c.html#abc2442b4551356ba003b6afe6830f429" title="core_at_commands_send_sync" alt="" coords="176,31,383,57"/>
-<area shape="rect" id="node3" href="$freertos__tcp__modem__port_2aiot__at__api_8c.html#a7ce0f5cf32de3c170bf5a1ca92ce75ca" title="core_at_uart_tx" alt="" coords="467,5,579,32"/>
-<area shape="rect" id="node4" href="$freertos__tcp__modem__port_2aiot__at__api_8c.html#a98cd2fe602967662c7a889eb1d6766fb" title="core_ringbuf_read_sync_rsp" alt="" coords="431,56,616,83"/>
-<area shape="rect" id="node5" href="$at-port_2at_2aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="837,56,1004,83"/>
-<area shape="rect" id="node6" href="$at-port_2at_2aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="664,81,789,108"/>
-</map>

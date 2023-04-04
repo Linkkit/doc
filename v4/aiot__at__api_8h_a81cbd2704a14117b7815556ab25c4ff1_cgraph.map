@@ -1,0 +1,4 @@
+<map id="aiot_at_nwk_recv" name="aiot_at_nwk_recv">
+<area shape="rect" id="node2" href="$aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="351,5,517,32"/>
+<area shape="rect" id="node3" href="$aiot__at__api_8c.html#a36d66bd3307b62d5054448e964935b7d" title="core_ringbuf_read" alt="" coords="177,31,303,57"/>
+</map>

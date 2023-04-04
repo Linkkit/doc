@@ -4,7 +4,5 @@
 <area shape="rect" id="node4" href="$aiot__ra__api_8c.html" title="remote&#45;access模块的API接口实现, 提供远程隧道的能力 " alt="" coords="347,87,529,129"/>
 <area shape="rect" id="node5" href="$aiot__tunnel__api_8c.html" title="隧道管理模块，管理的隧道的连接及消息收发 " alt="" coords="553,87,736,129"/>
 <area shape="rect" id="node6" href="$aiot__tunnel__switch__api_8c.html" title="隧道开关接口实现 " alt="" coords="760,80,943,136"/>
-<area shape="rect" id="node7" href="$at-port_2at_2aiot__at__api_8c.html" title="portfiles/at&#45;port/at\l/aiot_at_api.c" alt="" coords="967,87,1091,129"/>
-<area shape="rect" id="node8" href="$freertos__tcp__modem__port_2aiot__at__api_8c.html" title="portfiles/freertos\l_tcp_modem_port/aiot\l_at_api.c" alt="" coords="1115,80,1265,136"/>
-<area shape="rect" id="node9" href="$linux-at-modem-port_2aiot__at__api_8c.html" title="portfiles/linux&#45;at\l&#45;modem&#45;port/aiot_at_api.c" alt="" coords="1290,87,1463,129"/>
+<area shape="rect" id="node7" href="$aiot__at__api_8c.html" title="提供了外部通信模组对接到SDK网络适配层的接口实现 " alt="" coords="967,87,1091,129"/>
 </map>

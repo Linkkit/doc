@@ -6,5 +6,5 @@ var searchData=
   ['open_5fcmd_5fsize',['open_cmd_size',['../structat__device__t.html#afef76335287f87a1c5a5361d84a798a7',1,'at_device_t']]],
   ['operation',['operation',['../structaiot__tunnel__switch__recv__data__t.html#a6b0854ba0d24c4f960cc98cc42b85911',1,'aiot_tunnel_switch_recv_data_t']]],
   ['option',['option',['../structaiot__sysdep__network__cred__t.html#a7be46bc9fb6dcd16e988d333f23b1b16',1,'aiot_sysdep_network_cred_t']]],
-  ['os_5fapi',['os_api',['../at-port_2at_2aiot__at__api_8c.html#ad303ff634065456f8a32fc7e8dd7c951',1,'aiot_at_api.c']]]
+  ['os_5fapi',['os_api',['../aiot__at__api_8c.html#ad303ff634065456f8a32fc7e8dd7c951',1,'aiot_at_api.c']]]
 ];

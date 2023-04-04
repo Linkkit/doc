@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Link Kit C-SDK
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -196,7 +196,14 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>tunnel内部事件回调函数接口定义 </p>
-<p>当tunnel内部事件被触发时, 调用此函数. 如连接成功/断开连接/ [in] handle tunnel管理模块句柄 [in] event tunnel消息结构体, 存放内部事件 [in] userdata 用户上下文 </p>
+<p>当tunnel内部事件被触发时, 调用此函数. 如连接成功/断开连接/ </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>tunnel管理模块句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>tunnel消息结构体, 存放内部事件 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>用户上下文 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -332,7 +339,14 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>配置tunnel管理模块 </p>
-<p>[in] handle tunnel管理模块句柄 [in] option 配置选项, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a> [in] data 配置选项数据, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>tunnel管理模块句柄 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>配置选项, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>配置选项数据, 更多信息请参考<a class="el" href="aiot__tunnel__api_8h.html#a84b682eff5f0e5f9f6382e5af6dae324">aiot_tunnel_option_t</a></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
@@ -369,7 +383,12 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>结束tunnel管理模块, 销毁实例并回收资源 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
@@ -407,7 +426,12 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>开始tunnel管理服务，作为后台线程开始运行，会一直阻塞，直至退出 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
@@ -449,7 +473,12 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>关闭tunnel管理服务，作为线程开始运行 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
@@ -492,7 +521,14 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>向隧道管理模块增加隧道，并建连 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道id [in] params 隧道的建连信息</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tunnel_id</td><td>隧道id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>隧道的建连信息</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
@@ -545,7 +581,14 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>更新隧道建来呢信息 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道id [in] params 隧道的建连信息</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tunnel_id</td><td>隧道id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>隧道的建连信息</td></tr>
+  </table>
+  </dd>
+</dl>
 <pre class="fragment">当该隧道id已经存在，且在线时，会断连后使用新的建连信息建连
 当该隧道id已经存在，且不在线时，会使用新的建连信息建连
 当该隧道id不存在，会直接使用新的建连信息建连
@@ -595,7 +638,13 @@ aiot_tunnel_api.h 的引用(Include)关系图:</div>
 </div><div class="memdoc">
 
 <p>从隧道管理模块删除隧道，并断连 </p>
-<p>[in] handle 指向tunnel管理模块句柄的指针 [in] tunnel 隧道的信息</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>指向tunnel管理模块句柄的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tunnel_id</td><td>隧道的信息</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>int32_t* </dd></dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">

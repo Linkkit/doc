@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['aiot_5fat_5fuart_5ftx_5ffunc_5ft',['aiot_at_uart_tx_func_t',['../at-port_2at_2aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481',1,'aiot_at_uart_tx_func_t():&#160;aiot_at_api.h'],['../freertos__tcp__modem__port_2aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481',1,'aiot_at_uart_tx_func_t():&#160;aiot_at_api.h'],['../linux-at-modem-port_2aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481',1,'aiot_at_uart_tx_func_t():&#160;aiot_at_api.h']]],
+  ['aiot_5fat_5fuart_5ftx_5ffunc_5ft',['aiot_at_uart_tx_func_t',['../aiot__at__api_8h.html#a15419032f67ed989a100892b8facf481',1,'aiot_at_api.h']]],
   ['aiot_5fbootstrap_5fevent_5fhandler_5ft',['aiot_bootstrap_event_handler_t',['../aiot__bootstrap__api_8h.html#a1c67414cc21b797718cf97d763796214',1,'aiot_bootstrap_api.h']]],
   ['aiot_5fbootstrap_5frecv_5fhandler_5ft',['aiot_bootstrap_recv_handler_t',['../aiot__bootstrap__api_8h.html#a6e6c604440c0885eb97ad4d866032102',1,'aiot_bootstrap_api.h']]],
   ['aiot_5fcoap_5fevent_5fhandler_5ft',['aiot_coap_event_handler_t',['../aiot__coap__api_8h.html#aa5dc249545a65eb45739dd1d27644b94',1,'aiot_coap_api.h']]],
@@ -30,7 +30,7 @@ var searchData=
   ['aiot_5ftask_5frecv_5fhandler_5ft',['aiot_task_recv_handler_t',['../aiot__task__api_8h.html#a7ab84c6afc02ec7bfbdb7b4e1bb2c75f',1,'aiot_task_api.h']]],
   ['aiot_5ftunnel_5fevent_5fhandler_5ft',['aiot_tunnel_event_handler_t',['../aiot__tunnel__api_8h.html#ae8d9d25700f20cb980cb24e7872b2010',1,'aiot_tunnel_api.h']]],
   ['aiot_5ftunnel_5fswitch_5frecv_5fhandler_5ft',['aiot_tunnel_switch_recv_handler_t',['../aiot__tunnel__switch__api_8h.html#a0d57f7406b96156eb27d4d6343ab5992',1,'aiot_tunnel_switch_api.h']]],
-  ['at_5frsp_5fhandler_5ft',['at_rsp_handler_t',['../at-port_2at_2aiot__at__api_8h.html#a16222c140f4bd3b0c0302dee2ed5126f',1,'at_rsp_handler_t():&#160;aiot_at_api.h'],['../freertos__tcp__modem__port_2aiot__at__api_8h.html#a3a08d8b662ade51045578d7c2aa379e7',1,'at_rsp_handler_t():&#160;aiot_at_api.h'],['../linux-at-modem-port_2aiot__at__api_8h.html#a3a08d8b662ade51045578d7c2aa379e7',1,'at_rsp_handler_t():&#160;aiot_at_api.h']]],
-  ['at_5frsp_5fresult_5ft',['at_rsp_result_t',['../at-port_2at_2aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400',1,'aiot_at_api.h']]],
-  ['at_5furc_5fhandler_5ft',['at_urc_handler_t',['../at-port_2at_2aiot__at__api_8h.html#a8bf6d2915adb7fb145b9849fd0fe3dac',1,'aiot_at_api.h']]]
+  ['at_5frsp_5fhandler_5ft',['at_rsp_handler_t',['../aiot__at__api_8h.html#a16222c140f4bd3b0c0302dee2ed5126f',1,'aiot_at_api.h']]],
+  ['at_5frsp_5fresult_5ft',['at_rsp_result_t',['../aiot__at__api_8h.html#ab5998e80042fda3f2e59195c56c37400',1,'aiot_at_api.h']]],
+  ['at_5furc_5fhandler_5ft',['at_urc_handler_t',['../aiot__at__api_8h.html#a8bf6d2915adb7fb145b9849fd0fe3dac',1,'aiot_at_api.h']]]
 ];

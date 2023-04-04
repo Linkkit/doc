@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['g_5faiot_5fsysdep_5fportfile',['g_aiot_sysdep_portfile',['../freertos__tcp__modem__port_2aiot__at__api_8c.html#ab54cc910a740e08e9b32a324c6401371',1,'g_aiot_sysdep_portfile():&#160;aiot_at_api.c'],['../linux-at-modem-port_2aiot__at__api_8c.html#ab54cc910a740e08e9b32a324c6401371',1,'g_aiot_sysdep_portfile():&#160;aiot_at_api.c']]],
   ['g_5fdm_5frecv_5ftopic_5fmapping',['g_dm_recv_topic_mapping',['../aiot__dm__api_8c.html#a6f4f6112db0dd04e6ae7e68785c3cc5a',1,'aiot_dm_api.c']]],
   ['g_5fdm_5fsend_5ftopic_5fmapping',['g_dm_send_topic_mapping',['../aiot__dm__api_8c.html#af5af606494e3cfd9538bd195a3c1b461',1,'aiot_dm_api.c']]],
   ['g_5flogcb_5fhandler',['g_logcb_handler',['../aiot__state__api_8c.html#a704acc26b972af87d91c54e12345f164',1,'aiot_state_api.c']]],
   ['g_5fota_5ftopic_5fmap',['g_ota_topic_map',['../aiot__ota__api_8c.html#af15ce90d56527f46e0d5717a4299df83',1,'aiot_ota_api.c']]],
-  ['g_5frsp_5fbuf',['g_rsp_buf',['../freertos__tcp__modem__port_2aiot__at__api_8c.html#a7f5ccb848d37d771fcd93d6ece35f95e',1,'aiot_at_api.c']]],
   ['g_5fsubdev_5ftopic_5fmap',['g_subdev_topic_map',['../aiot__subdev__api_8c.html#adbcaad01b964a7dcf6ef799b4ff2e0a9',1,'aiot_subdev_api.c']]],
   ['g_5ftask_5frecv_5ftopic_5fmapping',['g_task_recv_topic_mapping',['../aiot__task__api_8c.html#ac8080c933bae09c40bbcc0bc3b2dca42',1,'aiot_task_api.c']]],
   ['g_5ftask_5fstauts_5fmapping',['g_task_stauts_mapping',['../aiot__task__api_8c.html#ad8b60e13adcfd2996c3979e15f869c8b',1,'aiot_task_api.c']]],

@@ -1,4 +1,4 @@
 <map id="components/ota/aiot_mqtt_download_api.c" name="components/ota/aiot_mqtt_download_api.c">
-<area shape="rect" id="node2" href="$aiot__ota__api_8h.html" title="OTA模块头文件, 提供设备获取固件升级和远程配置的能力 " alt="" coords="5,109,108,136"/>
-<area shape="rect" id="node4" href="$aiot__http__download__api_8h.html" title="aiot_http_download\l_api.h" alt="" coords="43,199,177,240"/>
+<area shape="rect" id="node2" href="$aiot__ota__api_8h.html" title="OTA模块头文件, 提供设备获取固件升级和远程配置的能力 " alt="" coords="5,117,108,143"/>
+<area shape="rect" id="node4" href="$aiot__http__download__api_8h.html" title="aiot_http_download\l_api.h" alt="" coords="43,213,177,255"/>
 </map>

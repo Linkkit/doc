@@ -1,7 +1,0 @@
-<map id="aiot_at_hal_recv_handle" name="aiot_at_hal_recv_handle">
-<area shape="rect" id="node2" href="$at-port_2at_2aiot__at__api_8c.html#a23e435a4d2c2babc48c1e10a6b52fba4" title="core_at_hal_process" alt="" coords="216,32,359,59"/>
-<area shape="rect" id="node3" href="$at-port_2at_2aiot__at__api_8c.html#af68c0abb2eb755b69a049d4d535dbabb" title="core_ringbuf_write" alt="" coords="600,32,728,59"/>
-<area shape="rect" id="node5" href="$at-port_2at_2aiot__at__api_8c.html#a599c4558fdbecd9b1322d3fdd64f558b" title="core_at_recv_prefix\l_match" alt="" coords="411,25,547,66"/>
-<area shape="rect" id="node6" href="$at-port_2at_2aiot__at__api_8c.html#a075dd0d3dec34ae5018bb4bc9982f18b" title="core_at_process_line" alt="" coords="407,91,552,118"/>
-<area shape="rect" id="node4" href="$at-port_2at_2aiot__at__api_8c.html#a9954ff76651bd78f8d8a0529d62461d7" title="core_ringbuf_get_occupy" alt="" coords="776,32,943,59"/>
-</map>

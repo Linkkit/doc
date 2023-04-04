@@ -2,7 +2,6 @@ var searchData=
 [
   ['core_5fat_5fcmd_5fitem_5ft',['core_at_cmd_item_t',['../structcore__at__cmd__item__t.html',1,'']]],
   ['core_5fat_5fhandle_5ft',['core_at_handle_t',['../structcore__at__handle__t.html',1,'']]],
-  ['core_5fat_5fparse_5fsm_5ft',['core_at_parse_sm_t',['../structcore__at__parse__sm__t.html',1,'']]],
   ['core_5fat_5fread_5ft',['core_at_read_t',['../structcore__at__read__t.html',1,'']]],
   ['core_5fat_5frecv_5fdata_5fprefix',['core_at_recv_data_prefix',['../structcore__at__recv__data__prefix.html',1,'']]],
   ['core_5fat_5furc_5fitem_5ft',['core_at_urc_item_t',['../structcore__at__urc__item__t.html',1,'']]],
